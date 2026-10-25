@@ -1,5 +1,5 @@
 {
- "generated": "26/10/2026 00h32",
+ "generated": "26/10/2026 00h41",
  "date": "2026-10-25",
  "date_fr": "25/10/2026",
  "hockey": {
@@ -38,7 +38,10 @@
     "time": "03h00",
     "chance": "44 %",
     "min": "2,25",
-    "example": "À 2,25 ou plus, tu joues. À 2,10, tu ne joues pas."
+    "example": "À 2,25 ou plus, tu joues. À 2,10, tu ne joues pas.",
+    "wm": "1,90",
+    "wm_ok": false,
+    "wm_edge": -15
    },
    {
     "player": "Matt Boldy",
@@ -47,7 +50,10 @@
     "time": "03h00",
     "chance": "43 %",
     "min": "2,34",
-    "example": "À 2,34 ou plus, tu joues. À 2,19, tu ne joues pas."
+    "example": "À 2,34 ou plus, tu joues. À 2,19, tu ne joues pas.",
+    "wm": "2,25",
+    "wm_ok": false,
+    "wm_edge": -4
    },
    {
     "player": "Kyle Connor",
@@ -72,7 +78,10 @@
     "time": "01h00",
     "chance": "41 %",
     "min": "2,42",
-    "example": "À 2,42 ou plus, tu joues. À 2,27, tu ne joues pas."
+    "example": "À 2,42 ou plus, tu joues. À 2,27, tu ne joues pas.",
+    "wm": "2,05",
+    "wm_ok": false,
+    "wm_edge": -15
    },
    {
     "player": "Cole Caufield",
@@ -150,6 +159,9 @@
     "chance": "17 %",
     "min": "5,88",
     "example": "À 5,88 ou plus, tu joues. À 5,38, tu ne joues pas.",
+    "wm": "3,65",
+    "wm_ok": false,
+    "wm_edge": -38,
     "best": false
    },
    {
@@ -160,6 +172,9 @@
     "chance": "13 %",
     "min": "7,87",
     "example": "À 7,87 ou plus, tu joues. À 7,37, tu ne joues pas.",
+    "wm": "5,00",
+    "wm_ok": false,
+    "wm_edge": -36,
     "best": false
    }
   ],
@@ -169,14 +184,20 @@
     "form": "18 pts, point dans 6/10",
     "team": "COL",
     "game": "Colorado à Nashville",
-    "time": "01h00"
+    "time": "01h00",
+    "wm": "1,22",
+    "wm_ok": false,
+    "wm_level": "no"
    },
    {
     "player": "Kirill Kaprizov",
     "form": "16 pts, 8/10",
     "team": "MIN",
     "game": "Minnesota à Vancouver",
-    "time": "03h00"
+    "time": "03h00",
+    "wm": "1,24",
+    "wm_ok": false,
+    "wm_level": "no"
    },
    {
     "player": "Matthew Tkachuk",
@@ -516,7 +537,10 @@
     "bestD": {
      "player": "Cale Makar",
      "chance": "17 %",
-     "min": "5,88"
+     "min": "5,88",
+     "wm": "3,65",
+     "wm_ok": false,
+     "wm_edge": -38
     }
    },
    {
@@ -560,7 +584,10 @@
     "bestD": {
      "player": "Filip Hronek",
      "chance": "6 %",
-     "min": "15,87"
+     "min": "15,87",
+     "wm": "7,00",
+     "wm_ok": false,
+     "wm_edge": -56
     }
    }
   ],
@@ -832,6 +859,46 @@
      }
     ]
    }
+  ],
+  "wm_value": [
+   {
+    "player": "Jack Drury",
+    "team": "NSH",
+    "pos": "F",
+    "game": "Colorado à Nashville",
+    "time": "01h00",
+    "chance": "12 %",
+    "min": "8,33",
+    "wm": "10,50",
+    "edge": 26
+   },
+   {
+    "player": "Filip Chytil",
+    "team": "VAN",
+    "pos": "F",
+    "game": "Minnesota à Vancouver",
+    "time": "03h00",
+    "chance": "24 %",
+    "min": "4,15",
+    "wm": "5,00",
+    "edge": 21
+   },
+   {
+    "player": "Max Sasson",
+    "team": "VAN",
+    "pos": "F",
+    "game": "Minnesota à Vancouver",
+    "time": "03h00",
+    "chance": "14 %",
+    "min": "7,19",
+    "wm": "8,00",
+    "edge": 11
+   }
+  ],
+  "wm_read_at": "00h20",
+  "wm_games": [
+   "Colorado à Nashville",
+   "Minnesota à Vancouver"
   ]
  },
  "foot": {
