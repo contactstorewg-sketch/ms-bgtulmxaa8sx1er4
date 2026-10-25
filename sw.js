@@ -1,4 +1,4 @@
-var C='ms-v9',F=['./','index.html','detector.js','manifest.webmanifest','icon.svg','mp4box.min.js'];
+var C='ms-v10',F=['./','index.html','detector.js','manifest.webmanifest','icon.svg','mp4box.min.js'];
 self.addEventListener('install',function(e){self.skipWaiting();e.waitUntil(caches.open(C).then(function(c){return c.addAll(F.map(function(u){return new Request(u,{cache:'reload'})}))}).catch(function(){}))});
 self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(k){return Promise.all(k.filter(function(x){return x!==C}).map(function(x){return caches.delete(x)}))}).then(function(){return self.clients.claim()}))});
 /* Réseau d'abord (sans cache HTTP) pour tout ; le cache ne sert qu'hors ligne */

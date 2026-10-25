@@ -44,6 +44,7 @@ input[type=file]{display:none}
 .shot{width:100%;border-radius:10px;display:block;background:#000}
 .shots{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
 .shots figure{margin:0;flex:0 0 46%}.shots figcaption{font-size:12px;color:var(--mut);margin-top:4px}
+.sbanner{display:none;margin:0;padding:10px 14px;font-size:15px;font-weight:700;line-height:1.35;align-items:flex-start;gap:10px}.sbanner.on{display:flex}.sbanner.err{background:#5a1f24;color:#ffd7d7;border-bottom:1px solid #a33}.sbanner.ok{background:#14532d;color:#d6ffe1;border-bottom:1px solid #1fa34a}.sbanner span{flex:1}.sbanner button{background:none;border:0;color:inherit;font-size:20px;padding:0 4px;min-height:32px}
 .alert{border-radius:14px;padding:18px;text-align:center;font-size:22px;font-weight:800;margin-bottom:12px}
 .alert.seen{background:#4a3407;color:#ffd27a;border:2px solid var(--warn)}.alert.new{background:#0b3a1d;color:#8ff5ad;border:2px solid #1b6b3d}
 .honest{background:#13293a;border-left:4px solid #5fa8d3;border-radius:10px;padding:12px 14px;color:#cfe3f2;line-height:1.5;font-size:15px}
@@ -90,7 +91,8 @@ select{width:100%;padding:14px;border-radius:12px;background:var(--card2);color:
   <button data-tab="low"><span>🎯</span>Multi bas</button>
   <button data-tab="hist"><span>📊</span>Historique</button>
   <button data-tab="data"><span>💾</span>Données</button>
-</nav></div>
+</nav>
+<div class="sbanner" id="sBanner" role="alert"><span id="sBannerTxt"></span><button id="sBannerX" aria-label="Fermer">✕</button></div></div>
 <div id="shell"><div id="wrap"><main>
 
 <section id="tab-add" class="on">
@@ -143,11 +145,17 @@ select{width:100%;padding:14px;border-radius:12px;background:var(--card2);color:
 
 <section id="tab-data">
   <div class="card">
+    <h2>Stockage sur ce téléphone</h2>
+    <div id="storeInfo" class="small">Vérification…</div>
+    <button class="btn" id="btnStoreTest">🔎 Tester l'enregistrement</button>
+    <p class="small mut">Les données sont liées à <b>cette adresse</b> et à <b>ce navigateur</b> : celles enregistrées sur un autre lien (par ex. l'ancien lien Netlify) ou dans l'app ajoutée à l'écran d'accueil ne sont pas visibles ici, et inversement. Pour les récupérer : « Exporter » là-bas, puis « Importer une sauvegarde » ici.</p>
+  </div>
+  <div class="card">
     <h2>Sauvegarde</h2>
     <p class="mut small">Tout est enregistré uniquement sur ce téléphone, dans ce navigateur. Exporte de temps en temps pour ne rien perdre.</p>
     <button class="btn" id="btnExport">⬇️ Exporter (fichier JSON)</button>
     <label class="btn" for="fileImport">⬆️ Importer une sauvegarde</label>
-    <input id="fileImport" type="file" accept="application/json,.json">
+    <input id="fileImport" type="file" accept=".json,application/json,text/plain,.txt">
     <button class="btn red" id="btnWipe">🗑️ Tout effacer</button>
   </div>
   <div class="card">
@@ -177,20 +185,65 @@ function mines(g){return g.split('M').length-1}
 
 /* ---------- IndexedDB ---------- */
 var db,GRIDS=[],IMPS=[];
-function openDB(){return new Promise(function(res,rej){var r=indexedDB.open('mines-schemas',1);
-  r.onupgradeneeded=function(){var d=r.result;d.createObjectStore('grids',{keyPath:'id'});d.createObjectStore('sessions',{keyPath:'id'})};
-  r.onsuccess=function(){db=r.result;res()};r.onerror=function(){rej(r.error)}})}
-function all(st){return new Promise(function(res,rej){var q=db.transaction(st).objectStore(st).getAll();q.onsuccess=function(){res(q.result)};q.onerror=function(){rej(q.error)}})}
-function put(st,o){return new Promise(function(res,rej){var t=db.transaction(st,'readwrite');t.objectStore(st).put(o);t.oncomplete=res;t.onerror=function(){rej(t.error)}})}
-function del(st,id){return new Promise(function(res){var t=db.transaction(st,'readwrite');t.objectStore(st).delete(id);t.oncomplete=res})}
-function clear(st){return new Promise(function(res){var t=db.transaction(st,'readwrite');t.objectStore(st).clear();t.oncomplete=res})}
+var DB_OK=false,MEM_ONLY=false,STORE_REASON='';
+function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function lsSet(k,v){try{localStorage.setItem(k,v);return true}catch(e){return false}}
+function lsDel(k){try{localStorage.removeItem(k)}catch(e){}}
+function storeWhy(e){var n=e&&(e.name||'')||'',m=e&&(e.message||'')||String(e||'');
+  if(n==='QuotaExceededError'||/quota|space|full|disk/i.test(m))return 'la mémoire réservée au site est pleine. Supprime d\'anciennes vidéos (Historique) ou fais « Exporter » puis « Tout effacer ».';
+  if(n==='NO_IDB'||n==='SecurityError'||n==='InvalidStateError'||/private|security|not allowed|denied/i.test(m))return 'le stockage est bloqué par le navigateur. Si Safari est en navigation privée : ouvre le lien dans un onglet normal. Vérifie aussi Réglages › Safari › « Bloquer tous les cookies » (doit être désactivé).';
+  if(n==='TIMEOUT')return 'la base de données ne répond pas. Ferme complètement Safari (ou l\'app) puis rouvre le lien.';
+  return 'erreur du navigateur ('+(n||'?')+(m?' : '+m:'')+').'}
+function banner(msg,ok){var b=$('#sBanner');$('#sBannerTxt').textContent=msg;b.className='sbanner on '+(ok?'ok':'err');clearTimeout(banner.t);if(ok)banner.t=setTimeout(function(){b.className='sbanner'},5000)}
+function storeFail(e,what){var w=storeWhy(e);STORE_REASON=w;console.warn('stockage',e);banner('⚠️ '+(what||'Enregistrement impossible')+' : '+w)}
+function openDB(){return new Promise(function(res,rej){
+  if(!window.indexedDB){var e=new Error('indexedDB absent');e.name='NO_IDB';return rej(e)}
+  var done=false,to=setTimeout(function(){if(!done){done=true;var e=new Error('timeout');e.name='TIMEOUT';rej(e)}},6000),r;
+  try{r=indexedDB.open('mines-schemas',1)}catch(e){clearTimeout(to);return rej(e)}
+  r.onupgradeneeded=function(){var d=r.result;if(!d.objectStoreNames.contains('grids'))d.createObjectStore('grids',{keyPath:'id'});if(!d.objectStoreNames.contains('sessions'))d.createObjectStore('sessions',{keyPath:'id'})};
+  r.onsuccess=function(){if(done){try{r.result.close()}catch(e){}return}done=true;clearTimeout(to);db=r.result;DB_OK=true;db.onversionchange=function(){db.close()};res()};
+  r.onerror=function(){if(done)return;done=true;clearTimeout(to);rej(r.error)};r.onblocked=function(){}})}
+function tx(st,mode,fn){return new Promise(function(res,rej){
+  if(MEM_ONLY||!db){var e=new Error('indexedDB indisponible');e.name=STORE_REASON?'NO_IDB':'NO_IDB';return rej(e)}
+  try{var t=db.transaction(st,mode),os=t.objectStore(st),out=fn(os);
+    t.oncomplete=function(){res(out&&out.result!==undefined?out.result:undefined)};t.onerror=function(ev){ev&&ev.preventDefault&&0;};
+    t.onabort=function(){rej(t.error||(out&&out.error)||new Error('transaction annulée'))}}catch(e){rej(e)}})}
+function all(st){if(MEM_ONLY)return Promise.resolve([]);return tx(st,'readonly',function(os){return os.getAll()})}
+function put(st,o){if(MEM_ONLY)return Promise.reject(Object.assign(new Error('indexedDB indisponible'),{name:'NO_IDB'}));return tx(st,'readwrite',function(os){os.put(o)})}
+function putMany(st,arr){return tx(st,'readwrite',function(os){arr.forEach(function(o){os.put(o)})})}
+function del(st,id){return tx(st,'readwrite',function(os){os.delete(id)})}
+function clear(st){return tx(st,'readwrite',function(os){os.clear()})}
+function isQuota(e){return e&&(e.name==='QuotaExceededError'||/quota/i.test(e.message||''))}
+/* enregistre ; si la mémoire est pleine, réessaie sans les captures (la grille compte plus que l'image) */
+async function putSafe(st,list){try{await putMany(st,list);return {ok:true,noThumb:false}}
+  catch(e){if(isQuota(e)&&list.some(function(r){return r.thumb})){var l2=list.map(function(r){var c=Object.assign({},r);c.thumb=null;return c});
+      try{await putMany(st,l2);list.forEach(function(r){r.thumb=null});return {ok:true,noThumb:true}}catch(e2){throw e2}}throw e}}
+async function storeInfo(){var box=$('#storeInfo');if(!box)return;var h='';
+  if(!DB_OK)h+='<p style="color:#ff9b9b"><b>❌ Enregistrement impossible</b> : '+esc(STORE_REASON||'stockage indisponible')+'</p>';
+  else h+='<p style="color:var(--green)"><b>✅ Enregistrement actif</b> · '+GRIDS.length+' grille'+(GRIDS.length>1?'s':'')+' · '+vidImps().length+' vidéo'+(vidImps().length>1?'s':'')+'</p>';
+  try{if(navigator.storage&&navigator.storage.estimate){var e=await navigator.storage.estimate(),mo=function(x){return (x/1048576).toLocaleString('fr-FR',{maximumFractionDigits:1})+' Mo'};
+    h+='<p>Utilisé : <b>'+mo(e.usage||0)+'</b>'+(e.quota?' sur '+mo(e.quota)+' disponibles':'')+'</p>';
+    if(e.quota&&e.quota<130*1048576&&/Safari/.test(navigator.userAgent)&&!/Chrome|CriOS/.test(navigator.userAgent))h+='<p style="color:var(--warn)">ℹ️ Espace très réduit : si Safari est en navigation privée, ouvre le lien dans un onglet normal, sinon tout sera effacé à la fermeture.</p>'}}catch(e){}
+  try{if(navigator.storage&&navigator.storage.persisted){var p=await navigator.storage.persisted();h+='<p>Stockage protégé contre l\'effacement automatique : <b>'+(p?'oui':'non')+'</b>'+(p?'':' <span class="mut">(sur iPhone, ajoute l\'appli à l\'écran d\'accueil et ouvre-la au moins une fois par semaine ; exporte régulièrement)</span>')+'</p>'}}catch(e){}
+  box.innerHTML=h}
+function askPersist(){try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist().then(function(){storeInfo()}).catch(function(){})}catch(e){}}
+/* anciennes données éventuellement gardées dans localStorage → IndexedDB */
+async function migrateLS(){var keys=[];try{for(var i=0;i<localStorage.length;i++)keys.push(localStorage.key(i))}catch(e){return 0}
+  var n=0;for(var k of keys){if(/^(lowCfg|lastImp|activeSession)$|_migrated$/.test(k))continue;var v=lsGet(k);if(!v||v.length<30||!/grid/.test(v))continue;
+    var d;try{d=JSON.parse(v)}catch(e){continue}var arr=Array.isArray(d)?d:(d&&Array.isArray(d.grids)?d.grids:null);if(!arr)continue;
+    var ids={};GRIDS.forEach(function(r){ids[r.id]=1;ids['g:'+r.grid+':'+r.date]=1});
+    var add=arr.filter(function(r){return r&&/^[DM]{25}$/.test(r.grid)}).map(function(r){return {id:r.id||uid(),grid:r.grid,mines:mines(r.grid),date:r.date||Date.now(),added:r.added||Date.now(),thumb:r.thumb||null,imp:r.imp||null}})
+      .filter(function(r){return !ids[r.id]&&!ids['g:'+r.grid+':'+r.date]});
+    if(add.length){await putSafe('grids',add);add.forEach(function(r){GRIDS.push(r)});n+=add.length}
+    lsSet(k+'_migrated',v);lsDel(k)}
+  return n}
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
 
 /* ---------- Tabs ---------- */
 document.querySelectorAll('nav button').forEach(function(b){b.onclick=function(){showTab(b.dataset.tab)}});
 function showTab(t){$('#overlay').classList.remove('on');document.querySelectorAll('nav button').forEach(function(b){b.classList.toggle('on',b.dataset.tab===t)});
   document.querySelectorAll('section').forEach(function(s){s.classList.toggle('on',s.id==='tab-'+t)});
-  if(t==='hist')renderHist();if(t==='low')renderLow();if(t==='add')renderLastVid();$('#wrap').scrollTop=0;window.scrollTo(0,0)}
+  if(t==='hist')renderHist();if(t==='low')renderLow();if(t==='add')renderLastVid();if(t==='data')storeInfo();$('#wrap').scrollTop=0;window.scrollTo(0,0)}
 
 /* ---------- Grilles (rendu) ---------- */
 function cellHTML(ch){return ch==='D'?'<div class="d"></div>':ch==='M'?'<div class="m"></div>':'<div class="q">?</div>'}
@@ -207,14 +260,14 @@ function probLine(list,who){
 }
 
 /* ---------- Import d'images ---------- */
-var QUEUE=[];
+var QUEUE=[],THUMB_CAP=400;
 $('#fileImg').onchange=async function(e){var fs=[].slice.call(e.target.files);e.target.value='';if(!fs.length)return;
   toast('Analyse de '+fs.length+' image'+(fs.length>1?'s':'')+'…');
   for(var i=0;i<fs.length;i++){try{QUEUE.push(await analyzeFile(fs[i]))}catch(err){QUEUE.push({grid:'?'.repeat(25),thumb:null,err:'Image illisible',date:Date.now()})}}
   $('#toast').style.display='none';$('#resultBox').innerHTML='';renderQueue()};
 $('#btnManual').onclick=function(){QUEUE.push({grid:'D'.repeat(25),thumb:null,manual:true,date:Date.now()});$('#resultBox').innerHTML='';renderQueue()};
 function loadImg(file){return new Promise(function(res,rej){var u=URL.createObjectURL(file),im=new Image();im.onload=function(){res(im)};im.onerror=rej;im.src=u})}
-function thumbOf(src,w,h){var tw=Math.min(360,w),th=Math.round(h*tw/w);var c=document.createElement('canvas');c.width=tw;c.height=th;c.getContext('2d').drawImage(src,0,0,tw,th);return c.toDataURL('image/jpeg',0.65)}
+function thumbOf(src,w,h){var tw=Math.min(240,w),th=Math.round(h*tw/w);var c=document.createElement('canvas');c.width=tw;c.height=th;c.getContext('2d').drawImage(src,0,0,tw,th);return c.toDataURL('image/jpeg',0.6)}
 async function analyzeFile(f){var im=await loadImg(f);var w=im.naturalWidth,h=im.naturalHeight;
   var r=MinesDetector.detectFromSource(im,w,h);var item={grid:r.grid,ok:r.ok,found:r.found,err:r.error,thumb:thumbOf(im,w,h),date:f.lastModified||Date.now()};URL.revokeObjectURL(im.src);return item}
 
@@ -244,8 +297,9 @@ function renderQueue(){var box=$('#queueBox');
 async function saveGrid(it){
   var prev=GRIDS.filter(function(r){return r.grid===it.grid});
   var rec={id:uid(),grid:it.grid,mines:mines(it.grid),date:it.date||Date.now(),added:Date.now(),thumb:it.thumb||null,imp:it.imp||null};
-  await put('grids',rec);GRIDS.push(rec);
-  return {rec:rec,prev:prev};
+  try{var r=await putSafe('grids',[rec]);if(r.noThumb)banner('⚠️ Mémoire presque pleine : grille enregistrée sans la capture.')}
+  catch(e){storeFail(e,'Grille non enregistrée');GRIDS.push(rec);rec.unsaved=true;return {rec:rec,prev:prev}}
+  GRIDS.push(rec);return {rec:rec,prev:prev};
 }
 function showResult(list){var html='';
   var seen=list.filter(function(x){return x.prev.length});
@@ -285,8 +339,12 @@ $('#fileVid').onchange=async function(e){var f=e.target.files[0];e.target.value=
     $('#resultBox').innerHTML='';
     var ok=found.filter(function(x){return x.grid&&x.grid.indexOf('?')<0&&mines(x.grid)>=1&&mines(x.grid)<=24});
     if(ok.length){var imp={id:'v'+uid(),kind:'video',start:Date.now(),name:f.name||'vidéo',dur:info&&info.duration||0,n:ok.length};
-      for(var i=0;i<ok.length;i++){ok[i].imp=imp.id;ok[i].date=imp.start+i;await saveGrid(ok[i])}
-      await put('sessions',imp);IMPS.push(imp);localStorage.setItem('lastImp',imp.id);SETS_CACHE.clear();renderLastVid();showVidBilan(imp.id)}
+      var recs=ok.map(function(x,i){return {id:uid()+i,grid:x.grid,mines:mines(x.grid),date:imp.start+i,added:Date.now(),thumb:i<THUMB_CAP?(x.thumb||null):null,imp:imp.id}});
+      var saved=false,note='';
+      try{var rs=await putSafe('grids',recs);await put('sessions',imp);saved=true;if(rs.noThumb)note=' (sans captures : mémoire presque pleine)'}
+      catch(e){storeFail(e,'Les '+recs.length+' grilles de la vidéo n\'ont pas pu être enregistrées (visibles seulement jusqu\'à la fermeture)')}
+      recs.forEach(function(r){if(!saved)r.unsaved=true;GRIDS.push(r)});IMPS.push(imp);lsSet('lastImp',imp.id);SETS_CACHE.clear();renderLastVid();showVidBilan(imp.id);
+      if(saved){banner('Enregistré ✓ ('+recs.length+' grille'+(recs.length>1?'s':'')+')'+note,true);askPersist()}}
     else $('#vidMsg').textContent='Aucune grille terminée trouvée dans cette vidéo. Vérifie que la fin de chaque partie (diamants et mines visibles) apparaît à l\'écran.';
   }catch(err){console.warn(err);$('#vidMsg').textContent='Impossible de lire cette vidéo sur ce téléphone. Utilise plutôt des captures d\'écran.'}
   try{v.pause()}catch(e){}if(v.src){URL.revokeObjectURL(v.src);v.removeAttribute('src');try{v.load()}catch(e){}}v.style.display='none';
@@ -333,8 +391,8 @@ function makeScanner(w,h){
     if(r.ok){var b=r.box,k=sw/W,p=(b.x1-b.x0)/4*k,q=(b.y1-b.y0)/4*k;
       r.nbox={x0:Math.max(0,sx+b.x0*k-0.8*p),x1:Math.min(w,sx+b.x1*k+0.8*p),y0:Math.max(0,sy+b.y0*k-0.8*q),y1:Math.min(h,sy+b.y1*k+0.8*q)}}
     return r}
-  function thumb(src,b){var sw=b.x1-b.x0,sh=b.y1-b.y0,tw2=Math.min(360,Math.round(sw)),th2=Math.round(sh*tw2/sw);
-    var c=document.createElement('canvas');c.width=tw2;c.height=th2;c.getContext('2d').drawImage(src,b.x0,b.y0,sw,sh,0,0,tw2,th2);return c.toDataURL('image/jpeg',0.7)}
+  function thumb(src,b){var sw=b.x1-b.x0,sh=b.y1-b.y0,tw2=Math.min(240,Math.round(sw)),th2=Math.round(sh*tw2/sw);
+    var c=document.createElement('canvas');c.width=tw2;c.height=th2;c.getContext('2d').drawImage(src,b.x0,b.y0,sw,sh,0,0,tw2,th2);return c.toDataURL('image/jpeg',0.6)}
   async function frameA(t,fr){var s=null;try{s=await sampleYUV(fr)}catch(e){s=null}if(!s){yuvOff=true;s=sample(fr)}return frame(t,fr,s,true)}
   var yuvOff=false;
   function frame(t,src,s0,isA){stats.frames++;var s=s0||sample(src),r;
@@ -437,7 +495,7 @@ function heatHTML(heat,n){var mx=Math.max.apply(0,heat)||1;
 
 /* ---------- Vidéos importées (bilan par vidéo) ---------- */
 function vidImps(){return IMPS.filter(function(r){return r.kind==='video'}).sort(function(a,b){return b.start-a.start})}
-function lastImp(){var l=vidImps();if(!l.length)return null;var id=localStorage.getItem('lastImp');return l.find(function(r){return r.id===id})||l[0]}
+function lastImp(){var l=vidImps();if(!l.length)return null;var id=lsGet('lastImp');return l.find(function(r){return r.id===id})||l[0]}
 function impGrids(id){return GRIDS.filter(function(r){return r.imp===id})}
 function impLabel(r){return fmtDate(r.start)+' · '+esc(r.name||'vidéo')}
 function renderLastVid(){var r=lastImp(),b=$('#lastVid');if(!b)return;if(!r){b.innerHTML='';return}var n=impGrids(r.id).length;
@@ -464,7 +522,7 @@ function showVidBilan(id){var imp=IMPS.find(function(r){return r.id===id});if(!i
     det.innerHTML='<p class="small mut" style="margin:6px 0">Grilles où ces '+row.dataset.k+' cases étaient toutes des diamants ('+hit.length+') :</p>'+shotsHTML(hit.slice(0,40))+(hit.length>40?'<p class="small mut">… et '+(hit.length-40)+' autres.</p>':'')}});
   if($('#vbTest'))$('#vbTest').onclick=function(){$('#vbTestBox').innerHTML=testHTML(by)};
   $('#vbEdit').onclick=function(){reviewImp(id)};
-  $('#vbDel').onclick=async function(){if(!confirm('Supprimer cette vidéo et ses '+N+' grilles ?'))return;for(var i=0;i<all.length;i++)await del('grids',all[i].id);await del('sessions',id);
+  $('#vbDel').onclick=async function(){if(!confirm('Supprimer cette vidéo et ses '+N+' grilles ?'))return;try{await tx('grids','readwrite',function(os){all.forEach(function(r){os.delete(r.id)})});await del('sessions',id)}catch(e){storeFail(e,'Suppression impossible');return}
     GRIDS=GRIDS.filter(function(r){return r.imp!==id});IMPS=IMPS.filter(function(r){return r.id!==id});SETS_CACHE.clear();closeOv();renderLastVid();toast('Vidéo supprimée')}}
 function reviewImp(id){var l=impGrids(id).sort(function(a,b){return a.date-b.date});
   var h='<h2>Grilles de la vidéo ('+l.length+')</h2><p class="small mut">Touche une grille pour la corriger ou la supprimer.</p><div class="list">'+l.map(function(r,i){return '<div class="item" data-id="'+r.id+'">'+(r.thumb?'<img src="'+r.thumb+'" loading="lazy" alt="">':'')+miniHTML(r.grid)+'<div class="grow"><b>#'+(i+1)+' · '+r.mines+' mines</b></div><span>›</span></div>'}).join('')+'</div><button class="btn pri" id="rvBack">← Retour au bilan</button>';
@@ -476,16 +534,16 @@ function editRec(r,back){var g=r.grid;function draw(){var mn=mines(g);
     $('#overlay').scrollTop=0;
     $('#editGrid').querySelectorAll('.cell').forEach(function(c){c.onclick=function(){var a=g.split(''),i=+c.dataset.i;a[i]=a[i]==='M'?'D':'M';g=a.join('');draw()}});
     $('#edBack').onclick=back;
-    $('#edSave').onclick=async function(){r.grid=g;r.mines=mines(g);await put('grids',r);SETS_CACHE.clear();toast('Grille corrigée');back()};
-    $('#edDel').onclick=async function(){await del('grids',r.id);GRIDS=GRIDS.filter(function(x){return x.id!==r.id});SETS_CACHE.clear();back()}}
+    $('#edSave').onclick=async function(){var og=r.grid;r.grid=g;r.mines=mines(g);try{await put('grids',r)}catch(e){r.grid=og;r.mines=mines(og);storeFail(e,'Correction non enregistrée');return}SETS_CACHE.clear();toast('Grille corrigée');back()};
+    $('#edDel').onclick=async function(){try{await del('grids',r.id)}catch(e){storeFail(e,'Suppression impossible');return}GRIDS=GRIDS.filter(function(x){return x.id!==r.id});SETS_CACHE.clear();back()}}
   draw()}
 
 /* ---------- Multiplicateurs bas ---------- */
 function multi(m,k){return 0.99*binom(25,k)/binom(25-m,k)}
 function winP(m,k){return binom(25-m,k)/binom(25,k)}
 function fx(x){return x.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})}
-var LOW=(function(){try{var o=JSON.parse(localStorage.getItem('lowCfg'));if(o&&o.m>=1&&o.m<=24&&o.k>=1&&o.k<=25-o.m)return o}catch(e){}return {m:5,k:7,sess:false}})();if(LOW.gt==='sess')LOW.gt='vid';
-function saveLow(){localStorage.setItem('lowCfg',JSON.stringify(LOW))}
+var LOW=(function(){try{var o=JSON.parse(lsGet('lowCfg'));if(o&&o.m>=1&&o.m<=24&&o.k>=1&&o.k<=25-o.m)return o}catch(e){}return {m:5,k:7,sess:false}})();if(LOW.gt==='sess')LOW.gt='vid';
+function saveLow(){lsSet('lowCfg',JSON.stringify(LOW))}
 (function(){var s='';for(var m=1;m<=24;m++)s+='<option value="'+m+'">'+m+' mine'+(m>1?'s':'')+'</option>';$('#lowM').innerHTML=s})();
 function fillK(){var s='';for(var k=1;k<=25-LOW.m;k++)s+='<option value="'+k+'">'+k+' case'+(k>1?'s':'')+' · '+fx(Math.round(multi(LOW.m,k)*100)/100)+'×</option>';$('#lowK').innerHTML=s;$('#lowK').value=LOW.k}
 $('#lowM').onchange=function(){LOW.m=+this.value;LOW.user=1;if(LOW.k>25-LOW.m)LOW.k=25-LOW.m;saveLow();renderLow()};
@@ -638,7 +696,7 @@ function renderHist(){var vl=vidImps();$('#vidList').innerHTML=vl.length?vl.map(
   var l=GRIDS.slice().sort(function(a,b){return b.added-a.added});
   $('#allList').innerHTML=l.slice(0,shown).map(function(r){return '<div class="item">'+(r.thumb?'<img src="'+r.thumb+'" loading="lazy" alt="">':'')+miniHTML(r.grid)+'<div class="grow"><b>'+r.mines+' mines</b><br><span class="small mut">'+fmtDate(r.date)+(groups[r.grid].length>1?' · 🔁 '+groups[r.grid].length+'×':'')+'</span></div><button class="btn" style="width:52px;min-height:48px;padding:0;margin:0" data-del="'+r.id+'" aria-label="Supprimer">🗑️</button></div>'}).join('')||'<p class="mut">Vide.</p>';
   $('#moreBtn').style.display=l.length>shown?'block':'none';
-  $('#allList').querySelectorAll('[data-del]').forEach(function(b){b.onclick=async function(){if(!confirm('Supprimer cette grille ?'))return;await del('grids',b.dataset.del);GRIDS=GRIDS.filter(function(r){return r.id!==b.dataset.del});renderHist()}})}
+  $('#allList').querySelectorAll('[data-del]').forEach(function(b){b.onclick=async function(){if(!confirm('Supprimer cette grille ?'))return;try{await del('grids',b.dataset.del)}catch(e){storeFail(e,'Suppression impossible');return}GRIDS=GRIDS.filter(function(r){return r.id!==b.dataset.del});renderHist()}})}
 $('#moreBtn').onclick=function(){shown+=30;renderHist()};
 $('#heatSel').onchange=renderHeat;
 function renderHeat(){var m=+$('#heatSel').value,box=$('#heatBox');if(!m&&m!==0||!GRIDS.length){box.innerHTML='<p class="mut">Pas encore de données.</p>';return}
@@ -646,19 +704,46 @@ function renderHeat(){var m=+$('#heatSel').value,box=$('#heatBox');if(!m&&m!==0|
   box.innerHTML=heatHTML(heat,l.length)+'<p class="small mut">% des grilles à '+m+' mines où la case était une mine. Par pur hasard on attend environ <b>'+Math.round(100*m/25)+' %</b> par case ; les écarts sur peu de parties sont normaux et ne prédisent rien.</p>'}
 
 /* ---------- Données ---------- */
-$('#btnExport').onclick=function(){var data=JSON.stringify({app:'mines-schemas',version:1,exported:Date.now(),grids:GRIDS,imports:vidImps()});
-  var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:'application/json'}));a.download='mines-schemas-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove()};
+function exportData(){return JSON.stringify({app:'mines-schemas',version:1,exported:Date.now(),grids:GRIDS,imports:vidImps()})}
+function exportName(){return 'mines-schemas-'+new Date().toISOString().slice(0,10)+'.json'}
+function exportFallback(data,name){
+  try{var u=URL.createObjectURL(new Blob([data],{type:'application/json'}));var a=document.createElement('a');a.href=u;a.download=name;a.rel='noopener';a.style.display='none';document.body.appendChild(a);a.click();
+    setTimeout(function(){a.remove();URL.revokeObjectURL(u)},60000);if(!/iPhone|iPad|iPod/.test(navigator.userAgent))return}catch(e){}
+  /* dernier recours : afficher le texte à copier */
+  var h='<h2>Sauvegarde</h2><p class="small">Si aucun fichier n\'a été proposé, copie ce texte et colle-le dans une note ou un fichier <b>'+esc(name)+'</b> (app Fichiers). Pour le réimporter : Données › Importer une sauvegarde.</p>'+
+    '<textarea id="expTxt" readonly style="width:100%;height:200px;font-size:12px;background:#0b1a24;color:#cfe;border:1px solid var(--line);border-radius:10px">'+esc(data)+'</textarea>'+
+    '<button class="btn pri" id="expCopy">📋 Copier</button><button class="btn" id="closeOv">Fermer</button>';
+  $('#overlayInner').innerHTML=h;$('#overlay').classList.add('on');$('#overlay').scrollTop=0;$('#closeOv').onclick=function(){$('#overlay').classList.remove('on')};
+  $('#expCopy').onclick=function(){var t=$('#expTxt');var done=function(){banner('Copié ✓ ('+GRIDS.length+' grilles) : colle-le dans une note ou un fichier.',true)};
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(data).then(done,function(){t.select();try{document.execCommand('copy');done()}catch(e){banner('⚠️ Copie impossible : sélectionne le texte et copie-le à la main.')}});
+    else{t.focus();t.select();t.setSelectionRange(0,data.length);try{document.execCommand('copy');done()}catch(e){banner('⚠️ Copie impossible : sélectionne le texte et copie-le à la main.')}}}}
+$('#btnExport').onclick=function(){
+  if(!GRIDS.length){banner('⚠️ Aucune donnée à exporter pour l\'instant (0 grille).');return}
+  var data=exportData(),name=exportName(),n=GRIDS.length,file=null;
+  try{file=new File([data],name,{type:'application/json'})}catch(e){file=null}
+  /* iPhone : feuille de partage → « Enregistrer dans Fichiers » (appel direct dans le geste de l'utilisateur) */
+  if(file&&navigator.canShare&&navigator.share){var can=false;try{can=navigator.canShare({files:[file]})}catch(e){can=false}
+    if(can){navigator.share({files:[file],title:name}).then(function(){banner('Exporté ✓ ('+n+' grille'+(n>1?'s':'')+') : choisis « Enregistrer dans Fichiers » pour le retrouver.',true)})
+      .catch(function(e){if(e&&e.name==='AbortError'){toast('Export annulé');return}exportFallback(data,name)});return}}
+  exportFallback(data,name);toast('Fichier '+name+' ('+n+' grilles) préparé')};
 $('#fileImport').onchange=async function(e){var f=e.target.files[0];e.target.value='';if(!f)return;
   try{var d=JSON.parse(await f.text());if(!d.grids)throw 0;var ids={};GRIDS.forEach(function(r){ids[r.id]=1});var k=0;
-    for(var i=0;i<d.grids.length;i++){var r=d.grids[i];if(!/^[DM]{25}$/.test(r.grid)||ids[r.id])continue;r.mines=mines(r.grid);await put('grids',r);GRIDS.push(r);k++}
-    var im=d.imports||[];for(i=0;i<im.length;i++){var s=im[i];if(s.kind!=='video'||IMPS.some(function(x){return x.id===s.id}))continue;await put('sessions',s);IMPS.push(s)}SETS_CACHE.clear();
-    toast(k+' grille(s) importée(s)')}catch(err){toast('Fichier de sauvegarde invalide')}};
+    for(var i=0;i<d.grids.length;i++){var r=d.grids[i];if(!/^[DM]{25}$/.test(r.grid)||ids[r.id])continue;r.mines=mines(r.grid);try{var ps=await putSafe('grids',[r]);if(ps.noThumb)banner('⚠️ Mémoire presque pleine : captures non importées.')}catch(er){storeFail(er,'Import interrompu après '+k+' grille(s)');break}GRIDS.push(r);k++}
+    var im=d.imports||[];for(i=0;i<im.length;i++){var s=im[i];if(s.kind!=='video'||IMPS.some(function(x){return x.id===s.id}))continue;try{await put('sessions',s)}catch(er){storeFail(er);break}IMPS.push(s)}SETS_CACHE.clear();renderLastVid();storeInfo();
+    if(k)banner('Enregistré ✓ ('+k+' grille'+(k>1?'s':'')+' importée'+(k>1?'s':'')+')',true);else toast('0 grille importée (déjà présentes)')}catch(err){toast('Fichier de sauvegarde invalide')}};
+$('#sBannerX').onclick=function(){$('#sBanner').className='sbanner'};
+$('#btnStoreTest').onclick=async function(){var id='__test'+uid();try{await put('sessions',{id:id,kind:'test',t:Date.now()});var l=await all('sessions');if(!l.some(function(r){return r.id===id}))throw new Error('relecture impossible');await del('sessions',id);banner('Enregistré ✓ : le stockage fonctionne ('+GRIDS.length+' grilles enregistrées)',true)}catch(e){storeFail(e,'Test échoué')}storeInfo()};
 $('#btnWipe').onclick=async function(){if(!confirm('Effacer toutes les grilles et tous les bilans ? Cette action est définitive.'))return;
-  await clear('grids');await clear('sessions');GRIDS=[];IMPS=[];localStorage.removeItem('lastImp');SETS_CACHE.clear();renderLastVid();toast('Tout a été effacé')};
+  try{await clear('grids');await clear('sessions')}catch(e){storeFail(e,'Effacement impossible');return}GRIDS=[];IMPS=[];lsDel('lastImp');SETS_CACHE.clear();renderLastVid();toast('Tout a été effacé')};
 
 /* ---------- Démarrage ---------- */
-(async function(){await openDB();GRIDS=await all('grids');IMPS=(await all('sessions')).filter(function(r){return r.kind==='video'});
-  localStorage.removeItem('activeSession');renderLastVid();
+(async function(){
+  try{await openDB();GRIDS=await all('grids');IMPS=(await all('sessions')).filter(function(r){return r.kind==='video'})}
+  catch(e){MEM_ONLY=true;DB_OK=false;storeFail(e,'Les données ne peuvent pas être enregistrées sur ce téléphone')}
+  lsDel('activeSession');
+  if(DB_OK){try{var mg=await migrateLS();if(mg)banner('Enregistré ✓ ('+mg+' ancienne'+(mg>1?'s':'')+' grille'+(mg>1?'s':'')+' récupérée'+(mg>1?'s':'')+')',true)}catch(e){storeFail(e,'Récupération des anciennes données impossible')}
+    if(GRIDS.length)askPersist()}
+  renderLastVid();storeInfo();
   if('serviceWorker' in navigator){var hadCtl=!!navigator.serviceWorker.controller,reloaded=false;
     navigator.serviceWorker.addEventListener('controllerchange',function(){if(!hadCtl){hadCtl=true;return}if(reloaded)return;reloaded=true;location.reload()});
     navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(function(r){r.update().catch(function(){});
