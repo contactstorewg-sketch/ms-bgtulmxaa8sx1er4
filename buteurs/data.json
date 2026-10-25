@@ -1,0 +1,550 @@
+{
+ "generated": "25/10/2026 18h09",
+ "date": "2026-10-25",
+ "date_fr": "25/10/2026",
+ "hockey": {
+  "date": "2026-10-25",
+  "model": "NHL v2 attaquants, v1 défenseurs",
+  "intro": [
+   "Heures de Paris (heure d'hiver depuis cette nuit). Pas de Liiga aujourd'hui. 5 matchs NHL ce soir."
+  ],
+  "games": [
+   {
+    "game": "Floride à Chicago",
+    "time": "20h00"
+   },
+   {
+    "game": "Islanders à Dallas",
+    "time": "23h00"
+   },
+   {
+    "game": "Montréal à Winnipeg",
+    "time": "00h00"
+   },
+   {
+    "game": "Colorado à Nashville",
+    "time": "01h00"
+   },
+   {
+    "game": "Minnesota à Vancouver",
+    "time": "03h00"
+   }
+  ],
+  "a_jouer": [
+   {
+    "player": "Kirill Kaprizov",
+    "team": "MIN",
+    "game": "Minnesota à Vancouver",
+    "time": "03h00",
+    "chance": "44 %",
+    "min": "2,25",
+    "example": "À 2,25 ou plus, tu joues. À 2,10, tu ne joues pas."
+   },
+   {
+    "player": "Matt Boldy",
+    "team": "MIN",
+    "game": "Minnesota à Vancouver",
+    "time": "03h00",
+    "chance": "43 %",
+    "min": "2,34",
+    "example": "À 2,34 ou plus, tu joues. À 2,19, tu ne joues pas."
+   },
+   {
+    "player": "Kyle Connor",
+    "team": "WPG",
+    "game": "Montréal à Winnipeg",
+    "time": "00h00",
+    "chance": "42 %",
+    "min": "2,40",
+    "example": "À 2,40 ou plus, tu joues. À 2,25, tu ne joues pas."
+   }
+  ],
+  "notes": [
+   "⚠️ Les lignes ne sont pas définitives. Revérifie juste avant de parier.",
+   "⚠️ Minnesota a joué hier soir à Seattle (2e match en 2 jours). Kaprizov et Boldy sont dans le même match : si Minnesota a une mauvaise soirée, les deux perdent ensemble. Si tu n'en veux qu'un, prends Kaprizov.",
+   "Rappel : même le meilleur choix marque environ 4 fois sur 10. Les 3 ensemble, c'est environ 7 soirs sur 100. Donc **jamais de combiné**."
+  ],
+  "surveiller": [
+   {
+    "player": "Nathan MacKinnon",
+    "team": "COL",
+    "game": "Colorado à Nashville",
+    "time": "01h00",
+    "chance": "41 %",
+    "min": "2,42",
+    "example": "À 2,42 ou plus, tu joues. À 2,27, tu ne joues pas."
+   },
+   {
+    "player": "Cole Caufield",
+    "team": "MTL",
+    "game": "Montréal à Winnipeg",
+    "time": "00h00",
+    "chance": "40 %",
+    "min": "2,48",
+    "example": "À 2,48 ou plus, tu joues. À 2,33, tu ne joues pas."
+   },
+   {
+    "player": "Jason Robertson",
+    "team": "DAL",
+    "game": "Islanders à Dallas",
+    "time": "23h00",
+    "chance": "37 %",
+    "min": "2,68",
+    "example": "À 2,68 ou plus, tu joues. À 2,53, tu ne joues pas."
+   },
+   {
+    "player": "Sam Reinhart",
+    "team": "FLA",
+    "game": "Floride à Chicago",
+    "time": "20h00",
+    "chance": "37 %",
+    "min": "2,72",
+    "example": "À 2,72 ou plus, tu joues. À 2,57, tu ne joues pas."
+   },
+   {
+    "player": "Wyatt Johnston",
+    "team": "DAL",
+    "game": "Islanders à Dallas",
+    "time": "23h00",
+    "chance": "36 %",
+    "min": "2,79",
+    "example": "À 2,79 ou plus, tu joues. À 2,64, tu ne joues pas."
+   }
+  ],
+  "bestD": [
+   {
+    "player": "Seth Jones",
+    "team": "FLA",
+    "game": "Floride à Chicago",
+    "time": "20h00",
+    "chance": "11 %",
+    "min": "8,93",
+    "example": "À 8,93 ou plus, tu joues. À 8,43, tu ne joues pas.",
+    "best": false
+   },
+   {
+    "player": "Matthew Schaefer",
+    "team": "NYI",
+    "game": "Islanders à Dallas",
+    "time": "23h00",
+    "chance": "19 %",
+    "min": "5,15",
+    "example": "À 5,15 ou plus, tu joues. À 4,65, tu ne joues pas.",
+    "best": true
+   },
+   {
+    "player": "Lane Hutson",
+    "team": "MTL",
+    "game": "Montréal à Winnipeg",
+    "time": "00h00",
+    "chance": "10 %",
+    "min": "9,71",
+    "example": "À 9,71 ou plus, tu joues. À 9,21, tu ne joues pas.",
+    "best": false
+   },
+   {
+    "player": "Cale Makar",
+    "team": "COL",
+    "game": "Colorado à Nashville",
+    "time": "01h00",
+    "chance": "17 %",
+    "min": "5,88",
+    "example": "À 5,88 ou plus, tu joues. À 5,38, tu ne joues pas.",
+    "best": false
+   },
+   {
+    "player": "Quinn Hughes",
+    "team": "MIN",
+    "game": "Minnesota à Vancouver",
+    "time": "03h00",
+    "chance": "13 %",
+    "min": "7,87",
+    "example": "À 7,87 ou plus, tu joues. À 7,37, tu ne joues pas.",
+    "best": false
+   }
+  ],
+  "point": [
+   {
+    "player": "Nathan MacKinnon",
+    "form": "18 pts, point dans 6/10"
+   },
+   {
+    "player": "Kirill Kaprizov",
+    "form": "16 pts, 8/10"
+   },
+   {
+    "player": "Matthew Tkachuk",
+    "form": "15 pts, 9/10"
+   }
+  ],
+  "totals": [
+   {
+    "game": "Colorado à Nashville",
+    "time": "01h00",
+    "line": "6,5",
+    "book": "6,8",
+    "model": "5,8",
+    "open": true
+   },
+   {
+    "game": "Minnesota à Vancouver",
+    "time": "03h00",
+    "line": "6,5",
+    "book": "6,6",
+    "model": "6,1",
+    "open": false
+   },
+   {
+    "game": "Floride à Chicago",
+    "time": "20h00",
+    "line": "6,5",
+    "book": "6,5",
+    "model": "5,8",
+    "open": false
+   },
+   {
+    "game": "Montréal à Winnipeg",
+    "time": "00h00",
+    "line": "5,5",
+    "book": "5,9",
+    "model": "5,7",
+    "open": false
+   },
+   {
+    "game": "Islanders à Dallas",
+    "time": "23h00",
+    "line": "5,5",
+    "book": "5,6",
+    "model": "5,3",
+    "open": false
+   }
+  ],
+  "goalies": [
+   {
+    "team": "Floride",
+    "name": "Akira Schmid",
+    "confirmed": true
+   },
+   {
+    "team": "Chicago",
+    "name": "Spencer Knight",
+    "confirmed": false
+   },
+   {
+    "team": "Islanders",
+    "name": "Ilya Sorokin",
+    "confirmed": false
+   },
+   {
+    "team": "Dallas",
+    "name": "Jake Oettinger",
+    "confirmed": false
+   },
+   {
+    "team": "Montréal",
+    "name": "Jacob Fowler",
+    "confirmed": false
+   },
+   {
+    "team": "Winnipeg",
+    "name": "Stuart Skinner",
+    "confirmed": false
+   },
+   {
+    "team": "Colorado",
+    "name": "Scott Wedgewood",
+    "confirmed": false
+   },
+   {
+    "team": "Nashville",
+    "name": "Justus Annunen",
+    "confirmed": false
+   },
+   {
+    "team": "Minnesota",
+    "name": "Calvin Pickard",
+    "confirmed": true
+   },
+   {
+    "team": "Vancouver",
+    "name": "Leevi Merilainen",
+    "confirmed": false
+   }
+  ],
+  "info": [
+   {
+    "title": "📋 **BILAN D'HIER (samedi 24/10)**",
+    "lines": [
+     "**NHL**",
+     "✅ Draisaitl (à jouer, 42 %) : **2 buts**. Mais la cote Winamax était 2,00. Le minimum était 2,36. Tu as bien fait de ne pas jouer : à 2,00 ce pari perd de l'argent sur la durée, même quand il passe.",
+     "❌ Hyman (à jouer, 42 %) : 0 but.",
+     "À surveiller : ✅ Kaprizov et ✅ Dorofeyev ont marqué. ❌ McDavid, Boldy, Thompson, DeBrincat et Hagel n'ont pas marqué.",
+     "➡️ 3 buteurs sur 9 joueurs listés. C'est normal : le modèle en attendait environ 3,4.",
+     "🛡️ Défenseurs : 1 sur 12. ✅ Sanderson (OTT, 11 %) a marqué. Chychrun, le meilleur de la nuit (19 %), n'a pas marqué.",
+     "🎯 Paris point : McDavid ✅, Draisaitl ✅ (cote 1,17, trop basse, pas joué), Kaprizov ✅ → 3 sur 3.",
+     "**Liiga**",
+     "Meilleur buteur de chaque match : 6 sur 8 ✅ (Henman, Ojantakanen, Curry, Hartikainen (cage vide), Beaucage, Siikanen). ❌ Marleau et Rautiainen.",
+     "Top 3 de chaque match : 11 sur 24 (en plus : Mäkiaho 2 buts, Tukiainen, Nikkanen, Kantner, Fridrich).",
+     "⚠️ 6 sur 8, c'est beaucoup de chance. Le modèle en attendait environ 2. Ne t'attends pas à ça chaque soir.",
+     "🛡️ Défenseurs : 1 sur 8 ✅ (Kukkonen, HPK).",
+     "🎯 Paris point : Mäkiaho ✅, Henman ✅ → 2 sur 2.",
+     "**Qui a marqué hier, était-ce prévisible ?**",
+     "NHL : 73 buteurs. 28 étaient prévisibles (chance de 25 % ou plus, ou parmi les 2 meilleurs de leur équipe). 33 étaient possibles (10 à 25 %). 12 étaient imprévisibles (moins de 10 %, surtout des défenseurs, comme Borgen ou Stecher).",
+     "Liiga : 45 buteurs. 14 prévisibles, 24 possibles, 7 imprévisibles.",
+     "📊 **Depuis le début (compteurs)**",
+     "• Buteurs proposés NHL : 7 sur 22. Le modèle en attendait environ 8. C'est un peu en dessous, mais encore dans la normale.",
+     "• Buteurs proposés Liiga : 9 sur 20. Le modèle en attendait environ 6. C'est au-dessus.",
+     "• Seuls vrais « à jouer » : 1 sur 2 (Draisaitl oui, Hyman non).",
+     "• Défenseurs : NHL 3 sur 26, Liiga 2 sur 14. C'est ce qui était prévu (environ 1 sur 7).",
+     "• Paris « au moins 1 point » : 12 sur 15 (80 %). Le taux réel attendu est d'environ 70 %.",
+     "🔍 **Bilan de tes points**",
+     "Hier :",
+     "• **Gardien en méforme qui a mal joué** : NHL 3 sur 6 (Dostal, Lindgren, Jarry) · Liiga 5 sur 8",
+     "• **Gardien en forme qui a bien joué** : NHL 0 sur 1 · Liiga 3 sur 7",
+     "• **Attaquant le plus utilisé qui a marqué** : NHL 8 sur 24 (Sennecke, Pastrnak, Stützle, Rakell, Tuch, Fantilli, Matthews, Farabee) · Liiga 5 sur 16",
+     "• **Défenseur le plus utilisé qui a marqué** : NHL 0 sur 24 · Liiga 2 sur 16",
+     "• **Joueur promu qui a marqué** : NHL 6 sur 39 · Liiga 3 sur 20",
+     "• **Joueur rétrogradé qui a marqué** : NHL 7 sur 39 · Liiga 4 sur 18",
+     "• **Retour de blessure qui a marqué** : NHL 1 sur 17 (Borgen, cage vide) · Liiga 1 sur 19",
+     "• **Les ex qui ont marqué** : NHL 3 sur 8 (Tuch 2 buts, Roslovic, Stecher) · Liiga 0 sur 6",
+     "• **Total de buts à ±1 du prévu** : NHL 4 sur 12 · Liiga 3 sur 8",
+     "• **Match le plus ouvert = le plus de buts** : NHL non (NYR@OTT, 11 buts) · Liiga oui (Jokerit@KooKoo)",
+     "Depuis le début :",
+     "• Gardien en méforme qui a mal joué : 15 sur 29",
+     "• Gardien en forme qui a bien joué : 6 sur 15",
+     "• Attaquant le plus utilisé qui a marqué : 30 sur 80",
+     "• Défenseur le plus utilisé qui a marqué : 7 sur 80",
+     "• Promu qui a marqué : 14 sur 87. Rétrogradé qui a marqué : 12 sur 75",
+     "• Retour de blessure qui a marqué : 8 sur 64",
+     "• Les ex qui ont marqué : 4 sur 37",
+     "• Total à +/-1 but : 13 sur 40. Match le plus ouvert = le plus de buts : 1 sur 4"
+    ]
+   },
+   {
+    "title": "👀 **À RE-SURVEILLER (ils ont raté leur dernier match ciblé et rejouent ce soir)**",
+    "lines": [
+     "• Reinhart 37 % (min 2,72), B. Tkachuk 33 % (min 3,05), M. Tkachuk (pari point, min 1,39) : FLA@CHI à 20h00",
+     "• Horvat 32 % (min 3,12), J. Robertson 37 % (min 2,68), Heiskanen (défenseur) 11 % (min 9,35) : NYI@DAL à 23h00",
+     "• Caufield 40 % (min 2,48), Slafkovsky 26 % (min 3,89), Hutson (défenseur) 10 % (min 9,71) : MTL@WPG à 00h00",
+     "• Makar (défenseur) 17 % (min 5,88), Josi (défenseur) 10 % (min 9,62) : COL@NSH à 01h00",
+     "• Boldy 43 % (min 2,34), Q. Hughes (défenseur) 13 % (min 7,87) : MIN@VAN à 03h00",
+     "📒 Après un match raté, ils ont marqué **7 fois sur 34**. Leur chance moyenne était de 23 %, donc environ 8 buts étaient attendus. Un match raté ne les rend pas « dus » : on ne leur donne aucun bonus."
+    ]
+   },
+   {
+    "title": "🥅 **GARDIENS (5 derniers matchs, puis saison)**",
+    "lines": [
+     "• FLA : Schmid (confirmé), .867 / .867 ⚠️ Remplaçant, et en méforme.",
+     "• CHI : Knight, .887 / .888 ⚠️ En méforme.",
+     "• NYI : Sorokin, .917 / .934.",
+     "• DAL : Oettinger, .923 / .939.",
+     "• MTL : Fowler, .910.",
+     "• WPG : Skinner, .913 / .912.",
+     "• COL : Wedgewood, .938 / .912 ⚠️ Remplaçant.",
+     "• NSH : Annunen ⚠️ Remplaçant. Il n'a joué qu'un match cette saison (.806). Nashville a joué hier.",
+     "• MIN : Pickard (confirmé), .884 ⚠️ Remplaçant, et en méforme. Minnesota a joué hier.",
+     "• VAN : Merilainen, .911 / .917.",
+     "Sauf Schmid et Pickard, ces gardiens sont « probables », pas confirmés."
+    ]
+   },
+   {
+    "title": "🔄 **CHANGEMENTS DE LIGNE (depuis le dernier relevé)**",
+    "lines": [
+     "• VAN : Boeser monte en 1re ligne. DeBrusk et Gallagher montent en 2e ligne. L. Karlsson et Cotter descendent en 4e ligne. Buium monte en 2e paire.",
+     "• MIN : McCarron monte de la 4e à la 2e ligne. Shabanov entre en 3e ligne et au PP1. Yurov passe du PP1 au PP2. Hartman descend en 4e ligne. Spurgeon monte en 1re paire et Brodin passe en 2e.",
+     "• DAL : Kiviranta monte de la 4e à la 1re ligne. Myers monte en 2e paire et Lundkvist descend en 3e.",
+     "• CHI : Greenway monte de la 4e à la 2e ligne. Teravainen descend en 3e.",
+     "• FLA : Eller descend en 3e ligne.",
+     "• MTL : Dobson descend en 3e paire mais reste au PP1. Matheson revient en 1re paire et au PP2.",
+     "• WPG : DeMelo descend en 3e paire. Iafallo perd sa place au PP2.",
+     "• NSH : Colton descend en 4e ligne. Pinchuk entre en 3e ligne."
+    ]
+   },
+   {
+    "title": "🩹 **RETOURS ET ABSENTS (info seulement)**",
+    "lines": [
+     "Retours :",
+     "• FLA : Vilmanis (1 match manqué), 2e ligne, 12 %. Gudas (1 match), 3e paire. Probables, selon Daily Faceoff.",
+     "• CHI : Mangiapane (9 matchs), 4e ligne et PP2, 10 %. Korchinski (7 matchs), 3e paire. Probables, selon Daily Faceoff.",
+     "• DAL : Perron, pas encore joué cette saison. Incertain (« pourrait jouer »).",
+     "• WPG : **Mercer**, arrivé de New Jersey par échange. Ce sera son 1er match avec Winnipeg, en 3e ligne et au PP2, 20 %. Koepke (1 match) en 4e ligne. Salomonsson, rappelé de la ligue mineure (AHL), en 2e paire.",
+     "• VAN : Ohgren (1 match), 3e ligne, 14 %. Brisebois (5 matchs) et L. Schenn (1 match) sont prévus.",
+     "Absents importants (Daily Faceoff) :",
+     "• FLA : Barkov et Marchand (blessés longue durée), Markstrom (incertain).",
+     "• NYI : Barzal (blessé longue durée), Romanov (absent), Maccelli et Ritchie (incertains).",
+     "• DAL : Duchene (blessé longue durée), Steel, Lindell et Faksa (incertains).",
+     "• MTL : Demidov (blessé longue durée), Montembeault, Xhekaj.",
+     "• WPG : Morrissey (absent), Namestnikov (incertain).",
+     "• COL : N. Roy (absent). NSH : Trudeau. CHI : Byram (incertain). VAN : Demko (absent).",
+     "• MIN : Faber, Gustavsson, M. Foligno et N. Foligno (absents).",
+     "Aucun des joueurs proposés ci-dessus n'est sur la liste des blessés."
+    ]
+   },
+   {
+    "title": "🔁 **LES EX (info seulement, aucun bonus)**",
+    "lines": [
+     "Notre test sur 5 719 matchs ne montre aucun effet. Depuis le début, les ex que j'ai listés ont marqué 4 fois sur 37.",
+     "• COL@NSH : Svechkov (COL) affronte Nashville, son ancien club, pour la 1re fois. Colton et Drury (NSH, ex-Colorado) reçoivent leur ancien club pour la 1re fois. C'est la piste qu'on suit : un attaquant qui reçoit son ancien club pour la 1re fois. Leurs chances restent petites (Colton 13 %, Drury 12 %, Svechkov 11 %).",
+     "• MIN@VAN : Quinn Hughes (MIN) revient à Vancouver pour la 1re fois (13 %). Rossi (20 %) et Ohgren (14 %), passés à Vancouver, reçoivent Minnesota. Ils l'avaient déjà affronté une fois, en avril."
+    ]
+   },
+   {
+    "title": "⏱️ **TEMPS DE JEU (5 derniers matchs / saison, en minutes, avec le temps en PP)**",
+    "lines": [
+     "• **FLA** : Attaquant le plus utilisé Reinhart 19,1 / 20,4 (PP 4,3) · Défenseur le plus utilisé S. Jones 23,2 / 24,9",
+     "• **CHI** : Attaquant le plus utilisé Bedard 20,3 / 20,3 (PP 4,1) · Défenseur le plus utilisé Vlasic 20,6 / 20,2",
+     "• **NYI** : Attaquant le plus utilisé Horvat 22,1 / 20,8 (PP 4,0) · Défenseur le plus utilisé Schaefer 27,0 / 26,2",
+     "• **DAL** : Attaquant le plus utilisé J. Robertson 21,9 / 20,2 (PP 3,7) · Défenseur le plus utilisé Heiskanen 27,6 / 26,0",
+     "• **MTL** : Attaquant le plus utilisé Caufield 18,7 / 19,3 (PP 3,2) · Défenseur le plus utilisé Hutson 25,2 / 26,0",
+     "• **WPG** : Attaquant le plus utilisé Connor 20,7 / 21,0 (PP 3,1) · Défenseur le plus utilisé Pionk 25,8 / 24,6",
+     "• **COL** : Attaquant le plus utilisé MacKinnon 22,4 / 21,0 (PP 3,9) · Défenseur le plus utilisé Makar 22,5 / 22,0",
+     "• **NSH** : Attaquant le plus utilisé Forsberg 20,7 / 20,6 (PP 2,8) · Défenseur le plus utilisé Josi 25,9 / 25,7",
+     "• **MIN** : Attaquant le plus utilisé Boldy 22,3 / 21,6 (PP 4,5) · Défenseur le plus utilisé Q. Hughes 27,2 / 27,0 (PP 5,0)",
+     "• **VAN** : Attaquant le plus utilisé E. Pettersson 20,0 / 19,6 (PP 3,7) · Défenseur le plus utilisé Hronek 26,4 / 25,5"
+    ]
+   },
+   {
+    "title": "📊 **INFO TIRS (non pariable, je ne conseille jamais les paris sur les tirs)**",
+    "lines": [
+     "Tirs cadrés par match cette saison (puis total sur les 3 derniers matchs) :",
+     "Boldy 4,7 (15), Connor 4,4 (9), MacKinnon 4,4 (10), Schaefer (défenseur) 4,1 (15), Caufield 3,6 (12), Kaprizov 3,5 (11), B. Tkachuk 3,5 (13), Horvat 3,4 (10)."
+    ]
+   }
+  ],
+  "liiga_status": "pas de match"
+ },
+ "foot": {
+  "available": true,
+  "picks": [
+   {
+    "player": "Kylian Mbappé",
+    "match": "Real Madrid à Barcelona",
+    "league": "Liga",
+    "day": "25/10",
+    "chance": "43 %",
+    "P": 0.433,
+    "min": "2,31",
+    "play": "2,54",
+    "example": "À 2,54 ou plus, tu joues. À 2,29, tu ne joues pas.",
+    "star": true,
+    "us_odds": "2,00",
+    "us_ok": false
+   },
+   {
+    "player": "Dominic Calvert-Lewin",
+    "match": "Leeds United à Sunderland",
+    "league": "Premier League",
+    "day": "25/10",
+    "chance": "41 %",
+    "P": 0.409,
+    "min": "2,45",
+    "play": "2,69",
+    "example": "À 2,69 ou plus, tu joues. À 2,44, tu ne joues pas.",
+    "star": false,
+    "us_odds": "2,85",
+    "us_ok": true
+   },
+   {
+    "player": "Harry Kane",
+    "match": "Bayern Munich à SC Freiburg",
+    "league": "Bundesliga",
+    "day": "25/10",
+    "chance": "41 %",
+    "P": 0.405,
+    "min": "2,47",
+    "play": "2,72",
+    "example": "À 2,72 ou plus, tu joues. À 2,47, tu ne joues pas.",
+    "star": true,
+    "us_odds": "1,62",
+    "us_ok": false
+   }
+  ],
+  "others": [
+   {
+    "player": "Cameron Archer",
+    "match": "Le Mans à AJ Auxerre",
+    "league": "Ligue 1",
+    "day": "25/10",
+    "chance": "37 %",
+    "P": 0.37,
+    "min": "2,70",
+    "play": "2,97",
+    "example": "À 2,97 ou plus, tu joues. À 2,72, tu ne joues pas.",
+    "star": false,
+    "us_odds": "2,55",
+    "us_ok": false
+   },
+   {
+    "player": "Ante Budimir",
+    "match": "Osasuna à Sevilla",
+    "league": "Liga",
+    "day": "26/10",
+    "chance": "34 %",
+    "P": 0.339,
+    "min": "2,95",
+    "play": "3,24",
+    "example": "À 3,24 ou plus, tu joues. À 2,99, tu ne joues pas.",
+    "star": false,
+    "us_odds": "3,00",
+    "us_ok": false
+   },
+   {
+    "player": "Anssumane Fati",
+    "match": "Lille à AS Monaco",
+    "league": "Ligue 1",
+    "day": "25/10",
+    "chance": "33 %",
+    "P": 0.332,
+    "min": "3,01",
+    "play": "3,31",
+    "example": "À 3,31 ou plus, tu joues. À 3,06, tu ne joues pas.",
+    "star": false,
+    "us_odds": "3,00",
+    "us_ok": false
+   },
+   {
+    "player": "Amine Gouiri",
+    "match": "Le Havre AC à Marseille",
+    "league": "Ligue 1",
+    "day": "25/10",
+    "chance": "33 %",
+    "P": 0.328,
+    "min": "3,05",
+    "play": "3,35",
+    "example": "À 3,35 ou plus, tu joues. À 3,10, tu ne joues pas.",
+    "star": false,
+    "us_odds": "2,10",
+    "us_ok": false
+   },
+   {
+    "player": "Carlos Espí",
+    "match": "Real Madrid à Barcelona",
+    "league": "Liga",
+    "day": "25/10",
+    "chance": "32 %",
+    "P": 0.319,
+    "min": "3,13",
+    "play": "3,45",
+    "example": "À 3,45 ou plus, tu joues. À 3,20, tu ne joues pas.",
+    "star": false,
+    "us_odds": "2,75",
+    "us_ok": false
+   },
+   {
+    "player": "Brian Brobbey",
+    "match": "Leeds United à Sunderland",
+    "league": "Premier League",
+    "day": "25/10",
+    "chance": "31 %",
+    "P": 0.312,
+    "min": "3,20",
+    "play": "3,52",
+    "example": "À 3,52 ou plus, tu joues. À 3,27, tu ne joues pas.",
+    "star": false,
+    "us_odds": "3,15",
+    "us_ok": false
+   }
+  ],
+  "updated": "25/10 18h01"
+ }
+}

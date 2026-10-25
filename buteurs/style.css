@@ -1,0 +1,36 @@
+:root{--bg:#0e1b2b;--card:#172a3e;--card2:#1f3650;--line:#2b4766;--txt:#eef3f8;--mut:#a8b8cc;--ok:#2ecc71;--no:#ff5c6c;--warn:#ffb020}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,system-ui,Segoe UI,Roboto,sans-serif;font-size:17px;line-height:1.45}
+header{position:sticky;top:0;z-index:5;background:#0a1522;padding:calc(10px + env(safe-area-inset-top)) 14px 0;border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:22px}
+#stamp{color:var(--mut);font-size:13px;margin:2px 0 8px}
+nav{display:flex;gap:6px}
+nav button{flex:1;font-size:16px;padding:10px 4px;border:0;border-radius:12px 12px 0 0;background:var(--card);color:var(--mut);font-weight:600}
+nav button.on{background:var(--warn);color:#10202f}
+main{max-width:640px;margin:0 auto;padding:12px}
+.tab{display:none}.tab.on{display:block}
+.card{background:var(--card);border-radius:16px;padding:14px 16px;margin:0 0 14px;border:1px solid var(--line)}
+.card h2{margin:0 0 8px;font-size:20px}
+.card h3{margin:12px 0 6px;font-size:17px}
+.card p{margin:6px 0}
+.pick{background:var(--card2);border-radius:14px;padding:12px;margin:10px 0;border-left:5px solid var(--ok)}
+.pick.watch{border-left-color:var(--warn)}.pick.d{border-left-color:#5aa9ff}.pick.star{border-left-color:var(--no)}
+.pick .name{font-size:19px;font-weight:700}
+.pick .meta{color:var(--mut);font-size:15px}
+.big{font-size:24px;font-weight:800;color:var(--warn)}
+.ex{margin-top:6px;font-size:16px}
+.tag{display:inline-block;font-size:13px;padding:2px 8px;border-radius:20px;background:var(--line);margin-left:4px;vertical-align:middle}
+.tag.ok{background:#1d5c3a}.tag.no{background:#6b2430}
+ul{margin:4px 0;padding-left:0;list-style:none}
+li{margin:6px 0}
+.small{font-size:14px;color:var(--mut)}
+.warn{color:var(--warn)}
+details{background:var(--card);border-radius:16px;margin:0 0 12px;border:1px solid var(--line)}
+summary{padding:14px 16px;font-weight:700;font-size:17px;cursor:pointer}
+details .in{padding:0 16px 12px}
+label{display:block;margin:12px 0;font-weight:600}
+input{display:block;width:100%;margin-top:6px;font-size:22px;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0a1522;color:var(--txt)}
+.verdict{font-size:20px;font-weight:800;padding:14px;border-radius:12px;background:var(--card2);text-align:center;margin:10px 0}
+.verdict.ok{background:#1d5c3a}.verdict.no{background:#6b2430}
+footer{max-width:640px;margin:0 auto;padding:6px 16px calc(24px + env(safe-area-inset-bottom));color:var(--mut);font-size:15px;border-top:1px solid var(--line)}
+footer a{color:var(--warn)}

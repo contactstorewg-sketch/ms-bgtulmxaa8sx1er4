@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0e1b2b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Buteurs">
+<title>Buteurs – Analyse du jour</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🎯 Buteurs</h1>
+  <div id="stamp">Chargement…</div>
+  <nav>
+    <button data-tab="hockey" class="on">🏒 Hockey</button>
+    <button data-tab="foot">⚽ Foot</button>
+    <button data-tab="calc">🧮 Calcul</button>
+  </nav>
+</header>
+<main>
+  <section id="hockey" class="tab on"></section>
+  <section id="foot" class="tab"></section>
+  <section id="calc" class="tab">
+    <div class="card">
+      <h2>🧮 Calculateur</h2>
+      <p>Mets la chance du joueur et la cote Winamax. Je te dis si tu joues.</p>
+      <label>Chance du joueur (en %)<input id="cP" type="number" inputmode="decimal" placeholder="ex : 44" min="1" max="99" step="0.1"></label>
+      <label>Cote Winamax<input id="cO" type="number" inputmode="decimal" placeholder="ex : 2,30" min="1.01" step="0.01"></label>
+      <div id="cR" class="verdict">Remplis les 2 cases.</div>
+      <p class="small">Règle : tu joues seulement si chance × cote − 1 fait au moins 10 %.<br>Exemple : 44 % et cote 2,60 → 0,44 × 2,60 − 1 = 14 % → tu joues. 44 % et cote 2,30 → 1 % → tu ne joues pas.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>💶 <b>1 € par pari, en simple.</b> Jamais de combiné.</p>
+  <p>⛔ Ne monte jamais la mise après une perte.</p>
+  <p>⚠️ Rien n'est garanti. Même un bon pari perd souvent.</p>
+  <p>📞 Besoin d'aide ? <b>Joueurs Info Service : <a href="tel:0974751313">09 74 75 13 13</a></b> (gratuit, anonyme).</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
