@@ -1,5 +1,5 @@
 {
- "generated": "26/10/2026 00h14",
+ "generated": "26/10/2026 00h32",
  "date": "2026-10-25",
  "date_fr": "25/10/2026",
  "hockey": {
@@ -461,7 +461,12 @@
       "score": "0-4",
       "win": false
      }
-    ]
+    ],
+    "bestD": {
+     "player": "Seth Jones",
+     "chance": "11 %",
+     "min": "8,93"
+    }
    },
    {
     "team": "Colorado",
@@ -507,7 +512,12 @@
       "score": "6-3",
       "win": true
      }
-    ]
+    ],
+    "bestD": {
+     "player": "Cale Makar",
+     "chance": "17 %",
+     "min": "5,88"
+    }
    },
    {
     "team": "Vancouver",
@@ -546,7 +556,12 @@
       "score": "2-5",
       "win": false
      }
-    ]
+    ],
+    "bestD": {
+     "player": "Filip Hronek",
+     "chance": "6 %",
+     "min": "15,87"
+    }
    }
   ],
   "after_so": [],
@@ -555,7 +570,269 @@
    "today": false,
    "after_nul": [],
    "after_so": []
-  }
+  },
+  "shots": [
+   {
+    "game": "Floride à Chicago",
+    "time": "20h00",
+    "teams": [
+     {
+      "team": "Floride",
+      "date": "23/10",
+      "opp": "Pittsburgh",
+      "home": false,
+      "top": [
+       {
+        "player": "S. Reinhart",
+        "d": false,
+        "sog": 6
+       },
+       {
+        "player": "S. Bennett",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "B. Tkachuk",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Chicago",
+      "date": "24/10",
+      "opp": "Montréal",
+      "home": true,
+      "top": [
+       {
+        "player": "R. Kantserov",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "R. Greene",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "P. Kane",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Islanders à Dallas",
+    "time": "23h00",
+    "teams": [
+     {
+      "team": "Islanders",
+      "date": "23/10",
+      "opp": "Los Angeles",
+      "home": true,
+      "top": [
+       {
+        "player": "M. Schaefer",
+        "d": true,
+        "sog": 9
+       },
+       {
+        "player": "E. Heineman",
+        "d": false,
+        "sog": 6
+       },
+       {
+        "player": "B. Horvat",
+        "d": false,
+        "sog": 5
+       }
+      ]
+     },
+     {
+      "team": "Dallas",
+      "date": "23/10",
+      "opp": "Winnipeg",
+      "home": true,
+      "top": [
+       {
+        "player": "R. Hintz",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "M. Heiskanen",
+        "d": true,
+        "sog": 5
+       },
+       {
+        "player": "J. Robertson",
+        "d": false,
+        "sog": 4
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Montréal à Winnipeg",
+    "time": "00h00",
+    "teams": [
+     {
+      "team": "Montréal",
+      "date": "24/10",
+      "opp": "Chicago",
+      "home": false,
+      "top": [
+       {
+        "player": "C. Caufield",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "J. Anderson",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "J. Slafkovský",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Winnipeg",
+      "date": "23/10",
+      "opp": "Dallas",
+      "home": false,
+      "top": [
+       {
+        "player": "K. Connor",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "G. Vilardi",
+        "d": false,
+        "sog": 2
+       },
+       {
+        "player": "M. Scheifele",
+        "d": false,
+        "sog": 2
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Colorado à Nashville",
+    "time": "01h00",
+    "teams": [
+     {
+      "team": "Colorado",
+      "date": "24/10",
+      "opp": "Tampa Bay",
+      "home": true,
+      "top": [
+       {
+        "player": "T. Hughes",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "N. MacKinnon",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "L. O'Connor",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Nashville",
+      "date": "25/10",
+      "opp": "Pittsburgh",
+      "home": false,
+      "top": [
+       {
+        "player": "M. Wood",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "S. Stamkos",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "A. Wilsby",
+        "d": true,
+        "sog": 3
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Minnesota à Vancouver",
+    "time": "03h00",
+    "teams": [
+     {
+      "team": "Minnesota",
+      "date": "25/10",
+      "opp": "Seattle",
+      "home": false,
+      "top": [
+       {
+        "player": "M. Boldy",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "B. Coleman",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "M. Kiersted",
+        "d": true,
+        "sog": 5
+       }
+      ]
+     },
+     {
+      "team": "Vancouver",
+      "date": "23/10",
+      "opp": "Detroit",
+      "home": true,
+      "top": [
+       {
+        "player": "J. DeBrusk",
+        "d": false,
+        "sog": 2
+       },
+       {
+        "player": "J. Lekkerimäki",
+        "d": false,
+        "sog": 2
+       },
+       {
+        "player": "Z. Buium",
+        "d": true,
+        "sog": 2
+       }
+      ]
+     }
+    ]
+   }
+  ]
  },
  "foot": {
   "available": true,

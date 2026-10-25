@@ -45,7 +45,10 @@ function points(h){
   return o;
 }
 function matchs(h){
+  var d=DATA;
   var o=card('🕗 Matchs (heure de Paris)',(h.intro||[]).map(function(l){return '<p>'+md(l)+'</p>'}).join('')+'<ul>'+(h.games||[]).map(function(g){return '<li><b>'+esc(g.time)+'</b> : '+esc(g.game)+'</li>'}).join('')+'</ul>');
+  if(h.shots){var sh=h.shots.filter(function(g){return !started(d,g.time)});
+    o+=card('🎯 Qui a le plus tiré au dernier match',(sh.length?sh.map(function(g){return '<h3>'+esc(g.game)+' · '+esc(g.time)+'</h3>'+g.teams.map(function(t){return '<p><b>'+esc(t.team)+'</b> <span class="small">('+esc(t.date)+', '+where(t)+')</span><br>'+t.top.map(function(p){return esc(p.player)+(p.d?' (D)':'')+' : '+p.sog}).join(' · ')+'</p>'}).join('')}).join(''):'<p>Tous les matchs de ce soir ont commencé.</p>')+'<p class="small">Tirs cadrés. Info seulement, Winamax ne propose pas de paris sur les tirs.</p>')}
   if(h.totals.length)o+=card('📈 Match à buts','<ul>'+h.totals.map(function(t,i){return '<li>'+(i+1)+'. '+(t.open?'🔥 ':'')+'<b>'+esc(t.game)+'</b> ('+esc(t.time)+') : environ '+esc(t.book)+' buts attendus (ligne '+esc(t.line)+'). Notre modèle : '+esc(t.model)+'.</li>'}).join('')+'</ul><p class="small">Chiffres des cotes publiques américaines, pas Winamax.</p>');
   return o;
 }
@@ -63,6 +66,7 @@ function otList(d,list,kind,liiga){
     if(kind==='nul'){o+='<div class="small">Nul le '+esc(x.nul.date)+' '+where(x.nul)+' ('+(x.nul.kind==='SO'?'tirs au but':'prolongation')+', '+wl(x.nul)+')</div>'+
       '<div class="small">Puis : '+x.between.map(function(b){return (b.win?'✅':'❌')+' '+esc(b.score)}).join(' · ')+'</div>'}
     else o+='<div class="small">Dernier match le '+esc(x.so.date)+' '+where(x.so)+' : '+wl(x.so)+' aux tirs au but</div>';
+    if(x.bestD)o+='<div class="bd">🛡️ Meilleur défenseur buteur : <b>'+esc(x.bestD.player)+'</b> '+esc(x.bestD.chance)+', à <b>'+esc(x.bestD.min)+'</b> ou plus</div>';
     o+='</div><div class="rodd info">'+(kind==='nul'?'5e':'TAB')+'<small>match</small></div></div>';
   });
   if(gone.length)o+='<p class="small">Déjà commencé : '+gone.map(function(x){return esc(x.team)}).join(', ')+'.</p>';
@@ -133,7 +137,7 @@ function calc(){
   r.className='verdict '+(ev>=0.10?'ok':'no');
   r.innerHTML=(ev>=0.10?'✅ Tu joues (1 €)':'❌ Tu ne joues pas')+'<div class="small" style="color:#eef3f8">Avantage : '+Math.round(ev*100)+' %. Cote juste : '+f2(min)+'. Tu joues à partir de '+f2(play)+'.</div>';
 }
-window.Buteurs={resume:resume,buteurs:buteurs,defs:defs,points:points,matchs:matchs,infos:infos,bilan:bilanHtml,foot:footHtml,calc:calc,otTab:otTab};
+window.Buteurs={resume:resume,buteurs:buteurs,defs:defs,points:points,matchs:matchs,infos:infos,bilan:bilanHtml,foot:footHtml,calc:calc,otTab:otTab,setData:function(d){DATA=d}};
 if(typeof document==='undefined')return;
 document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){
   document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x===b)});

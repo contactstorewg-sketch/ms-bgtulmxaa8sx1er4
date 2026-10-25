@@ -40,3 +40,4 @@ footer a{color:var(--warn)}
 
 .okc{color:var(--ok);font-weight:700}.noc{color:var(--no);font-weight:700}
 .rodd.info{color:var(--mut)}
+.bd{margin-top:4px;font-size:15px;color:#5aa9ff}
