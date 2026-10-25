@@ -1,5 +1,5 @@
 {
- "generated": "26/10/2026 00h41",
+ "generated": "26/10/2026 00h44",
  "date": "2026-10-25",
  "date_fr": "25/10/2026",
  "hockey": {
@@ -37,8 +37,9 @@
     "game": "Minnesota à Vancouver",
     "time": "03h00",
     "chance": "44 %",
-    "min": "2,25",
-    "example": "À 2,25 ou plus, tu joues. À 2,10, tu ne joues pas.",
+    "min": "2,48",
+    "fair": "2,25",
+    "example": "À 2,48 ou plus, tu joues. À 2,33, tu ne joues pas.",
     "wm": "1,90",
     "wm_ok": false,
     "wm_edge": -15
@@ -49,8 +50,9 @@
     "game": "Minnesota à Vancouver",
     "time": "03h00",
     "chance": "43 %",
-    "min": "2,34",
-    "example": "À 2,34 ou plus, tu joues. À 2,19, tu ne joues pas.",
+    "min": "2,58",
+    "fair": "2,34",
+    "example": "À 2,58 ou plus, tu joues. À 2,43, tu ne joues pas.",
     "wm": "2,25",
     "wm_ok": false,
     "wm_edge": -4
@@ -61,8 +63,9 @@
     "game": "Montréal à Winnipeg",
     "time": "00h00",
     "chance": "42 %",
-    "min": "2,40",
-    "example": "À 2,40 ou plus, tu joues. À 2,25, tu ne joues pas."
+    "min": "2,64",
+    "fair": "2,40",
+    "example": "À 2,64 ou plus, tu joues. À 2,49, tu ne joues pas."
    }
   ],
   "notes": [
@@ -77,8 +80,9 @@
     "game": "Colorado à Nashville",
     "time": "01h00",
     "chance": "41 %",
-    "min": "2,42",
-    "example": "À 2,42 ou plus, tu joues. À 2,27, tu ne joues pas.",
+    "min": "2,67",
+    "fair": "2,42",
+    "example": "À 2,67 ou plus, tu joues. À 2,52, tu ne joues pas.",
     "wm": "2,05",
     "wm_ok": false,
     "wm_edge": -15
@@ -89,8 +93,9 @@
     "game": "Montréal à Winnipeg",
     "time": "00h00",
     "chance": "40 %",
-    "min": "2,48",
-    "example": "À 2,48 ou plus, tu joues. À 2,33, tu ne joues pas."
+    "min": "2,73",
+    "fair": "2,48",
+    "example": "À 2,73 ou plus, tu joues. À 2,58, tu ne joues pas."
    },
    {
     "player": "Jason Robertson",
@@ -98,8 +103,9 @@
     "game": "Islanders à Dallas",
     "time": "23h00",
     "chance": "37 %",
-    "min": "2,68",
-    "example": "À 2,68 ou plus, tu joues. À 2,53, tu ne joues pas."
+    "min": "2,95",
+    "fair": "2,68",
+    "example": "À 2,95 ou plus, tu joues. À 2,80, tu ne joues pas."
    },
    {
     "player": "Sam Reinhart",
@@ -107,8 +113,9 @@
     "game": "Floride à Chicago",
     "time": "20h00",
     "chance": "37 %",
-    "min": "2,72",
-    "example": "À 2,72 ou plus, tu joues. À 2,57, tu ne joues pas."
+    "min": "3,00",
+    "fair": "2,72",
+    "example": "À 3,00 ou plus, tu joues. À 2,85, tu ne joues pas."
    },
    {
     "player": "Wyatt Johnston",
@@ -116,8 +123,9 @@
     "game": "Islanders à Dallas",
     "time": "23h00",
     "chance": "36 %",
-    "min": "2,79",
-    "example": "À 2,79 ou plus, tu joues. À 2,64, tu ne joues pas."
+    "min": "3,07",
+    "fair": "2,79",
+    "example": "À 3,07 ou plus, tu joues. À 2,92, tu ne joues pas."
    }
   ],
   "bestD": [
@@ -127,8 +135,9 @@
     "game": "Floride à Chicago",
     "time": "20h00",
     "chance": "11 %",
-    "min": "8,93",
-    "example": "À 8,93 ou plus, tu joues. À 8,43, tu ne joues pas.",
+    "min": "9,83",
+    "fair": "8,93",
+    "example": "À 9,83 ou plus, tu joues. À 9,33, tu ne joues pas.",
     "best": false
    },
    {
@@ -137,8 +146,9 @@
     "game": "Islanders à Dallas",
     "time": "23h00",
     "chance": "19 %",
-    "min": "5,15",
-    "example": "À 5,15 ou plus, tu joues. À 4,65, tu ne joues pas.",
+    "min": "5,68",
+    "fair": "5,15",
+    "example": "À 5,68 ou plus, tu joues. À 5,18, tu ne joues pas.",
     "best": true
    },
    {
@@ -147,8 +157,9 @@
     "game": "Montréal à Winnipeg",
     "time": "00h00",
     "chance": "10 %",
-    "min": "9,71",
-    "example": "À 9,71 ou plus, tu joues. À 9,21, tu ne joues pas.",
+    "min": "10,68",
+    "fair": "9,71",
+    "example": "À 10,68 ou plus, tu joues. À 10,18, tu ne joues pas.",
     "best": false
    },
    {
@@ -157,8 +168,9 @@
     "game": "Colorado à Nashville",
     "time": "01h00",
     "chance": "17 %",
-    "min": "5,88",
-    "example": "À 5,88 ou plus, tu joues. À 5,38, tu ne joues pas.",
+    "min": "6,48",
+    "fair": "5,88",
+    "example": "À 6,48 ou plus, tu joues. À 5,98, tu ne joues pas.",
     "wm": "3,65",
     "wm_ok": false,
     "wm_edge": -38,
@@ -170,8 +182,9 @@
     "game": "Minnesota à Vancouver",
     "time": "03h00",
     "chance": "13 %",
-    "min": "7,87",
-    "example": "À 7,87 ou plus, tu joues. À 7,37, tu ne joues pas.",
+    "min": "8,67",
+    "fair": "7,87",
+    "example": "À 8,67 ou plus, tu joues. À 8,17, tu ne joues pas.",
     "wm": "5,00",
     "wm_ok": false,
     "wm_edge": -36,
@@ -353,11 +366,11 @@
    {
     "title": "👀 **À RE-SURVEILLER (ils ont raté leur dernier match ciblé et rejouent ce soir)**",
     "lines": [
-     "• Reinhart 37 % (min 2,72), B. Tkachuk 33 % (min 3,05), M. Tkachuk (pari point, min 1,39) : FLA@CHI à 20h00",
-     "• Horvat 32 % (min 3,12), J. Robertson 37 % (min 2,68), Heiskanen (défenseur) 11 % (min 9,35) : NYI@DAL à 23h00",
-     "• Caufield 40 % (min 2,48), Slafkovsky 26 % (min 3,89), Hutson (défenseur) 10 % (min 9,71) : MTL@WPG à 00h00",
-     "• Makar (défenseur) 17 % (min 5,88), Josi (défenseur) 10 % (min 9,62) : COL@NSH à 01h00",
-     "• Boldy 43 % (min 2,34), Q. Hughes (défenseur) 13 % (min 7,87) : MIN@VAN à 03h00",
+     "• Reinhart 37 % (tu joues à 3,00), B. Tkachuk 33 % (tu joues à 3,36), M. Tkachuk (pari point, min 1,39) : FLA@CHI à 20h00",
+     "• Horvat 32 % (tu joues à 3,43), J. Robertson 37 % (tu joues à 2,95), Heiskanen (défenseur) 11 % (tu joues à 10,29) : NYI@DAL à 23h00",
+     "• Caufield 40 % (tu joues à 2,73), Slafkovsky 26 % (tu joues à 4,29), Hutson (défenseur) 10 % (tu joues à 10,68) : MTL@WPG à 00h00",
+     "• Makar (défenseur) 17 % (tu joues à 6,48), Josi (défenseur) 10 % (tu joues à 10,58) : COL@NSH à 01h00",
+     "• Boldy 43 % (tu joues à 2,58), Q. Hughes (défenseur) 13 % (tu joues à 8,67) : MIN@VAN à 03h00",
      "📒 Après un match raté, ils ont marqué **7 fois sur 34**. Leur chance moyenne était de 23 %, donc environ 8 buts étaient attendus. Un match raté ne les rend pas « dus » : on ne leur donne aucun bonus."
     ]
    },
@@ -486,7 +499,9 @@
     "bestD": {
      "player": "Seth Jones",
      "chance": "11 %",
-     "min": "8,93"
+     "min": "9,83",
+     "fair": "8,93",
+     "example": "À 9,83 ou plus, tu joues. À 9,33, tu ne joues pas."
     }
    },
    {
@@ -537,7 +552,9 @@
     "bestD": {
      "player": "Cale Makar",
      "chance": "17 %",
-     "min": "5,88",
+     "min": "6,48",
+     "fair": "5,88",
+     "example": "À 6,48 ou plus, tu joues. À 5,98, tu ne joues pas.",
      "wm": "3,65",
      "wm_ok": false,
      "wm_edge": -38
@@ -584,7 +601,9 @@
     "bestD": {
      "player": "Filip Hronek",
      "chance": "6 %",
-     "min": "15,87",
+     "min": "17,47",
+     "fair": "15,87",
+     "example": "À 17,47 ou plus, tu joues. À 16,97, tu ne joues pas.",
      "wm": "7,00",
      "wm_ok": false,
      "wm_edge": -56
@@ -868,7 +887,8 @@
     "game": "Colorado à Nashville",
     "time": "01h00",
     "chance": "12 %",
-    "min": "8,33",
+    "min": "9,17",
+    "fair": "8,33",
     "wm": "10,50",
     "edge": 26
    },
@@ -879,7 +899,8 @@
     "game": "Minnesota à Vancouver",
     "time": "03h00",
     "chance": "24 %",
-    "min": "4,15",
+    "min": "4,57",
+    "fair": "4,15",
     "wm": "5,00",
     "edge": 21
    },
@@ -890,7 +911,8 @@
     "game": "Minnesota à Vancouver",
     "time": "03h00",
     "chance": "14 %",
-    "min": "7,19",
+    "min": "7,92",
+    "fair": "7,19",
     "wm": "8,00",
     "edge": 11
    }
