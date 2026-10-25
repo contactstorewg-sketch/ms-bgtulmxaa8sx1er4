@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f212e">
+<title>Mines – Schémas</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>
+:root{--bg:#0f212e;--card:#1a2c38;--card2:#213743;--line:#2f4553;--txt:#e6edf3;--mut:#b1bad3;--green:#00e701;--dia:#1fbf5c;--mine:#e0315f;--warn:#ffb020}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:16px;height:100%;overflow:hidden;overscroll-behavior:none}
+body{display:flex;flex-direction:column;height:100vh;height:100dvh}
+#shell{flex:1;min-height:0;position:relative}
+#wrap{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+header{background:#0b1a24;padding:12px 16px calc(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}
+header h1{font-size:18px;margin:0;flex:1}
+main{padding:14px 14px calc(110px + env(safe-area-inset-bottom));max-width:680px;margin:0 auto}
+#top{flex:none;position:relative;z-index:6;padding-top:env(safe-area-inset-top);background:#0b1a24;touch-action:manipulation}nav{display:flex;background:#0b1a24;border-bottom:1px solid var(--line)}
+nav button{flex:1;background:none;border:0;border-bottom:3px solid transparent;color:var(--mut);padding:8px 2px 8px;font-size:13px;font-weight:600;min-height:58px}
+nav button span{display:block;font-size:20px;margin-bottom:2px}
+nav button.on{color:var(--green);border-bottom-color:var(--green)}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border-radius:14px;padding:16px;margin-bottom:14px}
+h2{font-size:18px;margin:0 0 10px}h3{font-size:16px;margin:14px 0 8px}
+p{line-height:1.45;margin:6px 0}.mut{color:var(--mut)}.small{font-size:13px}
+.btn{display:block;width:100%;border:0;border-radius:12px;padding:16px;font-size:17px;font-weight:700;background:var(--card2);color:var(--txt);margin:8px 0;min-height:56px;cursor:pointer}
+.btn.pri{background:var(--green);color:#05250a}.btn.red{background:#5a1a2b;color:#ffd6df}.btn:disabled{opacity:.45}
+.row{display:flex;gap:10px}.row>*{flex:1}
+label.btn{text-align:center}
+input[type=file]{display:none}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;max-width:340px;margin:10px auto}
+.cell{aspect-ratio:1;border-radius:9px;background:#071824;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:26px;cursor:pointer;user-select:none}
+.cell.D{background:#0c2a1c;border-color:#1b6b3d}.cell.M{background:#2a0c18;border-color:#7a1e38}.cell.Q{border-style:dashed;border-color:var(--warn)}
+.cell .d{width:58%;height:50%;background:var(--dia);clip-path:polygon(20% 0,80% 0,100% 35%,50% 100%,0 35%)}
+.cell .m{width:52%;height:52%;border-radius:50%;background:var(--mine);box-shadow:inset -4px -4px 0 rgba(0,0,0,.25)}
+.cell .q{color:var(--warn);font-weight:800;font-size:20px}
+.mini{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;width:70px;flex:none}
+.mini i{aspect-ratio:1;border-radius:2px;background:var(--dia)}.mini i.M{background:var(--mine)}
+.shot{width:100%;border-radius:10px;display:block;background:#000}
+.shots{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
+.shots figure{margin:0;flex:0 0 46%}.shots figcaption{font-size:12px;color:var(--mut);margin-top:4px}
+.alert{border-radius:14px;padding:18px;text-align:center;font-size:22px;font-weight:800;margin-bottom:12px}
+.alert.seen{background:#4a3407;color:#ffd27a;border:2px solid var(--warn)}.alert.new{background:#0b3a1d;color:#8ff5ad;border:2px solid #1b6b3d}
+.honest{background:#13293a;border-left:4px solid #5fa8d3;border-radius:10px;padding:12px 14px;color:#cfe3f2;line-height:1.5;font-size:15px}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{display:flex;gap:12px;align-items:center;background:var(--card2);border-radius:12px;padding:10px}
+.item img{width:80px;height:70px;object-fit:cover;border-radius:8px;flex:none}
+.item .grow{flex:1;min-width:0}
+.tag{display:inline-block;background:var(--line);border-radius:8px;padding:3px 8px;font-size:13px;margin:2px 4px 2px 0}
+.timer{font-size:64px;font-weight:800;text-align:center;font-variant-numeric:tabular-nums;margin:10px 0;color:var(--green)}
+.heat{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;max-width:320px;margin:10px auto}
+.heat div{aspect-ratio:1;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff}
+select{width:100%;padding:14px;border-radius:12px;background:var(--card2);color:var(--txt);border:1px solid var(--line);font-size:16px}
+.vmode{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0 2px}.seg{background:var(--card2);color:inherit;border:1px solid #2f4553;border-radius:18px;padding:8px 12px;font-size:14px;min-height:38px}.seg.on{background:var(--green);color:#05210f;border-color:var(--green);font-weight:700}
+#vid{display:block;height:150px;max-width:100%;margin:8px auto 0;border-radius:8px;background:#000}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0}.row2 select{margin-top:4px}
+.ptab{border-collapse:collapse;width:100%;font-size:13px}.ptab th{color:var(--mut);font-weight:600;padding:4px 2px;text-align:center;white-space:nowrap}.ptab td{padding:2px}
+.chip{width:100%;min-height:52px;background:var(--card2);color:var(--txt);border:1px solid var(--line);border-radius:10px;font-size:12px;line-height:1.3;padding:4px 2px}.chip.on{border-color:var(--green);box-shadow:0 0 0 2px var(--green) inset}
+.gtwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px 0 0;padding:0;overscroll-behavior-x:contain}
+.gtab{border-collapse:separate;border-spacing:3px;font-size:12px;min-width:100%}
+.gtab th{color:var(--mut);font-weight:600;padding:4px 3px;white-space:nowrap;text-align:center;background:var(--card)}
+.gtab th.kc,.gtab td.kc{position:sticky;left:0;z-index:2;background:var(--card);text-align:center;min-width:34px;padding:0 4px;white-space:nowrap;box-shadow:-4px 0 0 var(--card),4px 0 0 var(--card),0 -4px 0 var(--card),0 4px 0 var(--card),-4px -4px 0 var(--card),4px 4px 0 var(--card),-4px 4px 0 var(--card),4px -4px 0 var(--card)}
+.gtab td.gc{min-width:78px;border-radius:8px;padding:6px 4px;text-align:center;cursor:pointer;line-height:1.25;border:1px solid var(--line);white-space:nowrap}
+.gtab td.gc b{display:block;font-size:13px;color:var(--txt)}.gtab td.gc span{display:block;font-size:11px;color:#d7e2ea}
+.gtab td.na{background:transparent;border:0}
+.glg{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:11px;color:var(--mut);margin-top:8px}.glg i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:middle;margin-right:3px}
+.tgl{display:flex;align-items:center;gap:10px;min-height:48px;font-size:15px}.tgl input{width:24px;height:24px}
+.row2 input{width:100%;margin-top:4px;padding:14px;border-radius:12px;background:var(--card2);color:var(--txt);border:1px solid var(--line);font-size:16px;box-sizing:border-box}
+.mini.sel i.S{background:var(--green)}.mini.sel i.O{background:#2f4553}
+.srow .item{cursor:pointer}.sdet{padding:0 2px}
+.ttab{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0}.ttab th,.ttab td{border-bottom:1px solid var(--line);padding:6px 3px;text-align:center}.ttab th{color:var(--mut);font-weight:600}
+.prog{height:10px;background:var(--card2);border-radius:5px;overflow:hidden;margin:8px 0}.prog div{height:100%;background:var(--green);width:0}
+.overlay{position:absolute;inset:0;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;background:var(--bg);z-index:20;overflow:auto;padding:16px;display:none}
+.overlay.on{display:block}
+.overlay .inner{max-width:640px;margin:0 auto;padding-bottom:90px}
+.stat b{white-space:nowrap;margin-left:8px}
+.stat{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#000c;padding:12px 18px;border-radius:12px;z-index:30;display:none}
+</style>
+</head>
+<body>
+<div id="top"><header><h1>💎 Mines – Schémas</h1></header>
+<nav>
+  <button data-tab="add" class="on"><span>🎬</span>Vidéo</button>
+  <button data-tab="low"><span>🎯</span>Multi bas</button>
+  <button data-tab="hist"><span>📊</span>Historique</button>
+  <button data-tab="data"><span>💾</span>Données</button>
+</nav></div>
+<div id="shell"><div id="wrap"><main>
+
+<section id="tab-add" class="on">
+  <div class="card">
+    <h2>Analyser une vidéo</h2>
+    <p class="mut small">Enregistre ton écran pendant que tu joues (mode auto possible), puis importe la vidéo ici. L'appli lit chaque grille terminée, les enregistre toutes automatiquement et t'affiche le <b>bilan de la vidéo</b>.</p>
+    <label class="btn pri" for="fileVid">🎬 Importer un enregistrement d'écran</label>
+    <input id="fileVid" type="file" accept="video/*">
+    <div id="vidBox" style="display:none"><video id="vid" playsinline muted preload="auto" style="display:none"></video><p id="vidMsg" class="small mut"></p><div class="prog"><div id="vidProg"></div></div><p id="vidEta" class="small mut"></p><button class="btn" id="vidStop">Arrêter l'analyse</button></div>
+    <div id="lastVid"></div>
+  </div>
+  <div class="card">
+    <h3>Autres façons d'ajouter</h3>
+    <label class="btn" for="fileImg">📷 Importer des captures d'écran</label>
+    <input id="fileImg" type="file" accept="image/*" multiple>
+    <button class="btn" id="btnManual">✏️ Saisir une grille à la main</button>
+  </div>
+  <div id="queueBox"></div>
+  <div id="resultBox"></div>
+</section>
+
+<section id="tab-low">
+  <div class="card" id="gtCard"><h2>Tableau de mes grilles</h2>
+    <p class="small mut">Comme le tableau des gains de Stake : lignes = cases découvertes, colonnes = nombre de mines. Sous chaque multiplicateur : combien de tes grilles auraient atteint ce multiplicateur avec <b>un même groupe de cases</b> (celui qui a été le plus souvent sans mine). Touche une case pour voir le groupe.</p>
+    <div class="honest small">⚠️ Chaque groupe est <b>choisi après coup</b> parmi des milliers de combinaisons possibles : ces chiffres sont <b>toujours gonflés</b>, même avec des grilles 100 % aléatoires. Compare avec « attendu par hasard » (couleur) et lance le test de fiabilité. Cela ne dit rien sur la prochaine partie.</div>
+    <div class="vmode" id="gtScope"><button class="seg" data-v="vid">Cette vidéo</button><button class="seg" data-v="all">Tout l'historique</button></div>
+    <div id="gtBox"></div>
+    <button class="btn" id="gtTest">🔬 Test de fiabilité (toutes les colonnes)</button><div id="gtTestBox"></div></div>
+  <div class="card"><h2>Multiplicateurs bas</h2>
+    <div class="row2"><label class="small mut">Mines<select id="lowM"></select></label><label class="small mut">Cases à découvrir<select id="lowK"></select></label></div>
+    <div id="lowCalc"></div></div>
+  <div class="card"><h2>Cases le plus souvent sans mine</h2>
+    <p class="small mut">À partir de tes grilles enregistrées : quels groupes de cases ont été le plus souvent tous des diamants, comparé au hasard.</p>
+    <label class="tgl"><input type="checkbox" id="lowSess"> <span id="lowSessLbl">Seulement la dernière vidéo</span></label>
+    <div class="row2"><label class="small mut">Taille<select id="revK"></select></label><label class="small mut">Mise (facultatif)<input id="revBet" inputmode="decimal" placeholder="ex. 1,00"></label></div>
+    <div id="revBox"></div>
+    <button class="btn" id="revTest">🔬 Test de fiabilité</button><div id="revTestBox"></div></div>
+  <div class="card"><h3>Réglages rapides</h3><p class="small mut">Nombre de cases donnant environ 2×, 3×, 6×, 8× ou 10×.</p><div id="lowPresets" style="overflow-x:auto"></div></div>
+  <div class="card"><h2>Schémas exacts à ce nombre de mines</h2>
+    <div id="lowMine"></div></div>
+</section>
+
+<section id="tab-hist">
+  <div class="card"><h2>Bilans des vidéos</h2><div id="vidList" class="list"></div></div>
+  <div class="card" id="statsCard"></div>
+  <div class="card"><h2>Schémas sortis plusieurs fois</h2><div id="repeatList"></div></div>
+  <div class="card"><h2>Fréquence des mines par case</h2><select id="heatSel"></select><div id="heatBox"></div></div>
+  <div class="card"><h2>Toutes les grilles</h2><div id="allList" class="list"></div><button class="btn" id="moreBtn" style="display:none">Voir plus</button></div>
+</section>
+
+<section id="tab-data">
+  <div class="card">
+    <h2>Sauvegarde</h2>
+    <p class="mut small">Tout est enregistré uniquement sur ce téléphone, dans ce navigateur. Exporte de temps en temps pour ne rien perdre.</p>
+    <button class="btn" id="btnExport">⬇️ Exporter (fichier JSON)</button>
+    <label class="btn" for="fileImport">⬆️ Importer une sauvegarde</label>
+    <input id="fileImport" type="file" accept="application/json,.json">
+    <button class="btn red" id="btnWipe">🗑️ Tout effacer</button>
+  </div>
+  <div class="card">
+    <h2>Comment ça marche</h2>
+    <p class="small mut">L'appli repère les icônes vertes (diamants) et rouges (mines) sur ta capture, les range en 5 colonnes × 5 rangées et enregistre le schéma. Si une case est mal lue, touche-la pour la corriger avant d'enregistrer.</p>
+    <p class="small mut">Elle compare chaque nouvelle grille à toutes celles déjà enregistrées (même nombre de mines, mêmes positions).</p>
+    <p class="small mut">À savoir : sur Stake chaque grille est tirée au hasard, indépendamment des précédentes. L'appli constate ce qui est sorti ; elle ne peut pas prédire la prochaine grille.</p>
+    <p class="small mut">Besoin d'en parler à quelqu'un ? Joueurs Info Service : 09 74 75 13 13 (France, gratuit, anonyme).</p>
+  </div>
+</section>
+</main></div>
+<div class="overlay" id="overlay"><div class="inner" id="overlayInner"></div></div></div>
+
+<div class="toast" id="toast"></div>
+
+<script src="detector.js"></script>
+<script>
+'use strict';
+var $=function(s){return document.querySelector(s)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function toast(t){var e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(function(){e.style.display='none'},2500)}
+function fmtDate(t){return new Date(t).toLocaleString('fr-FR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}
+function binom(n,k){var r=1;for(var i=1;i<=k;i++)r=r*(n-k+i)/i;return Math.round(r)}
+function nf(x){return Math.round(x).toLocaleString('fr-FR')}
+function pct(p){var v=p*100;if(v===0)return '0 %';if(v<0.0001)return 'moins de 0,0001 %';if(v<1)return v.toLocaleString('fr-FR',{maximumSignificantDigits:2})+' %';return v.toLocaleString('fr-FR',{maximumFractionDigits:1})+' %'}
+function mines(g){return g.split('M').length-1}
+
+/* ---------- IndexedDB ---------- */
+var db,GRIDS=[],IMPS=[];
+function openDB(){return new Promise(function(res,rej){var r=indexedDB.open('mines-schemas',1);
+  r.onupgradeneeded=function(){var d=r.result;d.createObjectStore('grids',{keyPath:'id'});d.createObjectStore('sessions',{keyPath:'id'})};
+  r.onsuccess=function(){db=r.result;res()};r.onerror=function(){rej(r.error)}})}
+function all(st){return new Promise(function(res,rej){var q=db.transaction(st).objectStore(st).getAll();q.onsuccess=function(){res(q.result)};q.onerror=function(){rej(q.error)}})}
+function put(st,o){return new Promise(function(res,rej){var t=db.transaction(st,'readwrite');t.objectStore(st).put(o);t.oncomplete=res;t.onerror=function(){rej(t.error)}})}
+function del(st,id){return new Promise(function(res){var t=db.transaction(st,'readwrite');t.objectStore(st).delete(id);t.oncomplete=res})}
+function clear(st){return new Promise(function(res){var t=db.transaction(st,'readwrite');t.objectStore(st).clear();t.oncomplete=res})}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+
+/* ---------- Tabs ---------- */
+document.querySelectorAll('nav button').forEach(function(b){b.onclick=function(){showTab(b.dataset.tab)}});
+function showTab(t){$('#overlay').classList.remove('on');document.querySelectorAll('nav button').forEach(function(b){b.classList.toggle('on',b.dataset.tab===t)});
+  document.querySelectorAll('section').forEach(function(s){s.classList.toggle('on',s.id==='tab-'+t)});
+  if(t==='hist')renderHist();if(t==='low')renderLow();if(t==='add')renderLastVid();$('#wrap').scrollTop=0;window.scrollTo(0,0)}
+
+/* ---------- Grilles (rendu) ---------- */
+function cellHTML(ch){return ch==='D'?'<div class="d"></div>':ch==='M'?'<div class="m"></div>':'<div class="q">?</div>'}
+function miniHTML(g){return '<div class="mini">'+g.split('').map(function(c){return '<i class="'+c+'"></i>'}).join('')+'</div>'}
+function shotsHTML(list,cap){return '<div class="shots">'+list.map(function(r){return '<figure>'+(r.thumb?'<img class="shot" loading="lazy" src="'+r.thumb+'" alt="capture">':miniHTML(r.grid))+'<figcaption>'+(cap?cap(r):fmtDate(r.date))+'</figcaption></figure>'}).join('')+'</div>'}
+
+/* ---------- Honnêteté : probabilités ---------- */
+function probLine(list,who){
+  if(!list.length)return '';
+  var by={};list.forEach(function(r){var m=mines(r.grid);by[m]=(by[m]||0)+1});
+  var dom=Object.keys(by).sort(function(a,b){return by[b]-by[a]})[0]|0,n=by[dom],C=binom(25,dom);
+  var e=n*(n-1)/(2*C),p=1-Math.exp(-e);
+  return '<div class="honest">Avec '+dom+' mine'+(dom>1?'s':'')+' il existe <b>'+nf(C)+'</b> schémas possibles. Avec '+(who||'tes')+' '+n+' partie'+(n>1?'s':'')+' à '+dom+' mine'+(dom>1?'s':'')+', la probabilité qu\'un schéma soit déjà sorti deux fois par hasard est de <b>'+pct(p)+'</b> (nombre de répétitions attendu : '+e.toLocaleString('fr-FR',{maximumSignificantDigits:2})+').<br>Chaque partie est tirée au hasard : un schéma déjà vu n\'a pas plus de chances de ressortir.</div>';
+}
+
+/* ---------- Import d'images ---------- */
+var QUEUE=[];
+$('#fileImg').onchange=async function(e){var fs=[].slice.call(e.target.files);e.target.value='';if(!fs.length)return;
+  toast('Analyse de '+fs.length+' image'+(fs.length>1?'s':'')+'…');
+  for(var i=0;i<fs.length;i++){try{QUEUE.push(await analyzeFile(fs[i]))}catch(err){QUEUE.push({grid:'?'.repeat(25),thumb:null,err:'Image illisible',date:Date.now()})}}
+  $('#toast').style.display='none';$('#resultBox').innerHTML='';renderQueue()};
+$('#btnManual').onclick=function(){QUEUE.push({grid:'D'.repeat(25),thumb:null,manual:true,date:Date.now()});$('#resultBox').innerHTML='';renderQueue()};
+function loadImg(file){return new Promise(function(res,rej){var u=URL.createObjectURL(file),im=new Image();im.onload=function(){res(im)};im.onerror=rej;im.src=u})}
+function thumbOf(src,w,h){var tw=Math.min(360,w),th=Math.round(h*tw/w);var c=document.createElement('canvas');c.width=tw;c.height=th;c.getContext('2d').drawImage(src,0,0,tw,th);return c.toDataURL('image/jpeg',0.65)}
+async function analyzeFile(f){var im=await loadImg(f);var w=im.naturalWidth,h=im.naturalHeight;
+  var r=MinesDetector.detectFromSource(im,w,h);var item={grid:r.grid,ok:r.ok,found:r.found,err:r.error,thumb:thumbOf(im,w,h),date:f.lastModified||Date.now()};URL.revokeObjectURL(im.src);return item}
+
+function renderQueue(){var box=$('#queueBox');
+  if(!QUEUE.length){box.innerHTML='';return}
+  var it=QUEUE[0],q=it.grid.indexOf('?')>=0;
+  var html='<div class="card"><h2>Vérifie la grille '+(QUEUE.length>1?'<span class="mut small">(1 / '+QUEUE.length+')</span>':'')+'</h2>';
+  if(it.err&&!it.manual)html+='<p style="color:var(--warn)">⚠️ '+esc(it.err)+'. Remplis la grille à la main en touchant les cases.</p>';
+  else if(q)html+='<p style="color:var(--warn)">⚠️ '+(25-(it.grid.split('?').length-1))+' cases sur 25 lues. Touche les cases « ? » pour les compléter (une rangée est peut-être coupée sur la capture).</p>';
+  else if(!it.manual)html+='<p class="mut small">Compare avec ta capture. Touche une case pour la corriger.</p>';
+  if(it.thumb)html+='<img class="shot" src="'+it.thumb+'" alt="capture" style="max-height:260px;object-fit:contain">';
+  html+='<div class="grid" id="editGrid">'+it.grid.split('').map(function(c,i){return '<div class="cell '+(c==='?'?'Q':c)+'" data-i="'+i+'">'+cellHTML(c)+'</div>'}).join('')+'</div>';
+  html+='<p style="text-align:center;font-weight:700">'+mines(it.grid)+' mine'+(mines(it.grid)>1?'s':'')+' · '+(25-mines(it.grid)-(it.grid.split('?').length-1))+' diamants</p>';
+  html+='<div class="row"><button class="btn" id="shU">⬆️ Décaler</button><button class="btn" id="shD">⬇️ Décaler</button></div>';
+  html+='<button class="btn pri" id="btnSave" '+(q?'disabled':'')+'>✅ Enregistrer</button>';
+  html+='<div class="row"><button class="btn" id="btnSkip">Ignorer</button>'+(QUEUE.length>1?'<button class="btn" id="btnAll">Tout enregistrer ('+QUEUE.filter(function(x){return x.grid.indexOf('?')<0}).length+')</button>':'')+'</div></div>';
+  box.innerHTML=html;
+  box.querySelectorAll('.cell').forEach(function(c){c.onclick=function(){var i=+c.dataset.i,a=it.grid.split('');a[i]=a[i]==='M'?'D':'M';it.grid=a.join('');renderQueue()}});
+  $('#shU').onclick=function(){it.grid=it.grid.slice(5)+'?????';renderQueue()};
+  $('#shD').onclick=function(){it.grid='?????'+it.grid.slice(0,20);renderQueue()};
+  $('#btnSkip').onclick=function(){QUEUE.shift();renderQueue()};
+  $('#btnSave').onclick=async function(){QUEUE.shift();var res=await saveGrid(it);renderQueue();showResult([res])};
+  if($('#btnAll'))$('#btnAll').onclick=async function(){var ok=QUEUE.filter(function(x){return x.grid.indexOf('?')<0}),out=[];
+    QUEUE=QUEUE.filter(function(x){return x.grid.indexOf('?')>=0});for(var i=0;i<ok.length;i++)out.push(await saveGrid(ok[i]));renderQueue();showResult(out)};
+}
+
+async function saveGrid(it){
+  var prev=GRIDS.filter(function(r){return r.grid===it.grid});
+  var rec={id:uid(),grid:it.grid,mines:mines(it.grid),date:it.date||Date.now(),added:Date.now(),thumb:it.thumb||null,imp:it.imp||null};
+  await put('grids',rec);GRIDS.push(rec);
+  return {rec:rec,prev:prev};
+}
+function showResult(list){var html='';
+  var seen=list.filter(function(x){return x.prev.length});
+  if(list.length>1)html+='<div class="card"><h2>'+list.length+' grilles enregistrées</h2><p>'+(seen.length?seen.length+' déjà vue'+(seen.length>1?'s':'')+' auparavant.':'Toutes sont des schémas nouveaux.')+'</p></div>';
+  list.forEach(function(x){if(list.length>1&&!x.prev.length)return;
+    html+='<div class="card">';
+    if(x.prev.length)html+='<div class="alert seen">🔁 Schéma déjà vu '+x.prev.length+' fois</div>'+miniHTML(x.rec.grid).replace('class="mini"','class="mini" style="width:110px;margin:0 auto 10px"')+'<p class="small mut">Nouvelle capture puis les précédentes :</p>'+shotsHTML([x.rec].concat(x.prev),function(r){return (r===x.rec?'Maintenant · ':'')+fmtDate(r.date)});
+    else html+='<div class="alert new">✨ Nouveau schéma</div><p class="mut" style="text-align:center">'+x.rec.mines+' mines · jamais vu dans tes '+(GRIDS.length-1)+' grilles précédentes</p>';
+    html+='</div>'});
+  html+=probLine(GRIDS);
+  $('#resultBox').innerHTML=html;var w=$('#wrap'),el=$('#resultBox');w.scrollTo({top:el.getBoundingClientRect().top-w.getBoundingClientRect().top+w.scrollTop-8,behavior:'smooth'});
+}
+
+/* ---------- Vidéo (enregistrement d'écran) ----------
+   Méthode 1 (iPhone iOS 16.4+, Chrome, Android) : WebCodecs. La vidéo est décodée
+   image par image (aucune image sautée, même si une grille ne reste que 1 image à l'écran).
+   Méthode 2 (secours) : lecture de la vidéo, avec ralentissement automatique si des images
+   sont perdues. Pour chaque image : pré‑contrôle sur une mini‑image (zone de la grille
+   mémorisée), détecteur complet seulement si une grille terminée peut être présente. */
+var vidStop=false;
+$('#vidStop').onclick=function(){vidStop=true};
+function fmtS(s){s=Math.max(0,Math.round(s));return s<60?s+' s':Math.floor(s/60)+' min '+(s%60<10?'0':'')+(s%60)+' s'}
+$('#fileVid').onchange=async function(e){var f=e.target.files[0];e.target.value='';if(!f)return;
+  var v=$('#vid');vidStop=false;$('#vidBox').style.display='block';$('#vidProg').style.width='0';$('#vidEta').textContent='';
+  $('#vidMsg').textContent='Chargement de la vidéo…';
+  var t0=performance.now(),found=null,info=null;
+  function prog(p,n,how){$('#vidProg').style.width=(p*100)+'%';
+    $('#vidMsg').textContent='Analyse ('+how+') : '+Math.round(p*100)+' % · '+n+' grille(s) trouvée(s)';
+    var el=(performance.now()-t0)/1000;if(p>0.03)$('#vidEta').textContent='Temps restant estimé : '+fmtS(el/p-el)}
+  try{
+    if(window.VideoDecoder&&window.VideoFrame&&!window.__noCodecs){
+      try{var r=await codecScan(f,prog);found=r.out;info=r.info}catch(err){console.warn('WebCodecs indisponible pour ce fichier :',err&&err.message);found=null}}
+    if(!found&&!vidStop){t0=performance.now();var r2=await playScan(f,v,prog);found=r2.out;info=r2.info}
+    var el=(performance.now()-t0)/1000;window.__vidInfo=Object.assign({time:el,grids:found.length},info||{});
+    $('#vidProg').style.width='100%';$('#vidEta').textContent=info&&info.note?info.note:'';
+    $('#vidMsg').textContent=found.length+' grille(s) complète(s) trouvée(s) dans la vidéo (analyse : '+fmtS(el)+').';
+    $('#resultBox').innerHTML='';
+    var ok=found.filter(function(x){return x.grid&&x.grid.indexOf('?')<0&&mines(x.grid)>=1&&mines(x.grid)<=24});
+    if(ok.length){var imp={id:'v'+uid(),kind:'video',start:Date.now(),name:f.name||'vidéo',dur:info&&info.duration||0,n:ok.length};
+      for(var i=0;i<ok.length;i++){ok[i].imp=imp.id;ok[i].date=imp.start+i;await saveGrid(ok[i])}
+      await put('sessions',imp);IMPS.push(imp);localStorage.setItem('lastImp',imp.id);SETS_CACHE.clear();renderLastVid();showVidBilan(imp.id)}
+    else $('#vidMsg').textContent='Aucune grille terminée trouvée dans cette vidéo. Vérifie que la fin de chaque partie (diamants et mines visibles) apparaît à l\'écran.';
+  }catch(err){console.warn(err);$('#vidMsg').textContent='Impossible de lire cette vidéo sur ce téléphone. Utilise plutôt des captures d\'écran.'}
+  try{v.pause()}catch(e){}if(v.src){URL.revokeObjectURL(v.src);v.removeAttribute('src');try{v.load()}catch(e){}}v.style.display='none';
+  setTimeout(function(){$('#vidBox').style.display='none'},8000)};
+
+/* Analyse image par image : une seule fonction pour les deux méthodes */
+function makeScanner(w,h){
+  var tc=document.createElement('canvas'),tx=tc.getContext('2d',{willReadFrequently:true});
+  var dc=document.createElement('canvas'),dx=dc.getContext('2d',{willReadFrequently:true});
+  var prev=null,box=null,refCnt=0,lastGrid=null,lastFail=false,lastOkT=-99,lastProbe=-99,out=[],stats={frames:0,full:0,boardFrames:0};
+  function cls(r,g,b){var mx=r>g?(r>b?r:b):(g>b?g:b),mn=r<g?(r<b?r:b):(g<b?g:b);if(mx<26)return 0;var dl=mx-mn;if(dl<0.25*mx)return 0;
+    var hh;if(mx===r)hh=((g-b)/dl+6)%6;else if(mx===g)hh=(b-r)/dl+2;else hh=(r-g)/dl+4;hh*=60;
+    return (hh>=95&&hh<=165)?1:((hh>=290||hh<=22)?2:0)}
+  function reg(){var sx=0,sy=0,sw=w,sh=h,tw=96;if(box){sx=box.x0;sy=box.y0;sw=box.x1-box.x0;sh=box.y1-box.y0;tw=64}
+    return {sx:sx,sy:sy,sw:sw,sh:sh,tw:tw,th:Math.max(8,Math.round(sh*tw/sw))}}
+  function finish(R,cur,g,r){var n=cur.length,diff=0;if(prev&&prev.length===n)for(var i=0;i<n;i++)diff+=Math.abs(cur[i]-prev[i]);
+    var res={g:g,r:r,cnt:g+r,changed:!prev||prev.length!==n||diff/n>1.2};prev=cur;return res}
+  function sample(src){   // mini‑image : toute l'image (96 px) ou seulement la grille (64 px)
+    var R=reg(),tw=R.tw,th=R.th;if(tc.width!==tw||tc.height!==th){tc.width=tw;tc.height=th}
+    tx.drawImage(src,R.sx,R.sy,R.sw,R.sh,0,0,tw,th);var d=tx.getImageData(0,0,tw,th).data,n=tw*th,g=0,r=0,cur=new Uint8Array(n);
+    for(var i=0,p=0;i<n;i++,p+=4){cur[i]=(d[p]*3+d[p+1]*6+d[p+2])/10|0;var c=cls(d[p],d[p+1],d[p+2]);if(c===1)g++;else if(c===2)r++}
+    return finish(R,cur,g,r)}
+  var ybuf=null;
+  async function sampleYUV(fr){  // lecture directe des plans Y/U/V décodés (pas de GPU, pas de canvas)
+    var f=fr.format;if(f!=='I420'&&f!=='NV12'&&f!=='I420A')return null;
+    var R=reg(),x0=Math.max(0,Math.floor(R.sx/2)*2),y0=Math.max(0,Math.floor(R.sy/2)*2),
+      rw=Math.min(fr.codedWidth-x0,Math.ceil(R.sw/2)*2),rh=Math.min(fr.codedHeight-y0,Math.ceil(R.sh/2)*2),rect={x:x0,y:y0,width:rw,height:rh};
+    var sz=fr.allocationSize({rect:rect});if(!ybuf||ybuf.length<sz)ybuf=new Uint8Array(sz);
+    var L=await fr.copyTo(ybuf,{rect:rect}),Y=L[0],U=L[1],V=f==='NV12'?null:L[2],B=ybuf;
+    var tw=R.tw,th=R.th,n=tw*th,cur=new Uint8Array(n),g=0,r=0,k=0,full=video709(fr);
+    for(var j=0;j<th;j++){var yy=Math.min(rh-1,((j+0.5)*rh/th)|0),yc=yy>>1;
+      for(var i=0;i<tw;i++,k++){var xx=Math.min(rw-1,((i+0.5)*rw/tw)|0),xc=xx>>1,Yv=B[Y.offset+yy*Y.stride+xx],Uv,Vv;
+        if(V){Uv=B[U.offset+yc*U.stride+xc];Vv=B[V.offset+yc*V.stride+xc]}else{var q=U.offset+yc*U.stride+xc*2;Uv=B[q];Vv=B[q+1]}
+        var c=(Yv-16)*1.164,u=Uv-128,v=Vv-128,rr,gg,bb;
+        if(full){rr=c+1.793*v;gg=c-0.213*u-0.533*v;bb=c+2.112*u}else{rr=c+1.596*v;gg=c-0.392*u-0.813*v;bb=c+2.017*u}
+        rr=rr<0?0:rr>255?255:rr|0;gg=gg<0?0:gg>255?255:gg|0;bb=bb<0?0:bb>255?255:bb|0;
+        cur[k]=(rr*3+gg*6+bb)/10|0;var cl=cls(rr,gg,bb);if(cl===1)g++;else if(cl===2)r++}}
+    return finish(R,cur,g,r)}
+  function video709(fr){try{var m=fr.colorSpace&&fr.colorSpace.matrix;return m==='bt709'}catch(e){return false}}
+  function detect(src,sx,sy,sw,sh,maxS){var sc=Math.min(1,maxS/Math.max(sw,sh)),W=Math.max(1,Math.round(sw*sc)),H=Math.max(1,Math.round(sh*sc));
+    if(dc.width!==W||dc.height!==H){dc.width=W;dc.height=H}
+    dx.drawImage(src,sx,sy,sw,sh,0,0,W,H);stats.full++;
+    var r=MinesDetector.detectPixels(dx.getImageData(0,0,W,H).data,W,H);
+    if(r.ok){var b=r.box,k=sw/W,p=(b.x1-b.x0)/4*k,q=(b.y1-b.y0)/4*k;
+      r.nbox={x0:Math.max(0,sx+b.x0*k-0.8*p),x1:Math.min(w,sx+b.x1*k+0.8*p),y0:Math.max(0,sy+b.y0*k-0.8*q),y1:Math.min(h,sy+b.y1*k+0.8*q)}}
+    return r}
+  function thumb(src,b){var sw=b.x1-b.x0,sh=b.y1-b.y0,tw2=Math.min(360,Math.round(sw)),th2=Math.round(sh*tw2/sw);
+    var c=document.createElement('canvas');c.width=tw2;c.height=th2;c.getContext('2d').drawImage(src,b.x0,b.y0,sw,sh,0,0,tw2,th2);return c.toDataURL('image/jpeg',0.7)}
+  async function frameA(t,fr){var s=null;try{s=await sampleYUV(fr)}catch(e){s=null}if(!s){yuvOff=true;s=sample(fr)}return frame(t,fr,s,true)}
+  var yuvOff=false;
+  function frame(t,src,s0,isA){stats.frames++;var s=s0||sample(src),r;
+    if(!box){
+      if(s.g<4||s.r<4){lastGrid=null;lastFail=false;return}        // pas de vert ET de rouge : pas une grille terminée
+      if(!s.changed&&lastFail)return;
+      r=detect(src,0,0,w,h,520)}
+    else{
+      if(s.cnt<0.4*refCnt){lastGrid=null;lastFail=false;          // pas une fin de partie : la suivante sera une nouvelle partie
+        if(t-lastOkT>15&&t-lastProbe>3&&s.changed&&s.cnt>0){lastProbe=t;var pr=detect(src,0,0,w,h,520);   // la grille a peut‑être bougé
+          if(pr.ok){box=null;refCnt=0;prev=null;return isA?frameA(t,src):frame(t,src)}}
+        return}
+      if(!s.changed&&(lastGrid||lastFail))return;                   // image identique : déjà traitée
+      r=detect(src,box.x0,box.y0,box.x1-box.x0,box.y1-box.y0,360);
+      if(!r.ok&&s.cnt>=0.8*refCnt)r=detect(src,0,0,w,h,520)}
+    if(r.ok){stats.boardFrames++;lastOkT=t;lastFail=false;var nb=r.nbox;
+      if(!box||Math.abs(nb.x0-box.x0)+Math.abs(nb.y0-box.y0)>0.05*w){box=nb;prev=null;var g0=r.grid;if(g0!==lastGrid&&t>api.noPushUntil){out.push({grid:g0,ok:true,thumb:thumb(src,box),date:Date.now(),fromVideo:true,t:Math.round(t*100)/100});lastGrid=g0}
+        if(isA&&!yuvOff)return sampleYUV(src).then(function(x){refCnt=x?x.cnt:sample(src).cnt}).catch(function(){refCnt=sample(src).cnt});refCnt=sample(src).cnt;return}
+      else refCnt=Math.max(refCnt*0.8,Math.min(s.cnt,refCnt*1.5));
+      if(r.grid!==lastGrid&&t>api.noPushUntil){out.push({grid:r.grid,ok:true,thumb:thumb(src,box),date:Date.now(),fromVideo:true,t:Math.round(t*100)/100});lastGrid=r.grid}}
+    else{lastFail=true;if(!box)lastGrid=null}}
+  var api={noPushUntil:-1,frame:frame,frameA:function(t,fr){return yuvOff?frame(t,fr):frameA(t,fr)},out:out,stats:stats};return api}
+
+/* --- Méthode 1 : WebCodecs + mp4box.js (démultiplexage MP4/MOV local) --- */
+function loadScript(src){return new Promise(function(res,rej){if(window.MP4Box)return res();var s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s)})}
+async function codecScan(file,prog){
+  await loadScript('mp4box.min.js');try{Log.debug=Log.info=Log.warn=Log.error=function(){}}catch(e){}
+  var chain=Promise.resolve(),inFlight=0,mp4=MP4Box.createFile(),track=null,dec=null,S=null,dur=0,pending=[],err=null,nOut=0,nIn=0,total=0,readyRes;
+  var ready=new Promise(function(r){readyRes=r});
+  mp4.onError=function(e){err=new Error('mp4 '+e);readyRes()};
+  mp4.onReady=function(info){track=info.videoTracks[0];readyRes();if(!track)return;
+    total=track.nb_samples;dur=(track.movie_duration&&info.timescale?track.movie_duration/info.timescale:0)||track.duration/track.timescale;
+    mp4.setExtractionOptions(track.id,null,{nbSamples:120});mp4.start()};
+  mp4.onSamples=function(id,u,samples){for(var i=0;i<samples.length;i++)pending.push(samples[i])};
+  var CH=4*1024*1024,off=0,configured=false;
+  async function setup(){
+    var tr=mp4.getTrackById(track.id),en=tr.mdia.minf.stbl.stsd.entries[0],bx=en.avcC||en.hvcC||en.vpcC||en.av1C,desc;
+    if(bx){var ds=new DataStream(undefined,0,DataStream.BIG_ENDIAN);bx.write(ds);desc=new Uint8Array(ds.buffer,8)}
+    var cfg={codec:track.codec.indexOf('vp08')===0?'vp8':track.codec,codedWidth:track.video.width,codedHeight:track.video.height,description:desc,optimizeForLatency:false};
+    var sup=await VideoDecoder.isConfigSupported(cfg);if(!sup.supported)throw new Error('codec non pris en charge : '+track.codec);
+    var w=track.video.width,h=track.video.height;
+    // orientation (iPhone : vidéo parfois enregistrée tournée)
+    S=null;
+    dec=new VideoDecoder({output:function(fr){nOut++;inFlight++;
+        chain=chain.then(function(){if(!S)S=makeScanner(fr.displayWidth,fr.displayHeight);
+          if(!vidStop&&!window.__skipScan)return S.frameA(fr.timestamp/1e6,fr)}).catch(function(e){console.warn(e)}).then(function(){fr.close();inFlight--})},error:function(e){err=e}});
+    dec.configure(cfg);configured=true}
+  async function pump(){
+    while(pending.length&&!err&&!vidStop){
+      if(dec.decodeQueueSize>8||inFlight>6){if(inFlight>6){await chain;continue}await new Promise(function(r){var done=false;function f(){if(!done){done=true;r()}}dec.addEventListener('dequeue',f,{once:true});setTimeout(f,50)});continue}
+      var s=pending.shift();
+      dec.decode(new EncodedVideoChunk({type:s.is_sync?'key':'delta',timestamp:1e6*s.cts/s.timescale,duration:1e6*s.duration/s.timescale,data:s.data}));
+      nIn++;if(nIn%60===0){mp4.releaseUsedSamples(track.id,s.number);prog(Math.min(0.99,nIn/Math.max(1,total)),S?S.out.length:0,'image par image');await new Promise(function(r){setTimeout(r,0)})}}}
+  while(off<file.size&&!err&&!vidStop){
+    var buf=await file.slice(off,off+CH).arrayBuffer();buf.fileStart=off;off+=buf.byteLength;mp4.appendBuffer(buf);
+    if(off>=file.size)mp4.flush();
+    if(track&&!configured)await setup();
+    if(configured)await pump();
+    if(!track&&off>=file.size)await Promise.race([ready,new Promise(function(r){setTimeout(r,200)})]);}
+  if(!track)throw err||new Error('pas de piste vidéo');
+  if(!configured)await setup();await pump();
+  if(err)throw err;
+  if(!vidStop)await dec.flush();await chain;try{dec.close()}catch(e){}
+  if(!S||!nOut)throw new Error('aucune image décodée');
+  return {out:S.out,info:{method:'WebCodecs (toutes les images)',decoded:nOut,samples:total,catchRate:nOut/Math.max(1,total),full:S.stats.full,boardFrames:S.stats.boardFrames,duration:dur}}}
+
+/* --- Méthode 2 : lecture de la vidéo, ralentie automatiquement si des images sont perdues --- */
+async function playScan(file,v,prog){
+  v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('muted','');v.style.display='block';
+  v.src=URL.createObjectURL(file);
+  await new Promise(function(res,rej){if(v.readyState>=2)return res();v.onloadeddata=res;v.onerror=function(){rej(new Error('format'))};setTimeout(res,5000)});
+  var dur=v.duration;if(!isFinite(dur)||dur<=0)throw new Error('dur');
+  var S=makeScanner(v.videoWidth,v.videoHeight),rvfc='requestVideoFrameCallback' in v;
+  return new Promise(function(resolve,reject){
+    var rate=2,minD=1,seen=0,lost=0,wSeen=0,wLost=0,lastT=-1,lastMove=performance.now(),done=false,started=false;
+    function setRate(r){rate=r;try{v.playbackRate=r;v.defaultPlaybackRate=r}catch(e){}}
+    function finish(){if(done)return;done=true;clearInterval(wd);try{v.pause()}catch(e){}
+      resolve({out:S.out,info:{method:'lecture vidéo'+(rvfc?' (requestVideoFrameCallback)':''),rate:rate,catchRate:seen/Math.max(1,seen+lost),full:S.stats.full,duration:dur,
+        note:lost>0.02*(seen+lost)?'Attention : ce téléphone a sauté environ '+Math.round(100*lost/(seen+lost))+' % des images ; une grille très brève a pu être manquée.':''}})}
+    function handle(t){if(done)return;if(t>lastT){var dt=t-lastT;if(lastT>=0&&dt>0){if(dt<minD)minD=dt;var k=Math.round(dt/minD)-1;if(k>0&&k<50){lost+=k;wLost+=k}}
+        seen++;wSeen++;lastT=t;lastMove=performance.now();S.frame(t,v);prog(Math.min(1,t/dur),S.out.length,'lecture ×'+rate)}
+      if(vidStop||v.ended||t>=dur-0.02)finish()}
+    function onVF(now,md){handle(md&&md.mediaTime!=null?md.mediaTime:v.currentTime);if(!done)v.requestVideoFrameCallback(onVF)}
+    function onRAF(){handle(v.currentTime);if(!done)requestAnimationFrame(onRAF)}
+    v.onended=function(){finish()};
+    var wd=setInterval(function(){if(done)return;if(vidStop)return finish();
+      if(wSeen>20){if(wLost/(wSeen+wLost)>0.03&&rate>0.5){var back=Math.max(0,v.currentTime-2*rate);setRate(rate>1?rate/2:0.5);S.noPushUntil=Math.max(S.noPushUntil,lastT);lastT=back-1e-3;try{v.currentTime=back}catch(e){}} // images perdues : on ralentit et on revient un peu en arrière
+        wSeen=0;wLost=0}
+      var still=performance.now()-lastMove;
+      if(still>3000&&v.paused)v.play().catch(function(){});
+      if(still>15000){finish()}},1000);
+    setRate(2);
+    var pr=v.play();(pr&&pr.then?pr:Promise.resolve()).then(function(){started=true;setRate(rate);if(rvfc)v.requestVideoFrameCallback(onVF);else requestAnimationFrame(onRAF)})
+      .catch(function(e){if(!done){done=true;clearInterval(wd);reject(e)}});
+  })}
+
+function byId(id){return GRIDS.find(function(r){return r.id===id})}
+function heatHTML(heat,n){var mx=Math.max.apply(0,heat)||1;
+  return '<div class="heat">'+heat.map(function(c){var a=c/mx;return '<div style="background:rgba(224,49,95,'+(0.12+0.8*a).toFixed(2)+')">'+(n?Math.round(100*c/n)+'%':'')+'</div>'}).join('')+'</div>'}
+
+/* ---------- Vidéos importées (bilan par vidéo) ---------- */
+function vidImps(){return IMPS.filter(function(r){return r.kind==='video'}).sort(function(a,b){return b.start-a.start})}
+function lastImp(){var l=vidImps();if(!l.length)return null;var id=localStorage.getItem('lastImp');return l.find(function(r){return r.id===id})||l[0]}
+function impGrids(id){return GRIDS.filter(function(r){return r.imp===id})}
+function impLabel(r){return fmtDate(r.start)+' · '+esc(r.name||'vidéo')}
+function renderLastVid(){var r=lastImp(),b=$('#lastVid');if(!b)return;if(!r){b.innerHTML='';return}var n=impGrids(r.id).length;
+  b.innerHTML='<button class="btn" id="openLastVid">📋 Bilan de la dernière vidéo ('+n+' grille'+(n>1?'s':'')+')</button>';$('#openLastVid').onclick=function(){showVidBilan(r.id)}}
+function closeOv(){$('#overlay').classList.remove('on')}
+function vbRow(m,k,s,N,list){var x=s?s.idx.length:0,mu=Math.round(multi(m,k)*100)/100,E=N*winP(m,k);
+  return '<div class="srow vbr" data-m="'+m+'" data-k="'+k+'" data-mask="'+(s?s.mask:0)+'"><div class="item" style="'+gtColor(x,E)+'">'+(x?selMini(s.mask):'<div class="mini" style="opacity:.25">'+'<i class="O"></i>'.repeat(25)+'</div>')+
+    '<div class="grow"><b style="font-size:19px;color:var(--green)">×'+fxm(mu)+'</b> <span class="small mut">('+k+' case'+(k>1?'s':'')+')</span><br><b>gagnant '+x+' fois sur '+N+' grille'+(N>1?'s':'')+'</b><br><span class="small">attendu par hasard : '+(E>0&&E<0.05?'moins de 0,1 (≈ 1 chance sur '+nf(Math.round(1/winP(m,k)))+' par grille)':E.toLocaleString('fr-FR',{maximumFractionDigits:1}))+'</span></div>'+(x?'<span>›</span>':'')+'</div><div class="sdet"></div></div>'}
+function showVidBilan(id){var imp=IMPS.find(function(r){return r.id===id});if(!imp)return;var all=impGrids(id),N=all.length,by={};
+  all.forEach(function(r){(by[r.mines]=by[r.mines]||[]).push(r)});var ms=Object.keys(by).map(Number).sort(function(a,b){return by[b].length-by[a].length||a-b});
+  var h='<h2 style="font-size:22px">🎬 Bilan de la vidéo</h2><p class="small mut">'+impLabel(imp)+'</p>';
+  h+='<div class="card"><div class="alert new" style="font-size:20px">J\'ai vu '+N+' grille'+(N>1?'s':'')+'</div>'+ms.map(function(m){return '<span class="tag">'+m+' mine'+(m>1?'s':'')+' : '+by[m].length+'</span>'}).join('')+'</div>';
+  if(N){h+='<div class="honest small">⚠️ Pour chaque multiplicateur, le schéma montré est <b>choisi après coup</b> parmi des milliers de combinaisons possibles (le groupe de cases le plus souvent sans mine dans cette vidéo) : compare toujours avec « attendu par hasard ». Cela ne prédit pas la prochaine partie.</div>';
+    ms.forEach(function(m){var list=by[m],n=list.length,lv=searchSets(list,m),vis='',hid='',nh=0;
+      for(var k=1;k<=25-m;k++){var s0=lv[k]&&lv[k][0],row=vbRow(m,k,s0,n,list);if(s0&&s0.idx.length)vis+=row;else{hid+=row;nh++}}
+      h+='<div class="card"><h3>'+m+' mine'+(m>1?'s':'')+' · '+n+' grille'+(n>1?'s':'')+'</h3><p class="small mut">Du plus petit au plus grand multiplicateur. Touche une ligne pour voir les captures.</p><div class="list">'+vis+'</div>'+
+        (nh?'<button class="btn vbmore">Voir plus ('+nh+' multiplicateur'+(nh>1?'s':'')+' jamais atteint'+(nh>1?'s':'')+')</button><div class="list vbhid" style="display:none">'+hid+'</div>':'')+'</div>'});
+    h+='<button class="btn" id="vbTest">🔬 Test de fiabilité</button><div id="vbTestBox"></div>'}
+  h+='<button class="btn" id="vbEdit">✏️ Revoir / corriger les grilles</button><button class="btn red" id="vbDel">🗑️ Supprimer cette vidéo et ses grilles</button><button class="btn pri" id="closeOv">Fermer</button>';
+  var ov=$('#overlayInner');ov.innerHTML=h;$('#overlay').classList.add('on');$('#overlay').scrollTop=0;$('#closeOv').onclick=closeOv;
+  ov.querySelectorAll('.vbmore').forEach(function(b){b.onclick=function(){var d=b.nextElementSibling;d.style.display=d.style.display==='none'?'':'none'}});
+  ov.querySelectorAll('.vbr .item').forEach(function(it){it.onclick=function(){var row=it.parentNode,det=row.querySelector('.sdet'),mk=+row.dataset.mask;if(det.innerHTML){det.innerHTML='';return}if(!mk)return;
+    var hit=(by[+row.dataset.m]||[]).filter(function(r){return (diaMask(r.grid)&mk)===mk});
+    det.innerHTML='<p class="small mut" style="margin:6px 0">Grilles où ces '+row.dataset.k+' cases étaient toutes des diamants ('+hit.length+') :</p>'+shotsHTML(hit.slice(0,40))+(hit.length>40?'<p class="small mut">… et '+(hit.length-40)+' autres.</p>':'')}});
+  if($('#vbTest'))$('#vbTest').onclick=function(){$('#vbTestBox').innerHTML=testHTML(by)};
+  $('#vbEdit').onclick=function(){reviewImp(id)};
+  $('#vbDel').onclick=async function(){if(!confirm('Supprimer cette vidéo et ses '+N+' grilles ?'))return;for(var i=0;i<all.length;i++)await del('grids',all[i].id);await del('sessions',id);
+    GRIDS=GRIDS.filter(function(r){return r.imp!==id});IMPS=IMPS.filter(function(r){return r.id!==id});SETS_CACHE.clear();closeOv();renderLastVid();toast('Vidéo supprimée')}}
+function reviewImp(id){var l=impGrids(id).sort(function(a,b){return a.date-b.date});
+  var h='<h2>Grilles de la vidéo ('+l.length+')</h2><p class="small mut">Touche une grille pour la corriger ou la supprimer.</p><div class="list">'+l.map(function(r,i){return '<div class="item" data-id="'+r.id+'">'+(r.thumb?'<img src="'+r.thumb+'" loading="lazy" alt="">':'')+miniHTML(r.grid)+'<div class="grow"><b>#'+(i+1)+' · '+r.mines+' mines</b></div><span>›</span></div>'}).join('')+'</div><button class="btn pri" id="rvBack">← Retour au bilan</button>';
+  $('#overlayInner').innerHTML=h;$('#overlay').scrollTop=0;$('#rvBack').onclick=function(){showVidBilan(id)};
+  $('#overlayInner').querySelectorAll('.item[data-id]').forEach(function(e){e.onclick=function(){editRec(byId(e.dataset.id),function(){reviewImp(id)})}})}
+function editRec(r,back){var g=r.grid;function draw(){var mn=mines(g);
+    $('#overlayInner').innerHTML='<h2>Corriger la grille</h2>'+(r.thumb?'<img class="shot" src="'+r.thumb+'" alt="capture" style="max-height:240px;object-fit:contain">':'')+'<div class="grid" id="editGrid">'+g.split('').map(function(c,i){return '<div class="cell '+c+'" data-i="'+i+'">'+cellHTML(c)+'</div>'}).join('')+'</div><p style="text-align:center;font-weight:700">'+mn+' mine'+(mn>1?'s':'')+'</p>'+
+      '<button class="btn pri" id="edSave"'+(mn<1||mn>24?' disabled':'')+'>✅ Enregistrer</button><button class="btn red" id="edDel">🗑️ Supprimer cette grille</button><button class="btn" id="edBack">Annuler</button>';
+    $('#overlay').scrollTop=0;
+    $('#editGrid').querySelectorAll('.cell').forEach(function(c){c.onclick=function(){var a=g.split(''),i=+c.dataset.i;a[i]=a[i]==='M'?'D':'M';g=a.join('');draw()}});
+    $('#edBack').onclick=back;
+    $('#edSave').onclick=async function(){r.grid=g;r.mines=mines(g);await put('grids',r);SETS_CACHE.clear();toast('Grille corrigée');back()};
+    $('#edDel').onclick=async function(){await del('grids',r.id);GRIDS=GRIDS.filter(function(x){return x.id!==r.id});SETS_CACHE.clear();back()}}
+  draw()}
+
+/* ---------- Multiplicateurs bas ---------- */
+function multi(m,k){return 0.99*binom(25,k)/binom(25-m,k)}
+function winP(m,k){return binom(25-m,k)/binom(25,k)}
+function fx(x){return x.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})}
+var LOW=(function(){try{var o=JSON.parse(localStorage.getItem('lowCfg'));if(o&&o.m>=1&&o.m<=24&&o.k>=1&&o.k<=25-o.m)return o}catch(e){}return {m:5,k:7,sess:false}})();if(LOW.gt==='sess')LOW.gt='vid';
+function saveLow(){localStorage.setItem('lowCfg',JSON.stringify(LOW))}
+(function(){var s='';for(var m=1;m<=24;m++)s+='<option value="'+m+'">'+m+' mine'+(m>1?'s':'')+'</option>';$('#lowM').innerHTML=s})();
+function fillK(){var s='';for(var k=1;k<=25-LOW.m;k++)s+='<option value="'+k+'">'+k+' case'+(k>1?'s':'')+' · '+fx(Math.round(multi(LOW.m,k)*100)/100)+'×</option>';$('#lowK').innerHTML=s;$('#lowK').value=LOW.k}
+$('#lowM').onchange=function(){LOW.m=+this.value;LOW.user=1;if(LOW.k>25-LOW.m)LOW.k=25-LOW.m;saveLow();renderLow()};
+$('#lowK').onchange=function(){LOW.k=+this.value;saveLow();renderLow()};
+$('#lowSess').onchange=function(){LOW.sess=this.checked;saveLow();renderLow()};
+$('#revK').onchange=function(){LOW.ak=this.value;saveLow();renderRev()};
+$('#revBet').oninput=function(){LOW.bet=this.value;saveLow();clearTimeout(window.__bt);window.__bt=setTimeout(renderRev,300)};
+$('#revTest').onclick=runTest;
+function presetsHTML(){var T=[2,3,6,8,10],M=[3,5,6,8],h='<table class="ptab"><tr><th></th>'+T.map(function(t){return '<th>≈'+t+'×</th>'}).join('')+'</tr>';
+  M.forEach(function(m){h+='<tr><th>'+m+' mines</th>';T.forEach(function(t){var best=1,bd=1e9;for(var k=1;k<=25-m;k++){var d=Math.abs(Math.log(multi(m,k)/t));if(d<bd){bd=d;best=k}}
+    var on=LOW.m===m&&LOW.k===best;h+='<td><button class="chip'+(on?' on':'')+'" data-m="'+m+'" data-k="'+best+'">'+best+' case'+(best>1?'s':'')+'<br><b>'+fx(Math.round(multi(m,best)*100)/100)+'×</b></button></td>'});h+='</tr>'});
+  return h+'</table>'}
+function renderLow(){var by={};GRIDS.forEach(function(r){by[r.mines]=(by[r.mines]||0)+1});
+  if(!LOW.user&&GRIDS.length){var dm=+Object.keys(by).sort(function(a,b){return by[b]-by[a]})[0];if(dm>=1&&dm<=24&&dm!==LOW.m){LOW.m=dm;if(LOW.k>25-dm)LOW.k=25-dm}}
+  var o='';for(var mm=1;mm<=24;mm++)o+='<option value="'+mm+'">'+mm+' mine'+(mm>1?'s':'')+(by[mm]?' ('+by[mm]+' grilles)':'')+'</option>';$('#lowM').innerHTML=o;
+  var m=LOW.m,k=LOW.k;$('#lowM').value=m;fillK();$('#revBet').value=LOW.bet||'';$('#revTestBox').innerHTML='';
+  var mu=Math.round(multi(m,k)*100)/100,p=winP(m,k);
+  $('#lowCalc').innerHTML='<div class="stat"><span>Multiplicateur Stake</span><b style="color:var(--green);font-size:22px">'+fx(mu)+'×</b></div>'+
+    '<div class="stat"><span>Chance réelle de gagner une manche</span><b>'+pct(p)+'</b></div>'+
+    '<p class="small mut">Soit environ 1 manche gagnée sur '+(1/p).toLocaleString('fr-FR',{maximumFractionDigits:1})+'. Formule : 0,99 × C(25,'+k+') / C('+(25-m)+','+k+'). Le 0,99 est l\'avantage de la maison : sur la durée, chaque mise ne rend en moyenne que 99 %, quel que soit le réglage.</p>';
+  $('#lowPresets').innerHTML=presetsHTML();
+  $('#lowPresets').querySelectorAll('.chip').forEach(function(b){b.onclick=function(){LOW.m=+b.dataset.m;LOW.k=+b.dataset.k;LOW.user=1;saveLow();renderLow()}});
+  var act=lastImp();$('#lowSess').checked=!!(LOW.sess&&act);$('#lowSess').disabled=!act;$('#lowSessLbl').textContent=act?'Seulement la dernière vidéo':'Seulement la dernière vidéo (aucune vidéo)';
+  var list=lowList(),n=list.length,C=binom(25,m);
+  var h='<div class="stat"><span>Grilles à '+m+' mine'+(m>1?'s':'')+(LOW.sess&&act?' (dernière vidéo)':'')+'</span><b>'+n+'</b></div>';
+  if(!n)h+='<p class="mut">Aucune grille à '+m+' mine'+(m>1?'s':'')+' pour l\'instant. Importe des captures ou une vidéo dans l\'onglet Vidéo.</p>';
+  else{var gr={};list.forEach(function(r){(gr[r.grid]=gr[r.grid]||[]).push(r)});
+    var rep=Object.keys(gr).filter(function(g){return gr[g].length>=2}).sort(function(a,b){return gr[b].length-gr[a].length});
+    if(rep.length){var top=gr[rep[0]].length;
+      h+='<div class="alert seen">🔁 Schéma sorti '+top+' fois</div>';
+      rep.filter(function(g){return gr[g].length===top}).slice(0,3).forEach(function(g){h+='<div class="item">'+miniHTML(g)+'<div class="grow"><b>'+gr[g].length+' fois</b><br><span class="small mut">'+m+' mines</span></div></div>'+shotsHTML(gr[g])});
+      if(rep.length>1)h+='<p class="small mut">'+rep.length+' schéma(s) différent(s) sont sortis au moins 2 fois.</p>'}
+    else h+='<div class="alert new" style="font-size:18px">Aucun schéma n\'est sorti deux fois sur '+n+' partie'+(n>1?'s':'')+'</div>';
+    var heat=new Array(25).fill(0);list.forEach(function(r){for(var i=0;i<25;i++)if(r.grid[i]==='M')heat[i]++});
+    h+='<h3>Fréquence des mines par case</h3>'+heatHTML(heat,n)+'<p class="small mut">% des grilles où la case était une mine. Par pur hasard on attend environ <b>'+Math.round(100*m/25)+' %</b> par case ; les écarts sur peu de parties sont normaux et ne prédisent rien.</p>'}
+  var e=n*(n-1)/(2*C),pr=1-Math.exp(-e);
+  h+='<div class="honest">Avec '+m+' mine'+(m>1?'s':'')+' il existe <b>'+nf(C)+'</b> schémas possibles.'+(n>=2?' Sur '+n+' parties, la probabilité qu\'au moins un schéma sorte deux fois par pur hasard est de <b>'+pct(pr)+'</b> (répétitions attendues : '+e.toLocaleString('fr-FR',{maximumSignificantDigits:2})+').':'')+'<br>Chaque partie est tirée au hasard : un schéma déjà vu n\'a pas plus de chances de ressortir.</div>';
+  $('#lowMine').innerHTML=h;renderRev();renderGT()}
+
+/* --- Analyse inverse : k cases le plus souvent sans mine --- */
+function popc(x){x=x-((x>>>1)&0x55555555);x=(x&0x33333333)+((x>>>2)&0x33333333);return (((x+(x>>>4))&0x0F0F0F0F)*0x01010101)>>>24}
+function diaMask(g){var b=0;for(var i=0;i<25;i++)if(g[i]==='D')b|=1<<i;return b}
+var BEAM=200,SETS_CACHE=new Map();
+/* niveaux[k] = liste triée {mask,idx:[indices des grilles où les k cases étaient des diamants]} */
+function searchSets(list,m){var key=m+'|'+list.map(function(r){return r.id}).join(',');if(SETS_CACHE.has(key)){var cv=SETS_CACHE.get(key);SETS_CACHE.delete(key);SETS_CACHE.set(key,cv);return cv}
+  var N=list.length,D=list.map(function(r){return diaMask(r.grid)}),lv=[null],all=[];for(var i=0;i<N;i++)all.push(i);
+  function cmp(a,b){return b.idx.length-a.idx.length||a.mask-b.mask}
+  var prev=[{mask:0,idx:all}];
+  for(var k=1;k<=25-m;k++){var seen=new Map(),cand=[];
+    for(var a=0;a<prev.length;a++){var P=prev[a];var hi=k<=3?(P.mask?31-Math.clz32(P.mask):-1):-1; /* k<=3 : énumération exacte sans doublons */
+      for(var c=(k<=3?hi+1:0);c<25;c++){var bit=1<<c;if(P.mask&bit)continue;var mk=P.mask|bit;if(seen.has(mk))continue;seen.set(mk,1);
+        var idx=[];for(var j=0;j<P.idx.length;j++)if(D[P.idx[j]]&bit)idx.push(P.idx[j]);cand.push({mask:mk,idx:idx})}}
+    cand.sort(cmp);
+    var keep=k<=2?cand.length:BEAM;var nxt=cand.slice(0,keep);lv.push(nxt);prev=nxt.filter(function(s){return s.idx.length>0});if(!prev.length){for(var z=k+1;z<=25-m;z++)lv.push([]);break}}
+  SETS_CACHE.set(key,lv);while(SETS_CACHE.size>12)SETS_CACHE.delete(SETS_CACHE.keys().next().value);return lv}
+function selMini(mask,big){var s='';for(var i=0;i<25;i++)s+='<i class="'+((mask>>>i)&1?'S':'O')+'"></i>';return '<div class="mini sel"'+(big?' style="width:96px"':'')+'>'+s+'</div>'}
+function eur(x){return x.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function lowList(){var act=lastImp();return GRIDS.filter(function(r){return r.mines===LOW.m&&(!(LOW.sess&&act)||r.imp===act.id)})}
+function setRow(s,k,m,N,list){var c=s.idx.length,p=winP(m,k),mu=Math.round(multi(m,k)*100)/100,E=N*p,bet=parseFloat(String(LOW.bet||'').replace(',','.'));
+  return '<div class="srow" data-mask="'+s.mask+'" data-k="'+k+'"><div class="item">'+selMini(s.mask)+'<div class="grow"><b>'+k+' case'+(k>1?'s':'')+' : sortie'+(k>1?'s':'')+' sans mine '+c+' fois sur '+N+'</b> <span class="mut small">('+pct(c/N)+')</span><br>'+
+    '<span class="small">Attendu par hasard : <b>'+E.toLocaleString('fr-FR',{maximumFractionDigits:1})+' fois</b> ('+pct(p)+')</span><br>'+
+    '<span class="small">Multiplicateur : <b style="color:var(--green)">'+fx(mu)+'×</b>'+(bet>0?' · gain théorique pour une mise de '+eur(bet)+' : <b>'+eur(bet*mu)+'</b>':'')+'</span><br><span class="small mut">Choisi parmi '+nf(binom(25,k))+' combinaisons : chiffre gonflé par la sélection, ne prédit rien.</span></div><span>›</span></div><div class="sdet"></div></div>'}
+function renderRev(){var m=LOW.m,list=lowList(),N=list.length,box=$('#revBox');
+  var ks='<option value="all">Toutes les tailles (meilleur par taille)</option>';for(var k=1;k<=25-m;k++)ks+='<option value="'+k+'">'+k+' case'+(k>1?'s':'')+' · '+fx(Math.round(multi(m,k)*100)/100)+'×</option>';
+  $('#revK').innerHTML=ks;if(LOW.ak!=='all'&&(+LOW.ak<1||+LOW.ak>25-m))LOW.ak='all';$('#revK').value=String(LOW.ak||'all');
+  if(N<2){box.innerHTML='<p class="mut">Il faut au moins 2 grilles à '+m+' mine'+(m>1?'s':'')+' (tu en as '+N+'). Importe des captures ou une vidéo dans l\'onglet Vidéo.</p>';$('#revTest').style.display='none';$('#revTestBox').innerHTML='';return}
+  $('#revTest').style.display='block';
+  var lv=searchSets(list,m),h='<div class="honest small">⚠️ Le haut de cette liste est <b>toujours gonflé</b> : l\'appli choisit les meilleures parmi des milliers de combinaisons possibles (par ex. '+nf(binom(25,Math.min(7,25-m)))+' façons de choisir '+Math.min(7,25-m)+' cases). Même avec des grilles 100 % aléatoires, certaines cases ressortent « souvent » sans mine. Compare toujours avec la ligne « attendu par hasard » et lance le test de fiabilité. Cela ne dit rien sur la prochaine partie.</div>';
+  var rows=[];
+  if((LOW.ak||'all')==='all'){for(var k=1;k<=25-m;k++){var s=lv[k]&&lv[k][0];if(s&&s.idx.length)rows.push(setRow(s,k,m,N,list))}}
+  else{var k=+LOW.ak;(lv[k]||[]).filter(function(s){return s.idx.length}).slice(0,10).forEach(function(s){rows.push(setRow(s,k,m,N,list))})}
+  h+=rows.length?'<div class="list" style="margin-top:10px">'+rows.join('')+'</div>':'<p class="mut">Aucun ensemble de cette taille n\'a jamais été entièrement sans mine.</p>';
+  h+='<p class="small mut">Recherche exacte jusqu\'à 3 cases, puis recherche par faisceau ('+BEAM+' meilleurs ensembles gardés à chaque taille) au-delà.</p>';
+  box.innerHTML=h;
+  box.querySelectorAll('.srow .item').forEach(function(it){it.onclick=function(){var row=it.parentNode,det=row.querySelector('.sdet');if(det.innerHTML){det.innerHTML='';return}
+    var mk=+row.dataset.mask,hit=list.filter(function(r){return (diaMask(r.grid)&mk)===mk}).sort(function(a,b){return b.date-a.date});
+    det.innerHTML='<p class="small mut" style="margin:6px 0">Grilles où ces cases étaient toutes des diamants ('+hit.length+') :</p>'+shotsHTML(hit.slice(0,30))+(hit.length>30?'<p class="small mut">… et '+(hit.length-30)+' autres.</p>':'')}})}
+function runTest(){var m=LOW.m,list=lowList().slice().sort(function(a,b){return (a.date||a.added)-(b.date||b.added)}),N=list.length,box=$('#revTestBox');
+  if(N<10){box.innerHTML='<p class="mut">Il faut au moins 10 grilles à '+m+' mines pour ce test (tu en as '+N+').</p>';return}
+  var h1=list.slice(0,N>>1),h2=list.slice(N>>1),n1=h1.length,n2=h2.length,lv=searchSets(h1,m),D2=h2.map(function(r){return diaMask(r.grid)});
+  var t='<table class="ttab"><tr><th>Cases</th><th>1<sup>re</sup> moitié<br>(choisies ici)</th><th>2<sup>e</sup> moitié<br>(vérif.)</th><th>Attendu<br>par hasard</th></tr>',sy=0,se=0,sx=0;
+  for(var k=1;k<=25-m;k++){var s=lv[k]&&lv[k][0];if(!s||!s.idx.length)continue;var y=D2.filter(function(d){return (d&s.mask)===s.mask}).length,e=n2*winP(m,k);sy+=y;se+=e;sx+=s.idx.length/n1*n2;
+    t+='<tr><td>'+k+'</td><td>'+s.idx.length+' / '+n1+'</td><td><b>'+y+' / '+n2+'</b></td><td>'+e.toLocaleString('fr-FR',{maximumFractionDigits:1})+'</td></tr>'}
+  t+='</table>';
+  var verdict=sy<=se*1.25+2*Math.sqrt(se)?'Sur la 2<sup>e</sup> moitié, les « meilleures » cases font à peu près comme le hasard : leur avance sur la 1<sup>re</sup> moitié venait de la sélection, pas d\'un vrai schéma.':'Sur la 2<sup>e</sup> moitié, ces cases font mieux que le hasard sur cet échantillon. Avec peu de grilles, cela arrive aussi par chance ; refais le test quand tu auras plus de grilles.';
+  box.innerHTML='<h3>Test de fiabilité</h3><p class="small mut">Les grilles sont coupées en deux par date ('+n1+' anciennes / '+n2+' récentes). Les meilleures cases sont cherchées uniquement sur la 1<sup>re</sup> moitié, puis on regarde combien de fois elles étaient sans mine sur la 2<sup>e</sup> moitié, qu\'elles n\'ont pas « vue ».</p>'+t+
+   '<div class="stat"><span>Total 2<sup>e</sup> moitié (toutes tailles)</span><b>'+sy+'</b></div><div class="stat"><span>Si l\'avance de la 1<sup>re</sup> moitié se maintenait</span><b>'+sx.toLocaleString('fr-FR',{maximumFractionDigits:1})+'</b></div><div class="stat"><span>Attendu par pur hasard</span><b>'+se.toLocaleString('fr-FR',{maximumFractionDigits:1})+'</b></div><div class="honest small" style="margin-top:8px">'+verdict+' Chaque partie est tirée au hasard.</div>'}
+
+/* --- Tableau de mes grilles (style tableau des gains Stake) --- */
+var GT_RUN=0;
+function gtScope(){var act=lastImp();return (LOW.gt!=='all'&&act)?'vid':'all'}
+function gtLists(){var act=lastImp(),sc=gtScope(),by={};GRIDS.forEach(function(r){if(sc==='vid'&&r.imp!==act.id)return;if(r.mines>=1&&r.mines<=24)(by[r.mines]=by[r.mines]||[]).push(r)});return by}
+function gtCol(lv,m,N){var c=[];for(var k=1;k<=25-m;k++){var s=lv[k]&&lv[k][0];c[k]={mask:s?s.mask:0,x:s?s.idx.length:0,e:N*winP(m,k)}}return c}
+function gtColor(x,e){var r=Math.log((x+0.5)/(e+0.5))/Math.LN2;if(Math.abs(r)<0.25)return 'background:#24343f';
+  var a=Math.min(1,(Math.abs(r)-0.25)/2);return r>0?'background:rgba(255,176,32,'+(0.18+0.5*a).toFixed(2)+')':'background:rgba(95,168,211,'+(0.15+0.45*a).toFixed(2)+')'}
+function fxm(x){return x.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function renderGT(){var act=lastImp(),sc=gtScope(),by=gtLists(),ms=Object.keys(by).map(Number).sort(function(a,b){return a-b}),box=$('#gtBox'),run=++GT_RUN;
+  $('#gtScope').querySelectorAll('.seg').forEach(function(b){b.classList.toggle('on',b.dataset.v===sc);if(b.dataset.v==='vid'){b.disabled=!act;b.textContent=act?'Cette vidéo ('+fmtDate(act.start)+')':'Cette vidéo (aucune)'}});
+  $('#gtTestBox').innerHTML='';$('#gtTest').style.display=ms.length?'block':'none';
+  if(!ms.length){box.innerHTML='<p class="mut">'+(sc==='vid'?'Aucune grille dans cette vidéo.':'Aucune grille enregistrée pour l\'instant. Importe des captures ou une vidéo dans l\'onglet Vidéo.')+'</p>';return}
+  var K=25-ms[0],h='<div class="gtwrap"><table class="gtab"><tr><th class="kc">Cases</th>'+ms.map(function(m){return '<th>'+m+' mine'+(m>1?'s':'')+'<br><span style="font-weight:400">N = '+by[m].length+'</span></th>'}).join('')+'</tr>';
+  for(var k=1;k<=K;k++){h+='<tr><td class="kc"><b>'+k+'</b></td>';ms.forEach(function(m){if(k>25-m){h+='<td class="na"></td>';return}
+    h+='<td class="gc" id="gc-'+m+'-'+k+'" data-m="'+m+'" data-k="'+k+'"><b>'+fxm(Math.round(multi(m,k)*100)/100)+'×</b><span class="gx">…</span></td>'});h+='</tr>'}
+  h+='</table></div><div class="glg"><span><i style="background:rgba(255,176,32,.6)"></i>plus que le hasard</span><span><i style="background:#24343f"></i>≈ hasard</span><span><i style="background:rgba(95,168,211,.55)"></i>moins que le hasard</span></div>'+
+    '<p class="small mut">« atteint X / N » = nombre de grilles (sur N à ce nombre de mines) où le meilleur groupe de k cases était entièrement sans mine. Recherche exacte jusqu\'à 3 cases, par faisceau au-delà.</p>';
+  box.innerHTML=h;
+  box.querySelector('.gtab').onclick=function(ev){var td=ev.target.closest('td.gc');if(td&&td.dataset.done)gtOpen(+td.dataset.m,+td.dataset.k)};
+  var i=0;(function step(){if(run!==GT_RUN||i>=ms.length)return;var m=ms[i++],list=by[m],N=list.length,col=gtCol(searchSets(list,m),m,N);
+    for(var k=1;k<=25-m;k++){var td=document.getElementById('gc-'+m+'-'+k);if(!td)continue;var c=col[k];td.dataset.done=1;td.setAttribute('style',gtColor(c.x,c.e));td.querySelector('.gx').innerHTML='atteint '+c.x+' fois / '+N}
+    setTimeout(step,0)})()}
+function gtOpen(m,k){var list=gtLists()[m]||[],N=list.length,lv=searchSets(list,m),s=lv[k]&&lv[k][0],x=s?s.idx.length:0,p=winP(m,k),E=N*p,mu=Math.round(multi(m,k)*100)/100;
+  var hit=s&&x?list.filter(function(r){return (diaMask(r.grid)&s.mask)===s.mask}).sort(function(a,b){return (b.date||0)-(a.date||0)}):[];
+  var h='<h2 style="font-size:20px">'+k+' case'+(k>1?'s':'')+' · '+m+' mine'+(m>1?'s':'')+' · '+fxm(mu)+'×</h2>';
+  h+='<div class="card">'+(s&&x?'<div style="display:flex;justify-content:center;margin-bottom:10px">'+selMini(s.mask,true)+'</div>':'<p class="mut">Aucun groupe de '+k+' cases n\'a été entièrement sans mine sur ces grilles.</p>')+
+    '<div class="stat"><span>Atteint (ce groupe sans mine)</span><b>'+x+' fois / '+N+'</b></div>'+
+    '<div class="stat"><span>Attendu par hasard</span><b>'+E.toLocaleString('fr-FR',{maximumFractionDigits:1})+' fois</b></div>'+
+    '<div class="stat"><span>Multiplicateur Stake</span><b style="color:var(--green)">'+fxm(mu)+'×</b></div>'+
+    '<div class="stat"><span>Chance réelle par manche</span><b>'+pct(p)+'</b></div>'+
+    '<div class="honest small" style="margin-top:8px">Ce groupe a été choisi parmi '+nf(binom(25,k))+' combinaisons possibles <b>parce qu\'il</b> était le plus souvent sans mine : le chiffre « atteint » est gonflé par cette sélection. Il ne prédit rien pour la prochaine partie.</div></div>';
+  if(hit.length)h+='<div class="card"><h3>Grilles où ce groupe était sans mine ('+hit.length+')</h3>'+shotsHTML(hit.slice(0,30))+(hit.length>30?'<p class="small mut">… et '+(hit.length-30)+' autres.</p>':'')+'</div>';
+  h+='<button class="btn pri" id="closeOv" style="margin-top:14px">Fermer</button>';
+  $('#overlayInner').innerHTML=h;$('#overlay').classList.add('on');$('#overlay').scrollTop=0;$('#closeOv').onclick=function(){$('#overlay').classList.remove('on')}}
+function gtTest(){$('#gtTestBox').innerHTML=testHTML(gtLists())}
+function testHTML(by){var ms=Object.keys(by).map(Number).sort(function(a,b){return a-b}),t='<table class="ttab"><tr><th>Mines</th><th>Grilles<br>(1<sup>re</sup>/2<sup>e</sup>)</th><th>2<sup>e</sup> moitié<br>(vérif.)</th><th>Si l\'avance<br>tenait</th><th>Attendu<br>par hasard</th></tr>',SY=0,SE=0,any=0;
+  ms.forEach(function(m){var list=by[m].slice().sort(function(a,b){return (a.date||a.added)-(b.date||b.added)}),N=list.length;if(N<10){t+='<tr><td>'+m+'</td><td colspan="4" class="mut">moins de 10 grilles</td></tr>';return}
+    any=1;var h1=list.slice(0,N>>1),h2=list.slice(N>>1),n1=h1.length,n2=h2.length,lv=searchSets(h1,m),D2=h2.map(function(r){return diaMask(r.grid)}),sy=0,se=0,sx=0;
+    for(var k=1;k<=25-m;k++){var s=lv[k]&&lv[k][0];if(!s||!s.idx.length)continue;sy+=D2.filter(function(d){return (d&s.mask)===s.mask}).length;se+=n2*winP(m,k);sx+=s.idx.length/n1*n2}
+    SY+=sy;SE+=se;t+='<tr><td>'+m+'</td><td>'+n1+' / '+n2+'</td><td><b>'+sy+'</b></td><td>'+sx.toLocaleString('fr-FR',{maximumFractionDigits:1})+'</td><td>'+se.toLocaleString('fr-FR',{maximumFractionDigits:1})+'</td></tr>'});
+  t+='</table>';
+  var v=!any?'Il faut au moins 10 grilles dans une colonne pour ce test.':(SY<=SE*1.25+2*Math.sqrt(SE)?'Sur la 2<sup>e</sup> moitié, les groupes choisis font à peu près comme le hasard : leur avance venait de la sélection, pas d\'un vrai schéma.':'Sur la 2<sup>e</sup> moitié, les groupes choisis font mieux que le hasard sur cet échantillon. Avec peu de grilles cela arrive aussi par chance ; refais le test avec plus de grilles.');
+  return '<h3>Test de fiabilité</h3><p class="small mut">Pour chaque colonne, les grilles sont coupées en deux par date. Le meilleur groupe de chaque taille est choisi sur la 1<sup>re</sup> moitié, puis on compte combien de fois il était sans mine sur la 2<sup>e</sup> moitié (somme de toutes les tailles).</p>'+t+'<div class="honest small" style="margin-top:8px">'+v+' Chaque partie est tirée au hasard.</div>'}
+$('#gtScope').querySelectorAll('.seg').forEach(function(b){b.onclick=function(){if(b.disabled)return;LOW.gt=b.dataset.v;saveLow();renderGT()}});
+$('#gtTest').onclick=gtTest;
+
+/* ---------- Historique ---------- */
+var shown=30;
+function renderHist(){var vl=vidImps();$('#vidList').innerHTML=vl.length?vl.map(function(r){var n=impGrids(r.id).length;return '<div class="item" data-id="'+r.id+'"><div class="grow"><b>'+fmtDate(r.start)+'</b><br><span class="small mut">'+esc(r.name||'vidéo')+' · '+n+' grille'+(n>1?'s':'')+'</span></div><span>›</span></div>'}).join(''):'<p class="mut">Aucune vidéo analysée pour l\'instant.</p>';
+  $('#vidList').querySelectorAll('.item').forEach(function(e){e.onclick=function(){showVidBilan(e.dataset.id)}});
+  var n=GRIDS.length,by={};GRIDS.forEach(function(r){by[r.mines]=(by[r.mines]||0)+1});
+  var groups={};GRIDS.forEach(function(r){(groups[r.grid]=groups[r.grid]||[]).push(r)});
+  var rep=Object.keys(groups).filter(function(g){return groups[g].length>=2}).sort(function(a,b){return groups[b].length-groups[a].length});
+  var h='<h2>Résumé</h2><div class="stat"><span>Grilles enregistrées</span><b>'+n+'</b></div><div class="stat"><span>Schémas différents</span><b>'+Object.keys(groups).length+'</b></div><div class="stat"><span>Schémas sortis 2 fois ou plus</span><b>'+rep.length+'</b></div>';
+  h+='<h3>Par nombre de mines</h3>'+(Object.keys(by).sort(function(a,b){return a-b}).map(function(m){return '<span class="tag">'+m+' mine'+(m>1?'s':'')+' : '+by[m]+'</span>'}).join('')||'<p class="mut">—</p>');
+  h+=n?'<div style="margin-top:12px">'+probLine(GRIDS)+'</div>':'<p class="mut">Ajoute des captures pour commencer.</p>';
+  $('#statsCard').innerHTML=h;
+  $('#repeatList').innerHTML=rep.length?rep.map(function(g,i){var l=groups[g];return '<div style="margin-bottom:16px">'+(i===0?'<p style="color:var(--warn);font-weight:700">⭐ Schéma qui ressort le plus</p>':'')+'<div class="item">'+miniHTML(g)+'<div class="grow"><b>'+l.length+' fois</b><br><span class="small mut">'+mines(g)+' mines</span></div></div>'+shotsHTML(l)+'</div>'}).join(''):'<p class="mut">Aucun schéma identique n\'est sorti deux fois pour l\'instant.</p>';
+  var ms=Object.keys(by).sort(function(a,b){return by[b]-by[a]}),sel=$('#heatSel'),cur=sel.value;
+  sel.innerHTML=ms.map(function(m){return '<option value="'+m+'">'+m+' mine'+(m>1?'s':'')+' ('+by[m]+' grilles)</option>'}).join('');
+  if(cur&&by[cur])sel.value=cur;renderHeat();
+  var l=GRIDS.slice().sort(function(a,b){return b.added-a.added});
+  $('#allList').innerHTML=l.slice(0,shown).map(function(r){return '<div class="item">'+(r.thumb?'<img src="'+r.thumb+'" loading="lazy" alt="">':'')+miniHTML(r.grid)+'<div class="grow"><b>'+r.mines+' mines</b><br><span class="small mut">'+fmtDate(r.date)+(groups[r.grid].length>1?' · 🔁 '+groups[r.grid].length+'×':'')+'</span></div><button class="btn" style="width:52px;min-height:48px;padding:0;margin:0" data-del="'+r.id+'" aria-label="Supprimer">🗑️</button></div>'}).join('')||'<p class="mut">Vide.</p>';
+  $('#moreBtn').style.display=l.length>shown?'block':'none';
+  $('#allList').querySelectorAll('[data-del]').forEach(function(b){b.onclick=async function(){if(!confirm('Supprimer cette grille ?'))return;await del('grids',b.dataset.del);GRIDS=GRIDS.filter(function(r){return r.id!==b.dataset.del});renderHist()}})}
+$('#moreBtn').onclick=function(){shown+=30;renderHist()};
+$('#heatSel').onchange=renderHeat;
+function renderHeat(){var m=+$('#heatSel').value,box=$('#heatBox');if(!m&&m!==0||!GRIDS.length){box.innerHTML='<p class="mut">Pas encore de données.</p>';return}
+  var l=GRIDS.filter(function(r){return r.mines===m}),heat=new Array(25).fill(0);l.forEach(function(r){for(var i=0;i<25;i++)if(r.grid[i]==='M')heat[i]++});
+  box.innerHTML=heatHTML(heat,l.length)+'<p class="small mut">% des grilles à '+m+' mines où la case était une mine. Par pur hasard on attend environ <b>'+Math.round(100*m/25)+' %</b> par case ; les écarts sur peu de parties sont normaux et ne prédisent rien.</p>'}
+
+/* ---------- Données ---------- */
+$('#btnExport').onclick=function(){var data=JSON.stringify({app:'mines-schemas',version:1,exported:Date.now(),grids:GRIDS,imports:vidImps()});
+  var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:'application/json'}));a.download='mines-schemas-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove()};
+$('#fileImport').onchange=async function(e){var f=e.target.files[0];e.target.value='';if(!f)return;
+  try{var d=JSON.parse(await f.text());if(!d.grids)throw 0;var ids={};GRIDS.forEach(function(r){ids[r.id]=1});var k=0;
+    for(var i=0;i<d.grids.length;i++){var r=d.grids[i];if(!/^[DM]{25}$/.test(r.grid)||ids[r.id])continue;r.mines=mines(r.grid);await put('grids',r);GRIDS.push(r);k++}
+    var im=d.imports||[];for(i=0;i<im.length;i++){var s=im[i];if(s.kind!=='video'||IMPS.some(function(x){return x.id===s.id}))continue;await put('sessions',s);IMPS.push(s)}SETS_CACHE.clear();
+    toast(k+' grille(s) importée(s)')}catch(err){toast('Fichier de sauvegarde invalide')}};
+$('#btnWipe').onclick=async function(){if(!confirm('Effacer toutes les grilles et tous les bilans ? Cette action est définitive.'))return;
+  await clear('grids');await clear('sessions');GRIDS=[];IMPS=[];localStorage.removeItem('lastImp');SETS_CACHE.clear();renderLastVid();toast('Tout a été effacé')};
+
+/* ---------- Démarrage ---------- */
+(async function(){await openDB();GRIDS=await all('grids');IMPS=(await all('sessions')).filter(function(r){return r.kind==='video'});
+  localStorage.removeItem('activeSession');renderLastVid();
+  if('serviceWorker' in navigator){var hadCtl=!!navigator.serviceWorker.controller,reloaded=false;
+    navigator.serviceWorker.addEventListener('controllerchange',function(){if(!hadCtl){hadCtl=true;return}if(reloaded)return;reloaded=true;location.reload()});
+    navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(function(r){r.update().catch(function(){});
+      if(r.waiting)r.waiting.postMessage('skip');
+      document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')r.update().catch(function(){})})}).catch(function(){})}
+})();
+</script>
+</body>
+</html>
