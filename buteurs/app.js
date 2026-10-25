@@ -17,8 +17,8 @@ function resume(d){
   if(h.liiga&&h.liiga.a_jouer)h.liiga.a_jouer.forEach(function(p){rows.push('<div class="rrow"><div><b>'+esc(p.player)+'</b> <span class="tag">Liiga</span><div class="meta">'+esc(p.game||'')+' · '+esc(p.time||'')+'</div></div><div class="rodd">'+esc(p.min)+'<small>ou plus</small></div></div>')});
   o+=card('🎯 Ce soir, tu prends',(rows.length?rows.join(''):'<p><b>Rien ce soir.</b> Pas de pari, c\'est un bon choix aussi.</p>')+
     '<p class="small">Le chiffre à droite = cote Winamax minimum. En dessous, tu ne joues pas. 1 € chacun, en simple, jamais de combiné.</p>');
-  var pts=h.point.filter(function(p){var g=(h.a_jouer.concat(h.surveiller)).filter(function(q){return q.player.split(' ').pop()===p.player.split(' ').pop()})[0];return !(g&&started(d,g.time))});
-  if(pts.length)o+=card('✅ Plus sûr : au moins 1 point',pts.map(function(p){return '<div class="rrow"><div><b>'+esc(p.player)+'</b></div><div class="rodd">1,53<small>ou plus</small></div></div>'}).join('')+'<p class="small">Passe environ 7 fois sur 10.</p>');
+  var pts=h.point.filter(function(p){var t=p.time;if(!t){var g=(h.a_jouer.concat(h.surveiller)).filter(function(q){return q.player===p.player})[0];t=g&&g.time}return !started(d,t)});
+  if(pts.length)o+=card('✅ Plus sûr : au moins 1 point',pts.map(function(p){return '<div class="rrow"><div><b>'+esc(p.player)+'</b>'+(p.game?'<div class="meta">'+esc(p.game)+' · '+esc(p.time)+'</div>':'')+'</div><div class="rodd">1,53<small>ou plus</small></div></div>'}).join('')+'<p class="small">Passe environ 7 fois sur 10.</p>');
   var f=d.foot;
   if(f&&f.available&&f.picks.length)o+=card('⚽ Foot (pas prouvé rentable)',f.picks.map(function(p){return '<div class="rrow"><div><b>'+esc(p.player)+'</b>'+(p.star?' <span class="tag no">star, prudence</span>':'')+'<div class="meta">'+esc(p.match)+' · '+esc(p.day)+'</div></div><div class="rodd">'+esc(p.play)+'<small>ou plus</small></div></div>'}).join('')+'<p class="small">Seulement si Winamax donne cette cote ou plus. C\'est rare.</p>');
   o+='<p class="small center">Détails dans les autres onglets. Aide : <a href="tel:0974751313">09 74 75 13 13</a> (Joueurs Info Service).</p>';
@@ -47,6 +47,38 @@ function points(h){
 function matchs(h){
   var o=card('🕗 Matchs (heure de Paris)',(h.intro||[]).map(function(l){return '<p>'+md(l)+'</p>'}).join('')+'<ul>'+(h.games||[]).map(function(g){return '<li><b>'+esc(g.time)+'</b> : '+esc(g.game)+'</li>'}).join('')+'</ul>');
   if(h.totals.length)o+=card('📈 Match à buts','<ul>'+h.totals.map(function(t,i){return '<li>'+(i+1)+'. '+(t.open?'🔥 ':'')+'<b>'+esc(t.game)+'</b> ('+esc(t.time)+') : environ '+esc(t.book)+' buts attendus (ligne '+esc(t.line)+'). Notre modèle : '+esc(t.model)+'.</li>'}).join('')+'</ul><p class="small">Chiffres des cotes publiques américaines, pas Winamax.</p>');
+  return o;
+}
+
+function where(x){return (x.home?'contre ':'à ')+esc(x.opp)}
+function wl(x){return '<span class="'+(x.win?'okc':'noc')+'">'+(x.win?'gagné':'perdu')+' '+esc(x.score)+'</span>'}
+function startedT(d,x){return started(d,x.time)}
+function otList(d,list,kind,liiga){
+  var later=list.filter(function(x){return !(x.k===4)}),soon=list.filter(function(x){return x.k===4});
+  var now=liiga?later:later.filter(function(x){return !startedT(d,x)}),gone=liiga?[]:later.filter(function(x){return startedT(d,x)});
+  var o='';
+  if(!now.length)o+='<p><b>Aucune équipe ce soir.</b></p>';
+  now.forEach(function(x){
+    o+='<div class="rrow"><div><b>'+esc(x.team)+'</b> '+where(x)+'<div class="meta">'+esc(x.day)+' · '+esc(x.time)+'</div>';
+    if(kind==='nul'){o+='<div class="small">Nul le '+esc(x.nul.date)+' '+where(x.nul)+' ('+(x.nul.kind==='SO'?'tirs au but':'prolongation')+', '+wl(x.nul)+')</div>'+
+      '<div class="small">Puis : '+x.between.map(function(b){return (b.win?'✅':'❌')+' '+esc(b.score)}).join(' · ')+'</div>'}
+    else o+='<div class="small">Dernier match le '+esc(x.so.date)+' '+where(x.so)+' : '+wl(x.so)+' aux tirs au but</div>';
+    o+='</div><div class="rodd info">'+(kind==='nul'?'5e':'TAB')+'<small>match</small></div></div>';
+  });
+  if(gone.length)o+='<p class="small">Déjà commencé : '+gone.map(function(x){return esc(x.team)}).join(', ')+'.</p>';
+  if(kind==='nul'&&soon.length)o+='<p class="small">4e match ce soir (le prochain sera le 5e) : '+soon.map(function(x){return esc(x.team)}).join(', ')+'.</p>';
+  return o;
+}
+function otTab(d,kind){
+  var h=d.hockey,key=kind==='nul'?'after_nul':'after_so',o='';
+  var intro=kind==='nul'?'<p>Équipe qui a fait un nul (égalité après 60 min), puis a joué 4 matchs. Ce soir, c\'est son 5e match.</p>':'<p>Équipe dont le dernier match s\'est fini aux tirs au but.</p>';
+  o+=card(kind==='nul'?'🔁 NHL : 5e match après un nul':'🎯 NHL : juste après des tirs au but',intro+(h[key]?otList(d,h[key],kind):'<p>'+esc(h.nhl_error||'NHL : pas de données.')+'</p>'));
+  var L=h.liiga_ot;var li;
+  if(!L)li='<p>Liiga : pas de données.</p>';
+  else if(!L.day)li='<p>Liiga : pas de match prévu.</p>';
+  else li=(L.today?'':'<p class="small">Pas de match ce soir. Prochains matchs le '+esc(L.day)+'.</p>')+otList(d,L[key],kind,true).replace('Aucune équipe ce soir.',L.today?'Aucune équipe ce soir.':'Aucune équipe.');
+  o+=card('🇫🇮 Liiga',li);
+  o+=card('📊 Est-ce que ça marche ?','<p>'+esc(kind==='nul'?h.hist_nul:h.hist_so)+'</p>');
   return o;
 }
 function infos(h){
@@ -101,7 +133,7 @@ function calc(){
   r.className='verdict '+(ev>=0.10?'ok':'no');
   r.innerHTML=(ev>=0.10?'✅ Tu joues (1 €)':'❌ Tu ne joues pas')+'<div class="small" style="color:#eef3f8">Avantage : '+Math.round(ev*100)+' %. Cote juste : '+f2(min)+'. Tu joues à partir de '+f2(play)+'.</div>';
 }
-window.Buteurs={resume:resume,buteurs:buteurs,defs:defs,points:points,matchs:matchs,infos:infos,bilan:bilanHtml,foot:footHtml,calc:calc};
+window.Buteurs={resume:resume,buteurs:buteurs,defs:defs,points:points,matchs:matchs,infos:infos,bilan:bilanHtml,foot:footHtml,calc:calc,otTab:otTab};
 if(typeof document==='undefined')return;
 document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){
   document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x===b)});
@@ -118,6 +150,8 @@ fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.js
   document.getElementById('infos').innerHTML=infos(h);
   document.getElementById('foot').innerHTML=footHtml(d.foot);
   document.getElementById('bilan').innerHTML=bilanHtml(h);
+  document.getElementById('nul5').innerHTML=otTab(d,'nul');
+  document.getElementById('tab').innerHTML=otTab(d,'so');
 }).catch(function(){document.getElementById('stamp').textContent='Impossible de charger l\'analyse. Vérifie ta connexion.'});
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});
 })();

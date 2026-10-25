@@ -37,3 +37,6 @@ footer a{color:var(--warn)}
 
 .bline{margin:.45em 0;padding:.5em .7em;border-radius:10px;background:rgba(255,255,255,.04);line-height:1.45}.bline.ok{border-left:4px solid #2ecc71}.bline.no{border-left:4px solid #e74c3c}ul.bl{list-style:none;padding:0;margin:.3em 0}ul.bl li{padding:.5em .2em;border-bottom:1px solid rgba(255,255,255,.08);line-height:1.45}ul.bl li:last-child{border-bottom:0}
 .rrow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.rrow:last-of-type{border-bottom:0}.rodd{font-size:24px;font-weight:800;color:var(--ok);text-align:right;line-height:1}.rodd small{display:block;font-size:11px;color:var(--mut);font-weight:500}.center{text-align:center}footer{display:none}
+
+.okc{color:var(--ok);font-weight:700}.noc{color:var(--no);font-weight:700}
+.rodd.info{color:var(--mut)}

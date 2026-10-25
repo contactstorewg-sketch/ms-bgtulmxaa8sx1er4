@@ -1,5 +1,5 @@
 {
- "generated": "25/10/2026 23h25",
+ "generated": "26/10/2026 00h14",
  "date": "2026-10-25",
  "date_fr": "25/10/2026",
  "hockey": {
@@ -166,15 +166,24 @@
   "point": [
    {
     "player": "Nathan MacKinnon",
-    "form": "18 pts, point dans 6/10"
+    "form": "18 pts, point dans 6/10",
+    "team": "COL",
+    "game": "Colorado à Nashville",
+    "time": "01h00"
    },
    {
     "player": "Kirill Kaprizov",
-    "form": "16 pts, 8/10"
+    "form": "16 pts, 8/10",
+    "team": "MIN",
+    "game": "Minnesota à Vancouver",
+    "time": "03h00"
    },
    {
     "player": "Matthew Tkachuk",
-    "form": "15 pts, 9/10"
+    "form": "15 pts, 9/10",
+    "team": "FLA",
+    "game": "Floride à Chicago",
+    "time": "20h00"
    }
   ],
   "totals": [
@@ -411,7 +420,142 @@
     ]
    }
   ],
-  "liiga_status": "pas de match"
+  "liiga_status": "pas de match",
+  "hist_nul": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le 5e match après un nul : 19 %. Un peu moins, mais une saison sur 4 dit l'inverse (31 %). Pas fiable : c'est de l'info, pas un pari.",
+  "hist_so": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le match juste après des tirs au but : 21 %. Pas d'effet : c'est de l'info, pas un pari.",
+  "after_nul": [
+   {
+    "team": "Floride",
+    "opp": "Chicago",
+    "home": false,
+    "time": "20h00",
+    "day": "25/10",
+    "k": 4,
+    "nul": {
+     "date": "16/10",
+     "opp": "Vancouver",
+     "home": true,
+     "score": "3-2",
+     "win": true,
+     "kind": "OT"
+    },
+    "between": [
+     {
+      "date": "18/10",
+      "opp": "Seattle",
+      "home": true,
+      "score": "8-3",
+      "win": true
+     },
+     {
+      "date": "22/10",
+      "opp": "Ottawa",
+      "home": false,
+      "score": "1-5",
+      "win": false
+     },
+     {
+      "date": "23/10",
+      "opp": "Pittsburgh",
+      "home": false,
+      "score": "0-4",
+      "win": false
+     }
+    ]
+   },
+   {
+    "team": "Colorado",
+    "opp": "Nashville",
+    "home": false,
+    "time": "01h00",
+    "day": "26/10",
+    "k": 5,
+    "nul": {
+     "date": "15/10",
+     "opp": "Dallas",
+     "home": true,
+     "score": "2-3",
+     "win": false,
+     "kind": "SO"
+    },
+    "between": [
+     {
+      "date": "17/10",
+      "opp": "Pittsburgh",
+      "home": true,
+      "score": "5-2",
+      "win": true
+     },
+     {
+      "date": "20/10",
+      "opp": "Philadelphie",
+      "home": false,
+      "score": "2-3",
+      "win": false
+     },
+     {
+      "date": "21/10",
+      "opp": "New Jersey",
+      "home": false,
+      "score": "3-4",
+      "win": false
+     },
+     {
+      "date": "24/10",
+      "opp": "Tampa Bay",
+      "home": true,
+      "score": "6-3",
+      "win": true
+     }
+    ]
+   },
+   {
+    "team": "Vancouver",
+    "opp": "Minnesota",
+    "home": true,
+    "time": "03h00",
+    "day": "26/10",
+    "k": 4,
+    "nul": {
+     "date": "16/10",
+     "opp": "Floride",
+     "home": false,
+     "score": "2-3",
+     "win": false,
+     "kind": "OT"
+    },
+    "between": [
+     {
+      "date": "17/10",
+      "opp": "Tampa Bay",
+      "home": false,
+      "score": "2-4",
+      "win": false
+     },
+     {
+      "date": "21/10",
+      "opp": "Caroline",
+      "home": true,
+      "score": "3-6",
+      "win": false
+     },
+     {
+      "date": "23/10",
+      "opp": "Detroit",
+      "home": true,
+      "score": "2-5",
+      "win": false
+     }
+    ]
+   }
+  ],
+  "after_so": [],
+  "liiga_ot": {
+   "day": "27/10",
+   "today": false,
+   "after_nul": [],
+   "after_so": []
+  }
  },
  "foot": {
   "available": true,
