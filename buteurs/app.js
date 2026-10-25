@@ -105,7 +105,7 @@ window.Buteurs={resume:resume,buteurs:buteurs,defs:defs,points:points,matchs:mat
 if(typeof document==='undefined')return;
 document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){
   document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x===b)});
-  document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('on',t.id===b.dataset.tab)});window.scrollTo(0,0);})});
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('on',t.id===b.dataset.tab)});b.scrollIntoView({inline:'center',block:'nearest'});var hh=document.querySelector('header').offsetHeight;if(window.scrollY>hh)window.scrollTo(0,hh);})});
 ['cP','cO'].forEach(function(id){document.getElementById(id).addEventListener('input',calc)});
 fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
   document.getElementById('stamp').textContent='Analyse du '+d.date_fr+' · mise à jour '+d.generated;

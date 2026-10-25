@@ -1,4 +1,4 @@
-var C='buteurs-v4',F=['./','index.html','app.js?v=4','style.css?v=4','manifest.webmanifest','icon-180.png','icon-192.png','icon-512.png'];
+var C='buteurs-v5',F=['./','index.html','app.js?v=5','style.css?v=5','manifest.webmanifest','icon-180.png','icon-192.png','icon-512.png'];
 self.addEventListener('install',function(e){self.skipWaiting();e.waitUntil(caches.open(C).then(function(c){return c.addAll(F)}).catch(function(){}))});
 self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(k){return Promise.all(k.filter(function(x){return x.indexOf('buteurs-')===0&&x!==C}).map(function(x){return caches.delete(x)}))}).then(function(){return self.clients.claim()}))});
 // Réseau d'abord : on veut toujours l'analyse la plus récente ; le cache sert seulement hors ligne.
