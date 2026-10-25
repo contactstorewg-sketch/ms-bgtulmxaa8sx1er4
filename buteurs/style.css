@@ -5,7 +5,7 @@ header{position:sticky;top:0;z-index:5;background:#0a1522;padding:calc(10px + en
 h1{margin:0;font-size:22px}
 #stamp{color:var(--mut);font-size:13px;margin:2px 0 8px}
 nav{display:flex;gap:6px}
-nav button{flex:1;font-size:16px;padding:10px 4px;border:0;border-radius:12px 12px 0 0;background:var(--card);color:var(--mut);font-weight:600}
+nav button{flex:1;font-size:15px;padding:10px 2px;border:0;border-radius:12px 12px 0 0;background:var(--card);color:var(--mut);font-weight:600}
 nav button.on{background:var(--warn);color:#10202f}
 main{max-width:640px;margin:0 auto;padding:12px}
 .tab{display:none}.tab.on{display:block}
@@ -34,3 +34,5 @@ input{display:block;width:100%;margin-top:6px;font-size:22px;padding:12px;border
 .verdict.ok{background:#1d5c3a}.verdict.no{background:#6b2430}
 footer{max-width:640px;margin:0 auto;padding:6px 16px calc(24px + env(safe-area-inset-bottom));color:var(--mut);font-size:15px;border-top:1px solid var(--line)}
 footer a{color:var(--warn)}
+
+.bline{margin:.45em 0;padding:.5em .7em;border-radius:10px;background:rgba(255,255,255,.04);line-height:1.45}.bline.ok{border-left:4px solid #2ecc71}.bline.no{border-left:4px solid #e74c3c}ul.bl{list-style:none;padding:0;margin:.3em 0}ul.bl li{padding:.5em .2em;border-bottom:1px solid rgba(255,255,255,.08);line-height:1.45}ul.bl li:last-child{border-bottom:0}nav{flex-wrap:wrap}

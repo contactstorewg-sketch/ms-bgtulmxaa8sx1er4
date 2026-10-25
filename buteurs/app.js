@@ -28,9 +28,28 @@ function hockey(h,data){
     if(L.point.length)li+='<h3>🎯 Au moins 1 point</h3><ul>'+L.point.map(function(p){return '<li>• <b>'+esc(p.player)+'</b> : '+esc(p.form)+'. À '+esc(p.min)+' ou plus, tu joues.</li>'}).join('')+'</ul>';
     o+=card('🇫🇮 Liiga',li);
   } else if(h.liiga_status){o+=card('🇫🇮 Liiga','<p>'+esc(h.liiga_status.charAt(0).toUpperCase()+h.liiga_status.slice(1))+' aujourd\'hui.</p>')}
-  (h.info||[]).forEach(function(s,i){
-    o+='<details'+(i===0?' open':'')+'><summary>'+md(s.title)+'</summary><div class="in">'+s.lines.map(function(l){return '<p>'+md(l)+'</p>'}).join('')+'</div></details>';
+  (h.info||[]).filter(function(s){return !isBilan(s)}).forEach(function(s,i){
+    o+='<details'+'><summary>'+md(s.title)+'</summary><div class="in">'+s.lines.map(function(l){return '<p>'+md(l)+'</p>'}).join('')+'</div></details>';
   });
+  return o;
+}
+function isBilan(s){return /BILAN D/i.test(s.title)}
+function bilanHtml(h){
+  var s=(h.info||[]).filter(isBilan)[0];
+  if(!s)return card('📋 Bilan','<p>Pas de bilan pour aujourd\'hui.</p>');
+  var o=card(md(s.title.replace(/\*\*/g,'').replace(/BILAN D'HIER/i,'Bilan d\'hier')),'<p class="small">Résultats des choix d\'hier, puis les compteurs depuis le début.</p>');
+  var cur=null,buf=[],inList=false;
+  function flush(){if(inList){buf.push('</ul>');inList=false}if(cur!==null||buf.length)o+=card(cur||'',buf.join(''));buf=[]}
+  s.lines.forEach(function(l){
+    var t=l.trim();
+    if(/^[^\w•]*\*\*[^*]+\*\*\s*$/.test(t)){flush();cur=md(t.replace(/\*\*/g,''));return}
+    if(/^.{0,30}:\s*$/.test(t)){if(inList){buf.push('</ul>');inList=false}buf.push('<h3>'+md(t.replace(/:\s*$/,''))+'</h3>');return}
+    if(t.indexOf('•')===0){if(!inList){buf.push('<ul class="bl">');inList=true}buf.push('<li>'+md(t.replace(/^•\s*/,''))+'</li>');return}
+    if(inList){buf.push('</ul>');inList=false}
+    var c=t.indexOf('✅')===0?' ok':(t.indexOf('❌')===0?' no':'');
+    buf.push('<p class="bline'+c+'">'+md(t)+'</p>');
+  });
+  flush();
   return o;
 }
 function footHtml(f){
@@ -59,7 +78,7 @@ function calc(){
   r.className='verdict '+(ev>=0.10?'ok':'no');
   r.innerHTML=(ev>=0.10?'✅ Tu joues (1 €)':'❌ Tu ne joues pas')+'<div class="small" style="color:#eef3f8">Avantage : '+Math.round(ev*100)+' %. Cote juste : '+f2(min)+'. Tu joues à partir de '+f2(play)+'.</div>';
 }
-window.Buteurs={hockey:hockey,foot:footHtml,calc:calc};
+window.Buteurs={hockey:hockey,bilan:bilanHtml,foot:footHtml,calc:calc};
 if(typeof document==='undefined')return;
 document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){
   document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x===b)});
@@ -69,6 +88,7 @@ fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.js
   document.getElementById('stamp').textContent='Analyse du '+d.date_fr+' · mise à jour '+d.generated;
   document.getElementById('hockey').innerHTML=hockey(d.hockey,d);
   document.getElementById('foot').innerHTML=footHtml(d.foot);
+  document.getElementById('bilan').innerHTML=bilanHtml(d.hockey);
 }).catch(function(){document.getElementById('stamp').textContent='Impossible de charger l\'analyse. Vérifie ta connexion.'});
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});
 })();
