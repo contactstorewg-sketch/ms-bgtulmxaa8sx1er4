@@ -17,10 +17,15 @@ function wmPts(p){return p.wm?'<div class="wm">Winamax : <b>'+esc(p.wm)+'</b> '+
 function playable(p){return p.wm?p.wm_ok:true}
 function started(d,t){var m=/(\d{1,2})h(\d{2})/.exec(t||'');if(!m||!d.date)return false;var x=new Date(d.date+'T'+('0'+m[1]).slice(-2)+':'+m[2]+':00+01:00');if(+m[1]<12)x=new Date(x.getTime()+864e5);return Date.now()>x.getTime()+5*60e3}
 function valRow(p,i){
-  return '<div class="vrow"><div class="vtop"><div class="vname">'+(i+1)+'. '+esc(p.player)+' <span class="tag">'+esc(p.team)+'</span>'+(p.star?' <span class="tag ok">⭐</span>':'')+(p.up?' <span class="tag">⬆️</span>':'')+'</div><div class="vodd">'+esc(p.wm)+'<small>Winamax</small></div></div>'+
+  return '<div class="vrow"><div class="vtop"><div class="vname">'+(i+1)+'. '+esc(p.player)+' <span class="tag">'+esc(p.team)+'</span>'+(p.star?' <span class="tag ok">⭐</span>':'')+(p.up?' <span class="tag">⬆️</span>':'')+(p.down?' <span class="tag">⬇️</span>':'')+'</div><div class="vodd">'+esc(p.wm)+'<small>Winamax</small></div></div>'+
   '<div class="vone">Gagne <b>1 fois sur '+esc(p.one_in)+'</b></div>'+
   '<div class="meta">'+esc(p.why)+' · '+esc(p.game)+' · '+esc(p.time)+'</div>'+
   '<div class="small fair">cote juste '+esc(p.fair)+' · tu joues dès '+esc(p.min)+(p.market_fair?' · autres sites '+esc(p.market_fair):'')+'</div></div>';
+}
+function limRow(p){
+  return '<div class="vrow lrow"><div class="vtop"><div class="vname">🟡 '+esc(p.player)+' <span class="tag">'+esc(p.team)+'</span>'+(p.down?' <span class="tag">⬇️</span>':'')+'</div><div class="vodd">'+esc(p.wm)+'<small>Winamax</small></div></div>'+
+  '<div class="small">Minimum '+esc(p.min)+' · chance '+esc(p.chance)+' · gagne 1 fois sur '+esc(p.one_in)+'</div>'+
+  '<div class="meta">'+esc(p.why)+' · '+esc(p.game)+' · '+esc(p.time)+'</div></div>';
 }
 function resume(d){
   var h=d.hockey,o='';
@@ -30,7 +35,9 @@ function resume(d){
   } else {
     var v=(h.values||[]).filter(function(p){return !started(d,p.time)});
     vb=v.length?v.map(valRow).join(''):'<p class="vnone">❌ Pas de value ce soir.</p><p>On ne joue rien. C\'est un bon choix aussi.</p>';
-    if(h.wm_read_at)vb+='<p class="small">Cotes Winamax lues à '+esc(h.wm_read_at)+'. ⭐ = Winamax paie plus que les autres sites. ⬆️ = rôle en hausse ce soir.</p>';
+    var lm=(h.values_limite||[]).filter(function(p){return !started(d,p.time)});
+    if(lm.length)vb+='<h3 class="vlim">🟡 Limite (petite marge)</h3><p class="small">Cote au-dessus de la cote juste, mais sous le minimum. Petite marge : à toi de voir.</p>'+lm.map(limRow).join('');
+    if(h.wm_read_at)vb+='<p class="small">Cotes Winamax lues à '+esc(h.wm_read_at)+'. ⭐ = Winamax paie plus que les autres sites. ⬆️ = rôle en hausse ce soir.'+(v.concat(lm).some(function(p){return p.down})?' ⬇️ = en baisse ce soir, mais la cote dépasse son nouveau minimum.':'')+'</p>';
   }
   o+='<div class="card vcard"><h2>💰 Les values du soir</h2>'+vb+'<p class="vfoot">1 € par pari, jamais de combiné.</p></div>';
   // Stars : une ligne repliée

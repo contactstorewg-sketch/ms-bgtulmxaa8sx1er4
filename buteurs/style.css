@@ -55,3 +55,6 @@ footer a{color:var(--warn)}
 .vfoot{font-weight:700;margin-top:10px;font-size:15px}
 details.stars summary{font-size:15px;font-weight:600;color:var(--mut)}
 .small a{color:var(--warn)}
+.vlim{margin:14px 0 4px;font-size:1rem}
+.lrow{opacity:.9;border-left:3px solid #e6b800;padding-left:8px}
+.lrow .vodd{color:#e6b800}
