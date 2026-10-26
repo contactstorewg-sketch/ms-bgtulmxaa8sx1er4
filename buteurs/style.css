@@ -58,3 +58,8 @@ details.stars summary{font-size:15px;font-weight:600;color:var(--mut)}
 .vlim{margin:14px 0 4px;font-size:1rem}
 .lrow{opacity:.9;border-left:3px solid #e6b800;padding-left:8px}
 .lrow .vodd{color:#e6b800}
+.vsig{margin:14px 0 4px;font-size:1rem}
+.srow{border-left:3px solid #ff8c1a;padding-left:8px}
+.srow .vodd{color:#ff8c1a}
+.vsigs{font-weight:600;color:#ffb366}
+.gap{color:#ffb366}

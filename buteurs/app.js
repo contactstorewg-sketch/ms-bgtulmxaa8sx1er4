@@ -27,6 +27,13 @@ function limRow(p){
   '<div class="small">Minimum '+esc(p.min)+' · chance '+esc(p.chance)+' · gagne 1 fois sur '+esc(p.one_in)+'</div>'+
   '<div class="meta">'+esc(p.why)+' · '+esc(p.game)+' · '+esc(p.time)+'</div></div>';
 }
+function sigRow(p){
+  return '<div class="vrow srow"><div class="vtop"><div class="vname">🔥 '+esc(p.player)+' <span class="tag">'+esc(p.team)+'</span>'+(p.down?' <span class="tag">⬇️</span>':'')+'</div><div class="vodd">'+(p.wm?esc(p.wm):'–')+'<small>Winamax</small></div></div>'+
+  '<div class="vsigs">'+esc(p.signals)+'</div>'+
+  '<div class="small">Minimum '+esc(p.min)+' · chance '+esc(p.chance)+' · gagne 1 fois sur '+esc(p.one_in)+'</div>'+
+  (p.gap?'<div class="small gap">'+esc(p.gap)+'</div>':'')+
+  '<div class="meta">'+esc(p.game)+' · '+esc(p.time)+'</div></div>';
+}
 function resume(d){
   var h=d.hockey,o='';
   var vb='';
@@ -37,7 +44,9 @@ function resume(d){
     vb=v.length?v.map(valRow).join(''):'<p class="vnone">❌ Pas de value ce soir.</p><p>On ne joue rien. C\'est un bon choix aussi.</p>';
     var lm=(h.values_limite||[]).filter(function(p){return !started(d,p.time)});
     if(lm.length)vb+='<h3 class="vlim">🟡 Limite (petite marge)</h3><p class="small">Cote au-dessus de la cote juste, mais sous le minimum. Petite marge : à toi de voir.</p>'+lm.map(limRow).join('');
-    if(h.wm_read_at)vb+='<p class="small">Cotes Winamax lues à '+esc(h.wm_read_at)+'. ⭐ = Winamax paie plus que les autres sites. ⬆️ = rôle en hausse ce soir.'+(v.concat(lm).some(function(p){return p.down})?' ⬇️ = en baisse ce soir, mais la cote dépasse son nouveau minimum.':'')+'</p>';
+    var sg=(h.values_signaux||[]).filter(function(p){return !started(d,p.time)});
+    if(sg.length)vb+='<h3 class="vsig">🔥 Ce qui me fait dire (cote pas forcément bonne)</h3><p class="small">Un signal fort pour ces joueurs. Si la cote est sous le minimum, c\'est ton choix.</p>'+sg.map(sigRow).join('');
+    if(h.wm_read_at)vb+='<p class="small">Cotes Winamax lues à '+esc(h.wm_read_at)+'. ⭐ = Winamax paie plus que les autres sites. ⬆️ = rôle en hausse ce soir.'+(v.concat(lm,sg).some(function(p){return p.down})?' ⬇️ = en baisse ce soir, mais la cote dépasse son nouveau minimum.':'')+'</p>';
   }
   o+='<div class="card vcard"><h2>💰 Les values du soir</h2>'+vb+'<p class="vfoot">1 € par pari, jamais de combiné.</p></div>';
   // Stars : une ligne repliée
