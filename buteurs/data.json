@@ -1,612 +1,285 @@
 {
- "generated": "26/10/2026 12h53",
- "date": "2026-10-25",
- "date_fr": "25/10/2026",
+ "generated": "26/10/2026 21h13",
+ "date": "2026-10-26",
+ "date_fr": "26/10/2026",
  "hockey": {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "model": "NHL v2 attaquants, v1 défenseurs",
-  "intro": [
-   "Heures de Paris (heure d'hiver depuis cette nuit). Pas de Liiga aujourd'hui. 5 matchs NHL ce soir."
-  ],
+  "intro": [],
   "games": [
    {
-    "game": "Floride à Chicago",
-    "time": "20h00"
-   },
-   {
-    "game": "Islanders à Dallas",
-    "time": "23h00"
-   },
-   {
-    "game": "Montréal à Winnipeg",
+    "game": "Los Angeles à Rangers",
     "time": "00h00"
    },
    {
-    "game": "Colorado à Nashville",
-    "time": "01h00"
+    "game": "Toronto à Calgary",
+    "time": "01h30"
    },
    {
-    "game": "Minnesota à Vancouver",
-    "time": "03h00"
+    "game": "Detroit à Edmonton",
+    "time": "02h30"
    }
   ],
   "a_jouer": [
    {
-    "player": "Kirill Kaprizov",
-    "team": "MIN",
-    "game": "Minnesota à Vancouver",
-    "time": "03h00",
-    "chance": "44 %",
-    "min": "2,48",
-    "fair": "2,25",
-    "example": "À 2,48 ou plus, tu joues. À 2,33, tu ne joues pas.",
-    "wm": "1,90",
+    "player": "Leon Draisaitl",
+    "team": "EDM",
+    "game": "Detroit à Edmonton",
+    "time": "02h30",
+    "chance": "47 %",
+    "min": "2,33",
+    "fair": "2,11",
+    "example": "À 2,33 ou plus, tu joues. À 2,18, tu ne joues pas.",
+    "wm": "2,10",
     "wm_ok": false,
-    "wm_edge": -15
+    "wm_edge": -1
+   }
+  ],
+  "notes": [],
+  "surveiller": [
+   {
+    "player": "Alex DeBrincat",
+    "team": "DET",
+    "game": "Detroit à Edmonton",
+    "time": "02h30",
+    "chance": "39 %",
+    "min": "2,80",
+    "fair": "2,54",
+    "example": "À 2,80 ou plus, tu joues. À 2,65, tu ne joues pas.",
+    "wm": "2,65",
+    "wm_ok": false,
+    "wm_edge": 4
    },
    {
-    "player": "Matt Boldy",
-    "team": "MIN",
-    "game": "Minnesota à Vancouver",
-    "time": "03h00",
-    "chance": "43 %",
-    "min": "2,58",
-    "fair": "2,34",
-    "example": "À 2,58 ou plus, tu joues. À 2,43, tu ne joues pas.",
-    "wm": "2,25",
+    "player": "Connor McDavid",
+    "team": "EDM",
+    "game": "Detroit à Edmonton",
+    "time": "02h30",
+    "chance": "37 %",
+    "min": "2,97",
+    "fair": "2,70",
+    "example": "À 2,97 ou plus, tu joues. À 2,82, tu ne joues pas.",
+    "wm": "2,10",
+    "wm_ok": false,
+    "wm_edge": -22
+   },
+   {
+    "player": "Pavel Dorofeyev",
+    "team": "NYR",
+    "game": "Los Angeles à Rangers",
+    "time": "00h00",
+    "chance": "37 %",
+    "min": "2,98",
+    "fair": "2,70",
+    "example": "À 2,98 ou plus, tu joues. À 2,83, tu ne joues pas.",
+    "wm": "2,90",
+    "wm_ok": false,
+    "wm_edge": 7
+   },
+   {
+    "player": "Adrian Kempe",
+    "team": "LAK",
+    "game": "Los Angeles à Rangers",
+    "time": "00h00",
+    "chance": "34 %",
+    "min": "3,22",
+    "fair": "2,92",
+    "example": "À 3,22 ou plus, tu joues. À 3,07, tu ne joues pas.",
+    "wm": "2,80",
     "wm_ok": false,
     "wm_edge": -4
    },
    {
-    "player": "Kyle Connor",
-    "team": "WPG",
-    "game": "Montréal à Winnipeg",
-    "time": "00h00",
-    "chance": "42 %",
-    "min": "2,64",
-    "fair": "2,40",
-    "example": "À 2,64 ou plus, tu joues. À 2,49, tu ne joues pas."
-   }
-  ],
-  "notes": [
-   "⚠️ Les lignes ne sont pas définitives. Revérifie juste avant de parier.",
-   "⚠️ Minnesota a joué hier soir à Seattle (2e match en 2 jours). Kaprizov et Boldy sont dans le même match : si Minnesota a une mauvaise soirée, les deux perdent ensemble. Si tu n'en veux qu'un, prends Kaprizov.",
-   "Rappel : même le meilleur choix marque environ 4 fois sur 10. Les 3 ensemble, c'est environ 7 soirs sur 100. Donc **jamais de combiné**."
-  ],
-  "surveiller": [
-   {
-    "player": "Nathan MacKinnon",
-    "team": "COL",
-    "game": "Colorado à Nashville",
-    "time": "01h00",
-    "chance": "41 %",
-    "min": "2,67",
-    "fair": "2,42",
-    "example": "À 2,67 ou plus, tu joues. À 2,52, tu ne joues pas.",
-    "wm": "2,05",
+    "player": "Zach Hyman",
+    "team": "EDM",
+    "game": "Detroit à Edmonton",
+    "time": "02h30",
+    "chance": "34 %",
+    "min": "3,25",
+    "fair": "2,95",
+    "example": "À 3,25 ou plus, tu joues. À 3,10, tu ne joues pas.",
+    "wm": "2,90",
     "wm_ok": false,
-    "wm_edge": -15
-   },
-   {
-    "player": "Cole Caufield",
-    "team": "MTL",
-    "game": "Montréal à Winnipeg",
-    "time": "00h00",
-    "chance": "40 %",
-    "min": "2,73",
-    "fair": "2,48",
-    "example": "À 2,73 ou plus, tu joues. À 2,58, tu ne joues pas."
-   },
-   {
-    "player": "Jason Robertson",
-    "team": "DAL",
-    "game": "Islanders à Dallas",
-    "time": "23h00",
-    "chance": "37 %",
-    "min": "2,95",
-    "fair": "2,68",
-    "example": "À 2,95 ou plus, tu joues. À 2,80, tu ne joues pas."
-   },
-   {
-    "player": "Sam Reinhart",
-    "team": "FLA",
-    "game": "Floride à Chicago",
-    "time": "20h00",
-    "chance": "37 %",
-    "min": "3,00",
-    "fair": "2,72",
-    "example": "À 3,00 ou plus, tu joues. À 2,85, tu ne joues pas."
-   },
-   {
-    "player": "Wyatt Johnston",
-    "team": "DAL",
-    "game": "Islanders à Dallas",
-    "time": "23h00",
-    "chance": "36 %",
-    "min": "3,07",
-    "fair": "2,79",
-    "example": "À 3,07 ou plus, tu joues. À 2,92, tu ne joues pas."
+    "wm_edge": -2
    }
   ],
   "bestD": [
    {
-    "player": "Seth Jones",
-    "team": "FLA",
-    "game": "Floride à Chicago",
-    "time": "20h00",
-    "chance": "11 %",
-    "min": "9,83",
-    "fair": "8,93",
-    "example": "À 9,83 ou plus, tu joues. À 9,33, tu ne joues pas.",
-    "best": false
-   },
-   {
-    "player": "Matthew Schaefer",
-    "team": "NYI",
-    "game": "Islanders à Dallas",
-    "time": "23h00",
-    "chance": "19 %",
-    "min": "5,68",
-    "fair": "5,15",
-    "example": "À 5,68 ou plus, tu joues. À 5,18, tu ne joues pas.",
-    "best": true
-   },
-   {
-    "player": "Lane Hutson",
-    "team": "MTL",
-    "game": "Montréal à Winnipeg",
+    "player": "Adam Fox",
+    "team": "NYR",
+    "game": "Los Angeles à Rangers",
     "time": "00h00",
-    "chance": "10 %",
-    "min": "10,68",
-    "fair": "9,71",
-    "example": "À 10,68 ou plus, tu joues. À 10,18, tu ne joues pas.",
-    "best": false
-   },
-   {
-    "player": "Cale Makar",
-    "team": "COL",
-    "game": "Colorado à Nashville",
-    "time": "01h00",
-    "chance": "17 %",
-    "min": "6,48",
-    "fair": "5,88",
-    "example": "À 6,48 ou plus, tu joues. À 5,98, tu ne joues pas.",
-    "wm": "3,65",
+    "chance": "9 %",
+    "min": "12,50",
+    "fair": "11,36",
+    "example": "À 12,50 ou plus, tu joues. À 12,00, tu ne joues pas.",
+    "wm": "6,50",
     "wm_ok": false,
-    "wm_edge": -38,
+    "wm_edge": -43,
     "best": false
    },
    {
-    "player": "Quinn Hughes",
-    "team": "MIN",
-    "game": "Minnesota à Vancouver",
-    "time": "03h00",
+    "player": "Simon Nemec",
+    "team": "CGY",
+    "game": "Toronto à Calgary",
+    "time": "01h30",
     "chance": "13 %",
-    "min": "8,67",
-    "fair": "7,87",
-    "example": "À 8,67 ou plus, tu joues. À 8,17, tu ne joues pas.",
-    "wm": "5,00",
+    "min": "8,47",
+    "fair": "7,69",
+    "example": "À 8,47 ou plus, tu joues. À 7,97, tu ne joues pas.",
+    "wm": "7,00",
     "wm_ok": false,
-    "wm_edge": -36,
+    "wm_edge": -9,
     "best": false
+   },
+   {
+    "player": "Evan Bouchard",
+    "team": "EDM",
+    "game": "Detroit à Edmonton",
+    "time": "02h30",
+    "chance": "18 %",
+    "min": "6,18",
+    "fair": "5,62",
+    "example": "À 6,18 ou plus, tu joues. À 5,68, tu ne joues pas.",
+    "wm": "4,00",
+    "wm_ok": false,
+    "wm_edge": -29,
+    "best": true
    }
   ],
   "point": [
    {
-    "player": "Nathan MacKinnon",
-    "form": "18 pts, point dans 6/10",
-    "team": "COL",
-    "game": "Colorado à Nashville",
-    "time": "01h00",
-    "wm": "1,22",
-    "wm_ok": false,
-    "wm_level": "no"
+    "player": "Connor McDavid",
+    "form": "31 pts, point dans 10/10",
+    "team": "EDM",
+    "game": "Detroit à Edmonton",
+    "time": "02h30"
    },
    {
-    "player": "Kirill Kaprizov",
-    "form": "16 pts, 8/10",
-    "team": "MIN",
-    "game": "Minnesota à Vancouver",
-    "time": "03h00",
-    "wm": "1,24",
-    "wm_ok": false,
-    "wm_level": "no"
+    "player": "Leon Draisaitl",
+    "form": "22 pts, point dans 9/10",
+    "team": "EDM",
+    "game": "Detroit à Edmonton",
+    "time": "02h30"
    },
    {
-    "player": "Matthew Tkachuk",
-    "form": "15 pts, 9/10",
-    "team": "FLA",
-    "game": "Floride à Chicago",
-    "time": "20h00"
+    "player": "Auston Matthews",
+    "form": "18 pts, point dans 8/10",
+    "team": "TOR",
+    "game": "Toronto à Calgary",
+    "time": "01h30"
    }
   ],
   "totals": [
    {
-    "game": "Colorado à Nashville",
-    "time": "01h00",
+    "game": "Toronto à Calgary",
+    "time": "01h30",
     "line": "6,5",
     "book": "6,8",
-    "model": "5,8",
+    "model": "5,6",
     "open": true
    },
    {
-    "game": "Minnesota à Vancouver",
-    "time": "03h00",
+    "game": "Detroit à Edmonton",
+    "time": "02h30",
     "line": "6,5",
-    "book": "6,6",
-    "model": "6,1",
+    "book": "6,8",
+    "model": "6,4",
     "open": false
    },
    {
-    "game": "Floride à Chicago",
-    "time": "20h00",
-    "line": "6,5",
-    "book": "6,5",
-    "model": "5,8",
-    "open": false
-   },
-   {
-    "game": "Montréal à Winnipeg",
+    "game": "Los Angeles à Rangers",
     "time": "00h00",
     "line": "5,5",
     "book": "5,9",
-    "model": "5,7",
-    "open": false
-   },
-   {
-    "game": "Islanders à Dallas",
-    "time": "23h00",
-    "line": "5,5",
-    "book": "5,6",
-    "model": "5,3",
+    "model": "5,6",
     "open": false
    }
   ],
   "goalies": [
    {
-    "team": "Floride",
-    "name": "Akira Schmid",
+    "team": "Los Angeles",
+    "name": "Darcy Kuemper",
+    "confirmed": false
+   },
+   {
+    "team": "Rangers",
+    "name": "James Reimer",
     "confirmed": true
    },
    {
-    "team": "Chicago",
-    "name": "Spencer Knight",
+    "team": "Toronto",
+    "name": "Sergei Bobrovsky",
     "confirmed": false
    },
    {
-    "team": "Islanders",
-    "name": "Ilya Sorokin",
-    "confirmed": false
-   },
-   {
-    "team": "Dallas",
-    "name": "Jake Oettinger",
-    "confirmed": false
-   },
-   {
-    "team": "Montréal",
-    "name": "Jacob Fowler",
-    "confirmed": false
-   },
-   {
-    "team": "Winnipeg",
-    "name": "Stuart Skinner",
-    "confirmed": false
-   },
-   {
-    "team": "Colorado",
-    "name": "Scott Wedgewood",
-    "confirmed": false
-   },
-   {
-    "team": "Nashville",
-    "name": "Justus Annunen",
-    "confirmed": false
-   },
-   {
-    "team": "Minnesota",
-    "name": "Calvin Pickard",
+    "team": "Calgary",
+    "name": "Devin Cooley",
     "confirmed": true
    },
    {
-    "team": "Vancouver",
-    "name": "Leevi Merilainen",
-    "confirmed": false
+    "team": "Detroit",
+    "name": "Michal Postava",
+    "confirmed": true
+   },
+   {
+    "team": "Edmonton",
+    "name": "Tristan Jarry",
+    "confirmed": true
    }
   ],
-  "info": [
-   {
-    "title": "📋 **BILAN D'HIER (samedi 24/10)**",
-    "lines": [
-     "**NHL**",
-     "✅ Draisaitl (à jouer, 42 %) : **2 buts**. Mais la cote Winamax était 2,00. Le minimum était 2,36. Tu as bien fait de ne pas jouer : à 2,00 ce pari perd de l'argent sur la durée, même quand il passe.",
-     "❌ Hyman (à jouer, 42 %) : 0 but.",
-     "À surveiller : ✅ Kaprizov et ✅ Dorofeyev ont marqué. ❌ McDavid, Boldy, Thompson, DeBrincat et Hagel n'ont pas marqué.",
-     "➡️ 3 buteurs sur 9 joueurs listés. C'est normal : le modèle en attendait environ 3,4.",
-     "🛡️ Défenseurs : 1 sur 12. ✅ Sanderson (OTT, 11 %) a marqué. Chychrun, le meilleur de la nuit (19 %), n'a pas marqué.",
-     "🎯 Paris point : McDavid ✅, Draisaitl ✅ (cote 1,17, trop basse, pas joué), Kaprizov ✅ → 3 sur 3.",
-     "**Liiga**",
-     "Meilleur buteur de chaque match : 6 sur 8 ✅ (Henman, Ojantakanen, Curry, Hartikainen (cage vide), Beaucage, Siikanen). ❌ Marleau et Rautiainen.",
-     "Top 3 de chaque match : 11 sur 24 (en plus : Mäkiaho 2 buts, Tukiainen, Nikkanen, Kantner, Fridrich).",
-     "⚠️ 6 sur 8, c'est beaucoup de chance. Le modèle en attendait environ 2. Ne t'attends pas à ça chaque soir.",
-     "🛡️ Défenseurs : 1 sur 8 ✅ (Kukkonen, HPK).",
-     "🎯 Paris point : Mäkiaho ✅, Henman ✅ → 2 sur 2.",
-     "**Qui a marqué hier, était-ce prévisible ?**",
-     "NHL : 73 buteurs. 28 étaient prévisibles (chance de 25 % ou plus, ou parmi les 2 meilleurs de leur équipe). 33 étaient possibles (10 à 25 %). 12 étaient imprévisibles (moins de 10 %, surtout des défenseurs, comme Borgen ou Stecher).",
-     "Liiga : 45 buteurs. 14 prévisibles, 24 possibles, 7 imprévisibles.",
-     "📊 **Depuis le début (compteurs)**",
-     "• Buteurs proposés NHL : 7 sur 22. Le modèle en attendait environ 8. C'est un peu en dessous, mais encore dans la normale.",
-     "• Buteurs proposés Liiga : 9 sur 20. Le modèle en attendait environ 6. C'est au-dessus.",
-     "• Seuls vrais « à jouer » : 1 sur 2 (Draisaitl oui, Hyman non).",
-     "• Défenseurs : NHL 3 sur 26, Liiga 2 sur 14. C'est ce qui était prévu (environ 1 sur 7).",
-     "• Paris « au moins 1 point » : 12 sur 15 (80 %). Le taux réel attendu est d'environ 70 %.",
-     "🔍 **Bilan de tes points**",
-     "Hier :",
-     "• **Gardien en méforme qui a mal joué** : NHL 3 sur 6 (Dostal, Lindgren, Jarry) · Liiga 5 sur 8",
-     "• **Gardien en forme qui a bien joué** : NHL 0 sur 1 · Liiga 3 sur 7",
-     "• **Attaquant le plus utilisé qui a marqué** : NHL 8 sur 24 (Sennecke, Pastrnak, Stützle, Rakell, Tuch, Fantilli, Matthews, Farabee) · Liiga 5 sur 16",
-     "• **Défenseur le plus utilisé qui a marqué** : NHL 0 sur 24 · Liiga 2 sur 16",
-     "• **Joueur promu qui a marqué** : NHL 6 sur 39 · Liiga 3 sur 20",
-     "• **Joueur rétrogradé qui a marqué** : NHL 7 sur 39 · Liiga 4 sur 18",
-     "• **Retour de blessure qui a marqué** : NHL 1 sur 17 (Borgen, cage vide) · Liiga 1 sur 19",
-     "• **Les ex qui ont marqué** : NHL 3 sur 8 (Tuch 2 buts, Roslovic, Stecher) · Liiga 0 sur 6",
-     "• **Total de buts à ±1 du prévu** : NHL 4 sur 12 · Liiga 3 sur 8",
-     "• **Match le plus ouvert = le plus de buts** : NHL non (NYR@OTT, 11 buts) · Liiga oui (Jokerit@KooKoo)",
-     "Depuis le début :",
-     "• Gardien en méforme qui a mal joué : 15 sur 29",
-     "• Gardien en forme qui a bien joué : 6 sur 15",
-     "• Attaquant le plus utilisé qui a marqué : 30 sur 80",
-     "• Défenseur le plus utilisé qui a marqué : 7 sur 80",
-     "• Promu qui a marqué : 14 sur 87. Rétrogradé qui a marqué : 12 sur 75",
-     "• Retour de blessure qui a marqué : 8 sur 64",
-     "• Les ex qui ont marqué : 4 sur 37",
-     "• Total à +/-1 but : 13 sur 40. Match le plus ouvert = le plus de buts : 1 sur 4"
-    ]
-   },
-   {
-    "title": "👀 **À RE-SURVEILLER (ils ont raté leur dernier match ciblé et rejouent ce soir)**",
-    "lines": [
-     "• Reinhart 37 % (tu joues à 3,00), B. Tkachuk 33 % (tu joues à 3,36), M. Tkachuk (pari point, min 1,39) : FLA@CHI à 20h00",
-     "• Horvat 32 % (tu joues à 3,43), J. Robertson 37 % (tu joues à 2,95), Heiskanen (défenseur) 11 % (tu joues à 10,29) : NYI@DAL à 23h00",
-     "• Caufield 40 % (tu joues à 2,73), Slafkovsky 26 % (tu joues à 4,29), Hutson (défenseur) 10 % (tu joues à 10,68) : MTL@WPG à 00h00",
-     "• Makar (défenseur) 17 % (tu joues à 6,48), Josi (défenseur) 10 % (tu joues à 10,58) : COL@NSH à 01h00",
-     "• Boldy 43 % (tu joues à 2,58), Q. Hughes (défenseur) 13 % (tu joues à 8,67) : MIN@VAN à 03h00",
-     "📒 Après un match raté, ils ont marqué **7 fois sur 34**. Leur chance moyenne était de 23 %, donc environ 8 buts étaient attendus. Un match raté ne les rend pas « dus » : on ne leur donne aucun bonus."
-    ]
-   },
-   {
-    "title": "🥅 **GARDIENS (5 derniers matchs, puis saison)**",
-    "lines": [
-     "• FLA : Schmid (confirmé), .867 / .867 ⚠️ Remplaçant, et en méforme.",
-     "• CHI : Knight, .887 / .888 ⚠️ En méforme.",
-     "• NYI : Sorokin, .917 / .934.",
-     "• DAL : Oettinger, .923 / .939.",
-     "• MTL : Fowler, .910.",
-     "• WPG : Skinner, .913 / .912.",
-     "• COL : Wedgewood, .938 / .912 ⚠️ Remplaçant.",
-     "• NSH : Annunen ⚠️ Remplaçant. Il n'a joué qu'un match cette saison (.806). Nashville a joué hier.",
-     "• MIN : Pickard (confirmé), .884 ⚠️ Remplaçant, et en méforme. Minnesota a joué hier.",
-     "• VAN : Merilainen, .911 / .917.",
-     "Sauf Schmid et Pickard, ces gardiens sont « probables », pas confirmés."
-    ]
-   },
-   {
-    "title": "🔄 **CHANGEMENTS DE LIGNE (depuis le dernier relevé)**",
-    "lines": [
-     "• VAN : Boeser monte en 1re ligne. DeBrusk et Gallagher montent en 2e ligne. L. Karlsson et Cotter descendent en 4e ligne. Buium monte en 2e paire.",
-     "• MIN : McCarron monte de la 4e à la 2e ligne. Shabanov entre en 3e ligne et au PP1. Yurov passe du PP1 au PP2. Hartman descend en 4e ligne. Spurgeon monte en 1re paire et Brodin passe en 2e.",
-     "• DAL : Kiviranta monte de la 4e à la 1re ligne. Myers monte en 2e paire et Lundkvist descend en 3e.",
-     "• CHI : Greenway monte de la 4e à la 2e ligne. Teravainen descend en 3e.",
-     "• FLA : Eller descend en 3e ligne.",
-     "• MTL : Dobson descend en 3e paire mais reste au PP1. Matheson revient en 1re paire et au PP2.",
-     "• WPG : DeMelo descend en 3e paire. Iafallo perd sa place au PP2.",
-     "• NSH : Colton descend en 4e ligne. Pinchuk entre en 3e ligne."
-    ]
-   },
-   {
-    "title": "🩹 **RETOURS ET ABSENTS (info seulement)**",
-    "lines": [
-     "Retours :",
-     "• FLA : Vilmanis (1 match manqué), 2e ligne, 12 %. Gudas (1 match), 3e paire. Probables, selon Daily Faceoff.",
-     "• CHI : Mangiapane (9 matchs), 4e ligne et PP2, 10 %. Korchinski (7 matchs), 3e paire. Probables, selon Daily Faceoff.",
-     "• DAL : Perron, pas encore joué cette saison. Incertain (« pourrait jouer »).",
-     "• WPG : **Mercer**, arrivé de New Jersey par échange. Ce sera son 1er match avec Winnipeg, en 3e ligne et au PP2, 20 %. Koepke (1 match) en 4e ligne. Salomonsson, rappelé de la ligue mineure (AHL), en 2e paire.",
-     "• VAN : Ohgren (1 match), 3e ligne, 14 %. Brisebois (5 matchs) et L. Schenn (1 match) sont prévus.",
-     "Absents importants (Daily Faceoff) :",
-     "• FLA : Barkov et Marchand (blessés longue durée), Markstrom (incertain).",
-     "• NYI : Barzal (blessé longue durée), Romanov (absent), Maccelli et Ritchie (incertains).",
-     "• DAL : Duchene (blessé longue durée), Steel, Lindell et Faksa (incertains).",
-     "• MTL : Demidov (blessé longue durée), Montembeault, Xhekaj.",
-     "• WPG : Morrissey (absent), Namestnikov (incertain).",
-     "• COL : N. Roy (absent). NSH : Trudeau. CHI : Byram (incertain). VAN : Demko (absent).",
-     "• MIN : Faber, Gustavsson, M. Foligno et N. Foligno (absents).",
-     "Aucun des joueurs proposés ci-dessus n'est sur la liste des blessés."
-    ]
-   },
-   {
-    "title": "🔁 **LES EX (info seulement, aucun bonus)**",
-    "lines": [
-     "Notre test sur 5 719 matchs ne montre aucun effet. Depuis le début, les ex que j'ai listés ont marqué 4 fois sur 37.",
-     "• COL@NSH : Svechkov (COL) affronte Nashville, son ancien club, pour la 1re fois. Colton et Drury (NSH, ex-Colorado) reçoivent leur ancien club pour la 1re fois. C'est la piste qu'on suit : un attaquant qui reçoit son ancien club pour la 1re fois. Leurs chances restent petites (Colton 13 %, Drury 12 %, Svechkov 11 %).",
-     "• MIN@VAN : Quinn Hughes (MIN) revient à Vancouver pour la 1re fois (13 %). Rossi (20 %) et Ohgren (14 %), passés à Vancouver, reçoivent Minnesota. Ils l'avaient déjà affronté une fois, en avril."
-    ]
-   },
-   {
-    "title": "⏱️ **TEMPS DE JEU (5 derniers matchs / saison, en minutes, avec le temps en PP)**",
-    "lines": [
-     "• **FLA** : Attaquant le plus utilisé Reinhart 19,1 / 20,4 (PP 4,3) · Défenseur le plus utilisé S. Jones 23,2 / 24,9",
-     "• **CHI** : Attaquant le plus utilisé Bedard 20,3 / 20,3 (PP 4,1) · Défenseur le plus utilisé Vlasic 20,6 / 20,2",
-     "• **NYI** : Attaquant le plus utilisé Horvat 22,1 / 20,8 (PP 4,0) · Défenseur le plus utilisé Schaefer 27,0 / 26,2",
-     "• **DAL** : Attaquant le plus utilisé J. Robertson 21,9 / 20,2 (PP 3,7) · Défenseur le plus utilisé Heiskanen 27,6 / 26,0",
-     "• **MTL** : Attaquant le plus utilisé Caufield 18,7 / 19,3 (PP 3,2) · Défenseur le plus utilisé Hutson 25,2 / 26,0",
-     "• **WPG** : Attaquant le plus utilisé Connor 20,7 / 21,0 (PP 3,1) · Défenseur le plus utilisé Pionk 25,8 / 24,6",
-     "• **COL** : Attaquant le plus utilisé MacKinnon 22,4 / 21,0 (PP 3,9) · Défenseur le plus utilisé Makar 22,5 / 22,0",
-     "• **NSH** : Attaquant le plus utilisé Forsberg 20,7 / 20,6 (PP 2,8) · Défenseur le plus utilisé Josi 25,9 / 25,7",
-     "• **MIN** : Attaquant le plus utilisé Boldy 22,3 / 21,6 (PP 4,5) · Défenseur le plus utilisé Q. Hughes 27,2 / 27,0 (PP 5,0)",
-     "• **VAN** : Attaquant le plus utilisé E. Pettersson 20,0 / 19,6 (PP 3,7) · Défenseur le plus utilisé Hronek 26,4 / 25,5"
-    ]
-   },
-   {
-    "title": "📊 **INFO TIRS (non pariable, je ne conseille jamais les paris sur les tirs)**",
-    "lines": [
-     "Tirs cadrés par match cette saison (puis total sur les 3 derniers matchs) :",
-     "Boldy 4,7 (15), Connor 4,4 (9), MacKinnon 4,4 (10), Schaefer (défenseur) 4,1 (15), Caufield 3,6 (12), Kaprizov 3,5 (11), B. Tkachuk 3,5 (13), Horvat 3,4 (10)."
-    ]
-   }
-  ],
+  "info": [],
   "liiga_status": "pas de match",
   "hist_nul": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le 5e match après un nul : 19 %. Un peu moins, mais une saison sur 4 dit l'inverse (31 %). Pas fiable : c'est de l'info, pas un pari.",
   "hist_so": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le match juste après des tirs au but : 21 %. Pas d'effet : c'est de l'info, pas un pari.",
   "after_nul": [
    {
-    "team": "Floride",
-    "opp": "Chicago",
-    "home": false,
-    "time": "20h00",
-    "day": "25/10",
+    "team": "Rangers",
+    "opp": "Los Angeles",
+    "home": true,
+    "time": "00h00",
+    "day": "27/10",
     "k": 4,
     "nul": {
-     "date": "16/10",
-     "opp": "Vancouver",
-     "home": true,
-     "score": "3-2",
-     "win": true,
+     "date": "18/10",
+     "opp": "Columbus",
+     "home": false,
+     "score": "0-1",
+     "win": false,
      "kind": "OT"
     },
     "between": [
      {
-      "date": "18/10",
-      "opp": "Seattle",
-      "home": true,
-      "score": "8-3",
-      "win": true
-     },
-     {
-      "date": "22/10",
-      "opp": "Ottawa",
-      "home": false,
-      "score": "1-5",
-      "win": false
-     },
-     {
-      "date": "23/10",
-      "opp": "Pittsburgh",
-      "home": false,
-      "score": "0-4",
-      "win": false
-     }
-    ],
-    "bestD": {
-     "player": "Seth Jones",
-     "chance": "11 %",
-     "min": "9,83",
-     "fair": "8,93",
-     "example": "À 9,83 ou plus, tu joues. À 9,33, tu ne joues pas."
-    }
-   },
-   {
-    "team": "Colorado",
-    "opp": "Nashville",
-    "home": false,
-    "time": "01h00",
-    "day": "26/10",
-    "k": 5,
-    "nul": {
-     "date": "15/10",
-     "opp": "Dallas",
-     "home": true,
-     "score": "2-3",
-     "win": false,
-     "kind": "SO"
-    },
-    "between": [
-     {
-      "date": "17/10",
-      "opp": "Pittsburgh",
+      "date": "20/10",
+      "opp": "Anaheim",
       "home": true,
       "score": "5-2",
       "win": true
      },
      {
-      "date": "20/10",
-      "opp": "Philadelphie",
-      "home": false,
-      "score": "2-3",
-      "win": false
-     },
-     {
-      "date": "21/10",
-      "opp": "New Jersey",
-      "home": false,
-      "score": "3-4",
-      "win": false
-     },
-     {
-      "date": "24/10",
-      "opp": "Tampa Bay",
-      "home": true,
-      "score": "6-3",
-      "win": true
-     }
-    ],
-    "bestD": {
-     "player": "Cale Makar",
-     "chance": "17 %",
-     "min": "6,48",
-     "fair": "5,88",
-     "example": "À 6,48 ou plus, tu joues. À 5,98, tu ne joues pas.",
-     "wm": "3,65",
-     "wm_ok": false,
-     "wm_edge": -38
-    }
-   },
-   {
-    "team": "Vancouver",
-    "opp": "Minnesota",
-    "home": true,
-    "time": "03h00",
-    "day": "26/10",
-    "k": 4,
-    "nul": {
-     "date": "16/10",
-     "opp": "Floride",
-     "home": false,
-     "score": "2-3",
-     "win": false,
-     "kind": "OT"
-    },
-    "between": [
-     {
-      "date": "17/10",
-      "opp": "Tampa Bay",
-      "home": false,
-      "score": "2-4",
-      "win": false
-     },
-     {
-      "date": "21/10",
-      "opp": "Caroline",
-      "home": true,
-      "score": "3-6",
-      "win": false
-     },
-     {
       "date": "23/10",
-      "opp": "Detroit",
-      "home": true,
-      "score": "2-5",
+      "opp": "Toronto",
+      "home": false,
+      "score": "4-5",
+      "win": false
+     },
+     {
+      "date": "25/10",
+      "opp": "Ottawa",
+      "home": false,
+      "score": "4-7",
       "win": false
      }
     ],
     "bestD": {
-     "player": "Filip Hronek",
-     "chance": "6 %",
-     "min": "17,47",
-     "fair": "15,87",
-     "example": "À 17,47 ou plus, tu joues. À 16,97, tu ne joues pas.",
-     "wm": "7,00",
+     "player": "Adam Fox",
+     "chance": "9 %",
+     "min": "12,50",
+     "fair": "11,36",
+     "example": "À 12,50 ou plus, tu joues. À 12,00, tu ne joues pas.",
+     "wm": "6,50",
      "wm_ok": false,
-     "wm_edge": -56
+     "wm_edge": -43
     }
    }
   ],
@@ -619,207 +292,51 @@
   },
   "shots": [
    {
-    "game": "Floride à Chicago",
-    "time": "20h00",
-    "teams": [
-     {
-      "team": "Floride",
-      "date": "23/10",
-      "opp": "Pittsburgh",
-      "home": false,
-      "top": [
-       {
-        "player": "S. Reinhart",
-        "d": false,
-        "sog": 6
-       },
-       {
-        "player": "S. Bennett",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "B. Tkachuk",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     },
-     {
-      "team": "Chicago",
-      "date": "24/10",
-      "opp": "Montréal",
-      "home": true,
-      "top": [
-       {
-        "player": "R. Kantserov",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "R. Greene",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "P. Kane",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Islanders à Dallas",
-    "time": "23h00",
-    "teams": [
-     {
-      "team": "Islanders",
-      "date": "23/10",
-      "opp": "Los Angeles",
-      "home": true,
-      "top": [
-       {
-        "player": "M. Schaefer",
-        "d": true,
-        "sog": 9
-       },
-       {
-        "player": "E. Heineman",
-        "d": false,
-        "sog": 6
-       },
-       {
-        "player": "B. Horvat",
-        "d": false,
-        "sog": 5
-       }
-      ]
-     },
-     {
-      "team": "Dallas",
-      "date": "23/10",
-      "opp": "Winnipeg",
-      "home": true,
-      "top": [
-       {
-        "player": "R. Hintz",
-        "d": false,
-        "sog": 5
-       },
-       {
-        "player": "M. Heiskanen",
-        "d": true,
-        "sog": 5
-       },
-       {
-        "player": "J. Robertson",
-        "d": false,
-        "sog": 4
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Montréal à Winnipeg",
+    "game": "Los Angeles à Rangers",
     "time": "00h00",
     "teams": [
      {
-      "team": "Montréal",
+      "team": "Los Angeles",
       "date": "24/10",
-      "opp": "Chicago",
+      "opp": "New Jersey",
       "home": false,
       "top": [
        {
-        "player": "C. Caufield",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "J. Anderson",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "J. Slafkovský",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     },
-     {
-      "team": "Winnipeg",
-      "date": "23/10",
-      "opp": "Dallas",
-      "home": false,
-      "top": [
-       {
-        "player": "K. Connor",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "G. Vilardi",
-        "d": false,
-        "sog": 2
-       },
-       {
-        "player": "M. Scheifele",
-        "d": false,
-        "sog": 2
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Colorado à Nashville",
-    "time": "01h00",
-    "teams": [
-     {
-      "team": "Colorado",
-      "date": "24/10",
-      "opp": "Tampa Bay",
-      "home": true,
-      "top": [
-       {
-        "player": "T. Hughes",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "N. MacKinnon",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "L. O'Connor",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     },
-     {
-      "team": "Nashville",
-      "date": "25/10",
-      "opp": "Pittsburgh",
-      "home": false,
-      "top": [
-       {
-        "player": "M. Wood",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "S. Stamkos",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "A. Wilsby",
+        "player": "D. Doughty",
         "d": true,
+        "sog": 4
+       },
+       {
+        "player": "A. Panarin",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "T. Moore",
+        "d": false,
+        "sog": 1
+       }
+      ]
+     },
+     {
+      "team": "Rangers",
+      "date": "25/10",
+      "opp": "Ottawa",
+      "home": false,
+      "top": [
+       {
+        "player": "A. Lafrenière",
+        "d": false,
+        "sog": 7
+       },
+       {
+        "player": "P. Dorofeyev",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "T. Kartye",
+        "d": false,
         "sog": 3
        }
       ]
@@ -827,52 +344,104 @@
     ]
    },
    {
-    "game": "Minnesota à Vancouver",
-    "time": "03h00",
+    "game": "Toronto à Calgary",
+    "time": "01h30",
     "teams": [
      {
-      "team": "Minnesota",
+      "team": "Toronto",
       "date": "25/10",
-      "opp": "Seattle",
+      "opp": "Edmonton",
       "home": false,
       "top": [
        {
-        "player": "M. Boldy",
+        "player": "V. Lettieri",
         "d": false,
         "sog": 5
        },
        {
-        "player": "B. Coleman",
+        "player": "B. Duhaime",
         "d": false,
-        "sog": 5
+        "sog": 3
        },
        {
-        "player": "M. Kiersted",
-        "d": true,
-        "sog": 5
+        "player": "W. Nylander",
+        "d": false,
+        "sog": 3
        }
       ]
      },
      {
-      "team": "Vancouver",
-      "date": "23/10",
+      "team": "Calgary",
+      "date": "25/10",
       "opp": "Detroit",
       "home": true,
       "top": [
        {
-        "player": "J. DeBrusk",
+        "player": "M. Gridin",
         "d": false,
-        "sog": 2
+        "sog": 4
        },
        {
-        "player": "J. Lekkerimäki",
+        "player": "R. Strome",
         "d": false,
-        "sog": 2
+        "sog": 3
        },
        {
-        "player": "Z. Buium",
+        "player": "A. Klapka",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Detroit à Edmonton",
+    "time": "02h30",
+    "teams": [
+     {
+      "team": "Detroit",
+      "date": "25/10",
+      "opp": "Calgary",
+      "home": false,
+      "top": [
+       {
+        "player": "D. Larkin",
+        "d": false,
+        "sog": 6
+       },
+       {
+        "player": "A. Copp",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "L. Raymond",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Edmonton",
+      "date": "25/10",
+      "opp": "Toronto",
+      "home": true,
+      "top": [
+       {
+        "player": "L. Draisaitl",
+        "d": false,
+        "sog": 7
+       },
+       {
+        "player": "R. Shea",
         "d": true,
-        "sog": 2
+        "sog": 4
+       },
+       {
+        "player": "J. Walman",
+        "d": true,
+        "sog": 4
        }
       ]
      }
@@ -881,169 +450,130 @@
   ],
   "wm_value": [
    {
-    "player": "Jack Drury",
-    "team": "NSH",
+    "player": "Will Cuylle",
+    "team": "NYR",
     "pos": "F",
-    "game": "Colorado à Nashville",
-    "time": "01h00",
-    "chance": "12 %",
-    "min": "9,17",
-    "fair": "8,33",
-    "wm": "10,50",
-    "edge": 26
+    "game": "Los Angeles à Rangers",
+    "time": "00h00",
+    "chance": "25 %",
+    "min": "4,37",
+    "fair": "3,97",
+    "wm": "4,50",
+    "edge": 13
    },
    {
-    "player": "Filip Chytil",
-    "team": "VAN",
+    "player": "Scott Laughton",
+    "team": "LAK",
     "pos": "F",
-    "game": "Minnesota à Vancouver",
-    "time": "03h00",
-    "chance": "24 %",
-    "min": "4,57",
-    "fair": "4,15",
-    "wm": "5,00",
-    "edge": 21
-   },
-   {
-    "player": "Max Sasson",
-    "team": "VAN",
-    "pos": "F",
-    "game": "Minnesota à Vancouver",
-    "time": "03h00",
-    "chance": "14 %",
-    "min": "7,92",
-    "fair": "7,19",
-    "wm": "8,00",
-    "edge": 11
+    "game": "Los Angeles à Rangers",
+    "time": "00h00",
+    "chance": "16 %",
+    "min": "6,75",
+    "fair": "6,13",
+    "wm": "6,75",
+    "edge": 10
    }
   ],
-  "wm_read_at": "00h20",
+  "wm_read_at": "21h10",
   "wm_games": [
-   "Colorado à Nashville",
-   "Minnesota à Vancouver"
+   "Detroit à Edmonton",
+   "Los Angeles à Rangers",
+   "Toronto à Calgary"
   ],
   "values": [],
-  "values_status": "pending",
   "values_stars": [
    {
-    "player": "Kirill Kaprizov",
-    "wm": "",
-    "min": "2,73",
+    "player": "Leon Draisaitl",
+    "wm": "2,10",
+    "min": "2,43",
     "ok": false,
-    "time": "03h00"
+    "time": "02h30"
    },
    {
-    "player": "Matt Boldy",
-    "wm": "",
-    "min": "2,73",
+    "player": "Alex DeBrincat",
+    "wm": "2,65",
+    "min": "2,93",
     "ok": false,
-    "time": "03h00"
+    "time": "02h30"
    },
    {
-    "player": "Kyle Connor",
-    "wm": "",
-    "min": "2,73",
+    "player": "Connor McDavid",
+    "wm": "2,10",
+    "min": "3,10",
+    "ok": false,
+    "time": "02h30"
+   },
+   {
+    "player": "Pavel Dorofeyev",
+    "wm": "2,90",
+    "min": "3,11",
     "ok": false,
     "time": "00h00"
-   },
-   {
-    "player": "Nathan MacKinnon",
-    "wm": "",
-    "min": "2,73",
-    "ok": false,
-    "time": "01h00"
-   },
-   {
-    "player": "Cole Caufield",
-    "wm": "",
-    "min": "2,73",
-    "ok": false,
-    "time": "00h00"
-   },
-   {
-    "player": "Jason Robertson",
-    "wm": "",
-    "min": "3,08",
-    "ok": false,
-    "time": "23h00"
-   },
-   {
-    "player": "Sam Reinhart",
-    "wm": "",
-    "min": "3,13",
-    "ok": false,
-    "time": "20h00"
-   },
-   {
-    "player": "Wyatt Johnston",
-    "wm": "",
-    "min": "3,20",
-    "ok": false,
-    "time": "23h00"
    }
-  ]
+  ],
+  "values_limite": [],
+  "values_signaux": [
+   {
+    "player": "Erik Gustafsson",
+    "team": "LAK",
+    "pos": "D",
+    "game": "Los Angeles à Rangers",
+    "time": "00h00",
+    "wm": "10,50",
+    "min": "14,48",
+    "fair": "13,16",
+    "chance": "8 %",
+    "one_in": 13,
+    "edge": -20,
+    "signals": "D en PP1, monte en PP1",
+    "score": 4,
+    "down": false,
+    "gap": "cote trop basse : 10,50 au lieu de 14,48 mini",
+    "ok": false
+   },
+   {
+    "player": "Oliver Bjorkstrand",
+    "team": "NYR",
+    "pos": "F",
+    "game": "Los Angeles à Rangers",
+    "time": "00h00",
+    "wm": "5,50",
+    "min": "6,21",
+    "fair": "5,64",
+    "chance": "18 %",
+    "one_in": 6,
+    "edge": -3,
+    "signals": "monte en top-6",
+    "score": 2,
+    "down": false,
+    "gap": "cote un peu basse : 5,50 au lieu de 6,21 mini",
+    "ok": false
+   },
+   {
+    "player": "Trevor Moore",
+    "team": "LAK",
+    "pos": "F",
+    "game": "Los Angeles à Rangers",
+    "time": "00h00",
+    "wm": "4,50",
+    "min": "6,28",
+    "fair": "5,70",
+    "chance": "18 %",
+    "one_in": 6,
+    "edge": -21,
+    "signals": "monte en top-6",
+    "score": 2,
+    "down": false,
+    "gap": "cote trop basse : 4,50 au lieu de 6,28 mini",
+    "ok": false
+   }
+  ],
+  "values_status": "ok"
  },
  "foot": {
   "available": true,
-  "picks": [
-   {
-    "player": "Kylian Mbappé",
-    "match": "Real Madrid à Barcelona",
-    "league": "Liga",
-    "day": "25/10",
-    "chance": "43 %",
-    "P": 0.433,
-    "min": "2,31",
-    "play": "2,54",
-    "example": "À 2,54 ou plus, tu joues. À 2,29, tu ne joues pas.",
-    "star": true,
-    "us_odds": "2,00",
-    "us_ok": false
-   },
-   {
-    "player": "Dominic Calvert-Lewin",
-    "match": "Leeds United à Sunderland",
-    "league": "Premier League",
-    "day": "25/10",
-    "chance": "41 %",
-    "P": 0.409,
-    "min": "2,45",
-    "play": "2,69",
-    "example": "À 2,69 ou plus, tu joues. À 2,44, tu ne joues pas.",
-    "star": false,
-    "us_odds": "2,85",
-    "us_ok": true
-   },
-   {
-    "player": "Harry Kane",
-    "match": "Bayern Munich à SC Freiburg",
-    "league": "Bundesliga",
-    "day": "25/10",
-    "chance": "41 %",
-    "P": 0.405,
-    "min": "2,47",
-    "play": "2,72",
-    "example": "À 2,72 ou plus, tu joues. À 2,47, tu ne joues pas.",
-    "star": true,
-    "us_odds": "1,62",
-    "us_ok": false
-   }
-  ],
+  "picks": [],
   "others": [
-   {
-    "player": "Cameron Archer",
-    "match": "Le Mans à AJ Auxerre",
-    "league": "Ligue 1",
-    "day": "25/10",
-    "chance": "37 %",
-    "P": 0.37,
-    "min": "2,70",
-    "play": "2,97",
-    "example": "À 2,97 ou plus, tu joues. À 2,72, tu ne joues pas.",
-    "star": false,
-    "us_odds": "2,55",
-    "us_ok": false
-   },
    {
     "player": "Ante Budimir",
     "match": "Osasuna à Sevilla",
@@ -1056,62 +586,6 @@
     "example": "À 3,24 ou plus, tu joues. À 2,99, tu ne joues pas.",
     "star": false,
     "us_odds": "3,00",
-    "us_ok": false
-   },
-   {
-    "player": "Anssumane Fati",
-    "match": "Lille à AS Monaco",
-    "league": "Ligue 1",
-    "day": "25/10",
-    "chance": "33 %",
-    "P": 0.332,
-    "min": "3,01",
-    "play": "3,31",
-    "example": "À 3,31 ou plus, tu joues. À 3,06, tu ne joues pas.",
-    "star": false,
-    "us_odds": "3,00",
-    "us_ok": false
-   },
-   {
-    "player": "Amine Gouiri",
-    "match": "Le Havre AC à Marseille",
-    "league": "Ligue 1",
-    "day": "25/10",
-    "chance": "33 %",
-    "P": 0.328,
-    "min": "3,05",
-    "play": "3,35",
-    "example": "À 3,35 ou plus, tu joues. À 3,10, tu ne joues pas.",
-    "star": false,
-    "us_odds": "2,10",
-    "us_ok": false
-   },
-   {
-    "player": "Carlos Espí",
-    "match": "Real Madrid à Barcelona",
-    "league": "Liga",
-    "day": "25/10",
-    "chance": "32 %",
-    "P": 0.319,
-    "min": "3,13",
-    "play": "3,45",
-    "example": "À 3,45 ou plus, tu joues. À 3,20, tu ne joues pas.",
-    "star": false,
-    "us_odds": "2,75",
-    "us_ok": false
-   },
-   {
-    "player": "Brian Brobbey",
-    "match": "Leeds United à Sunderland",
-    "league": "Premier League",
-    "day": "25/10",
-    "chance": "31 %",
-    "P": 0.312,
-    "min": "3,20",
-    "play": "3,52",
-    "example": "À 3,52 ou plus, tu joues. À 3,27, tu ne joues pas.",
-    "star": false,
-    "us_odds": "3,15",
     "us_ok": false
    }
   ],
