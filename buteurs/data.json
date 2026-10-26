@@ -1,5 +1,5 @@
 {
- "generated": "26/10/2026 00h44",
+ "generated": "26/10/2026 12h53",
  "date": "2026-10-25",
  "date_fr": "25/10/2026",
  "hockey": {
@@ -921,6 +921,66 @@
   "wm_games": [
    "Colorado à Nashville",
    "Minnesota à Vancouver"
+  ],
+  "values": [],
+  "values_status": "pending",
+  "values_stars": [
+   {
+    "player": "Kirill Kaprizov",
+    "wm": "",
+    "min": "2,73",
+    "ok": false,
+    "time": "03h00"
+   },
+   {
+    "player": "Matt Boldy",
+    "wm": "",
+    "min": "2,73",
+    "ok": false,
+    "time": "03h00"
+   },
+   {
+    "player": "Kyle Connor",
+    "wm": "",
+    "min": "2,73",
+    "ok": false,
+    "time": "00h00"
+   },
+   {
+    "player": "Nathan MacKinnon",
+    "wm": "",
+    "min": "2,73",
+    "ok": false,
+    "time": "01h00"
+   },
+   {
+    "player": "Cole Caufield",
+    "wm": "",
+    "min": "2,73",
+    "ok": false,
+    "time": "00h00"
+   },
+   {
+    "player": "Jason Robertson",
+    "wm": "",
+    "min": "3,08",
+    "ok": false,
+    "time": "23h00"
+   },
+   {
+    "player": "Sam Reinhart",
+    "wm": "",
+    "min": "3,13",
+    "ok": false,
+    "time": "20h00"
+   },
+   {
+    "player": "Wyatt Johnston",
+    "wm": "",
+    "min": "3,20",
+    "ok": false,
+    "time": "23h00"
+   }
   ]
  },
  "foot": {

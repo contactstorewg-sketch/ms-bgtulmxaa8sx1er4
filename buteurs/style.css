@@ -44,3 +44,14 @@ footer a{color:var(--warn)}
 .wm{margin-top:3px;font-size:15px}
 .rodd.pist{color:var(--warn)}
 .fair{color:var(--mut);font-size:13px}
+
+.vcard{border:2px solid var(--ok)}
+.vrow{background:var(--card2);border-radius:14px;padding:12px;margin:10px 0}
+.vtop{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.vname{font-size:19px;font-weight:700}
+.vodd{font-size:32px;font-weight:800;color:var(--ok);line-height:1;text-align:right}.vodd small{display:block;font-size:11px;color:var(--mut);font-weight:500}
+.vone{font-size:20px;margin:4px 0 2px}.vone b{color:var(--warn)}
+.vnone{font-size:22px;font-weight:800;margin:8px 0}
+.vfoot{font-weight:700;margin-top:10px;font-size:15px}
+details.stars summary{font-size:15px;font-weight:600;color:var(--mut)}
+.small a{color:var(--warn)}
