@@ -18,7 +18,12 @@ function coverLine(p){
   var c=p.cover_point; if(!c) return '';
   var odd=c.odds?esc(c.odds):'–';
   var cls=c.ok?'cover ok':'cover no';
-  return '<div class="'+cls+'">🎯 Couverture point : <b>'+odd+'</b>'+(c.min?' <span class="small">(dès '+esc(c.min)+')</span>':'')+' · '+esc(c.note||'')+'</div>';
+  var o='<div class="'+cls+'">🎯 Couverture point : <b>'+odd+'</b>'+(c.min?' <span class="small">(dès '+esc(c.min)+')</span>':'')+' · '+esc(c.note||'')+'</div>';
+  if(c.mise){
+    o+='<div class="cover-mise">Mise : <b>'+esc(c.mise)+'</b></div>';
+    if(c.outcomes) o+='<div class="cover-out">'+esc(c.outcomes)+'</div>';
+  }
+  return o;
 }
 function playable(p){return p.wm?p.wm_ok:true}
 function started(d,t){var m=/(\d{1,2})h(\d{2})/.exec(t||'');if(!m||!d.date)return false;var x=new Date(d.date+'T'+('0'+m[1]).slice(-2)+':'+m[2]+':00+01:00');if(+m[1]<12)x=new Date(x.getTime()+864e5);return Date.now()>x.getTime()+5*60e3}
@@ -54,7 +59,7 @@ function resume(d){
     if(sg.length)vb+='<h3 class="vsig">🔥 Ce qui me fait dire (cote pas forcément bonne)</h3><p class="small">Un signal fort pour ces joueurs. Si la cote est sous le minimum, c\'est ton choix.</p>'+sg.map(sigRow).join('');
     if(h.wm_read_at)vb+='<p class="small">Cotes Winamax lues à '+esc(h.wm_read_at)+'. ⭐ = Winamax paie plus que les autres sites. ⬆️ = rôle en hausse ce soir.'+(v.concat(lm,sg).some(function(p){return p.down})?' ⬇️ = en baisse ce soir, mais la cote dépasse son nouveau minimum.':'')+'</p>';
   }
-  o+='<div class="card vcard"><h2>💰 Les values du soir</h2>'+vb+'<p class="vfoot">1 € par pari, jamais de combiné.</p></div>';
+  o+='<div class="card vcard"><h2>💰 Les values du soir</h2>'+vb+'<p class="vfoot">1 € par pari (2 € max si couverture point : buteur + point), jamais de combiné.</p></div>';
   // Stars : une ligne repliée
   var st;
   if(h.values_status==='ok'){
