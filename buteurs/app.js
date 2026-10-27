@@ -14,25 +14,31 @@ function fairLine(p){return p.fair?'<div class="small fair">cote juste '+esc(p.f
 function badge(ok){return ok?'<span class="tag ok">✅ tu joues</span>':'<span class="tag no">❌ tu ne joues pas</span>'}
 function wmLine(p){return p.wm?'<div class="wm">Winamax : <b>'+esc(p.wm)+'</b> '+badge(p.wm_ok)+'</div>':''}
 function wmPts(p){return p.wm?'<div class="wm">Winamax : <b>'+esc(p.wm)+'</b> '+(p.wm_level==='correct'?'<span class="tag">juste correct</span>':badge(p.wm_ok))+'</div>':''}
+function coverLine(p){
+  var c=p.cover_point; if(!c) return '';
+  var odd=c.odds?esc(c.odds):'–';
+  var cls=c.ok?'cover ok':'cover no';
+  return '<div class="'+cls+'">🎯 Couverture point : <b>'+odd+'</b>'+(c.min?' <span class="small">(dès '+esc(c.min)+')</span>':'')+' · '+esc(c.note||'')+'</div>';
+}
 function playable(p){return p.wm?p.wm_ok:true}
 function started(d,t){var m=/(\d{1,2})h(\d{2})/.exec(t||'');if(!m||!d.date)return false;var x=new Date(d.date+'T'+('0'+m[1]).slice(-2)+':'+m[2]+':00+01:00');if(+m[1]<12)x=new Date(x.getTime()+864e5);return Date.now()>x.getTime()+5*60e3}
 function valRow(p,i){
   return '<div class="vrow"><div class="vtop"><div class="vname">'+(i+1)+'. '+esc(p.player)+' <span class="tag">'+esc(p.team)+'</span>'+(p.star?' <span class="tag ok">⭐</span>':'')+(p.up?' <span class="tag">⬆️</span>':'')+(p.down?' <span class="tag">⬇️</span>':'')+'</div><div class="vodd">'+esc(p.wm)+'<small>Winamax</small></div></div>'+
   '<div class="vone">Gagne <b>1 fois sur '+esc(p.one_in)+'</b></div>'+
   '<div class="meta">'+esc(p.why)+' · '+esc(p.game)+' · '+esc(p.time)+'</div>'+
-  '<div class="small fair">cote juste '+esc(p.fair)+' · tu joues dès '+esc(p.min)+(p.market_fair?' · autres sites '+esc(p.market_fair):'')+'</div></div>';
+  '<div class="small fair">cote juste '+esc(p.fair)+' · tu joues dès '+esc(p.min)+(p.market_fair?' · autres sites '+esc(p.market_fair):'')+'</div>'+coverLine(p)+'</div>';
 }
 function limRow(p){
   return '<div class="vrow lrow"><div class="vtop"><div class="vname">🟡 '+esc(p.player)+' <span class="tag">'+esc(p.team)+'</span>'+(p.down?' <span class="tag">⬇️</span>':'')+'</div><div class="vodd">'+esc(p.wm)+'<small>Winamax</small></div></div>'+
   '<div class="small">Minimum '+esc(p.min)+' · chance '+esc(p.chance)+' · gagne 1 fois sur '+esc(p.one_in)+'</div>'+
-  '<div class="meta">'+esc(p.why)+' · '+esc(p.game)+' · '+esc(p.time)+'</div></div>';
+  '<div class="meta">'+esc(p.why)+' · '+esc(p.game)+' · '+esc(p.time)+'</div>'+coverLine(p)+'</div>';
 }
 function sigRow(p){
   return '<div class="vrow srow"><div class="vtop"><div class="vname">🔥 '+esc(p.player)+' <span class="tag">'+esc(p.team)+'</span>'+(p.down?' <span class="tag">⬇️</span>':'')+'</div><div class="vodd">'+(p.wm?esc(p.wm):'–')+'<small>Winamax</small></div></div>'+
   '<div class="vsigs">'+esc(p.signals)+'</div>'+
   '<div class="small">Minimum '+esc(p.min)+' · chance '+esc(p.chance)+' · gagne 1 fois sur '+esc(p.one_in)+'</div>'+
   (p.gap?'<div class="small gap">'+esc(p.gap)+'</div>':'')+
-  '<div class="meta">'+esc(p.game)+' · '+esc(p.time)+'</div></div>';
+  '<div class="meta">'+esc(p.game)+' · '+esc(p.time)+'</div>'+coverLine(p)+'</div>';
 }
 function resume(d){
   var h=d.hockey,o='';
