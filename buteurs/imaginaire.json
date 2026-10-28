@@ -1,5 +1,5 @@
 {
- "updated": "28/10/2026 20h13",
+ "updated": "28/10/2026 20h43",
  "scenarios": [
   {
    "id": "tab_d",
@@ -438,6 +438,372 @@
      }
     ],
     "note": "Ce soir Jukurit-Lukko s'est aussi fini aux TAB : Jukurit et Lukko sont les 2 prochaines équipes à suivre."
+   },
+   "nhl": {
+    "title": "Test NHL : 3 saisons (2023-24 à 2025-26)",
+    "note": "Buts en temps réglementaire (1er au 3e tiers). Avec la prolongation, ça change à peine (après TAB 37 %, tous les matchs 36 %).",
+    "table": [
+     {
+      "label": "Après TAB",
+      "tous": {
+       "oui": 200,
+       "total": 550,
+       "pct": "36 %"
+      },
+      "dom": {
+       "oui": 106,
+       "total": 277,
+       "pct": "38 %"
+      },
+      "ext": {
+       "oui": 94,
+       "total": 273,
+       "pct": "34 %"
+      }
+     },
+     {
+      "label": "Après TAB perdu",
+      "tous": {
+       "oui": 103,
+       "total": 275,
+       "pct": "37 %"
+      },
+      "dom": {
+       "oui": 54,
+       "total": 133,
+       "pct": "41 %"
+      },
+      "ext": {
+       "oui": 49,
+       "total": 142,
+       "pct": "35 %"
+      }
+     },
+     {
+      "label": "Après TAB gagné",
+      "tous": {
+       "oui": 97,
+       "total": 275,
+       "pct": "35 %"
+      },
+      "dom": {
+       "oui": 52,
+       "total": 144,
+       "pct": "36 %"
+      },
+      "ext": {
+       "oui": 45,
+       "total": 131,
+       "pct": "34 %"
+      }
+     },
+     {
+      "label": "Après prolongation",
+      "tous": {
+       "oui": 420,
+       "total": 1173,
+       "pct": "36 %"
+      },
+      "dom": {
+       "oui": 219,
+       "total": 597,
+       "pct": "37 %"
+      },
+      "ext": {
+       "oui": 201,
+       "total": 576,
+       "pct": "35 %"
+      }
+     },
+     {
+      "label": "Après temps réglementaire",
+      "tous": {
+       "oui": 2131,
+       "total": 6053,
+       "pct": "35 %"
+      },
+      "dom": {
+       "oui": 1106,
+       "total": 3011,
+       "pct": "37 %"
+      },
+      "ext": {
+       "oui": 1025,
+       "total": 3042,
+       "pct": "34 %"
+      }
+     },
+     {
+      "label": "Tous les matchs",
+      "tous": {
+       "oui": 2778,
+       "total": 7872,
+       "pct": "35 %"
+      },
+      "dom": {
+       "oui": 1443,
+       "total": 3936,
+       "pct": "37 %"
+      },
+      "ext": {
+       "oui": 1335,
+       "total": 3936,
+       "pct": "34 %"
+      }
+     }
+    ],
+    "seasons": [
+     {
+      "season": "2023-24",
+      "after": {
+       "tous": {
+        "oui": 48,
+        "total": 160,
+        "pct": "30 %"
+       },
+       "dom": {
+        "oui": 22,
+        "total": 78,
+        "pct": "28 %"
+       },
+       "ext": {
+        "oui": 26,
+        "total": 82,
+        "pct": "32 %"
+       }
+      },
+      "base": {
+       "tous": {
+        "oui": 917,
+        "total": 2624,
+        "pct": "35 %"
+       },
+       "dom": {
+        "oui": 469,
+        "total": 1312,
+        "pct": "36 %"
+       },
+       "ext": {
+        "oui": 448,
+        "total": 1312,
+        "pct": "34 %"
+       }
+      }
+     },
+     {
+      "season": "2024-25",
+      "after": {
+       "tous": {
+        "oui": 60,
+        "total": 154,
+        "pct": "39 %"
+       },
+       "dom": {
+        "oui": 31,
+        "total": 73,
+        "pct": "42 %"
+       },
+       "ext": {
+        "oui": 29,
+        "total": 81,
+        "pct": "36 %"
+       }
+      },
+      "base": {
+       "tous": {
+        "oui": 906,
+        "total": 2624,
+        "pct": "35 %"
+       },
+       "dom": {
+        "oui": 477,
+        "total": 1312,
+        "pct": "36 %"
+       },
+       "ext": {
+        "oui": 429,
+        "total": 1312,
+        "pct": "33 %"
+       }
+      }
+     },
+     {
+      "season": "2025-26",
+      "after": {
+       "tous": {
+        "oui": 92,
+        "total": 236,
+        "pct": "39 %"
+       },
+       "dom": {
+        "oui": 53,
+        "total": 126,
+        "pct": "42 %"
+       },
+       "ext": {
+        "oui": 39,
+        "total": 110,
+        "pct": "35 %"
+       }
+      },
+      "base": {
+       "tous": {
+        "oui": 955,
+        "total": 2624,
+        "pct": "36 %"
+       },
+       "dom": {
+        "oui": 497,
+        "total": 1312,
+        "pct": "38 %"
+       },
+       "ext": {
+        "oui": 458,
+        "total": 1312,
+        "pct": "35 %"
+       }
+      }
+     },
+     {
+      "season": "2026-27 (en cours)",
+      "after": {
+       "tous": {
+        "oui": 9,
+        "total": 26,
+        "pct": "35 %"
+       },
+       "dom": {
+        "oui": 2,
+        "total": 10,
+        "pct": "20 %"
+       },
+       "ext": {
+        "oui": 7,
+        "total": 16,
+        "pct": "44 %"
+       }
+      },
+      "base": {
+       "tous": {
+        "oui": 134,
+        "total": 396,
+        "pct": "34 %"
+       },
+       "dom": {
+        "oui": 65,
+        "total": 198,
+        "pct": "33 %"
+       },
+       "ext": {
+        "oui": 69,
+        "total": 198,
+        "pct": "35 %"
+       }
+      }
+     }
+    ],
+    "test": "Après TAB 36 % (200 sur 550) contre 35 % pour les autres matchs (2 551 sur 7 226). L'écart est trop petit pour compter : il peut venir du hasard (p = 0,62). À domicile : 38 % contre 37 % (p = 0,61). À l'extérieur : 34 % contre 34 % (p = 0,85).",
+    "verdict": "En NHL, la règle ne marche pas : après des TAB, un défenseur marque aussi souvent que d'habitude, environ 1 match sur 3. En Liiga, le 54 % repose sur seulement 26 cas.",
+    "edm": {
+     "team": "Edmonton",
+     "note": "Edmonton sort d'une défaite aux TAB (Detroit 4-3, 26/10) et reçoit Calgary ce soir à 01h30 (heure de Paris). Après TAB, un défenseur d'Edmonton a marqué 5 fois sur 9 (2023 à 2026), mais 1 fois sur 5 à domicile et 4 sur 4 à l'extérieur. C'est très peu de cas. Sur 3 saisons, un défenseur d'Edmonton marque dans 37 % des matchs (91 sur 246). Bouchard en a mis 47 sur 3 saisons, Ekholm 25.",
+     "cases": [
+      {
+       "tab": "CAR 5-6 EDM (TAB gagné)",
+       "day": "24/10/2026",
+       "home": true,
+       "opp": "TOR",
+       "score": "TOR 7-2 EDM",
+       "ds": [],
+       "ok": false
+      },
+      {
+       "tab": "COL 2-1 EDM (TAB perdu)",
+       "day": "16/04/2026",
+       "home": true,
+       "opp": "VAN",
+       "score": "VAN 1-6 EDM",
+       "ds": [],
+       "ok": false
+      },
+      {
+       "tab": "LAK 4-3 EDM (TAB perdu)",
+       "day": "12/01/2026",
+       "home": false,
+       "opp": "CHI",
+       "score": "EDM 4-1 CHI",
+       "ds": [
+        "E. Bouchard",
+        "E. Bouchard"
+       ],
+       "ok": true
+      },
+      {
+       "tab": "EDM 3-4 DAL (TAB perdu)",
+       "day": "08/11/2025",
+       "home": true,
+       "opp": "COL",
+       "score": "COL 9-1 EDM",
+       "ds": [],
+       "ok": false
+      },
+      {
+       "tab": "CGY 4-3 EDM (TAB perdu)",
+       "day": "11/10/2025",
+       "home": true,
+       "opp": "VAN",
+       "score": "VAN 1-3 EDM",
+       "ds": [],
+       "ok": false
+      },
+      {
+       "tab": "DET 3-2 EDM (TAB perdu)",
+       "day": "01/02/2025",
+       "home": true,
+       "opp": "TOR",
+       "score": "TOR 4-3 EDM",
+       "ds": [
+        "E. Bouchard"
+       ],
+       "ok": true
+      },
+      {
+       "tab": "EDM 2-3 BUF (TAB perdu)",
+       "day": "10/03/2024",
+       "home": false,
+       "opp": "PIT",
+       "score": "EDM 4-0 PIT",
+       "ds": [
+        "M. Ekholm",
+        "D. Nurse",
+        "D. Nurse"
+       ],
+       "ok": true
+      },
+      {
+       "tab": "EDM 3-2 LAK (TAB gagné)",
+       "day": "31/12/2023",
+       "home": false,
+       "opp": "ANA",
+       "score": "EDM 7-2 ANA",
+       "ds": [
+        "B. Kulak"
+       ],
+       "ok": true
+      },
+      {
+       "tab": "VGK 4-5 EDM (TAB gagné)",
+       "day": "30/11/2023",
+       "home": false,
+       "opp": "WPG",
+       "score": "EDM 3-1 WPG",
+       "ds": [
+        "D. Nurse"
+       ],
+       "ok": true
+      }
+     ]
+    }
    }
   }
  ],

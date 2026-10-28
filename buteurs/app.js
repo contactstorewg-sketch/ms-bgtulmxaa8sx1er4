@@ -199,6 +199,13 @@ function imagHtml(m){
     x+='<p class="small">👉 Exemple : sur un match normal, un défenseur de l\'équipe marque '+esc(b.tous.pct)+' du temps. Après des TAB, c\'est '+esc(a.tous.pct)+'. Attention : seulement '+a.tous.total+' cas, c\'est encore peu.</p>';
     if(sc.candidates&&sc.candidates.length)x+='<h3>👀 Prochaines équipes à suivre</h3><p class="small">Leur dernier match s\'est fini aux TAB.</p>'+sc.candidates.map(function(c){return '<div class="icase"><b>'+esc(c.team)+'</b> · '+esc(c.day)+' à '+esc(c.time)+'<br>'+lieu(c.home,c.opp)+'<div class="small">TAB : '+esc(c.tab)+', '+esc(c.tab_day)+'</div></div>'}).join('');
     o+='<div class="card imag"><h2>🌙 '+esc(sc.title)+'</h2>'+x+'</div>';
+    if(sc.nhl){var n=sc.nhl,z='<p class="small">Le match suivant, un défenseur de l\'équipe marque. '+esc(n.note)+'</p>';
+      function cl(v){return '<td>'+esc(v.pct)+'<br><small>'+v.oui+'/'+v.total+'</small></td>'}
+      z+='<table class="it"><tr><th></th><th>Tous</th><th>🏠</th><th>✈️</th></tr>'+n.table.map(function(r){return '<tr><td>'+esc(r.label)+'</td>'+cl(r.tous)+cl(r.dom)+cl(r.ext)+'</tr>'}).join('')+'</table>';
+      z+='<p>'+esc(n.test)+'</p><p><b>👉 '+esc(n.verdict)+'</b></p>';
+      z+='<details><summary>Saison par saison</summary><div class="in"><table class="it"><tr><th>Saison</th><th>Après TAB</th><th>Tous les matchs</th></tr>'+n.seasons.map(function(r){return '<tr><td>'+esc(r.season)+'</td>'+cl(r.after.tous)+cl(r.base.tous)+'</tr>'}).join('')+'</table></div></details>';
+      o+='<div class="card imag"><h2>🏒 '+esc(n.title)+'</h2>'+z+'</div>';
+      if(n.edm)o+=card('🛢️ '+esc(n.edm.team)+' après des TAB','<p class="small">'+esc(n.edm.note)+'</p>'+n.edm.cases.map(function(c){return '<div class="icase">'+(c.ok?'✅':'❌')+' '+esc(c.day)+', '+lieu(c.home,c.opp)+' · '+esc(c.score)+'<div class="small">'+(c.ok?'Défenseur buteur : '+esc(c.ds.join(', ')):'Pas de défenseur buteur')+' · TAB avant : '+esc(c.tab)+'</div></div>'}).join(''));}
     if(f){var y='';
       if(f.next)y+='<p>Prochain match : <b>'+esc(f.next.day)+' à '+esc(f.next.time)+'</b>, '+lieu(f.next.home,f.next.opp)+'.</p>';
       if(f.note)y+='<p class="small">'+esc(f.note)+'</p>';
