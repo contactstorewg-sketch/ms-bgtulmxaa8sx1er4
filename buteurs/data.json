@@ -1,390 +1,180 @@
 {
- "generated": "27/10/2026 15h29",
- "date": "2026-10-27",
- "date_fr": "27/10/2026",
+ "generated": "28/10/2026 15h16",
+ "date": "2026-10-28",
+ "date_fr": "28/10/2026",
  "hockey": {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "model": "NHL v2 attaquants, v1 défenseurs; Liiga v4",
   "intro": [
-   "Heures de Paris. 1 match de Liiga à 17h30 (Sport à KalPa) et 11 matchs NHL cette nuit, de 00h00 à 03h30. Cotes Winamax lues à 16h20 pour les 12 matchs."
+   "Heures de Paris. 7 matchs de Liiga à 17h30 et 4 matchs NHL cette nuit (00h30 à 03h00). Cotes Winamax lues à 12h51 (Liiga) et vers 15h10 (NHL), sans compte."
   ],
   "games": [
    {
-    "game": "Columbus à Philadelphie",
-    "time": "00h00"
+    "game": "Philadelphie à Washington",
+    "time": "00h30"
    },
    {
-    "game": "Boston à Caroline",
-    "time": "01h00"
+    "game": "Calgary à Edmonton",
+    "time": "01h30"
    },
    {
-    "game": "Los Angeles à Chicago",
-    "time": "01h00"
-   },
-   {
-    "game": "Montréal à St. Louis",
-    "time": "01h00"
-   },
-   {
-    "game": "Islanders à Nashville",
-    "time": "01h00"
-   },
-   {
-    "game": "New Jersey à Dallas",
-    "time": "01h00"
-   },
-   {
-    "game": "Floride à Winnipeg",
-    "time": "01h00"
-   },
-   {
-    "game": "Minnesota à Utah",
+    "game": "New Jersey à Colorado",
     "time": "02h00"
    },
    {
-    "game": "Ottawa à Vegas",
+    "game": "Toronto à Seattle",
     "time": "03h00"
-   },
-   {
-    "game": "Vancouver à Anaheim",
-    "time": "03h00"
-   },
-   {
-    "game": "Buffalo à San José",
-    "time": "03h30"
    }
   ],
   "a_jouer": [
    {
-    "player": "Kyle Connor",
-    "team": "WPG",
-    "game": "Floride à Winnipeg",
-    "time": "01h00",
-    "chance": "45 %",
-    "min": "2,44",
-    "fair": "2,22",
-    "example": "À 2,44 ou plus, tu joues. À 2,29, tu ne joues pas.",
-    "wm": "2,60",
-    "wm_ok": true,
-    "wm_edge": 17
+    "player": "Leon Draisaitl",
+    "team": "EDM",
+    "game": "Calgary à Edmonton",
+    "time": "01h30",
+    "chance": "46 %",
+    "min": "2,42",
+    "fair": "2,19",
+    "example": "À 2,42 ou plus, tu joues. À 2,27, tu ne joues pas.",
+    "wm": "1,90",
+    "wm_ok": false,
+    "wm_edge": -13
+   }
+  ],
+  "notes": [],
+  "surveiller": [
+   {
+    "player": "Nathan MacKinnon",
+    "team": "COL",
+    "game": "New Jersey à Colorado",
+    "time": "02h00",
+    "chance": "40 %",
+    "min": "2,79",
+    "fair": "2,53",
+    "example": "À 2,79 ou plus, tu joues. À 2,64, tu ne joues pas.",
+    "wm": "2,25",
+    "wm_ok": false,
+    "wm_edge": -11
    },
    {
-    "player": "Tage Thompson",
-    "team": "BUF",
-    "game": "Buffalo à San José",
-    "time": "03h30",
-    "chance": "44 %",
-    "min": "2,49",
-    "fair": "2,26",
-    "example": "À 2,49 ou plus, tu joues. À 2,34, tu ne joues pas.",
-    "wm": "2,40",
+    "player": "William Nylander",
+    "team": "TOR",
+    "game": "Toronto à Seattle",
+    "time": "03h00",
+    "chance": "36 %",
+    "min": "3,09",
+    "fair": "2,80",
+    "example": "À 3,09 ou plus, tu joues. À 2,94, tu ne joues pas.",
+    "wm": "2,65",
+    "wm_ok": false,
+    "wm_edge": -5
+   },
+   {
+    "player": "Alex Tuch",
+    "team": "WSH",
+    "game": "Philadelphie à Washington",
+    "time": "00h30",
+    "chance": "35 %",
+    "min": "3,13",
+    "fair": "2,84",
+    "example": "À 3,13 ou plus, tu joues. À 2,98, tu ne joues pas.",
+    "wm": "3,00",
     "wm_ok": false,
     "wm_edge": 6
    },
    {
-    "player": "Kirill Kaprizov",
-    "team": "MIN",
-    "game": "Minnesota à Utah",
+    "player": "Connor McDavid",
+    "team": "EDM",
+    "game": "Calgary à Edmonton",
+    "time": "01h30",
+    "chance": "35 %",
+    "min": "3,13",
+    "fair": "2,84",
+    "example": "À 3,13 ou plus, tu joues. À 2,98, tu ne joues pas.",
+    "wm": "2,10",
+    "wm_ok": false,
+    "wm_edge": -26
+   },
+   {
+    "player": "Jack Hughes",
+    "team": "NJD",
+    "game": "New Jersey à Colorado",
     "time": "02h00",
-    "chance": "40 %",
-    "min": "2,73",
-    "fair": "2,48",
-    "example": "À 2,73 ou plus, tu joues. À 2,58, tu ne joues pas.",
+    "chance": "33 %",
+    "min": "3,32",
+    "fair": "3,01",
+    "example": "À 3,32 ou plus, tu joues. À 3,17, tu ne joues pas.",
+    "wm": "3,00",
+    "wm_ok": false,
+    "wm_edge": 0
+   },
+   {
+    "player": "Auston Matthews",
+    "team": "TOR",
+    "game": "Toronto à Seattle",
+    "time": "03h00",
+    "chance": "33 %",
+    "min": "3,33",
+    "fair": "3,02",
+    "example": "À 3,33 ou plus, tu joues. À 3,18, tu ne joues pas.",
     "wm": "2,25",
     "wm_ok": false,
-    "wm_edge": -9
-   },
-   {
-    "player": "Macklin Celebrini",
-    "team": "SJS",
-    "game": "Buffalo à San José",
-    "time": "03h30",
-    "chance": "40 %",
-    "min": "2,75",
-    "fair": "2,49",
-    "example": "À 2,75 ou plus, tu joues. À 2,60, tu ne joues pas.",
-    "wm": "2,40",
-    "wm_ok": false,
-    "wm_edge": -4
-   }
-  ],
-  "notes": [
-   "⚠️ Aucun gardien n'est confirmé à 15h et les lignes ne sont pas définitives. Revérifie juste avant de parier.",
-   "Rappel : même le meilleur choix marque environ 4 fois sur 10. **Jamais de combiné.**",
-   "⚠️ En face, Kochetkov est en forme (.924 sur 5 matchs). Mittelstadt marque environ 1 soir sur 7.",
-   "⚠️ Les 3 sont dans le même match, face à Vladar en forme (.921 sur 5 matchs). Si Columbus a une mauvaise soirée, les 3 perdent ensemble. Si tu en veux un seul, prends K. Johnson.",
-   "Rappel : sur l'historique, le bloc 🔥 marque comme prévu mais ses cotes sont trop basses (−17 % en 2025-26). C'est de l'info, à 1 € maximum."
-  ],
-  "surveiller": [
-   {
-    "player": "Cutter Gauthier",
-    "team": "ANA",
-    "game": "Vancouver à Anaheim",
-    "time": "03h00",
-    "chance": "39 %",
-    "min": "2,85",
-    "fair": "2,59",
-    "example": "À 2,85 ou plus, tu joues. À 2,70, tu ne joues pas.",
-    "wm": "2,30",
-    "wm_ok": false,
-    "wm_edge": -11
-   },
-   {
-    "player": "Matt Boldy",
-    "team": "MIN",
-    "game": "Minnesota à Utah",
-    "time": "02h00",
-    "chance": "38 %",
-    "min": "2,88",
-    "fair": "2,62",
-    "example": "À 2,88 ou plus, tu joues. À 2,73, tu ne joues pas.",
-    "wm": "2,60",
-    "wm_ok": false,
-    "wm_edge": -1
-   },
-   {
-    "player": "Jason Robertson",
-    "team": "DAL",
-    "game": "New Jersey à Dallas",
-    "time": "01h00",
-    "chance": "37 %",
-    "min": "2,95",
-    "fair": "2,67",
-    "example": "À 2,95 ou plus, tu joues. À 2,80, tu ne joues pas.",
-    "wm": "2,65",
-    "wm_ok": false,
-    "wm_edge": -1
-   },
-   {
-    "player": "Cole Caufield",
-    "team": "MTL",
-    "game": "Montréal à St. Louis",
-    "time": "01h00",
-    "chance": "37 %",
-    "min": "2,96",
-    "fair": "2,69",
-    "example": "À 2,96 ou plus, tu joues. À 2,81, tu ne joues pas.",
-    "wm": "2,40",
-    "wm_ok": false,
-    "wm_edge": -11
-   },
-   {
-    "player": "Wyatt Johnston",
-    "team": "DAL",
-    "game": "New Jersey à Dallas",
-    "time": "01h00",
-    "chance": "36 %",
-    "min": "3,06",
-    "fair": "2,78",
-    "example": "À 3,06 ou plus, tu joues. À 2,91, tu ne joues pas.",
-    "wm": "2,85",
-    "wm_ok": false,
-    "wm_edge": 3
-   },
-   {
-    "player": "Bo Horvat",
-    "team": "NYI",
-    "game": "Islanders à Nashville",
-    "time": "01h00",
-    "chance": "36 %",
-    "min": "3,09",
-    "fair": "2,81",
-    "example": "À 3,09 ou plus, tu joues. À 2,94, tu ne joues pas.",
-    "wm": "2,75",
-    "wm_ok": false,
-    "wm_edge": -2
-   },
-   {
-    "player": "Adrian Kempe",
-    "team": "LAK",
-    "game": "Los Angeles à Chicago",
-    "time": "01h00",
-    "chance": "36 %",
-    "min": "3,10",
-    "fair": "2,82",
-    "example": "À 3,10 ou plus, tu joues. À 2,95, tu ne joues pas.",
-    "wm": "2,55",
-    "wm_ok": false,
-    "wm_edge": -9
-   },
-   {
-    "player": "Sam Reinhart",
-    "team": "FLA",
-    "game": "Floride à Winnipeg",
-    "time": "01h00",
-    "chance": "35 %",
-    "min": "3,16",
-    "fair": "2,87",
-    "example": "À 3,16 ou plus, tu joues. À 3,01, tu ne joues pas.",
-    "wm": "2,75",
-    "wm_ok": false,
-    "wm_edge": -4
-   },
-   {
-    "player": "Mark Scheifele",
-    "team": "WPG",
-    "game": "Floride à Winnipeg",
-    "time": "01h00",
-    "chance": "34 %",
-    "min": "3,29",
-    "fair": "2,99",
-    "example": "À 3,29 ou plus, tu joues. À 3,14, tu ne joues pas.",
-    "wm": "3,25",
-    "wm_ok": false,
-    "wm_edge": 9
+    "wm_edge": -26
    }
   ],
   "bestD": [
    {
-    "player": "Zach Werenski",
-    "team": "CBJ",
-    "game": "Columbus à Philadelphie",
-    "time": "00h00",
-    "chance": "17 %",
-    "min": "6,55",
-    "fair": "5,95",
-    "example": "À 6,55 ou plus, tu joues. À 6,05, tu ne joues pas.",
+    "player": "Jakob Chychrun",
+    "team": "WSH",
+    "game": "Philadelphie à Washington",
+    "time": "00h30",
+    "chance": "21 %",
+    "min": "5,24",
+    "fair": "4,76",
+    "example": "À 5,24 ou plus, tu joues. À 4,74, tu ne joues pas.",
     "wm": "4,00",
     "wm_ok": false,
-    "wm_edge": -33,
-    "best": false
-   },
-   {
-    "player": "Shayne Gostisbehere",
-    "team": "CAR",
-    "game": "Boston à Caroline",
-    "time": "01h00",
-    "chance": "13 %",
-    "min": "8,34",
-    "fair": "7,58",
-    "example": "À 8,34 ou plus, tu joues. À 7,84, tu ne joues pas.",
-    "wm": "6,00",
-    "wm_ok": false,
-    "wm_edge": -21,
-    "best": false
-   },
-   {
-    "player": "Sam Rinzel",
-    "team": "CHI",
-    "game": "Los Angeles à Chicago",
-    "time": "01h00",
-    "chance": "7 %",
-    "min": "14,87",
-    "fair": "13,51",
-    "example": "À 14,87 ou plus, tu joues. À 14,37, tu ne joues pas.",
-    "wm": "9,00",
-    "wm_ok": false,
-    "wm_edge": -33,
-    "best": false
-   },
-   {
-    "player": "Philip Broberg",
-    "team": "STL",
-    "game": "Montréal à St. Louis",
-    "time": "01h00",
-    "chance": "10 %",
-    "min": "10,79",
-    "fair": "9,80",
-    "example": "À 10,79 ou plus, tu joues. À 10,29, tu ne joues pas.",
-    "wm": "7,00",
-    "wm_ok": false,
-    "wm_edge": -29,
-    "best": false
-   },
-   {
-    "player": "Matthew Schaefer",
-    "team": "NYI",
-    "game": "Islanders à Nashville",
-    "time": "01h00",
-    "chance": "22 %",
-    "min": "4,92",
-    "fair": "4,46",
-    "example": "À 4,92 ou plus, tu joues. À 4,42, tu ne joues pas.",
-    "wm": "3,65",
-    "wm_ok": false,
-    "wm_edge": -18,
+    "wm_edge": -16,
     "best": true
    },
    {
-    "player": "Miro Heiskanen",
-    "team": "DAL",
-    "game": "New Jersey à Dallas",
-    "time": "01h00",
-    "chance": "11 %",
-    "min": "10,38",
-    "fair": "9,43",
-    "example": "À 10,38 ou plus, tu joues. À 9,88, tu ne joues pas.",
-    "wm": "6,75",
+    "player": "Evan Bouchard",
+    "team": "EDM",
+    "game": "Calgary à Edmonton",
+    "time": "01h30",
+    "chance": "17 %",
+    "min": "6,33",
+    "fair": "5,75",
+    "example": "À 6,33 ou plus, tu joues. À 5,83, tu ne joues pas.",
+    "wm": "3,65",
     "wm_ok": false,
-    "wm_edge": -28,
+    "wm_edge": -36,
     "best": false
    },
    {
-    "player": "Seth Jones",
-    "team": "FLA",
-    "game": "Floride à Winnipeg",
-    "time": "01h00",
-    "chance": "10 %",
-    "min": "10,68",
-    "fair": "9,71",
-    "example": "À 10,68 ou plus, tu joues. À 10,18, tu ne joues pas.",
-    "wm": "5,75",
-    "wm_ok": false,
-    "wm_edge": -41,
-    "best": false
-   },
-   {
-    "player": "Quinn Hughes",
-    "team": "MIN",
-    "game": "Minnesota à Utah",
+    "player": "Cale Makar",
+    "team": "COL",
+    "game": "New Jersey à Colorado",
     "time": "02h00",
-    "chance": "13 %",
-    "min": "8,47",
-    "fair": "7,69",
-    "example": "À 8,47 ou plus, tu joues. À 7,97, tu ne joues pas.",
-    "wm": "6,50",
-    "wm_ok": false,
-    "wm_edge": -16,
-    "best": false
-   },
-   {
-    "player": "Rasmus Andersson",
-    "team": "VGK",
-    "game": "Ottawa à Vegas",
-    "time": "03h00",
-    "chance": "13 %",
-    "min": "8,21",
-    "fair": "7,46",
-    "example": "À 8,21 ou plus, tu joues. À 7,71, tu ne joues pas.",
-    "wm": "6,75",
-    "wm_ok": false,
-    "wm_edge": -10,
-    "best": false
-   },
-   {
-    "player": "Jackson Lacombe",
-    "team": "ANA",
-    "game": "Vancouver à Anaheim",
-    "time": "03h00",
-    "chance": "12 %",
-    "min": "8,80",
-    "fair": "8,00",
-    "example": "À 8,80 ou plus, tu joues. À 8,30, tu ne joues pas.",
-    "wm": "5,40",
-    "wm_ok": false,
-    "wm_edge": -32,
-    "best": false
-   },
-   {
-    "player": "Rasmus Dahlin",
-    "team": "BUF",
-    "game": "Buffalo à San José",
-    "time": "03h30",
-    "chance": "20 %",
-    "min": "5,53",
-    "fair": "5,03",
-    "example": "À 5,53 ou plus, tu joues. À 5,03, tu ne joues pas.",
+    "chance": "16 %",
+    "min": "6,75",
+    "fair": "6,13",
+    "example": "À 6,75 ou plus, tu joues. À 6,25, tu ne joues pas.",
     "wm": "4,00",
+    "wm_ok": false,
+    "wm_edge": -35,
+    "best": false
+   },
+   {
+    "player": "Brandon Montour",
+    "team": "SEA",
+    "game": "Toronto à Seattle",
+    "time": "03h00",
+    "chance": "14 %",
+    "min": "7,92",
+    "fair": "7,19",
+    "example": "À 7,92 ou plus, tu joues. À 7,42, tu ne joues pas.",
+    "wm": "5,75",
     "wm_ok": false,
     "wm_edge": -20,
     "best": false
@@ -392,3071 +182,2213 @@
   ],
   "point": [
    {
-    "player": "Kirill Kaprizov",
-    "form": "18 pts, point dans 9/10",
-    "team": "MIN",
-    "game": "Minnesota à Utah",
-    "time": "02h00",
-    "wm": "1,32",
+    "player": "Connor McDavid",
+    "form": "27 pts, point dans 10/10",
+    "team": "EDM",
+    "game": "Calgary à Edmonton",
+    "time": "01h30",
+    "wm": "1,12",
     "wm_ok": false,
     "wm_level": "no"
    },
    {
-    "player": "David Pastrnak",
-    "form": "15 pts, point dans 7/10",
-    "team": "BOS",
-    "game": "Boston à Caroline",
-    "time": "01h00",
-    "wm": "1,39",
+    "player": "Leon Draisaitl",
+    "form": "20 pts, point dans 9/10",
+    "team": "EDM",
+    "game": "Calgary à Edmonton",
+    "time": "01h30",
+    "wm": "1,20",
     "wm_ok": false,
-    "wm_level": "correct"
+    "wm_level": "no"
    },
    {
-    "player": "Matthew Tkachuk",
-    "form": "15 pts, point dans 9/10",
-    "team": "FLA",
-    "game": "Floride à Winnipeg",
-    "time": "01h00",
-    "wm": "1,39",
+    "player": "Nathan MacKinnon",
+    "form": "16 pts, point dans 6/10",
+    "team": "COL",
+    "game": "New Jersey à Colorado",
+    "time": "02h00",
+    "wm": "1,27",
     "wm_ok": false,
-    "wm_level": "correct"
+    "wm_level": "no"
    }
   ],
   "totals": [
    {
-    "game": "Vancouver à Anaheim",
+    "game": "Toronto à Seattle",
     "time": "03h00",
     "line": "6,5",
     "book": "6,7",
-    "model": "5,8",
+    "model": "5,5",
     "open": true
    },
    {
-    "game": "Buffalo à San José",
-    "time": "03h30",
-    "line": "6,5",
-    "book": "6,7",
-    "model": "6,6",
-    "open": false
-   },
-   {
-    "game": "Ottawa à Vegas",
-    "time": "03h00",
+    "game": "Calgary à Edmonton",
+    "time": "01h30",
     "line": "6,5",
     "book": "6,5",
-    "model": "6,2",
-    "open": false
-   },
-   {
-    "game": "Minnesota à Utah",
-    "time": "02h00",
-    "line": "6,5",
-    "book": "6,4",
-    "model": "6,0",
-    "open": false
-   },
-   {
-    "game": "Montréal à St. Louis",
-    "time": "01h00",
-    "line": "6,0",
-    "book": "6,3",
     "model": "5,5",
     "open": false
    },
    {
-    "game": "Boston à Caroline",
-    "time": "01h00",
-    "line": "6,0",
+    "game": "New Jersey à Colorado",
+    "time": "02h00",
+    "line": "6,5",
     "book": "6,3",
-    "model": "5,8",
-    "open": false
-   },
-   {
-    "game": "Floride à Winnipeg",
-    "time": "01h00",
-    "line": "6,0",
-    "book": "6,2",
     "model": "6,1",
     "open": false
    },
    {
-    "game": "Los Angeles à Chicago",
-    "time": "01h00",
-    "line": "6,0",
-    "book": "6,1",
-    "model": "5,4",
-    "open": false
-   },
-   {
-    "game": "Islanders à Nashville",
-    "time": "01h00",
-    "line": "5,5",
-    "book": "6,0",
-    "model": "5,4",
-    "open": false
-   },
-   {
-    "game": "New Jersey à Dallas",
-    "time": "01h00",
-    "line": "5,5",
-    "book": "6,0",
-    "model": "6,0",
-    "open": false
-   },
-   {
-    "game": "Columbus à Philadelphie",
-    "time": "00h00",
-    "line": "5,5",
-    "book": "5,9",
-    "model": "5,6",
+    "game": "Philadelphie à Washington",
+    "time": "00h30",
+    "line": "6,5",
+    "book": "6,3",
+    "model": "6,4",
     "open": false
    }
   ],
   "goalies": [
    {
-    "team": "Columbus",
-    "name": "Jet Greaves",
-    "confirmed": false
-   },
-   {
     "team": "Philadelphie",
-    "name": "Dan Vladar",
+    "name": "Joseph Woll",
     "confirmed": false
    },
    {
-    "team": "Boston",
-    "name": "Jeremy Swayman",
+    "team": "Washington",
+    "name": "Logan Thompson",
     "confirmed": false
    },
    {
-    "team": "Caroline",
-    "name": "Pyotr Kochetkov",
+    "team": "Calgary",
+    "name": "Devin Cooley",
     "confirmed": false
    },
    {
-    "team": "Los Angeles",
-    "name": "Anton Forsberg",
-    "confirmed": false
-   },
-   {
-    "team": "Chicago",
-    "name": "Spencer Knight",
-    "confirmed": false
-   },
-   {
-    "team": "Montréal",
-    "name": "Jacob Fowler",
-    "confirmed": false
-   },
-   {
-    "team": "St. Louis",
-    "name": "Joel Hofer",
-    "confirmed": false
-   },
-   {
-    "team": "Islanders",
-    "name": "Semyon Varlamov",
-    "confirmed": false
-   },
-   {
-    "team": "Nashville",
-    "name": "Juuse Saros",
+    "team": "Edmonton",
+    "name": "Tristan Jarry",
     "confirmed": false
    },
    {
     "team": "New Jersey",
     "name": "Jake Allen",
+    "confirmed": true
+   },
+   {
+    "team": "Colorado",
+    "name": "Mackenzie Blackwood",
     "confirmed": false
    },
    {
-    "team": "Dallas",
-    "name": "Jake Oettinger",
+    "team": "Toronto",
+    "name": "Anthony Stolarz",
     "confirmed": false
    },
    {
-    "team": "Floride",
-    "name": "Akira Schmid",
-    "confirmed": false
-   },
-   {
-    "team": "Winnipeg",
-    "name": "Stuart Skinner",
-    "confirmed": false
-   },
-   {
-    "team": "Minnesota",
-    "name": "Jesper Wallstedt",
-    "confirmed": false
-   },
-   {
-    "team": "Utah",
-    "name": "Karel Vejmelka",
-    "confirmed": false
-   },
-   {
-    "team": "Ottawa",
-    "name": "Samuel Ersson",
-    "confirmed": false
-   },
-   {
-    "team": "Vegas",
-    "name": "Adin Hill",
-    "confirmed": false
-   },
-   {
-    "team": "Vancouver",
-    "name": "Leevi Merilainen",
-    "confirmed": false
-   },
-   {
-    "team": "Anaheim",
-    "name": "Lukas Dostal",
-    "confirmed": false
-   },
-   {
-    "team": "Buffalo",
-    "name": "Colten Ellis",
-    "confirmed": false
-   },
-   {
-    "team": "San José",
-    "name": "Yaroslav Askarov",
+    "team": "Seattle",
+    "name": "Philipp Grubauer",
     "confirmed": false
    }
   ],
   "info": [
    {
-    "title": "📋 **BILAN D'HIER (lundi 26/10, NHL seulement)**",
+    "title": "📋 **BILAN D'HIER (mardi 27/10)**",
     "lines": [
-     "Scores : LAK 6-3 NYR, TOR 2-5 CGY, DET 4-3 EDM (aux tirs au but, le but des tirs au but ne compte pas).",
-     "❌ Draisaitl (à jouer, 47 %) : 0 but, 1 passe. Sa cote Winamax était 2,10, sous le minimum de 2,11 : il n'était donc pas une value.",
-     "À surveiller : 0 sur 5. DeBrincat, McDavid, Dorofeyev, Kempe (7 tirs cadrés) et Hyman n'ont pas marqué.",
-     "🛡️ Défenseurs : 1 sur 3. ✅ Fox (NYR, 9 %, Winamax 6,50) a marqué. Bouchard, le meilleur de la nuit (18 %), et Nemec n'ont pas marqué.",
-     "🎯 Paris point : McDavid ✅, Draisaitl ✅, Matthews ✅. 3 sur 3, mais les cotes (1,16 à 1,34) étaient trop basses pour jouer.",
-     "**🔥 Ce qui me fait dire (1 € par pari)**",
-     "✅ **Arvidsson (DET) a marqué en power-play, à 3,45** (signal : il retrouvait son ancien club). Gustafsson, Bjorkstrand et Moore n'ont pas marqué.",
-     "➡️ 1 sur 4 : +2,45 € − 3 € = **−0,55 €**.",
-     "💰 Values et 🟡 Limite : listes vides hier dans l'app, donc aucun pari et pas de bilan.",
-     "🎯 Couvertures point (calculées après coup, elles n'avaient pas été publiées hier, budget 2 € par joueur) : Arvidsson +2,90 €, Gustafsson +0,21 € (passe sans but), Moore 0 €, Bjorkstrand −2 €. Total **+1,11 € pour 8 € misés**.",
-     "**Qui a marqué hier, était-ce prévisible ?**",
-     "22 buts, 21 buteurs. 5 prévisibles (Panarin, Nylander, Podkolzin, Arvidsson, Larkin). 9 possibles (dont Gridin 2 buts, Backlund, Farabee et Pospisil dans la cage vide). 6 imprévisibles, surtout des défenseurs (Doughty, Clarke, M. Anderson, Fox, Edmundson cage vide, et T. Ward qui n'était pas dans le modèle).",
-     "📊 **Depuis le début (compteurs)**",
-     "• Buteurs proposés NHL : 12 sur 40. Le modèle en attendait environ 14. Un peu en dessous, mais dans la normale.",
-     "• Seuls vrais « à jouer » NHL : 2 sur 6.",
-     "• Buteurs proposés Liiga : 9 sur 20 (environ 6 attendus).",
-     "• Défenseurs : NHL 7 sur 34, Liiga 2 sur 14.",
-     "• Paris « au moins 1 point » : 18 sur 21.",
-     "• 🔥 Ce qui me fait dire : 1 sur 4 (−0,55 €). Couvertures point : 3 sur 4 avec au moins 1 point.",
+     "Scores NHL : CBJ 4-3 PHI (prol.), BOS 1-2 CAR, LAK 1-2 CHI, MTL 2-0 STL, NYI 4-3 NSH (tirs au but), NJD 5-1 DAL, FLA 5-1 WPG, MIN 3-1 UTA, OTT 1-4 VGK, VAN 6-5 ANA (prol.), BUF 2-0 SJS. Liiga : KalPa 5-2 Sport.",
+     "💰 Mittelstadt (8,00) : 0 point. −1 € à 1 €, −2 € avec la couverture.",
+     "🔥 ✅ **Kent Johnson a marqué dans le temps réglementaire (puis le but en prolongation) à 4,00** : +3 €, avec la couverture +3,29 €. Nichushkin : 1 passe, pas de but (−1 €, avec la couverture +0,05 €). Coyle : 0 point (−1 €, −2 € avec la couverture).",
+     "➡️ 🔥 sur la nuit : **+1,00 €** à 1 € par pari, **+1,34 €** avec les couvertures.",
+     "À jouer : Kaprizov ✅ (mais 2,25 était sous le minimum), Connor, T. Thompson et Celebrini ❌. À surveiller : Horvat ✅ et Reinhart ✅.",
+     "🛡️ Défenseurs : 0 sur 11. 🎯 Paris point : Kaprizov, Pastrnak, M. Tkachuk, 3 sur 3 (cotes trop basses pour jouer).",
+     "📈 VAN@ANA annoncé comme le match le plus ouvert : 11 buts ✅.",
+     "Liiga : aucun D de KalPa n'a marqué malgré la domination ; c'est Bürger (D de Sport) qui a marqué.",
+     "**Qui a marqué hier ?** 55 buts : 15 prévisibles, 32 possibles, 8 imprévisibles (surtout des D : Drysdale, Kaiser, Mikkola, Oleksiak, Hronek).",
+     "📊 **Depuis le début, par bloc (paris publiés)**",
+     "• 💰 Values : 0 sur 1, −1 € (−2 € avec couverture).",
+     "• 🟡 Limite : aucun pari publié pour l'instant.",
+     "• 🔥 Ce qui me fait dire : 2 sur 7 ont marqué, **+0,45 €** à 1 € par pari.",
+     "• 🎯 Couvertures point publiées : 2 sur 4 avec au moins 1 point (K. Johnson, Nichushkin).",
+     "• Buteurs proposés NHL : 15 sur 53 (environ 19 attendus). Liiga : 16 sur 46 (environ 12 attendus). Défenseurs : NHL 7 sur 45, Liiga 2 sur 15. Paris point : 21 sur 24.",
      "🔍 **Bilan de tes points**",
-     "Hier (NHL) :",
-     "• **Gardien en méforme qui a mal joué** : Hier 0 sur 2 (Bobrovsky .906, Jarry .897)",
-     "• **Gardien en forme qui a bien joué** : Hier 0 sur 1 (Kuemper .885)",
-     "• **Attaquant le plus utilisé qui a marqué** : Hier 3 sur 6 (Panarin, Farabee, Larkin)",
-     "• **Défenseur le plus utilisé qui a marqué** : Hier 2 sur 6 (Doughty, Fox)",
-     "• **Joueur promu qui a marqué** : Hier 1 sur 5 (Edmundson, cage vide)",
-     "• **Joueur rétrogradé qui a marqué** : Hier 0 sur 4",
-     "• **Les ex qui ont marqué** : Hier 2 sur 3 (Panarin, Arvidsson)",
-     "• **Total de buts à +/-1 du prévu** : Hier 2 sur 3 (LAK@NYR : 9 buts au lieu de 5,9)",
-     "• **Match le plus ouvert = le plus de buts** : Hier non (TOR@CGY prévu, LAK@NYR a fait 9 buts)",
-     "Depuis le début (NHL + Liiga) :",
-     "• Gardien en méforme qui a mal joué : 16 sur 34",
-     "• Gardien en forme qui a bien joué : 6 sur 20",
-     "• Attaquant le plus utilisé qui a marqué : 35 sur 96",
-     "• Défenseur le plus utilisé qui a marqué : 12 sur 96",
-     "• Promu qui a marqué : 17 sur 104. Rétrogradé qui a marqué : 14 sur 92",
-     "• Retour de blessure qui a marqué : 9 sur 73",
-     "• Les ex qui ont marqué : 8 sur 46",
-     "• Total à +/-1 but : 16 sur 48. Match le plus ouvert = le plus de buts : 1 sur 6"
+     "• **Gardien en méforme qui a mal joué** : Hier 1 sur 5 · Depuis le début 17 sur 39",
+     "• **Gardien en forme qui a bien joué** : Hier 2 sur 3 · Depuis le début 8 sur 23",
+     "• **Attaquant le plus utilisé qui a marqué** : Hier 11 sur 22 · Depuis le début 46 sur 118",
+     "• **Défenseur le plus utilisé qui a marqué** : Hier 2 sur 21 · Depuis le début 14 sur 117",
+     "• **Promu qui a marqué** : Hier 8 sur 48 · Depuis le début 25 sur 152",
+     "• **Rétrogradé qui a marqué** : Hier 4 sur 44 · Depuis le début 18 sur 136",
+     "• **Retour de blessure qui a marqué** : Hier 1 sur 6 · Depuis le début 10 sur 79",
+     "• **Les ex qui ont marqué** : Hier 1 sur 3 (Bolduc) · Depuis le début 9 sur 49",
+     "• **Total de buts à +/-1 du prévu** : Hier 3 sur 11 · Depuis le début 19 sur 59",
+     "• **Match le plus ouvert = le plus de buts** : Hier 1 sur 1 · Depuis le début 2 sur 7"
     ]
    },
    {
-    "title": "🏒 **LIIGA : SPORT À KALPA (17h30)**",
+    "title": "🏒 **LIIGA CE SOIR (17h30)**",
     "lines": [
-     "Personne n'atteint 35 % : il n'y a pas de « à jouer ». Deux très bons gardiens : Korhonen (KalPa, .942 sur la saison) et Härkönen (Sport, .929).",
-     "• Hartikainen (KalPa, 1re ligne) : 21 %. Mini 5,34, Winamax 3,20. Non.",
-     "• Tammela (KalPa) : 21 %, mais il n'a joué que 2 matchs. Mini 5,29, Winamax 4,50. Non.",
-     "• Diaco (Sport) : 20 %. Il descend de la 2e à la 3e ligne. Mini 5,62, Winamax 4,25. Non.",
-     "• Défenseur : Ruotsalainen (KalPa), 12 %. Mini 9,02, Winamax 5,50. Non.",
-     "Lignes de Sport : Grainger monte de la 3e à la 1re ligne, Nieminen de la 4e à la 2e. Côté KalPa, Ketola monte en 2e paire. Korkiakoski revient après 12 matchs, en 4e ligne. Sport revoit Timonen après 1 match.",
-     "Buts attendus par le modèle : KalPa 2,7, Sport 2,4."
+     "Lukko à Jukurit · Tappara à JYP · TPS à K-Espoo · Ässät à KooKoo · HPK à Kärpät · SaiPa à Pelicans · Ilves à HIFK.",
+     "⚠️ Compos de 12h50, pas officielles avant l'échauffement. Winamax ne compte pas la prolongation.",
+     "💰 **Les values du soir (Liiga)**",
+     "1. **Ondrej Kos (Ilves, à HIFK)**, monte de la 4e à la 2e ligne : 19 %, gagne 1 fois sur 5. Winamax **7,50**, minimum 5,88 ✅ (+40 %). 0 but en 14 matchs pour 2,8 attendus.",
+     "🎯 Couverture point : 2,45 pour 3,79 mini ❌. Mise 1,10 € buteur + 0,90 € point → but : +8,46 €, passe seulement : +0,21 €, rien : −2 €.",
+     "2. **Juuso Puustinen (JYP, contre Tappara)**, 4e ligne : 20 %. Winamax **5,75**, mini 5,56 ✅ (+14 %). Fragile : 9,5 min de jeu, 0 point en 6 matchs.",
+     "🎯 Point 2,15 pour 6,68 mini ❌. 1,00 € + 1,00 € → but : +5,90 €, passe seulement : +0,15 €, rien : −2 €.",
+     "3. **Wiktor Nilsson (Kärpät, contre HPK)**, 4e ligne : 16 %. Winamax **7,00**, mini 6,79 ✅ (+13 %).",
+     "🎯 Point 2,55 pour 3,79 mini ❌. 1,20 € + 0,80 € → but : +8,44 €, passe seulement : +0,04 €, rien : −2 €.",
+     "4. **Arttu Alasiurua (Ässät, à KooKoo)** ⭐, 3e ligne : 15 %. Winamax **7,50**, mini 7,38 ✅ (+12 %), et Winamax paie 18 % de plus que les autres sites. Randelin (KooKoo) est le pire gardien du soir (.878).",
+     "🎯 Point 3,30 pour 3,77 mini ❌. 1,30 € + 0,70 € → but : +10,06 €, passe seulement : +0,31 €, rien : −2 €.",
+     "5. **Pekka Jormakka (Jukurit, contre Lukko)**, 3e ligne : 19 %. Winamax **5,75**, mini 5,67 ✅ (+12 %). 2,25 tirs cadrés par match mais 0 point en 8 matchs.",
+     "🎯 Point 2,95 pour 7,90 mini ❌. 1,30 € + 0,70 € → but : +7,54 €, passe seulement : +0,06 €, rien : −2 €.",
+     "🟡 **Limite (Liiga)**",
+     "• Teemu Engberg (Ilves) : 16 %, 7,00 pour 7,01 mini. 🎯 Point 2,65 (mini 4,63 ❌), 1,20 € + 0,80 € → but +8,52 €.",
+     "• Thomas Olsen (Jukurit) : 21 %, 5,25 pour 5,29 mini. 🎯 Point 2,80 (mini 4,63 ❌), 1,20 € + 0,80 € → but +6,54 €.",
+     "• Tomi Sallinen (Tappara) : 14 %, 7,50 pour 7,69 mini. 🎯 Point 2,70 (mini 4,63 ❌), 1,20 € + 0,80 € → but +9,16 €.",
+     "🔥 **Ce qui me fait dire (Liiga)**",
+     "1. **Aleksi Matinmikko (Kärpät D)**, à domicile contre HPK : ton signal. C'est le D qui tire le plus ce soir (2,94 tirs cadrés par match), et les D de Kärpät font 10,6 tirs cadrés par match. 6,50 pour 7,33 mini (il manque 0,83). 🎯 Point 1,86 (mini 2,58 ❌), 0,90 € + 1,10 € → but +5,90 €.",
+     "2. **Valtteri Ojantakanen (JYP)**, 1re supériorité : meilleure chance du soir (32 %), 3,6 tirs cadrés par match. 3,00 pour 3,46 mini (il manque 0,46). 🎯 Point 1,72 (mini 2,86 ❌), 0,80 € + 1,20 € → but +2,46 €.",
+     "3. **Tony Sund (Ilves D)**, à HIFK, son ancien club : 3,8 tirs cadrés par match, le record des D du soir. 7,50 pour 11,34 mini (loin). ⭐ Winamax paie 17 % de plus que les autres. 🎯 Point 2,15 (mini 2,19, ❌ de peu), 1,00 € + 1,00 € → but +7,65 €.",
+     "🛡️ Meilleur D par match (Liiga) : Matinmikko 15 % (le meilleur du soir), Strand (Ilves) 15 % à 4,75 pour 7,48, Jokipakka (Tappara) 13 %, Corcoran (K-Espoo) 13 % (pas de cote), Nutivaara (Pelicans) 12 %, Stenqvist (Lukko) 11 %, Pelli (KooKoo) 10 %.",
+     "🥅 Gardiens en méforme : Mäkiniemi (TPS) .868, Rimpinen (K-Espoo) .872, Randelin (KooKoo) .878, Setänen (JYP) .880. En forme : Armalis (Ilves) .948, Myrenberg (Jukurit) .941, Grigals (SaiPa) .935."
     ]
    },
    {
-    "title": "👀 **À RE-SURVEILLER (ils ont raté leur dernier match ciblé et rejouent ce soir)**",
+    "title": "🎯 **BUTEURS CETTE NUIT (NHL)**",
     "lines": [
-     "• T. Thompson 44 % : BUF@SJS 03h30",
-     "• Connor 45 %, Reinhart 35 %, S. Jones (D) 10 % : FLA@WPG 01h00",
-     "• Boldy 38 % : MIN@UTA 02h00",
-     "• Caufield 37 % : MTL@STL 01h00",
-     "• Kempe 36 %, Moore 17 %, Gustafsson (D, monte en 1re paire et PP1) 6 % : LAK@CHI 01h00",
-     "• Werenski (D) 17 %, Sanheim (D) 14 % : CBJ@PHI 00h00",
-     "• McAvoy (D) 11 %, Gostisbehere (D) 13 % : BOS@CAR 01h00",
-     "• L. Hughes (D) 10 % : NJD@DAL 01h00",
-     "• Chytil 24 %, Gallagher 13 % : VAN@ANA 03h00",
-     "• Diaco 20 % : Sport@KalPa 17h30",
-     "📒 Après un match raté, ils ont marqué **13 fois sur 54**. Environ 14 buts étaient attendus. Un match raté ne les rend pas « dus » : aucun bonus."
+     "⚠️ Seul Allen (NJD) est confirmé dans les cages. Les lignes ne sont pas définitives : revérifie juste avant de parier.",
+     "💰 **Les values du soir (NHL)**",
+     "1. **Aliaksei Protas (WSH)**, contre PHI, 00h30. 1re ligne, sans PP. Chance 22 %, gagne 1 fois sur 4 à 5. Winamax **5,00**, cote juste 4,49, minimum 4,95 ✅ (+11 %). Marge mince : à 4,90 tu ne joues pas. Philadelphie joue son 2e match en 2 jours. Pas de comparaison possible avec les autres sites pour lui.",
+     "🎯 Couverture point : 2,10 pour 4,63 mini ❌ (2 points en 10 matchs seulement). Mise : 1,00 € buteur + 1,00 € point → but : +5,10 €, passe seulement : +0,10 €, rien : −2 €. Sinon 1 € sur le but seul.",
+     "🟡 **Limite (NHL)** : personne. Knuble (6,50), Nemec (9,50) et Foerster (4,50) passaient le modèle, mais Winamax les paie moins que les autres sites, donc je ne les garde pas.",
+     "🔥 **Ce qui me fait dire (NHL)**",
+     "1. **Vasily Podkolzin (EDM)**, contre CGY, 01h30. Avec McDavid et Draisaitl, et il monte au PP1. 28 %, 9 points en 10 matchs. En face, Jarry est en grosse méforme (.860). Winamax 2,90 pour 3,86 mini (il manque 0,96).",
+     "🎯 Point 1,58 pour 2,05 mini ❌. Si tu joues : 0,70 € buteur + 1,30 € point → but : +2,08 €, passe seulement : +0,05 €, rien : −2 €.",
+     "2. **Matty Beniers (SEA)**, contre TOR, 03h00. 1re ligne, monte au PP1. 21 %. C'est le match le plus ouvert de la nuit. Winamax 3,65 pour 5,17 mini (il manque 1,52).",
+     "🎯 Point 1,72 pour 3,79 mini ❌. 0,80 € + 1,20 € → but : +2,98 €, passe seulement : +0,06 €, rien : −2 €.",
+     "3. **Martin Necas (COL)**, contre NJD, 02h00. Monte au PP1. 27 %. New Jersey joue son 2e match en 2 jours. Winamax 2,90 pour 4,13 mini (il manque 1,23).",
+     "🎯 Point 1,37 : couverture inutile (sous 1,40). 1 € sur le but seulement.",
+     "Hors liste mais à noter : **Bobby McMann (SEA)** retrouve Toronto, son club en 2024-25, monte en 1re ligne et au PP1 (29 %). 2,70 pour 3,78 mini.",
+     "Rappel : le bloc 🔥 est de l'info. Sur l'historique ses cotes sont trop basses. 1 € maximum, ou 2 € avec la couverture.",
+     "⭐ **Stars** (toutes sous leur minimum) : Draisaitl 1,90 (mini 2,73), McDavid 2,10 (3,27), MacKinnon 2,25 (2,91), Nylander 2,65 (3,22), Tuch 3,00 (3,27).",
+     "🌍 **Winamax vs les autres sites** : en NHL, Winamax paie en moyenne 18 % de moins que les autres sites sur les buteurs ; en Liiga, 25 % de moins. Les exceptions ce soir sont surtout en Liiga : Alasiurua, Sund, Tichacek (HPK D, 5,75 pour 4,43 chez les autres), Kiviharju (HIFK, 10,00 pour 7,78), Jokirinne (HPK, 8,50 pour 6,69), Tiivola (Ässät, 7,00 pour 5,98).",
+     "🍀 Honnêtement : même une vraie value à 20 % perd 4 soirs sur 5. Le résultat d'un soir, c'est surtout de la chance. On ne juge le modèle que sur des centaines de paris."
     ]
    },
    {
-    "title": "🥅 **GARDIENS PROBABLES (saison, puis 5 derniers matchs). Aucun n'est confirmé à 15h.**",
+    "title": "👀 **À RE-SURVEILLER (ont raté leur dernier match ciblé et rejouent)**",
     "lines": [
-     "En forme : Fowler (MTL) .924 / .937, Kochetkov (CAR) .916 / .924, Vladar (PHI) .900 / .921, Oettinger (DAL) .929 / .902.",
-     "⚠️ En méforme : **Ersson (OTT) .835**, **Vejmelka (UTA) .874 / .846**, Schmid (FLA) .872, Dostal (ANA) .880 / .885, Hill (VGK) .882, Askarov (SJS) .883, Greaves (CBJ) .883, Allen (NJD) .886 / .892.",
-     "Les autres : Swayman (BOS) .920 / .908, Hofer (STL) .917 / .911, Wallstedt (MIN) .918 / .899, Merilainen (VAN) .912 / .904, Skinner (WPG) .911 / .904, Saros (NSH) .908, Varlamov (NYI) .899, Knight (CHI) .891 / .896, Forsberg (LAK) .894, Ellis (BUF) .864 / .911."
+     "• NHL : Draisaitl, McDavid, Bouchard (D), Nemec (D) à CGY@EDM ; MacKinnon, Makar (D) à NJD@COL ; Chychrun (D) à PHI@WSH.",
+     "• Liiga : Matinmikko, Stenqvist, Kramer, Bryggman et d'autres.",
+     "Un match raté ne les rend pas « dus » : aucun bonus."
     ]
    },
    {
-    "title": "🔄 **CHANGEMENTS DE LIGNE (Daily Faceoff, depuis le dernier relevé)**",
+    "title": "🥅 **GARDIENS PROBABLES (saison / 5 derniers). Seul Allen est confirmé.**",
     "lines": [
-     "• CBJ : gros remaniement. Nichushkin, K. Johnson et Coyle montent au PP1 ; Fantilli, Monahan et Garland passent au PP2. Coyle et Olivier montent en 2e ligne. Severson passe au PP1.",
-     "• PHI : Zegras, Dvorak et Acciari montent en 1re ligne. Michkov et Martone montent en 2e ligne. Couturier et Foerster descendent en 3e ligne.",
-     "• LAK : Byfield revient en 2e ligne et au PP1. Moore monte en 2e ligne. Gustafsson monte en 1re paire et au PP1, Clarke passe au PP2.",
-     "• VGK : Marner revient en 2e ligne et au PP1. Hertl et Connelly descendent en 3e ligne.",
-     "• VAN : DeBrusk monte en 1re ligne. Chytil et Lekkerimaki montent en 2e ligne. Rossi descend en 4e ligne. Buium monte en 1re paire.",
-     "• ANA : Gauthier monte en 1re ligne. Sennecke passe en 2e ligne. Killorn descend en 3e ligne.",
-     "• UTA : Cooley monte en 1re ligne, Keller passe en 2e.",
-     "• BUF : Benson monte en 1re ligne, Zucker descend en 3e. SJS : Stenberg monte en 1re ligne.",
-     "• MTL : Dobson monte en 1re paire (reste au PP1). NSH : Bourque monte en 1re ligne, Marchessault descend en 3e."
+     "⚠️ En méforme : **Jarry (EDM) .860**, Allen (NJD) .886 / .892, Woll (PHI) .904 / .888, Thompson (WSH) .901 / .892, Blackwood (COL) .893 / .891.",
+     "En forme : Cooley (CGY) .915 / .920. Les autres : Stolarz (TOR) .907, Grubauer (SEA) .907."
     ]
    },
    {
-    "title": "🩹 **RETOURS ET ABSENTS (info seulement)**",
+    "title": "🔄 **CHANGEMENTS DE LIGNE**",
     "lines": [
-     "• CAR : Taylor Hall (5 matchs manqués) est attendu contre Boston d'après Daily Faceoff, mais la NHL le liste encore blessé. Je ne le propose pas.",
-     "• VGK : Marner (2 matchs, raison personnelle) revient en 2e ligne et au PP1, 27 %.",
-     "• LAK : Byfield revient en 2e ligne et au PP1. T. Ward est aussi dans l'alignement.",
-     "• PHI : Bunting (2 matchs) en 4e ligne. VAN : Cotter (1 match) en 3e ligne, Oleksiak et Mancini en 3e paire.",
-     "Aucun des joueurs proposés ci-dessus n'est sur la liste des blessés."
+     "• PHI : gros remaniement. Zegras en 1re ligne, Knuble monte de la 4e à la 1re, Michkov et Martone en 2e ligne et PP1, Foerster descend en 3e, Couturier en 4e, Sanheim sort du PP. York revient.",
+     "• EDM : Podkolzin monte au PP1, Dach en 2e ligne, Ekholm revient en 1re paire et PP2.",
+     "• COL : Necas monte au PP1, Kadri en 3e ligne et PP1, Schwartz au PP2.",
+     "• SEA : McMann monte en 1re ligne, Beniers au PP1, Wright au PP2.",
+     "• CGY : Backlund revient en 1re ligne.",
+     "• Liiga : Kos (Ilves) monte en 2e ligne ; grosse rotation à Tappara ; De Jong (HPK) en 1re ligne."
     ]
    },
    {
-    "title": "🔁 **LES EX (info seulement, aucun bonus)**",
+    "title": "🩹 **RETOURS ET ABSENTS**",
     "lines": [
-     "Hier, Panarin et Arvidsson ont marqué contre leur ancien club. Depuis le début : 8 sur 46.",
-     "• MTL@STL : Bolduc et Texier (MTL) affrontent St. Louis, leur club en 2024-25.",
-     "• BUF@SJS : Kesselring (SJS) reçoit Buffalo, son club en 2025-26 (défenseur, petite chance)."
+     "• Retours : Dickinson (EDM, 6 matchs manqués), Ekholm (EDM, 2 matchs, commotion), Roy (COL, 6 matchs).",
+     "• Absents : Hyman (EDM) ; Tavares, Domi, Joshua, Tanev, Marchenko (TOR) ; Huberdeau, Honzek (CGY) ; McCann, Melanson, Lindgren (SEA) ; Casey (NJD).",
+     "Aucun joueur proposé ci-dessus n'est blessé."
     ]
    },
    {
-    "title": "⏱️ **TEMPS DE JEU (saison, en minutes, avec le temps en PP)**",
+    "title": "🔁 **LES EX (info seulement)**",
     "lines": [
-     "• **CBJ** : Attaquant le plus utilisé Fantilli 20,5 (PP 3,7) · Défenseur le plus utilisé Werenski 29,0",
-     "• **PHI** : Attaquant le plus utilisé Zegras 18,5 (PP 3,4) · Défenseur le plus utilisé Sanheim 25,8",
-     "• **BOS** : Attaquant le plus utilisé Pastrnak 19,7 (PP 3,4) · Défenseur le plus utilisé McAvoy 24,7",
-     "• **CAR** : Attaquant le plus utilisé Aho 19,9 (PP 4,3) · Défenseur le plus utilisé K. Miller 22,6",
-     "• **LAK** : Attaquant le plus utilisé Panarin 21,3 (PP 3,8) · Défenseur le plus utilisé Doughty 21,0",
-     "• **CHI** : Attaquant le plus utilisé Bedard 20,8 (PP 5,0) · Défenseur le plus utilisé Levshunov 20,3",
-     "• **MTL** : Attaquant le plus utilisé Caufield 19,0 (PP 3,3) · Défenseur le plus utilisé Hutson 25,5",
-     "• **STL** : Attaquant le plus utilisé R. Thomas 20,1 (PP 2,6) · Défenseur le plus utilisé Broberg 23,1",
-     "• **NYI** : Attaquant le plus utilisé Horvat 20,6 (PP 3,8) · Défenseur le plus utilisé Schaefer 26,2",
-     "• **NSH** : Attaquant le plus utilisé O'Reilly 20,9 (PP 3,6) · Défenseur le plus utilisé Josi 25,3",
-     "• **NJD** : Attaquant le plus utilisé J. Hughes 20,4 (PP 3,5) · Défenseur le plus utilisé L. Hughes 24,1",
-     "• **DAL** : Attaquant le plus utilisé Rantanen 20,6 (PP 4,0) · Défenseur le plus utilisé Heiskanen 25,7",
-     "• **FLA** : Attaquant le plus utilisé Reinhart 20,3 (PP 5,4) · Défenseur le plus utilisé S. Jones 24,9",
-     "• **WPG** : Attaquant le plus utilisé Connor 21,3 (PP 3,5) · Défenseur le plus utilisé Pionk 24,7",
-     "• **MIN** : Attaquant le plus utilisé Boldy 21,7 (PP 4,0) · Défenseur le plus utilisé Q. Hughes 27,0",
-     "• **UTA** : Attaquant le plus utilisé Cooley 18,1 (PP 4,0) · Défenseur le plus utilisé Sergachev 23,3",
-     "• **OTT** : Attaquant le plus utilisé Stützle 21,9 (PP 4,7) · Défenseur le plus utilisé Spence 21,5",
-     "• **VGK** : Attaquant le plus utilisé Eichel 19,8 (PP 3,9) · Défenseur le plus utilisé Theodore 21,7",
-     "• **VAN** : Attaquant le plus utilisé E. Pettersson 19,6 (PP 3,2) · Défenseur le plus utilisé Hronek 25,5",
-     "• **ANA** : Attaquant le plus utilisé Sennecke 20,7 (PP 3,9) · Défenseur le plus utilisé Lacombe 26,2",
-     "• **BUF** : Attaquant le plus utilisé Benson 19,9 (PP 3,7) · Défenseur le plus utilisé Power 27,0",
-     "• **SJS** : Attaquant le plus utilisé Celebrini 22,7 (PP 4,2) · Défenseur le plus utilisé Trouba 22,1",
-     "• **KalPa** : Attaquant le plus utilisé Kapanen 18,9 · Défenseur le plus utilisé Gallet 20,3",
-     "• **Sport** : Attaquant le plus utilisé Sundström 18,5 · Défenseur le plus utilisé Åkerström 20,9"
+     "• McMann (SEA) contre Toronto. • Tony Sund (Ilves) à HIFK."
+    ]
+   },
+   {
+    "title": "⏱️ **TEMPS DE JEU (saison, minutes)**",
+    "lines": [
+     "• **PHI** : Attaquant le plus utilisé Zegras 18,7 · Défenseur le plus utilisé Sanheim 25,8",
+     "• **WSH** : Attaquant le plus utilisé Tuch 19,2 · Défenseur le plus utilisé Chychrun 24,7",
+     "• **CGY** : Attaquant le plus utilisé Farabee 19,0 · Défenseur le plus utilisé Bahl 22,1",
+     "• **EDM** : Attaquant le plus utilisé McDavid 23,9 · Défenseur le plus utilisé Bouchard 26,5",
+     "• **NJD** : Attaquant le plus utilisé J. Hughes 20,3 · Défenseur le plus utilisé L. Hughes 24,0",
+     "• **COL** : Attaquant le plus utilisé MacKinnon 20,9 · Défenseur le plus utilisé Makar 22,1",
+     "• **TOR** : Attaquant le plus utilisé Matthews 20,7 · Défenseur le plus utilisé Raddysh 23,7",
+     "• **SEA** : Attaquant le plus utilisé Beniers 17,6 · Défenseur le plus utilisé Montour 23,7"
     ]
    },
    {
     "title": "📊 **INFO TIRS (non pariable, je ne conseille jamais les paris sur les tirs)**",
     "lines": [
-     "Tirs cadrés par match cette saison (puis total sur les 3 derniers matchs) :",
-     "Boldy 4,5 (15), Connor 4,5 (12), Meier 4,2 (16), T. Thompson 4,1 (8), Celebrini 4,0 (9), Schaefer (D) 3,8 (11), J. Hughes 3,6 (7), Pastrnak 3,5 (8)."
+     "Tirs cadrés par match (puis total sur 3 matchs) : MacKinnon 4,2 (11), Draisaitl 3,8 (14), Meier 3,8 (8), J. Hughes 3,8 (10), Nugent-Hopkins 3,3 (10), Chychrun (D) 3,1 (10), Nylander 2,9 (8), Bouchard (D) 2,9 (5)."
     ]
    }
   ],
   "liiga_status": {
-   "game": "Sport@KalPa",
-   "id": 2701416,
-   "paris": "17:30",
-   "model": "Liiga v4",
-   "prog": [
+   "date": "2026-10-28",
+   "model": "Liiga v4 (min = 1,10/P ; edge = P×cote−1)",
+   "winamax_file": "winamax_2026-10-28_liiga.json",
+   "winamax_read_at": "2026-10-28 12h51 Paris",
+   "winamax_note": "Cotes lues sans compte via le flux public de la page Winamax ; marché Buteur et Points 1+ = hors prolongation.",
+   "lineups": "Compos affichées sur liiga.fi (API v2) à 12h50 ; à re-vérifier avant 17h30.",
+   "games": [
     {
-     "gid": 2701416,
-     "game": "Sport@KalPa",
+     "game": "Lukko@Jukurit",
+     "id": 2701417,
      "paris": "17:30",
-     "g_home": {
-      "name": "Korhonen",
-      "m": 0.85,
-      "svp": 0.942,
-      "ga": 7,
-      "xga": 13.9,
-      "gp": 6.0
-     },
-     "g_away": {
-      "name": "Härkönen",
-      "m": 0.85,
-      "svp": 0.929,
-      "ga": 22,
-      "xga": 33.8,
-      "gp": 10.8
-     },
-     "ctx_home": {
-      "sa_g": 26.1,
-      "ca_g": 50.5,
-      "xga_g": 2.65,
-      "pk": 86.5,
-      "shi": 52,
-      "gp": 15
-     },
-     "ctx_away": {
-      "sa_g": 28.1,
-      "ca_g": 52.7,
-      "xga_g": 3.02,
-      "pk": 84.4,
-      "shi": 45,
-      "gp": 16
-     }
-    }
-   ],
-   "a_jouer": [],
-   "top": [
-    {
-     "player": "Jonne Tammela",
-     "team": "KalPa",
-     "pos": "F",
-     "line": 3,
-     "gp": 2,
-     "G": 0,
-     "P": 0.208,
-     "min_odds": 4.8
-    },
-    {
-     "player": "Teemu Hartikainen",
-     "team": "KalPa",
-     "pos": "F",
-     "line": 1,
-     "gp": 15,
-     "G": 4,
-     "P": 0.206,
-     "min_odds": 4.85
-    },
-    {
-     "player": "George Diaco",
-     "team": "Sport",
-     "pos": "F",
-     "line": 3,
-     "gp": 15,
-     "G": 3,
-     "P": 0.196,
-     "min_odds": 5.09
-    },
-    {
-     "player": "Joona Saarelainen",
-     "team": "KalPa",
-     "pos": "F",
-     "line": 3,
-     "gp": 15,
-     "G": 6,
-     "P": 0.195,
-     "min_odds": 5.12
-    },
-    {
-     "player": "Cade Borchardt",
-     "team": "KalPa",
-     "pos": "F",
-     "line": 3,
-     "gp": 15,
-     "G": 1,
-     "P": 0.186,
-     "min_odds": 5.38
-    },
-    {
-     "player": "Johan Sundström",
-     "team": "Sport",
-     "pos": "F",
-     "line": 2,
-     "gp": 16,
-     "G": 0,
-     "P": 0.186,
-     "min_odds": 5.36
-    }
-   ],
-   "best_D": [
-    {
-     "player": "Ville Ruotsalainen",
-     "team": "KalPa",
-     "P": 0.122,
-     "min_odds": 8.19
-    },
-    {
-     "player": "Simon Åkerström",
-     "team": "Sport",
-     "P": 0.099,
-     "min_odds": 10.13
-    }
-   ],
-   "extra": {
-    "KalPa": {
-     "opp": "Sport",
-     "returns": [
-      {
-       "player": "Tuukka Korkiakoski",
-       "missed_recent": 12,
-       "played": 3,
-       "team_gp": 15,
-       "line": 4,
-       "role": "13. H"
-      }
-     ],
-     "absent_listed": [],
-     "top_toi_F": {
-      "player": "Konsta Kapanen",
-      "toi": 18.9
-     },
-     "top_toi_D": {
-      "player": "Hugo Gallet",
-      "toi": 20.3
-     },
-     "goalie": {
-      "name": "Rasmus Korhonen",
+     "goalie_home": {
+      "name": "Jesper Myrenberg",
       "season": {
-       "gp": 6,
-       "svp": 0.942,
-       "gaa": 1.17
+       "gp": 15,
+       "svp": 0.93,
+       "gaa": 1.67
       },
       "last5": {
        "gp": 5,
-       "svp": 0.93,
+       "svp": 0.941,
        "gaa": 1.4
       }
      },
-     "ex": [],
-     "line_changes": [
-      {
-       "player": "Juuso Ketola",
-       "role": "OP",
-       "before": 4,
-       "now": 2
+     "goalie_away": {
+      "name": "Antti Raanta",
+      "season": {
+       "gp": 5,
+       "svp": 0.914,
+       "gaa": 1.8
       },
-      {
-       "player": "Tuukka Korkiakoski",
-       "role": "13. H",
-       "before": "absent",
-       "now": 4
+      "last5": {
+       "gp": 5,
+       "svp": 0.914,
+       "gaa": 1.8
       }
-     ],
-     "prev_game": 2701412,
-     "model_team_goals": 2.68
+     },
+     "line_changes": {
+      "Jukurit": [],
+      "Lukko": [
+       {
+        "player": "Vili Pulakka",
+        "role": "VL",
+        "before": 4,
+        "now": 2
+       },
+       {
+        "player": "Daniil Trakht",
+        "role": "13. H",
+        "before": 2,
+        "now": 4
+       }
+      ]
+     },
+     "returns": {
+      "Jukurit": [
+       {
+        "player": "Luka Tiihonen",
+        "missed_recent": 18,
+        "played": 0,
+        "team_gp": 18,
+        "line": 4,
+        "role": "7. P"
+       },
+       {
+        "player": "Bence Horvath",
+        "missed_recent": 1,
+        "played": 9,
+        "team_gp": 18,
+        "line": 4,
+        "role": "13. H"
+       }
+      ],
+      "Lukko": []
+     },
+     "absent": {
+      "Jukurit": [],
+      "Lukko": []
+     },
+     "best_D": {
+      "best": [
+       "Jakob Stenqvist",
+       "Lukko",
+       0.107,
+       10.28,
+       6
+      ],
+      "shooter": [
+       "Andrej Sustr",
+       "Jukurit",
+       1.56,
+       2.2,
+       3.11,
+       0.055,
+       8
+      ]
+     },
+     "top_toi": {
+      "Jukurit": [
+       {
+        "player": "Connor Ford",
+        "toi": 20.5
+       },
+       {
+        "player": "Andrej Sustr",
+        "toi": 23.4
+       }
+      ],
+      "Lukko": [
+       {
+        "player": "Alex Beaucage",
+        "toi": 18.3
+       },
+       {
+        "player": "Jakob Stenqvist",
+        "toi": 21.2
+       }
+      ]
+     }
     },
-    "Sport": {
-     "opp": "KalPa",
-     "returns": [
-      {
-       "player": "Samuel Timonen",
-       "missed_recent": 1,
-       "played": 10,
-       "team_gp": 16,
-       "line": 4,
-       "role": "KH"
+    {
+     "game": "Tappara@JYP",
+     "id": 2701418,
+     "paris": "17:30",
+     "goalie_home": {
+      "name": "Oskari Setänen",
+      "season": {
+       "gp": 9,
+       "svp": 0.9,
+       "gaa": 2.33
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.88,
+       "gaa": 2.8
       }
-     ],
-     "absent_listed": [],
-     "top_toi_F": {
-      "player": "Johan Sundström",
-      "toi": 18.5
      },
-     "top_toi_D": {
-      "player": "Simon Åkerström",
-      "toi": 20.9
+     "goalie_away": {
+      "name": "Juha Metsola",
+      "season": {
+       "gp": 5,
+       "svp": 0.905,
+       "gaa": 1.8
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.905,
+       "gaa": 1.8
+      }
      },
-     "goalie": {
-      "name": "Masi Härkönen",
+     "line_changes": {
+      "JYP": [],
+      "Tappara": [
+       {
+        "player": "Henrik Haapala",
+        "role": "VL",
+        "before": 2,
+        "now": 1
+       },
+       {
+        "player": "Jyrki Jokipakka",
+        "role": "VP",
+        "before": 1,
+        "now": 2
+       },
+       {
+        "player": "Julius Mattila",
+        "role": "KH",
+        "before": 1,
+        "now": 2
+       },
+       {
+        "player": "Niclas Almari",
+        "role": "OP",
+        "before": 2,
+        "now": 1
+       },
+       {
+        "player": "Kasper Simontaival",
+        "role": "OL",
+        "before": 2,
+        "now": 1
+       },
+       {
+        "player": "Iivari Räsänen",
+        "role": "7. P",
+        "before": "absent",
+        "now": 4
+       },
+       {
+        "player": "Juuso Nykänen",
+        "role": "OL",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Joona Karvonen",
+        "role": "VP",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Ville Väärälä",
+        "role": "13. H",
+        "before": "absent",
+        "now": 4
+       },
+       {
+        "player": "Vilho Vanhatalo",
+        "role": "VL",
+        "before": "absent",
+        "now": 2
+       },
+       {
+        "player": "Oliver Suvanto",
+        "role": "KH",
+        "before": 2,
+        "now": 1
+       },
+       {
+        "player": "William Wiå",
+        "role": "OL",
+        "before": 3,
+        "now": 4
+       },
+       {
+        "player": "Michael Lindqvist",
+        "role": "OL",
+        "before": 1,
+        "now": 2
+       }
+      ]
+     },
+     "returns": {
+      "JYP": [
+       {
+        "player": "Topias Liljamo",
+        "missed_recent": 2,
+        "played": 7,
+        "team_gp": 14,
+        "line": 4,
+        "role": "13. H"
+       }
+      ],
+      "Tappara": [
+       {
+        "player": "Iivari Räsänen",
+        "missed_recent": 2,
+        "played": 11,
+        "team_gp": 16,
+        "line": 4,
+        "role": "7. P"
+       },
+       {
+        "player": "Ville Väärälä",
+        "missed_recent": 7,
+        "played": 1,
+        "team_gp": 16,
+        "line": 4,
+        "role": "13. H"
+       },
+       {
+        "player": "Vilho Vanhatalo",
+        "missed_recent": 1,
+        "played": 5,
+        "team_gp": 16,
+        "line": 2,
+        "role": "VL"
+       }
+      ]
+     },
+     "absent": {
+      "JYP": [],
+      "Tappara": []
+     },
+     "best_D": {
+      "best": [
+       "Jyrki Jokipakka",
+       "Tappara",
+       0.129,
+       8.53,
+       6.5
+      ],
+      "shooter": [
+       "Trent Bourque",
+       "JYP",
+       2.14,
+       3.0,
+       3.5,
+       0.098,
+       5.75
+      ]
+     },
+     "top_toi": {
+      "JYP": [
+       {
+        "player": "Alexander True",
+        "toi": 19.8
+       },
+       {
+        "player": "Trent Bourque",
+        "toi": 21.7
+       }
+      ],
+      "Tappara": [
+       {
+        "player": "Kasper Simontaival",
+        "toi": 17.4
+       },
+       {
+        "player": "Jyrki Jokipakka",
+        "toi": 21.1
+       }
+      ]
+     }
+    },
+    {
+     "game": "TPS@K-Espoo",
+     "id": 2701419,
+     "paris": "17:30",
+     "goalie_home": {
+      "name": "Petteri Rimpinen",
       "season": {
        "gp": 12,
-       "svp": 0.929,
-       "gaa": 1.83
+       "svp": 0.902,
+       "gaa": 2.42
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.872,
+       "gaa": 3.2
+      }
+     },
+     "goalie_away": {
+      "name": "Eetu Mäkiniemi",
+      "season": {
+       "gp": 13,
+       "svp": 0.891,
+       "gaa": 2.08
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.868,
+       "gaa": 2.4
+      }
+     },
+     "line_changes": {
+      "K-Espoo": [
+       {
+        "player": "Matti Järvinen",
+        "role": "KH",
+        "before": "absent",
+        "now": 3
+       },
+       {
+        "player": "Jani Lajunen",
+        "role": "KH",
+        "before": 1,
+        "now": 4
+       },
+       {
+        "player": "Jere Sallinen",
+        "role": "OL",
+        "before": 1,
+        "now": 3
+       },
+       {
+        "player": "Iikka Kangasniemi",
+        "role": "VL",
+        "before": "absent",
+        "now": 1
+       },
+       {
+        "player": "Miro Keskitalo",
+        "role": "VP",
+        "before": 1,
+        "now": 2
+       },
+       {
+        "player": "Niklas Peltomäki",
+        "role": "7. P",
+        "before": 3,
+        "now": 4
+       },
+       {
+        "player": "Kasper Kotkansalo",
+        "role": "OP",
+        "before": 2,
+        "now": 3
+       },
+       {
+        "player": "Aarne Talvitie",
+        "role": "VL",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Jere Väisänen",
+        "role": "VL",
+        "before": 3,
+        "now": 2
+       },
+       {
+        "player": "Joni Jurmo",
+        "role": "VP",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Arttu Tuomaala",
+        "role": "KH",
+        "before": 2,
+        "now": 1
+       },
+       {
+        "player": "Connor Corcoran",
+        "role": "OP",
+        "before": "absent",
+        "now": 1
+       },
+       {
+        "player": "Carter King",
+        "role": "KH",
+        "before": 3,
+        "now": 2
+       }
+      ],
+      "TPS": [
+       {
+        "player": "Veli-Matti Savinainen",
+        "role": "VL",
+        "before": "absent",
+        "now": 3
+       },
+       {
+        "player": "Joel Määttä",
+        "role": "KH",
+        "before": 4,
+        "now": 1
+       },
+       {
+        "player": "Niklas Ylitalo",
+        "role": "8. P",
+        "before": 3,
+        "now": 4
+       },
+       {
+        "player": "Paavo Fugleberg",
+        "role": "OL",
+        "before": "absent",
+        "now": 3
+       },
+       {
+        "player": "Aatos Koivu",
+        "role": "VL",
+        "before": 3,
+        "now": 4
+       }
+      ]
+     },
+     "returns": {
+      "K-Espoo": [
+       {
+        "player": "Matti Järvinen",
+        "missed_recent": 17,
+        "played": 0,
+        "team_gp": 17,
+        "line": 3,
+        "role": "KH"
+       },
+       {
+        "player": "Iikka Kangasniemi",
+        "missed_recent": 2,
+        "played": 13,
+        "team_gp": 17,
+        "line": 1,
+        "role": "VL"
+       },
+       {
+        "player": "Connor Corcoran",
+        "missed_recent": 1,
+        "played": 16,
+        "team_gp": 17,
+        "line": 1,
+        "role": "OP"
+       }
+      ],
+      "TPS": [
+       {
+        "player": "Veli-Matti Savinainen",
+        "missed_recent": 1,
+        "played": 8,
+        "team_gp": 17,
+        "line": 3,
+        "role": "VL"
+       },
+       {
+        "player": "Paavo Fugleberg",
+        "missed_recent": 17,
+        "played": 0,
+        "team_gp": 17,
+        "line": 3,
+        "role": "OL"
+       }
+      ]
+     },
+     "absent": {
+      "K-Espoo": [
+       "Linus Öberg"
+      ],
+      "TPS": [
+       "Lukas Wernblom"
+      ]
+     },
+     "best_D": {
+      "best": [
+       "Connor Corcoran",
+       "K-Espoo",
+       0.129,
+       8.53,
+       null
+      ],
+      "shooter": [
+       "Connor Corcoran",
+       "K-Espoo",
+       2.5,
+       3.0,
+       4.56,
+       0.129,
+       null
+      ]
+     },
+     "top_toi": {
+      "K-Espoo": [
+       {
+        "player": "Arttu Tuomaala",
+        "toi": 17.7
+       },
+       {
+        "player": "Ville Lajunen",
+        "toi": 20.9
+       }
+      ],
+      "TPS": [
+       {
+        "player": "Joona Ikonen",
+        "toi": 18.8
+       },
+       {
+        "player": "Petteri Lindbohm",
+        "toi": 19.3
+       }
+      ]
+     }
+    },
+    {
+     "game": "Ässät@KooKoo",
+     "id": 2701420,
+     "paris": "17:30",
+     "goalie_home": {
+      "name": "Eetu Randelin",
+      "season": {
+       "gp": 9,
+       "svp": 0.876,
+       "gaa": 3.44
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.878,
+       "gaa": 3.2
+      }
+     },
+     "goalie_away": {
+      "name": "Jan Bednar",
+      "season": {
+       "gp": 13,
+       "svp": 0.902,
+       "gaa": 2.08
       },
       "last5": {
        "gp": 5,
        "svp": 0.915,
+       "gaa": 2.0
+      }
+     },
+     "line_changes": {
+      "KooKoo": [
+       {
+        "player": "Alexander Ruuttu",
+        "role": "OL",
+        "before": "absent",
+        "now": 3
+       },
+       {
+        "player": "Joona Riekkinen",
+        "role": "7. P",
+        "before": "absent",
+        "now": 4
+       },
+       {
+        "player": "Ossi-Petteri Jaakola",
+        "role": "VL",
+        "before": 2,
+        "now": 4
+       },
+       {
+        "player": "Niklas Nykyri",
+        "role": "OP",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Axel Holmström",
+        "role": "KH",
+        "before": 3,
+        "now": 2
+       }
+      ],
+      "Ässät": [
+       {
+        "player": "Valtteri Lipiäinen",
+        "role": "OL",
+        "before": "absent",
+        "now": 4
+       },
+       {
+        "player": "Aleksi Anttalainen",
+        "role": "8. P",
+        "before": "absent",
+        "now": 4
+       }
+      ]
+     },
+     "returns": {
+      "KooKoo": [
+       {
+        "player": "Alexander Ruuttu",
+        "missed_recent": 17,
+        "played": 0,
+        "team_gp": 17,
+        "line": 3,
+        "role": "OL"
+       },
+       {
+        "player": "Joona Riekkinen",
+        "missed_recent": 1,
+        "played": 14,
+        "team_gp": 17,
+        "line": 4,
+        "role": "7. P"
+       },
+       {
+        "player": "Verner Miettinen",
+        "missed_recent": 1,
+        "played": 8,
+        "team_gp": 17,
+        "line": 4,
+        "role": "13. H"
+       }
+      ],
+      "Ässät": [
+       {
+        "player": "Valtteri Lipiäinen",
+        "missed_recent": 17,
+        "played": 0,
+        "team_gp": 17,
+        "line": 4,
+        "role": "OL"
+       },
+       {
+        "player": "Aleksi Anttalainen",
+        "missed_recent": 9,
+        "played": 8,
+        "team_gp": 17,
+        "line": 4,
+        "role": "8. P"
+       }
+      ]
+     },
+     "absent": {
+      "KooKoo": [],
+      "Ässät": [
+       "Nestor Noiva",
+       "Eemeli Heinilä",
+       "Lasse Boelius",
+       "Miro Karjalainen",
+       "Carl Klingberg",
+       "Feetu Knihti"
+      ]
+     },
+     "best_D": {
+      "best": [
+       "Arttu Pelli",
+       "KooKoo",
+       0.102,
+       10.78,
+       7
+      ],
+      "shooter": [
+       "Kim Nousiainen",
+       "KooKoo",
+       1.94,
+       2.6,
+       3.88,
+       0.102,
+       8
+      ]
+     },
+     "top_toi": {
+      "KooKoo": [
+       {
+        "player": "Miska Siikonen",
+        "toi": 18.5
+       },
+       {
+        "player": "Kim Nousiainen",
+        "toi": 19.3
+       }
+      ],
+      "Ässät": [
+       {
+        "player": "Cameron Hillis",
+        "toi": 18.7
+       },
+       {
+        "player": "Rami Määttä",
+        "toi": 21.6
+       }
+      ]
+     }
+    },
+    {
+     "game": "HPK@Kärpät",
+     "id": 2701421,
+     "paris": "17:30",
+     "goalie_home": {
+      "name": "Niklas Rubin",
+      "season": {
+       "gp": 13,
+       "svp": 0.898,
+       "gaa": 2.46
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.891,
+       "gaa": 3.0
+      }
+     },
+     "goalie_away": {
+      "name": "Jakob Crespin",
+      "season": {
+       "gp": 5,
+       "svp": 0.925,
+       "gaa": 2.2
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.925,
        "gaa": 2.2
       }
      },
-     "ex": [],
-     "line_changes": [
-      {
-       "player": "Anton Stråka",
-       "role": "KH",
-       "before": 4,
-       "now": 3
+     "line_changes": {
+      "Kärpät": [
+       {
+        "player": "Tuomas Salmela",
+        "role": "VP",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Samuli Ratinen",
+        "role": "OL",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Arttu Paaso",
+        "role": "7. P",
+        "before": 1,
+        "now": 4
+       },
+       {
+        "player": "Lenni Kokkonen",
+        "role": "OP",
+        "before": "absent",
+        "now": 3
+       },
+       {
+        "player": "Veeti Ruotsalainen",
+        "role": "VP",
+        "before": 3,
+        "now": 1
+       },
+       {
+        "player": "Henrik Törnqvist",
+        "role": "VL",
+        "before": 3,
+        "now": 4
+       }
+      ],
+      "HPK": [
+       {
+        "player": "Anrei Hakulinen",
+        "role": "VL",
+        "before": "absent",
+        "now": 2
+       },
+       {
+        "player": "Harri Kainulainen",
+        "role": "KH",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Heikki Huttunen",
+        "role": "13. H",
+        "before": 3,
+        "now": 4
+       },
+       {
+        "player": "Onnikalle Lehtonen",
+        "role": "OP",
+        "before": "absent",
+        "now": 2
+       },
+       {
+        "player": "Arturs Andzans",
+        "role": "7. P",
+        "before": 2,
+        "now": 4
+       },
+       {
+        "player": "Garrett Pyke",
+        "role": "VP",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Ethan De Jong",
+        "role": "OL",
+        "before": 2,
+        "now": 1
+       },
+       {
+        "player": "Brendan Ranford",
+        "role": "VL",
+        "before": 1,
+        "now": 3
+       }
+      ]
+     },
+     "returns": {
+      "Kärpät": [
+       {
+        "player": "Lenni Kokkonen",
+        "missed_recent": 3,
+        "played": 9,
+        "team_gp": 18,
+        "line": 3,
+        "role": "OP"
+       }
+      ],
+      "HPK": [
+       {
+        "player": "Anrei Hakulinen",
+        "missed_recent": 5,
+        "played": 12,
+        "team_gp": 17,
+        "line": 2,
+        "role": "VL"
+       },
+       {
+        "player": "Onnikalle Lehtonen",
+        "missed_recent": 7,
+        "played": 2,
+        "team_gp": 17,
+        "line": 2,
+        "role": "OP"
+       }
+      ]
+     },
+     "absent": {
+      "Kärpät": [
+       "Rasmus Rissanen"
+      ],
+      "HPK": []
+     },
+     "best_D": {
+      "best": [
+       "Aleksi Matinmikko",
+       "Kärpät",
+       0.15,
+       7.33,
+       6.5
+      ],
+      "shooter": [
+       "Aleksi Matinmikko",
+       "Kärpät",
+       2.94,
+       3.2,
+       5.67,
+       0.15,
+       6.5
+      ]
+     },
+     "top_toi": {
+      "Kärpät": [
+       {
+        "player": "Roni Hirvonen",
+        "toi": 18.6
+       },
+       {
+        "player": "Aleksi Matinmikko",
+        "toi": 20.9
+       }
+      ],
+      "HPK": [
+       {
+        "player": "Sami Päivärinta",
+        "toi": 18.1
+       },
+       {
+        "player": "Miska Kukkonen",
+        "toi": 23.7
+       }
+      ]
+     }
+    },
+    {
+     "game": "SaiPa@Pelicans",
+     "id": 2701422,
+     "paris": "17:30",
+     "goalie_home": {
+      "name": "Patrik Bartosak",
+      "season": {
+       "gp": 4,
+       "svp": 0.903,
+       "gaa": 1.75
       },
-      {
-       "player": "Kalle Ervasti",
-       "role": "OP",
-       "before": 2,
-       "now": 3
-      },
-      {
-       "player": "Viljami Nieminen",
-       "role": "VL",
-       "before": 4,
-       "now": 2
-      },
-      {
-       "player": "Charles Bertrand",
-       "role": "13. H",
-       "before": 3,
-       "now": 4
-      },
-      {
-       "player": "Samuel Timonen",
-       "role": "KH",
-       "before": "absent",
-       "now": 4
-      },
-      {
-       "player": "Theodor Johnsson",
-       "role": "OP",
-       "before": 3,
-       "now": 2
-      },
-      {
-       "player": "George Diaco",
-       "role": "VL",
-       "before": 2,
-       "now": 3
-      },
-      {
-       "player": "Luke Grainger",
-       "role": "OL",
-       "before": 3,
-       "now": 1
+      "last5": {
+       "gp": 4,
+       "svp": 0.903,
+       "gaa": 1.75
       }
-     ],
-     "prev_game": 2701415,
-     "model_team_goals": 2.37
+     },
+     "goalie_away": {
+      "name": "Gustavs Grigals",
+      "season": {
+       "gp": 6,
+       "svp": 0.935,
+       "gaa": 1.33
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.925,
+       "gaa": 1.6
+      }
+     },
+     "line_changes": {
+      "Pelicans": [
+       {
+        "player": "Mikko Kousa",
+        "role": "OP",
+        "before": 1,
+        "now": 3
+       },
+       {
+        "player": "Markus Nutivaara",
+        "role": "VP",
+        "before": 2,
+        "now": 1
+       },
+       {
+        "player": "Hannes Häkkilä",
+        "role": "7. P",
+        "before": "absent",
+        "now": 4
+       },
+       {
+        "player": "Carl-Johan Lerby",
+        "role": "OP",
+        "before": 2,
+        "now": 1
+       },
+       {
+        "player": "Michal Jordan",
+        "role": "VP",
+        "before": 3,
+        "now": 2
+       },
+       {
+        "player": "Johannes Johannesen",
+        "role": "OP",
+        "before": 4,
+        "now": 2
+       }
+      ],
+      "SaiPa": [
+       {
+        "player": "Miikka Salomäki",
+        "role": "OL",
+        "before": "absent",
+        "now": 2
+       },
+       {
+        "player": "Veeti Moilanen",
+        "role": "OL",
+        "before": 4,
+        "now": 3
+       },
+       {
+        "player": "Olli Eloranta",
+        "role": "13. H",
+        "before": "absent",
+        "now": 4
+       },
+       {
+        "player": "Vojtech Hora",
+        "role": "VP",
+        "before": "absent",
+        "now": 1
+       }
+      ]
+     },
+     "returns": {
+      "Pelicans": [
+       {
+        "player": "Hannes Häkkilä",
+        "missed_recent": 4,
+        "played": 10,
+        "team_gp": 14,
+        "line": 4,
+        "role": "7. P"
+       },
+       {
+        "player": "Eelis Teutari",
+        "missed_recent": 1,
+        "played": 11,
+        "team_gp": 14,
+        "line": 4,
+        "role": "13. H"
+       }
+      ],
+      "SaiPa": [
+       {
+        "player": "Miikka Salomäki",
+        "missed_recent": 6,
+        "played": 4,
+        "team_gp": 16,
+        "line": 2,
+        "role": "OL"
+       },
+       {
+        "player": "Olli Eloranta",
+        "missed_recent": 16,
+        "played": 0,
+        "team_gp": 16,
+        "line": 4,
+        "role": "13. H"
+       },
+       {
+        "player": "Vojtech Hora",
+        "missed_recent": 16,
+        "played": 0,
+        "team_gp": 16,
+        "line": 1,
+        "role": "VP"
+       }
+      ]
+     },
+     "absent": {
+      "Pelicans": [],
+      "SaiPa": []
+     },
+     "best_D": {
+      "best": [
+       "Markus Nutivaara",
+       "Pelicans",
+       0.123,
+       8.94,
+       7
+      ],
+      "shooter": [
+       "Brian Kramer",
+       "SaiPa",
+       2.38,
+       3.0,
+       4.88,
+       0.115,
+       7.5
+      ]
+     },
+     "top_toi": {
+      "Pelicans": [
+       {
+        "player": "Gabriel Fortier",
+        "toi": 19.7
+       },
+       {
+        "player": "Markus Nutivaara",
+        "toi": 20.2
+       }
+      ],
+      "SaiPa": [
+       {
+        "player": "Aarne Intonen",
+        "toi": 16.9
+       },
+       {
+        "player": "Brian Kramer",
+        "toi": 20.4
+       }
+      ]
+     }
+    },
+    {
+     "game": "Ilves@HIFK",
+     "id": 2701423,
+     "paris": "17:30",
+     "goalie_home": {
+      "name": "Hugo Alnefelt",
+      "season": {
+       "gp": 8,
+       "svp": 0.898,
+       "gaa": 2.75
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.929,
+       "gaa": 2.0
+      }
+     },
+     "goalie_away": {
+      "name": "Mantas Armalis",
+      "season": {
+       "gp": 10,
+       "svp": 0.948,
+       "gaa": 1.2
+      },
+      "last5": {
+       "gp": 5,
+       "svp": 0.926,
+       "gaa": 1.4
+      }
+     },
+     "line_changes": {
+      "HIFK": [],
+      "Ilves": [
+       {
+        "player": "Toni Utunen",
+        "role": "OP",
+        "before": "absent",
+        "now": 3
+       },
+       {
+        "player": "Topias Hynninen",
+        "role": "VL",
+        "before": 2,
+        "now": 4
+       },
+       {
+        "player": "Ondrej Kos",
+        "role": "OL",
+        "before": 4,
+        "now": 2
+       }
+      ]
+     },
+     "returns": {
+      "HIFK": [
+       {
+        "player": "Atte Joki",
+        "missed_recent": 1,
+        "played": 11,
+        "team_gp": 16,
+        "line": 4,
+        "role": "13. H"
+       }
+      ],
+      "Ilves": [
+       {
+        "player": "Toni Utunen",
+        "missed_recent": 2,
+        "played": 15,
+        "team_gp": 17,
+        "line": 3,
+        "role": "OP"
+       }
+      ]
+     },
+     "absent": {
+      "HIFK": [],
+      "Ilves": []
+     },
+     "best_D": {
+      "best": [
+       "Austin Strand",
+       "Ilves",
+       0.147,
+       7.48,
+       4.75
+      ],
+      "shooter": [
+       "Tony Sund",
+       "Ilves",
+       2.35,
+       3.8,
+       4.76,
+       0.097,
+       7.5
+      ]
+     },
+     "top_toi": {
+      "HIFK": [
+       {
+        "player": "Vincent Marleau",
+        "toi": 19.0
+       },
+       {
+        "player": "Aron Kiviharju",
+        "toi": 20.5
+       }
+      ],
+      "Ilves": [
+       {
+        "player": "Luke Henman",
+        "toi": 17.1
+       },
+       {
+        "player": "Austin Strand",
+        "toi": 19.6
+       }
+      ]
+     }
     }
-   },
-   "players": [
+   ],
+   "a_jouer": [],
+   "note_a_jouer": "Personne ≥ 35 % (max Ojantakanen 31,8 %).",
+   "values": [
     {
-     "game": "Sport@KalPa",
+     "block": "value",
+     "player": "Ondrej Kos",
+     "team": "Ilves",
+     "opp": "HIFK",
+     "game": "Ilves@HIFK",
      "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Jesper Piitulainen",
-     "pid": 22895620,
-     "pos": "F",
-     "line": 1,
-     "gp": 15,
-     "G": 1,
-     "A": 5,
-     "ppP": 2,
-     "att_g": 3.07,
-     "sog_g": 2.27,
-     "xg_g": 0.221,
-     "xev_g": 0.157,
-     "xpp_g": 0.064,
-     "ppatt_g": 0.6,
-     "toi": 17.5,
-     "att5": 3.0,
-     "sog5": 2.0,
-     "xg5": 0.134,
-     "G5": 1,
-     "A5": 2,
-     "toi5": 17.4,
-     "att3": 3.0,
-     "sog3": 1.67,
-     "xg3": 0.147,
-     "G3": 1,
-     "A3": 2,
-     "trend": 0.61,
-     "F": 0.982,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.202,
-     "P": 0.183,
-     "odds_min": 5.47,
-     "pp_rank": 6
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Jaakko Rissanen",
-     "pid": 23065792,
-     "pos": "F",
-     "line": 1,
-     "gp": 11,
-     "G": 2,
-     "A": 7,
-     "ppP": 5,
-     "att_g": 0.73,
-     "sog_g": 0.18,
-     "xg_g": 0.044,
-     "xev_g": 0.026,
-     "xpp_g": 0.018,
-     "ppatt_g": 0.09,
-     "toi": 14.5,
-     "att5": 0.8,
-     "sog5": 0.2,
-     "xg5": 0.054,
-     "G5": 1,
-     "A5": 3,
-     "toi5": 13.2,
-     "att3": 0.67,
-     "sog3": 0.33,
-     "xg3": 0.068,
-     "G3": 1,
-     "A3": 2,
-     "trend": 1.23,
-     "F": 1.081,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.154,
-     "P": 0.143,
-     "odds_min": 7.0,
-     "pp_rank": 3
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Juuso Könönen",
-     "pid": 24226640,
-     "pos": "F",
-     "line": 4,
-     "gp": 14,
-     "G": 5,
-     "A": 1,
-     "ppP": 0,
-     "att_g": 1.21,
-     "sog_g": 0.71,
-     "xg_g": 0.073,
-     "xev_g": 0.073,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 10.8,
-     "att5": 1.0,
-     "sog5": 0.4,
-     "xg5": 0.056,
-     "G5": 1,
-     "A5": 1,
-     "toi5": 10.9,
-     "att3": 0.67,
-     "sog3": 0.33,
-     "xg3": 0.012,
-     "G3": 1,
-     "A3": 1,
-     "trend": 0.77,
-     "F": 1.146,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.108,
-     "P": 0.102,
-     "odds_min": 9.81,
-     "pp_rank": 13
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Teemu Hartikainen",
-     "pid": 24338350,
-     "pos": "F",
-     "line": 1,
-     "gp": 15,
-     "G": 4,
-     "A": 4,
-     "ppP": 4,
-     "att_g": 1.87,
-     "sog_g": 1.13,
-     "xg_g": 0.19,
-     "xev_g": 0.061,
-     "xpp_g": 0.129,
-     "ppatt_g": 0.87,
-     "toi": 16.0,
-     "att5": 1.8,
-     "sog5": 1.6,
-     "xg5": 0.233,
-     "G5": 3,
-     "A5": 1,
-     "toi5": 15.6,
-     "att3": 2.0,
-     "sog3": 1.67,
-     "xg3": 0.348,
-     "G3": 3,
-     "A3": 1,
-     "trend": 1.23,
-     "F": 1.016,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.231,
-     "P": 0.206,
-     "odds_min": 4.85,
-     "pp_rank": 2
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Lasse Lappalainen",
-     "pid": 24725109,
-     "pos": "D",
-     "line": 3,
-     "gp": 15,
-     "G": 1,
-     "A": 1,
-     "ppP": 1,
-     "att_g": 2.2,
-     "sog_g": 0.93,
-     "xg_g": 0.077,
-     "xev_g": 0.058,
-     "xpp_g": 0.019,
-     "ppatt_g": 0.33,
-     "toi": 16.9,
-     "att5": 2.4,
-     "sog5": 0.4,
-     "xg5": 0.081,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 17.1,
-     "att3": 1.33,
-     "sog3": 0.67,
-     "xg3": 0.087,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.05,
-     "F": 0.885,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.085,
-     "P": 0.069,
-     "odds_min": 14.51,
-     "pp_rank": 8
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Jonne Tammela",
-     "pid": 25461491,
-     "pos": "F",
-     "line": 3,
-     "gp": 2,
-     "G": 0,
-     "A": 0,
-     "ppP": 0,
-     "att_g": 0.0,
-     "sog_g": 0.0,
-     "xg_g": 0.0,
-     "xev_g": 0.0,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 11.8,
-     "att5": 0.0,
-     "sog5": 0.0,
-     "xg5": 0.0,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 11.8,
-     "att3": 0.0,
-     "sog3": 0.0,
-     "xg3": 0.0,
-     "G3": 0,
-     "A3": 0,
-     "trend": null,
-     "F": 1.079,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.233,
-     "P": 0.208,
-     "odds_min": 4.8,
-     "pp_rank": 14
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Aleksi Klemetti",
-     "pid": 27471447,
      "pos": "F",
      "line": 2,
-     "gp": 15,
-     "G": 4,
-     "A": 3,
-     "ppP": 4,
-     "att_g": 1.93,
-     "sog_g": 1.2,
-     "xg_g": 0.181,
-     "xev_g": 0.126,
-     "xpp_g": 0.055,
-     "ppatt_g": 0.33,
-     "toi": 15.1,
-     "att5": 2.0,
-     "sog5": 1.4,
-     "xg5": 0.228,
-     "G5": 1,
-     "A5": 0,
-     "toi5": 15.8,
-     "att3": 1.33,
-     "sog3": 1.0,
-     "xg3": 0.109,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.26,
-     "F": 1.045,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.2,
-     "P": 0.181,
-     "odds_min": 5.52,
-     "pp_rank": 5
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Elias Vilén",
-     "pid": 30793837,
-     "pos": "F",
-     "line": 2,
-     "gp": 15,
-     "G": 2,
-     "A": 2,
-     "ppP": 1,
-     "att_g": 2.33,
-     "sog_g": 1.2,
-     "xg_g": 0.18,
-     "xev_g": 0.113,
-     "xpp_g": 0.068,
-     "ppatt_g": 0.8,
-     "toi": 17.1,
-     "att5": 1.8,
-     "sog5": 0.8,
-     "xg5": 0.075,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 16.1,
-     "att3": 1.67,
-     "sog3": 0.67,
-     "xg3": 0.071,
-     "G3": 0,
-     "A3": 1,
-     "trend": 0.42,
-     "F": 1.022,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.163,
-     "P": 0.151,
-     "odds_min": 6.64,
-     "pp_rank": 7
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Juuso Ketola",
-     "pid": 31848134,
-     "pos": "D",
-     "line": 2,
+     "P": 0.187,
+     "min_odds": 5.88,
+     "wm_buteur": 7.5,
+     "edge": 0.403,
      "gp": 14,
      "G": 0,
-     "A": 2,
-     "ppP": 0,
-     "att_g": 1.29,
-     "sog_g": 0.79,
-     "xg_g": 0.029,
-     "xev_g": 0.02,
-     "xpp_g": 0.008,
-     "ppatt_g": 0.21,
-     "toi": 10.9,
-     "att5": 1.8,
-     "sog5": 1.0,
-     "xg5": 0.062,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 10.6,
-     "att3": 1.67,
-     "sog3": 1.0,
-     "xg3": 0.068,
-     "G3": 0,
-     "A3": 0,
-     "trend": 2.16,
-     "F": 1.129,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.053,
-     "P": 0.044,
-     "odds_min": 22.89,
-     "pp_rank": 10
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Kristjan Kombe",
-     "pid": 33388168,
-     "pos": "F",
-     "line": 4,
-     "gp": 13,
-     "G": 1,
-     "A": 1,
-     "ppP": 0,
-     "att_g": 0.69,
-     "sog_g": 0.31,
-     "xg_g": 0.048,
-     "xev_g": 0.048,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 12.1,
-     "att5": 0.6,
-     "sog5": 0.4,
-     "xg5": 0.021,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 14.1,
-     "att3": 0.33,
-     "sog3": 0.0,
-     "xg3": 0.014,
-     "G3": 0,
-     "A3": 0,
-     "trend": 0.43,
-     "F": 0.991,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.074,
-     "P": 0.071,
-     "odds_min": 14.02,
-     "pp_rank": 15
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Konsta Kapanen",
-     "pid": 33866651,
-     "pos": "F",
-     "line": 2,
-     "gp": 15,
-     "G": 4,
      "A": 4,
-     "ppP": 3,
-     "att_g": 3.0,
-     "sog_g": 2.07,
-     "xg_g": 0.152,
-     "xev_g": 0.1,
-     "xpp_g": 0.052,
-     "ppatt_g": 0.73,
-     "toi": 18.9,
-     "att5": 3.4,
-     "sog5": 2.6,
-     "xg5": 0.196,
-     "G5": 1,
-     "A5": 2,
-     "toi5": 19.7,
-     "att3": 3.0,
-     "sog3": 2.67,
-     "xg3": 0.235,
-     "G3": 1,
-     "A3": 2,
-     "trend": 1.29,
-     "F": 1.113,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.204,
-     "P": 0.184,
-     "odds_min": 5.42,
-     "pp_rank": 4
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Tuukka Korkiakoski",
-     "pid": 34471692,
-     "pos": "F",
-     "line": 4,
-     "gp": 3,
-     "G": 0,
-     "A": 0,
-     "ppP": 0,
-     "att_g": 0.0,
-     "sog_g": 0.0,
-     "xg_g": 0.0,
-     "xev_g": 0.0,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 7.7,
-     "att5": 0.0,
-     "sog5": 0.0,
-     "xg5": 0.0,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 7.7,
-     "att3": 0.0,
-     "sog3": 0.0,
-     "xg3": 0.0,
-     "G3": 0,
-     "A3": 0,
-     "trend": null,
-     "F": 0.958,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.111,
-     "P": 0.105,
-     "odds_min": 9.5,
-     "pp_rank": 16
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Mitja Jokinen",
-     "pid": 40048503,
-     "pos": "D",
-     "line": 3,
-     "gp": 13,
-     "G": 0,
-     "A": 4,
-     "ppP": 0,
-     "att_g": 1.85,
-     "sog_g": 0.46,
-     "xg_g": 0.054,
-     "xev_g": 0.054,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 15.4,
-     "att5": 2.0,
-     "sog5": 0.2,
-     "xg5": 0.036,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 16.3,
-     "att3": 2.33,
-     "sog3": 0.33,
-     "xg3": 0.057,
-     "G3": 0,
-     "A3": 1,
-     "trend": 0.67,
-     "F": 0.927,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.053,
-     "P": 0.044,
-     "odds_min": 22.89,
-     "pp_rank": 17
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Joona Saarelainen",
-     "pid": 40113846,
-     "pos": "F",
-     "line": 3,
-     "gp": 15,
-     "G": 6,
-     "A": 0,
-     "ppP": 0,
-     "att_g": 2.73,
-     "sog_g": 1.73,
-     "xg_g": 0.23,
-     "xev_g": 0.222,
-     "xpp_g": 0.008,
-     "ppatt_g": 0.07,
-     "toi": 17.0,
-     "att5": 4.0,
-     "sog5": 2.6,
-     "xg5": 0.331,
-     "G5": 2,
-     "A5": 0,
-     "toi5": 18.3,
-     "att3": 4.33,
-     "sog3": 2.67,
-     "xg3": 0.351,
-     "G3": 2,
-     "A3": 0,
-     "trend": 1.44,
-     "F": 1.025,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.217,
-     "P": 0.195,
-     "odds_min": 5.12,
-     "pp_rank": 12
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Ville Ruotsalainen",
-     "pid": 40215681,
-     "pos": "D",
-     "line": 1,
-     "gp": 15,
-     "G": 4,
-     "A": 5,
-     "ppP": 5,
-     "att_g": 3.33,
-     "sog_g": 1.93,
-     "xg_g": 0.085,
-     "xev_g": 0.06,
-     "xpp_g": 0.024,
-     "ppatt_g": 1.07,
-     "toi": 18.2,
-     "att5": 3.0,
-     "sog5": 1.8,
-     "xg5": 0.066,
-     "G5": 0,
-     "A5": 2,
-     "toi5": 20.0,
-     "att3": 3.67,
-     "sog3": 2.0,
-     "xg3": 0.085,
-     "G3": 0,
-     "A3": 2,
-     "trend": 0.78,
-     "F": 1.25,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.155,
-     "P": 0.122,
-     "odds_min": 8.19,
-     "pp_rank": 1
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Rasmus Miilunpohja",
-     "pid": 40373353,
-     "pos": "F",
-     "line": 4,
-     "gp": 5,
-     "G": 0,
-     "A": 1,
-     "ppP": 0,
-     "att_g": 0.4,
-     "sog_g": 0.0,
-     "xg_g": 0.024,
-     "xev_g": 0.024,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 7.3,
-     "att5": 0.4,
-     "sog5": 0.0,
-     "xg5": 0.024,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 7.3,
-     "att3": 0.33,
-     "sog3": 0.0,
-     "xg3": 0.031,
-     "G3": 0,
-     "A3": 1,
-     "trend": 1.0,
-     "F": 0.997,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.101,
-     "P": 0.096,
-     "odds_min": 10.38,
-     "pp_rank": 18
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Hugo Gallet",
-     "pid": 40431875,
-     "pos": "D",
-     "line": 1,
-     "gp": 15,
-     "G": 0,
-     "A": 8,
-     "ppP": 1,
-     "att_g": 1.53,
-     "sog_g": 0.93,
-     "xg_g": 0.037,
-     "xev_g": 0.037,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 20.3,
-     "att5": 1.8,
+     "sog_g": 1.29,
      "sog5": 1.2,
-     "xg5": 0.081,
-     "G5": 0,
-     "A5": 3,
-     "toi5": 20.8,
-     "att3": 2.0,
-     "sog3": 1.67,
-     "xg3": 0.113,
-     "G3": 0,
-     "A3": 2,
-     "trend": 2.17,
-     "F": 0.85,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.05,
-     "P": 0.042,
-     "odds_min": 24.03,
-     "pp_rank": 11
+     "att_g": 2.79,
+     "toi": 12.9,
+     "pp_rank": 5,
+     "cover_point": {
+      "odds": 2.45,
+      "p": 0.29,
+      "pts10": 3,
+      "n10": 10,
+      "min": 3.79,
+      "ok": false,
+      "stake_goal": 1.1,
+      "stake_point": 0.9,
+      "gain_if_goal": 8.46,
+      "gain_if_point_only": 0.21,
+      "lose_if_nothing": -2.0
+     }
     },
     {
-     "game": "Sport@KalPa",
+     "block": "value",
+     "player": "Juuso Puustinen",
+     "team": "JYP",
+     "opp": "Tappara",
+     "game": "Tappara@JYP",
      "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Anton Karlsson",
-     "pid": 60671583,
-     "pos": "D",
+     "pos": "F",
      "line": 4,
-     "gp": 12,
+     "P": 0.198,
+     "min_odds": 5.56,
+     "wm_buteur": 5.75,
+     "edge": 0.139,
+     "gp": 6,
      "G": 0,
-     "A": 1,
-     "ppP": 0,
-     "att_g": 0.08,
-     "sog_g": 0.0,
-     "xg_g": 0.0,
-     "xev_g": 0.0,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 6.5,
-     "att5": 0.2,
-     "sog5": 0.0,
-     "xg5": 0.0,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 6.5,
-     "att3": 0.33,
-     "sog3": 0.0,
-     "xg3": 0.001,
-     "G3": 0,
-     "A3": 1,
-     "trend": 2.4,
-     "F": 0.939,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.023,
-     "P": 0.019,
-     "odds_min": 52.78,
-     "pp_rank": 19
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Lukas Kanak",
-     "pid": 60866738,
-     "pos": "D",
-     "line": 2,
-     "gp": 14,
-     "G": 0,
-     "A": 3,
-     "ppP": 0,
-     "att_g": 2.07,
-     "sog_g": 0.64,
-     "xg_g": 0.045,
-     "xev_g": 0.045,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 14.8,
-     "att5": 2.4,
-     "sog5": 0.8,
-     "xg5": 0.054,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 16.4,
-     "att3": 1.33,
-     "sog3": 0.33,
-     "xg3": 0.009,
-     "G3": 0,
-     "A3": 1,
-     "trend": 1.2,
-     "F": 1.039,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.054,
-     "P": 0.044,
-     "odds_min": 22.47,
-     "pp_rank": 20
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "KalPa",
-     "opp": "Sport",
-     "home": true,
-     "player": "Cade Borchardt",
-     "pid": 60954533,
-     "pos": "F",
-     "line": 3,
-     "gp": 15,
-     "G": 1,
-     "A": 4,
-     "ppP": 0,
-     "att_g": 2.33,
-     "sog_g": 1.47,
-     "xg_g": 0.2,
-     "xev_g": 0.178,
-     "xpp_g": 0.022,
-     "ppatt_g": 0.4,
-     "toi": 15.2,
-     "att5": 2.8,
-     "sog5": 1.4,
-     "xg5": 0.285,
-     "G5": 1,
-     "A5": 0,
-     "toi5": 13.9,
-     "att3": 3.0,
-     "sog3": 1.33,
-     "xg3": 0.401,
-     "G3": 1,
-     "A3": 0,
-     "trend": 1.43,
-     "F": 0.964,
-     "Mo": 1.081,
-     "Mg": 0.85,
-     "opp_goalie": "Härkönen",
-     "lam": 0.206,
-     "P": 0.186,
-     "odds_min": 5.38,
-     "pp_rank": 9
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Miika Koivisto",
-     "pid": 22051859,
-     "pos": "D",
-     "line": 1,
-     "gp": 16,
-     "G": 0,
-     "A": 2,
-     "ppP": 0,
-     "att_g": 2.5,
-     "sog_g": 0.88,
-     "xg_g": 0.07,
-     "xev_g": 0.065,
-     "xpp_g": 0.005,
-     "ppatt_g": 0.25,
-     "toi": 18.8,
-     "att5": 2.6,
-     "sog5": 1.0,
-     "xg5": 0.078,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 17.9,
-     "att3": 3.0,
-     "sog3": 0.67,
-     "xg3": 0.037,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.12,
-     "F": 0.85,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.066,
-     "P": 0.054,
-     "odds_min": 18.48,
-     "pp_rank": 12
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Oula Palve",
-     "pid": 22805092,
-     "pos": "F",
-     "line": 1,
-     "gp": 7,
-     "G": 1,
-     "A": 5,
-     "ppP": 2,
-     "att_g": 3.0,
-     "sog_g": 1.86,
-     "xg_g": 0.182,
-     "xev_g": 0.165,
-     "xpp_g": 0.018,
-     "ppatt_g": 0.71,
-     "toi": 17.5,
-     "att5": 2.8,
-     "sog5": 2.2,
-     "xg5": 0.141,
-     "G5": 1,
-     "A5": 5,
-     "toi5": 18.1,
-     "att3": 2.67,
-     "sog3": 2.33,
-     "xg3": 0.093,
-     "G3": 1,
-     "A3": 3,
-     "trend": 0.77,
-     "F": 0.993,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.158,
-     "P": 0.146,
-     "odds_min": 6.85,
-     "pp_rank": 4
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Valtteri Viljanen",
-     "pid": 25334515,
-     "pos": "D",
-     "line": 1,
-     "gp": 16,
-     "G": 0,
-     "A": 3,
-     "ppP": 0,
-     "att_g": 3.19,
-     "sog_g": 1.44,
-     "xg_g": 0.061,
-     "xev_g": 0.061,
-     "xpp_g": 0.001,
-     "ppatt_g": 0.06,
-     "toi": 18.1,
-     "att5": 2.0,
-     "sog5": 1.4,
-     "xg5": 0.047,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 18.7,
-     "att3": 2.67,
-     "sog3": 2.0,
-     "xg3": 0.067,
-     "G3": 0,
-     "A3": 0,
-     "trend": 0.77,
-     "F": 0.966,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.057,
-     "P": 0.047,
-     "odds_min": 21.06,
-     "pp_rank": 15
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Anton Stråka",
-     "pid": 28948856,
-     "pos": "F",
-     "line": 3,
-     "gp": 12,
-     "G": 1,
      "A": 0,
-     "ppP": 0,
-     "att_g": 1.25,
-     "sog_g": 0.83,
-     "xg_g": 0.138,
-     "xev_g": 0.138,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 12.2,
-     "att5": 1.4,
-     "sog5": 0.8,
-     "xg5": 0.103,
-     "G5": 1,
-     "A5": 0,
-     "toi5": 11.9,
-     "att3": 1.33,
-     "sog3": 0.67,
-     "xg3": 0.114,
-     "G3": 0,
-     "A3": 0,
-     "trend": 0.75,
-     "F": 0.949,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.109,
-     "P": 0.103,
-     "odds_min": 9.68,
-     "pp_rank": 16
+     "sog_g": 1.17,
+     "sog5": 1.2,
+     "att_g": 1.67,
+     "toi": 9.5,
+     "pp_rank": 9,
+     "cover_point": {
+      "odds": 2.15,
+      "p": 0.165,
+      "pts10": 0,
+      "n10": 6,
+      "min": 6.68,
+      "ok": false,
+      "stake_goal": 1.0,
+      "stake_point": 1.0,
+      "gain_if_goal": 5.9,
+      "gain_if_point_only": 0.15,
+      "lose_if_nothing": -2.0
+     }
     },
     {
-     "game": "Sport@KalPa",
+     "block": "value",
+     "player": "Wiktor Nilsson",
+     "team": "Kärpät",
+     "opp": "HPK",
+     "game": "HPK@Kärpät",
      "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Lari Heikkinen",
-     "pid": 31411901,
      "pos": "F",
      "line": 4,
-     "gp": 16,
-     "G": 5,
-     "A": 1,
-     "ppP": 1,
-     "att_g": 1.38,
-     "sog_g": 0.81,
-     "xg_g": 0.15,
-     "xev_g": 0.107,
-     "xpp_g": 0.043,
-     "ppatt_g": 0.12,
-     "toi": 12.6,
-     "att5": 1.4,
-     "sog5": 0.8,
-     "xg5": 0.141,
-     "G5": 1,
-     "A5": 0,
-     "toi5": 11.8,
-     "att3": 2.0,
-     "sog3": 1.33,
-     "xg3": 0.199,
-     "G3": 1,
-     "A3": 0,
-     "trend": 0.94,
-     "F": 1.023,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.11,
-     "P": 0.104,
-     "odds_min": 9.59,
-     "pp_rank": 11
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Kalle Ervasti",
-     "pid": 31539993,
-     "pos": "D",
-     "line": 3,
-     "gp": 10,
-     "G": 0,
+     "P": 0.162,
+     "min_odds": 6.79,
+     "wm_buteur": 7,
+     "edge": 0.134,
+     "gp": 18,
+     "G": 3,
      "A": 4,
-     "ppP": 2,
-     "att_g": 2.1,
-     "sog_g": 0.9,
-     "xg_g": 0.05,
-     "xev_g": 0.045,
-     "xpp_g": 0.004,
-     "ppatt_g": 0.2,
-     "toi": 15.3,
-     "att5": 3.0,
-     "sog5": 1.4,
-     "xg5": 0.074,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 17.6,
-     "att3": 3.67,
-     "sog3": 2.0,
-     "xg3": 0.059,
-     "G3": 0,
-     "A3": 1,
-     "trend": 1.49,
-     "F": 1.04,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.072,
-     "P": 0.059,
-     "odds_min": 16.89,
-     "pp_rank": 9
+     "sog_g": 0.89,
+     "sog5": 1.0,
+     "att_g": 2.22,
+     "toi": 12.0,
+     "pp_rank": 2,
+     "cover_point": {
+      "odds": 2.55,
+      "p": 0.29,
+      "pts10": 3,
+      "n10": 10,
+      "min": 3.79,
+      "ok": false,
+      "stake_goal": 1.2,
+      "stake_point": 0.8,
+      "gain_if_goal": 8.44,
+      "gain_if_point_only": 0.04,
+      "lose_if_nothing": -2.0
+     }
     },
     {
-     "game": "Sport@KalPa",
+     "block": "value",
+     "player": "Arttu Alasiurua",
+     "team": "Ässät",
+     "opp": "KooKoo",
+     "game": "Ässät@KooKoo",
      "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Viljami Nieminen",
-     "pid": 31896306,
      "pos": "F",
-     "line": 2,
-     "gp": 15,
-     "G": 2,
-     "A": 2,
-     "ppP": 3,
-     "att_g": 3.73,
-     "sog_g": 2.2,
-     "xg_g": 0.289,
-     "xev_g": 0.152,
-     "xpp_g": 0.136,
-     "ppatt_g": 1.27,
-     "toi": 16.1,
-     "att5": 3.0,
-     "sog5": 1.6,
-     "xg5": 0.402,
-     "G5": 1,
-     "A5": 0,
-     "toi5": 16.3,
-     "att3": 2.33,
-     "sog3": 1.33,
-     "xg3": 0.195,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.39,
-     "F": 0.978,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.2,
-     "P": 0.181,
-     "odds_min": 5.51,
-     "pp_rank": 1
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Charles Bertrand",
-     "pid": 34254136,
-     "pos": "F",
-     "line": 4,
-     "gp": 15,
-     "G": 0,
-     "A": 3,
-     "ppP": 0,
-     "att_g": 1.87,
-     "sog_g": 0.73,
-     "xg_g": 0.095,
-     "xev_g": 0.081,
-     "xpp_g": 0.014,
-     "ppatt_g": 0.33,
-     "toi": 12.3,
-     "att5": 2.4,
-     "sog5": 0.8,
-     "xg5": 0.168,
-     "G5": 0,
-     "A5": 2,
-     "toi5": 11.5,
-     "att3": 3.0,
-     "sog3": 0.67,
-     "xg3": 0.123,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.76,
-     "F": 1.082,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.161,
+     "line": 3,
      "P": 0.149,
-     "odds_min": 6.71,
-     "pp_rank": 10
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Benjamin Pietilä",
-     "pid": 40055581,
-     "pos": "F",
-     "line": 4,
-     "gp": 16,
-     "G": 0,
-     "A": 3,
-     "ppP": 0,
-     "att_g": 1.19,
-     "sog_g": 0.69,
-     "xg_g": 0.076,
-     "xev_g": 0.076,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 11.5,
-     "att5": 0.6,
-     "sog5": 0.0,
-     "xg5": 0.023,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 10.0,
-     "att3": 0.67,
-     "sog3": 0.0,
-     "xg3": 0.035,
-     "G3": 0,
-     "A3": 0,
-     "trend": 0.31,
-     "F": 0.983,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.074,
-     "P": 0.071,
-     "odds_min": 14.01,
-     "pp_rank": 17
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Kalle Kangas",
-     "pid": 40115108,
-     "pos": "D",
-     "line": 4,
-     "gp": 16,
+     "min_odds": 7.38,
+     "wm_buteur": 7.5,
+     "edge": 0.117,
+     "gp": 7,
      "G": 1,
      "A": 1,
-     "ppP": 0,
-     "att_g": 0.81,
-     "sog_g": 0.31,
-     "xg_g": 0.033,
-     "xev_g": 0.033,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 14.3,
-     "att5": 0.8,
-     "sog5": 0.4,
-     "xg5": 0.08,
-     "G5": 1,
-     "A5": 0,
-     "toi5": 13.1,
-     "att3": 0.33,
-     "sog3": 0.0,
-     "xg3": 0.005,
-     "G3": 0,
-     "A3": 0,
-     "trend": 2.44,
-     "F": 0.988,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.032,
-     "P": 0.027,
-     "odds_min": 37.28,
-     "pp_rank": 18
+     "sog_g": 0.57,
+     "sog5": 0.6,
+     "att_g": 1.57,
+     "toi": 11.1,
+     "pp_rank": 10,
+     "cover_point": {
+      "odds": 3.3,
+      "p": 0.292,
+      "pts10": 2,
+      "n10": 7,
+      "min": 3.77,
+      "ok": false,
+      "stake_goal": 1.3,
+      "stake_point": 0.7,
+      "gain_if_goal": 10.06,
+      "gain_if_point_only": 0.31,
+      "lose_if_nothing": -2.0
+     }
     },
     {
-     "game": "Sport@KalPa",
+     "block": "value",
+     "player": "Pekka Jormakka",
+     "team": "Jukurit",
+     "opp": "Lukko",
+     "game": "Lukko@Jukurit",
      "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Simon Åkerström",
-     "pid": 60351425,
-     "pos": "D",
-     "line": 2,
-     "gp": 16,
-     "G": 3,
-     "A": 4,
-     "ppP": 3,
-     "att_g": 4.62,
-     "sog_g": 1.69,
-     "xg_g": 0.135,
-     "xev_g": 0.074,
-     "xpp_g": 0.061,
-     "ppatt_g": 1.25,
-     "toi": 20.9,
-     "att5": 4.6,
-     "sog5": 1.6,
-     "xg5": 0.132,
-     "G5": 2,
-     "A5": 1,
-     "toi5": 18.7,
-     "att3": 4.0,
-     "sog3": 1.0,
-     "xg3": 0.067,
-     "G3": 1,
-     "A3": 0,
-     "trend": 0.98,
-     "F": 1.052,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.123,
-     "P": 0.099,
-     "odds_min": 10.13,
-     "pp_rank": 2
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Samuel Timonen",
-     "pid": 60464071,
      "pos": "F",
-     "line": 4,
-     "gp": 10,
+     "line": 3,
+     "P": 0.194,
+     "min_odds": 5.67,
+     "wm_buteur": 5.75,
+     "edge": 0.115,
+     "gp": 8,
      "G": 0,
      "A": 0,
-     "ppP": 0,
-     "att_g": 0.6,
-     "sog_g": 0.5,
-     "xg_g": 0.028,
-     "xev_g": 0.028,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 10.8,
-     "att5": 0.8,
-     "sog5": 0.8,
-     "xg5": 0.048,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 11.3,
-     "att3": 1.33,
-     "sog3": 1.33,
-     "xg3": 0.08,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.71,
-     "F": 0.977,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.074,
-     "P": 0.072,
-     "odds_min": 13.96,
-     "pp_rank": 19
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Brett Harrison",
-     "pid": 60501427,
-     "pos": "F",
-     "line": 1,
-     "gp": 7,
-     "G": 4,
-     "A": 3,
-     "ppP": 1,
-     "att_g": 2.57,
-     "sog_g": 2.0,
-     "xg_g": 0.207,
-     "xev_g": 0.163,
-     "xpp_g": 0.043,
-     "ppatt_g": 0.43,
-     "toi": 15.4,
-     "att5": 2.4,
-     "sog5": 1.8,
-     "xg5": 0.184,
-     "G5": 2,
-     "A5": 3,
-     "toi5": 16.0,
-     "att3": 1.67,
-     "sog3": 1.33,
-     "xg3": 0.251,
-     "G3": 1,
-     "A3": 2,
-     "trend": 0.89,
-     "F": 1.066,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.174,
-     "P": 0.159,
-     "odds_min": 6.27,
-     "pp_rank": 8
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Philip Granath",
-     "pid": 60662386,
-     "pos": "F",
-     "line": 2,
-     "gp": 14,
-     "G": 2,
-     "A": 1,
-     "ppP": 0,
-     "att_g": 2.93,
-     "sog_g": 1.71,
-     "xg_g": 0.187,
-     "xev_g": 0.175,
-     "xpp_g": 0.011,
-     "ppatt_g": 0.21,
-     "toi": 18.0,
-     "att5": 2.6,
-     "sog5": 1.6,
-     "xg5": 0.141,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 18.5,
-     "att3": 3.0,
-     "sog3": 2.0,
-     "xg3": 0.142,
-     "G3": 0,
-     "A3": 0,
-     "trend": 0.75,
-     "F": 0.989,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.151,
-     "P": 0.14,
-     "odds_min": 7.15,
-     "pp_rank": 13
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Theodor Johnsson",
-     "pid": 60744048,
-     "pos": "D",
-     "line": 2,
-     "gp": 16,
-     "G": 0,
-     "A": 1,
-     "ppP": 0,
-     "att_g": 2.12,
-     "sog_g": 0.94,
-     "xg_g": 0.032,
-     "xev_g": 0.032,
-     "xpp_g": 0.0,
-     "ppatt_g": 0.0,
-     "toi": 16.2,
-     "att5": 2.0,
-     "sog5": 0.8,
-     "xg5": 0.038,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 15.0,
-     "att3": 2.67,
-     "sog3": 0.67,
-     "xg3": 0.048,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.2,
-     "F": 0.971,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.047,
-     "P": 0.039,
-     "odds_min": 25.67,
-     "pp_rank": 20
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Johan Sundström",
-     "pid": 60744055,
-     "pos": "F",
-     "line": 2,
-     "gp": 16,
-     "G": 0,
-     "A": 1,
-     "ppP": 1,
-     "att_g": 2.56,
-     "sog_g": 1.56,
-     "xg_g": 0.222,
-     "xev_g": 0.15,
-     "xpp_g": 0.072,
-     "ppatt_g": 0.69,
-     "toi": 18.5,
-     "att5": 2.8,
-     "sog5": 2.0,
-     "xg5": 0.283,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 18.2,
-     "att3": 3.33,
-     "sog3": 3.0,
-     "xg3": 0.336,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.28,
-     "F": 0.91,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.206,
-     "P": 0.186,
-     "odds_min": 5.36,
-     "pp_rank": 6
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Eric Bürger",
-     "pid": 61073929,
-     "pos": "D",
-     "line": 3,
-     "gp": 16,
-     "G": 0,
-     "A": 2,
-     "ppP": 0,
-     "att_g": 2.62,
-     "sog_g": 1.0,
-     "xg_g": 0.051,
-     "xev_g": 0.045,
-     "xpp_g": 0.006,
-     "ppatt_g": 0.12,
-     "toi": 15.0,
-     "att5": 2.6,
-     "sog5": 1.2,
-     "xg5": 0.067,
-     "G5": 0,
-     "A5": 0,
-     "toi5": 13.4,
-     "att3": 3.0,
-     "sog3": 1.0,
-     "xg3": 0.086,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.31,
-     "F": 0.944,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.055,
-     "P": 0.046,
-     "odds_min": 21.97,
-     "pp_rank": 14
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "George Diaco",
-     "pid": 61073932,
-     "pos": "F",
-     "line": 3,
-     "gp": 15,
-     "G": 3,
-     "A": 4,
-     "ppP": 3,
-     "att_g": 4.2,
-     "sog_g": 2.07,
-     "xg_g": 0.314,
-     "xev_g": 0.218,
-     "xpp_g": 0.096,
-     "ppatt_g": 1.0,
-     "toi": 17.2,
-     "att5": 3.4,
-     "sog5": 1.2,
-     "xg5": 0.215,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 16.4,
-     "att3": 2.33,
-     "sog3": 1.0,
-     "xg3": 0.073,
-     "G3": 0,
-     "A3": 1,
-     "trend": 0.69,
-     "F": 0.959,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.219,
-     "P": 0.196,
-     "odds_min": 5.09,
-     "pp_rank": 3
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Isak Walther",
-     "pid": 61073936,
-     "pos": "F",
-     "line": 3,
-     "gp": 16,
-     "G": 2,
-     "A": 2,
-     "ppP": 3,
-     "att_g": 1.5,
-     "sog_g": 0.94,
-     "xg_g": 0.17,
-     "xev_g": 0.121,
-     "xpp_g": 0.049,
-     "ppatt_g": 0.31,
-     "toi": 14.5,
-     "att5": 1.8,
-     "sog5": 1.0,
-     "xg5": 0.194,
-     "G5": 0,
-     "A5": 1,
-     "toi5": 14.1,
-     "att3": 2.0,
-     "sog3": 1.0,
-     "xg3": 0.133,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.15,
-     "F": 0.982,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.142,
-     "P": 0.133,
-     "odds_min": 7.53,
-     "pp_rank": 7
-    },
-    {
-     "game": "Sport@KalPa",
-     "paris": "17:30",
-     "team": "Sport",
-     "opp": "KalPa",
-     "home": false,
-     "player": "Luke Grainger",
-     "pid": 61073937,
-     "pos": "F",
-     "line": 1,
-     "gp": 16,
-     "G": 1,
-     "A": 3,
-     "ppP": 2,
-     "att_g": 2.31,
-     "sog_g": 1.56,
-     "xg_g": 0.164,
-     "xev_g": 0.103,
-     "xpp_g": 0.061,
-     "ppatt_g": 0.69,
-     "toi": 17.0,
-     "att5": 2.0,
-     "sog5": 1.8,
-     "xg5": 0.195,
-     "G5": 1,
-     "A5": 0,
-     "toi5": 15.1,
-     "att3": 1.67,
-     "sog3": 1.33,
-     "xg3": 0.067,
-     "G3": 0,
-     "A3": 0,
-     "trend": 1.19,
-     "F": 0.959,
-     "Mo": 1.013,
-     "Mg": 0.85,
-     "opp_goalie": "Korhonen",
-     "lam": 0.139,
-     "P": 0.13,
-     "odds_min": 7.69,
-     "pp_rank": 5
+     "sog_g": 2.25,
+     "sog5": 3.0,
+     "att_g": 3.25,
+     "toi": 15.2,
+     "pp_rank": 9,
+     "cover_point": {
+      "odds": 2.95,
+      "p": 0.139,
+      "pts10": 0,
+      "n10": 8,
+      "min": 7.9,
+      "ok": false,
+      "stake_goal": 1.3,
+      "stake_point": 0.7,
+      "gain_if_goal": 7.54,
+      "gain_if_point_only": 0.06,
+      "lose_if_nothing": -2.0
+     }
     }
-   ]
+   ],
+   "limite": [
+    {
+     "block": "limite",
+     "player": "Teemu Engberg",
+     "team": "Ilves",
+     "opp": "HIFK",
+     "game": "Ilves@HIFK",
+     "paris": "17:30",
+     "pos": "F",
+     "line": 3,
+     "P": 0.157,
+     "min_odds": 7.01,
+     "wm_buteur": 7,
+     "edge": 0.099,
+     "gp": 17,
+     "G": 0,
+     "A": 4,
+     "sog_g": 1.0,
+     "sog5": 1.4,
+     "att_g": 2.12,
+     "toi": 13.6,
+     "pp_rank": 15,
+     "cover_point": {
+      "odds": 2.65,
+      "p": 0.238,
+      "pts10": 2,
+      "n10": 10,
+      "min": 4.63,
+      "ok": false,
+      "stake_goal": 1.2,
+      "stake_point": 0.8,
+      "gain_if_goal": 8.52,
+      "gain_if_point_only": 0.12,
+      "lose_if_nothing": -2.0
+     }
+    },
+    {
+     "block": "limite",
+     "player": "Thomas Olsen",
+     "team": "Jukurit",
+     "opp": "Lukko",
+     "game": "Lukko@Jukurit",
+     "paris": "17:30",
+     "pos": "F",
+     "line": 2,
+     "P": 0.208,
+     "min_odds": 5.29,
+     "wm_buteur": 5.25,
+     "edge": 0.092,
+     "gp": 18,
+     "G": 3,
+     "A": 3,
+     "sog_g": 1.22,
+     "sog5": 2.0,
+     "att_g": 2.28,
+     "toi": 16.3,
+     "pp_rank": 6,
+     "cover_point": {
+      "odds": 2.8,
+      "p": 0.238,
+      "pts10": 2,
+      "n10": 10,
+      "min": 4.63,
+      "ok": false,
+      "stake_goal": 1.2,
+      "stake_point": 0.8,
+      "gain_if_goal": 6.54,
+      "gain_if_point_only": 0.24,
+      "lose_if_nothing": -2.0
+     }
+    },
+    {
+     "block": "limite",
+     "player": "Tomi Sallinen",
+     "team": "Tappara",
+     "opp": "JYP",
+     "game": "Tappara@JYP",
+     "paris": "17:30",
+     "pos": "F",
+     "line": 3,
+     "P": 0.143,
+     "min_odds": 7.69,
+     "wm_buteur": 7.5,
+     "edge": 0.073,
+     "gp": 16,
+     "G": 2,
+     "A": 3,
+     "sog_g": 0.75,
+     "sog5": 0.6,
+     "att_g": 1.75,
+     "toi": 15.5,
+     "pp_rank": 12,
+     "cover_point": {
+      "odds": 2.7,
+      "p": 0.238,
+      "pts10": 2,
+      "n10": 10,
+      "min": 4.63,
+      "ok": false,
+      "stake_goal": 1.2,
+      "stake_point": 0.8,
+      "gain_if_goal": 9.16,
+      "gain_if_point_only": 0.16,
+      "lose_if_nothing": -2.0
+     }
+    }
+   ],
+   "feeling": [
+    {
+     "block": "feeling",
+     "player": "Aleksi Matinmikko",
+     "team": "Kärpät",
+     "opp": "HPK",
+     "game": "HPK@Kärpät",
+     "paris": "17:30",
+     "pos": "D",
+     "line": 1,
+     "P": 0.15,
+     "min_odds": 7.33,
+     "wm_buteur": 6.5,
+     "edge": -0.025,
+     "gp": 18,
+     "G": 3,
+     "A": 7,
+     "sog_g": 2.94,
+     "sog5": 3.2,
+     "att_g": 5.67,
+     "toi": 20.9,
+     "pp_rank": 3,
+     "cover_point": {
+      "odds": 1.86,
+      "p": 0.427,
+      "pts10": 6,
+      "n10": 10,
+      "min": 2.58,
+      "ok": false,
+      "stake_goal": 0.9,
+      "stake_point": 1.1,
+      "gain_if_goal": 5.9,
+      "gain_if_point_only": 0.05,
+      "lose_if_nothing": -2.0
+     }
+    },
+    {
+     "block": "feeling",
+     "player": "Valtteri Ojantakanen",
+     "team": "JYP",
+     "opp": "Tappara",
+     "game": "Tappara@JYP",
+     "paris": "17:30",
+     "pos": "F",
+     "line": 2,
+     "P": 0.318,
+     "min_odds": 3.46,
+     "wm_buteur": 3,
+     "edge": -0.046,
+     "gp": 14,
+     "G": 5,
+     "A": 5,
+     "sog_g": 3.14,
+     "sog5": 3.6,
+     "att_g": 5.14,
+     "toi": 15.8,
+     "pp_rank": 1,
+     "cover_point": {
+      "odds": 1.72,
+      "p": 0.385,
+      "pts10": 5,
+      "n10": 10,
+      "min": 2.86,
+      "ok": false,
+      "stake_goal": 0.8,
+      "stake_point": 1.2,
+      "gain_if_goal": 2.46,
+      "gain_if_point_only": 0.06,
+      "lose_if_nothing": -2.0
+     }
+    },
+    {
+     "block": "feeling",
+     "player": "Tony Sund",
+     "team": "Ilves",
+     "opp": "HIFK",
+     "game": "Ilves@HIFK",
+     "paris": "17:30",
+     "pos": "D",
+     "line": 2,
+     "P": 0.097,
+     "min_odds": 11.34,
+     "wm_buteur": 7.5,
+     "edge": -0.272,
+     "gp": 17,
+     "G": 3,
+     "A": 9,
+     "sog_g": 2.35,
+     "sog5": 3.8,
+     "att_g": 4.76,
+     "toi": 17.8,
+     "pp_rank": 2,
+     "cover_point": {
+      "odds": 2.15,
+      "p": 0.503,
+      "pts10": 8,
+      "n10": 10,
+      "min": 2.19,
+      "ok": false,
+      "stake_goal": 1.0,
+      "stake_point": 1.0,
+      "gain_if_goal": 7.65,
+      "gain_if_point_only": 0.15,
+      "lose_if_nothing": -2.0
+     }
+    }
+   ],
+   "excluded": [
+    {
+     "player": "Ilari Mäkinen",
+     "team": "HPK",
+     "why": "1 seul match joué (4,6 min), P = presque que le prior ; 8,00 vs 7,59 min, non retenu"
+    }
+   ],
+   "top_P": [
+    {
+     "player": "Valtteri Ojantakanen",
+     "team": "JYP",
+     "P": 0.318,
+     "min": 3.46,
+     "wm": 3
+    },
+    {
+     "player": "Leevi Tukiainen",
+     "team": "JYP",
+     "P": 0.274,
+     "min": 4.01,
+     "wm": 2.85
+    },
+    {
+     "player": "Lars Bryggman",
+     "team": "TPS",
+     "P": 0.271,
+     "min": 4.06,
+     "wm": 2.75
+    },
+    {
+     "player": "Matyas Kantner",
+     "team": "Kärpät",
+     "P": 0.27,
+     "min": 4.07,
+     "wm": 3.5
+    },
+    {
+     "player": "Veeti Miettinen",
+     "team": "KooKoo",
+     "P": 0.269,
+     "min": 4.09,
+     "wm": null
+    },
+    {
+     "player": "Cameron Hillis",
+     "team": "Ässät",
+     "P": 0.268,
+     "min": 4.1,
+     "wm": 3.5
+    },
+    {
+     "player": "Alex Beaucage",
+     "team": "Lukko",
+     "P": 0.267,
+     "min": 4.12,
+     "wm": 2.8
+    },
+    {
+     "player": "Patrik Siikanen",
+     "team": "SaiPa",
+     "P": 0.262,
+     "min": 4.2,
+     "wm": 2.75
+    },
+    {
+     "player": "Luke Henman",
+     "team": "Ilves",
+     "P": 0.259,
+     "min": 4.25,
+     "wm": 2.7
+    },
+    {
+     "player": "Eetu Koivistoinen",
+     "team": "Kärpät",
+     "P": 0.253,
+     "min": 4.35,
+     "wm": 3.75
+    }
+   ],
+   "home_D_volume": {
+    "JYP": "D 11,4 tirs cadrés/match (5 derniers)",
+    "Kärpät": "10,6",
+    "K-Espoo": "10,2 (Corcoran revient, pas de cote Winamax)",
+    "Pelicans": "9,6"
+   }
   },
   "hist_nul": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le 5e match après un nul : 19 %. Un peu moins, mais une saison sur 4 dit l'inverse (31 %). Pas fiable : c'est de l'info, pas un pari.",
   "hist_so": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le match juste après des tirs au but : 21 %. Pas d'effet : c'est de l'info, pas un pari.",
-  "after_nul": [
+  "after_nul": [],
+  "after_so": [
    {
-    "team": "Chicago",
-    "opp": "Los Angeles",
+    "team": "Edmonton",
+    "opp": "Calgary",
     "home": true,
-    "time": "01h00",
-    "day": "28/10",
-    "k": 4,
-    "nul": {
-     "date": "16/10",
-     "opp": "Winnipeg",
+    "time": "01h30",
+    "day": "29/10",
+    "so": {
+     "date": "27/10",
+     "opp": "Detroit",
      "home": true,
-     "score": "4-3",
-     "win": true,
-     "kind": "OT"
-    },
-    "between": [
-     {
-      "date": "18/10",
-      "opp": "Dallas",
-      "home": true,
-      "score": "0-4",
-      "win": false
-     },
-     {
-      "date": "24/10",
-      "opp": "Montréal",
-      "home": true,
-      "score": "1-4",
-      "win": false
-     },
-     {
-      "date": "25/10",
-      "opp": "Floride",
-      "home": true,
-      "score": "2-3",
-      "win": false
-     }
-    ],
-    "bestD": {
-     "player": "Sam Rinzel",
-     "chance": "7 %",
-     "min": "14,87",
-     "fair": "13,51",
-     "example": "À 14,87 ou plus, tu joues. À 14,37, tu ne joues pas.",
-     "wm": "9,00",
-     "wm_ok": false,
-     "wm_edge": -33
-    }
-   },
-   {
-    "team": "Floride",
-    "opp": "Winnipeg",
-    "home": false,
-    "time": "01h00",
-    "day": "28/10",
-    "k": 5,
-    "nul": {
-     "date": "16/10",
-     "opp": "Vancouver",
-     "home": true,
-     "score": "3-2",
-     "win": true,
-     "kind": "OT"
-    },
-    "between": [
-     {
-      "date": "18/10",
-      "opp": "Seattle",
-      "home": true,
-      "score": "8-3",
-      "win": true
-     },
-     {
-      "date": "22/10",
-      "opp": "Ottawa",
-      "home": false,
-      "score": "1-5",
-      "win": false
-     },
-     {
-      "date": "23/10",
-      "opp": "Pittsburgh",
-      "home": false,
-      "score": "0-4",
-      "win": false
-     },
-     {
-      "date": "25/10",
-      "opp": "Chicago",
-      "home": false,
-      "score": "3-2",
-      "win": true
-     }
-    ],
-    "bestD": {
-     "player": "Seth Jones",
-     "chance": "10 %",
-     "min": "10,68",
-     "fair": "9,71",
-     "example": "À 10,68 ou plus, tu joues. À 10,18, tu ne joues pas.",
-     "wm": "5,75",
-     "wm_ok": false,
-     "wm_edge": -41
-    }
-   },
-   {
-    "team": "Minnesota",
-    "opp": "Utah",
-    "home": false,
-    "time": "02h00",
-    "day": "28/10",
-    "k": 4,
-    "nul": {
-     "date": "21/10",
-     "opp": "Edmonton",
-     "home": false,
      "score": "3-4",
-     "win": false,
-     "kind": "OT"
+     "win": false
     },
-    "between": [
-     {
-      "date": "23/10",
-      "opp": "Calgary",
-      "home": false,
-      "score": "1-2",
-      "win": false
-     },
-     {
-      "date": "25/10",
-      "opp": "Seattle",
-      "home": false,
-      "score": "5-1",
-      "win": true
-     },
-     {
-      "date": "26/10",
-      "opp": "Vancouver",
-      "home": false,
-      "score": "4-2",
-      "win": true
-     }
-    ],
     "bestD": {
-     "player": "Quinn Hughes",
-     "chance": "13 %",
-     "min": "8,47",
-     "fair": "7,69",
-     "example": "À 8,47 ou plus, tu joues. À 7,97, tu ne joues pas.",
-     "wm": "6,50",
+     "player": "Evan Bouchard",
+     "chance": "17 %",
+     "min": "6,33",
+     "fair": "5,75",
+     "example": "À 6,33 ou plus, tu joues. À 5,83, tu ne joues pas.",
+     "wm": "3,65",
      "wm_ok": false,
-     "wm_edge": -16
-    }
-   },
-   {
-    "team": "Ottawa",
-    "opp": "Vegas",
-    "home": false,
-    "time": "03h00",
-    "day": "28/10",
-    "k": 5,
-    "nul": {
-     "date": "16/10",
-     "opp": "Islanders",
-     "home": true,
-     "score": "2-1",
-     "win": true,
-     "kind": "SO"
-    },
-    "between": [
-     {
-      "date": "18/10",
-      "opp": "Philadelphie",
-      "home": false,
-      "score": "1-3",
-      "win": false
-     },
-     {
-      "date": "22/10",
-      "opp": "Floride",
-      "home": true,
-      "score": "5-1",
-      "win": true
-     },
-     {
-      "date": "23/10",
-      "opp": "San José",
-      "home": true,
-      "score": "2-6",
-      "win": false
-     },
-     {
-      "date": "25/10",
-      "opp": "Rangers",
-      "home": true,
-      "score": "7-4",
-      "win": true
-     }
-    ],
-    "bestD": {
-     "player": "Jake Sanderson",
-     "chance": "12 %",
-     "min": "9,33",
-     "fair": "8,47",
-     "example": "À 9,33 ou plus, tu joues. À 8,83, tu ne joues pas.",
-     "wm": "5,75",
-     "wm_ok": false,
-     "wm_edge": -32
-    }
-   },
-   {
-    "team": "Vancouver",
-    "opp": "Anaheim",
-    "home": false,
-    "time": "03h00",
-    "day": "28/10",
-    "k": 5,
-    "nul": {
-     "date": "16/10",
-     "opp": "Floride",
-     "home": false,
-     "score": "2-3",
-     "win": false,
-     "kind": "OT"
-    },
-    "between": [
-     {
-      "date": "17/10",
-      "opp": "Tampa Bay",
-      "home": false,
-      "score": "2-4",
-      "win": false
-     },
-     {
-      "date": "21/10",
-      "opp": "Caroline",
-      "home": true,
-      "score": "3-6",
-      "win": false
-     },
-     {
-      "date": "23/10",
-      "opp": "Detroit",
-      "home": true,
-      "score": "2-5",
-      "win": false
-     },
-     {
-      "date": "26/10",
-      "opp": "Minnesota",
-      "home": true,
-      "score": "2-4",
-      "win": false
-     }
-    ],
-    "bestD": {
-     "player": "Elias Nils Pettersson",
-     "chance": "6 %",
-     "min": "18,34",
-     "fair": "16,67",
-     "example": "À 18,34 ou plus, tu joues. À 17,84, tu ne joues pas."
+     "wm_edge": -36
     }
    }
   ],
-  "after_so": [],
   "liiga_ot": {
-   "day": "27/10",
+   "day": "28/10",
    "today": true,
    "after_nul": [],
-   "after_so": []
+   "after_so": [
+    {
+     "team": "Jukurit",
+     "opp": "Lukko",
+     "home": true,
+     "time": "17h30",
+     "day": "28/10",
+     "so": {
+      "date": "24/10",
+      "opp": "Ilves",
+      "home": false,
+      "score": "2-1",
+      "win": true
+     }
+    },
+    {
+     "team": "Tappara",
+     "opp": "JYP",
+     "home": false,
+     "time": "17h30",
+     "day": "28/10",
+     "so": {
+      "date": "24/10",
+      "opp": "Pelicans",
+      "home": false,
+      "score": "4-5",
+      "win": false
+     }
+    },
+    {
+     "team": "Pelicans",
+     "opp": "SaiPa",
+     "home": true,
+     "time": "17h30",
+     "day": "28/10",
+     "so": {
+      "date": "24/10",
+      "opp": "Tappara",
+      "home": true,
+      "score": "5-4",
+      "win": true
+     }
+    },
+    {
+     "team": "Ilves",
+     "opp": "HIFK",
+     "home": false,
+     "time": "17h30",
+     "day": "28/10",
+     "so": {
+      "date": "24/10",
+      "opp": "Jukurit",
+      "home": true,
+      "score": "1-2",
+      "win": false
+     }
+    }
+   ]
   },
   "shots": [
    {
-    "game": "Columbus à Philadelphie",
-    "time": "00h00",
+    "game": "Philadelphie à Washington",
+    "time": "00h30",
     "teams": [
      {
-      "team": "Columbus",
-      "date": "25/10",
-      "opp": "Vegas",
-      "home": true,
-      "top": [
-       {
-        "player": "Z. Werenski",
-        "d": true,
-        "sog": 3
-       },
-       {
-        "player": "C. Coyle",
-        "d": false,
-        "sog": 2
-       },
-       {
-        "player": "A. Fantilli",
-        "d": false,
-        "sog": 2
-       }
-      ]
-     },
-     {
       "team": "Philadelphie",
-      "date": "24/10",
-      "opp": "Anaheim",
+      "date": "28/10",
+      "opp": "Columbus",
       "home": true,
       "top": [
-       {
-        "player": "T. Sanheim",
-        "d": true,
-        "sog": 4
-       },
        {
         "player": "A. Bump",
         "d": false,
-        "sog": 3
-       },
-       {
-        "player": "M. Michkov",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Boston à Caroline",
-    "time": "01h00",
-    "teams": [
-     {
-      "team": "Boston",
-      "date": "25/10",
-      "opp": "San José",
-      "home": true,
-      "top": [
-       {
-        "player": "D. Pastrnak",
-        "d": false,
         "sog": 5
        },
        {
-        "player": "F. Minten",
+        "player": "C. Dvorak",
         "d": false,
-        "sog": 4
+        "sog": 3
        },
        {
-        "player": "H. Lindholm",
-        "d": true,
-        "sog": 4
+        "player": "T. Zegras",
+        "d": false,
+        "sog": 3
        }
       ]
      },
      {
-      "team": "Caroline",
+      "team": "Washington",
       "date": "25/10",
-      "opp": "St. Louis",
-      "home": false,
+      "opp": "Buffalo",
+      "home": true,
       "top": [
        {
-        "player": "L. Stankoven",
+        "player": "D. Strome",
         "d": false,
         "sog": 5
        },
        {
-        "player": "S. Brind'Amour",
+        "player": "A. Protas",
         "d": false,
-        "sog": 5
+        "sog": 4
        },
        {
-        "player": "S. Jarvis",
-        "d": false,
-        "sog": 3
+        "player": "J. Chychrun",
+        "d": true,
+        "sog": 4
        }
       ]
      }
     ]
    },
    {
-    "game": "Los Angeles à Chicago",
-    "time": "01h00",
+    "game": "Calgary à Edmonton",
+    "time": "01h30",
     "teams": [
      {
-      "team": "Los Angeles",
+      "team": "Calgary",
       "date": "27/10",
-      "opp": "Rangers",
-      "home": false,
-      "top": [
-       {
-        "player": "A. Kempe",
-        "d": false,
-        "sog": 7
-       },
-       {
-        "player": "A. Panarin",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "A. Laferriere",
-        "d": false,
-        "sog": 2
-       }
-      ]
-     },
-     {
-      "team": "Chicago",
-      "date": "25/10",
-      "opp": "Floride",
+      "opp": "Toronto",
       "home": true,
       "top": [
        {
-        "player": "R. Greene",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "T. Bertuzzi",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "A. Frondell",
-        "d": false,
-        "sog": 2
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Montréal à St. Louis",
-    "time": "01h00",
-    "teams": [
-     {
-      "team": "Montréal",
-      "date": "26/10",
-      "opp": "Winnipeg",
-      "home": false,
-      "top": [
-       {
-        "player": "J. Anderson",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "J. Slafkovský",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "Z. Bolduc",
-        "d": false,
-        "sog": 2
-       }
-      ]
-     },
-     {
-      "team": "St. Louis",
-      "date": "25/10",
-      "opp": "Caroline",
-      "home": true,
-      "top": [
-       {
-        "player": "D. Holloway",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "J. Neighbours",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "C. McMichael",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Islanders à Nashville",
-    "time": "01h00",
-    "teams": [
-     {
-      "team": "Islanders",
-      "date": "25/10",
-      "opp": "Dallas",
-      "home": false,
-      "top": [
-       {
-        "player": "K. Palmieri",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "B. Schenn",
-        "d": false,
-        "sog": 2
-       },
-       {
-        "player": "B. Horvat",
-        "d": false,
-        "sog": 2
-       }
-      ]
-     },
-     {
-      "team": "Nashville",
-      "date": "26/10",
-      "opp": "Colorado",
-      "home": true,
-      "top": [
-       {
-        "player": "R. O'Reilly",
-        "d": false,
-        "sog": 5
-       },
-       {
-        "player": "S. Stamkos",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "R. Josi",
-        "d": true,
-        "sog": 4
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "New Jersey à Dallas",
-    "time": "01h00",
-    "teams": [
-     {
-      "team": "New Jersey",
-      "date": "24/10",
-      "opp": "Los Angeles",
-      "home": true,
-      "top": [
-       {
-        "player": "N. Hischier",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "L. Evangelista",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "T. Meier",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     },
-     {
-      "team": "Dallas",
-      "date": "25/10",
-      "opp": "Islanders",
-      "home": true,
-      "top": [
-       {
-        "player": "C. Blackwell",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "M. Heiskanen",
-        "d": true,
-        "sog": 4
-       },
-       {
-        "player": "J. Robertson",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Floride à Winnipeg",
-    "time": "01h00",
-    "teams": [
-     {
-      "team": "Floride",
-      "date": "25/10",
-      "opp": "Chicago",
-      "home": false,
-      "top": [
-       {
-        "player": "C. Verhaeghe",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "S. Vilmanis",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "S. Jones",
-        "d": true,
-        "sog": 4
-       }
-      ]
-     },
-     {
-      "team": "Winnipeg",
-      "date": "26/10",
-      "opp": "Montréal",
-      "home": true,
-      "top": [
-       {
-        "player": "M. Scheifele",
-        "d": false,
-        "sog": 7
-       },
-       {
-        "player": "K. Connor",
-        "d": false,
-        "sog": 5
-       },
-       {
-        "player": "C. Perfetti",
-        "d": false,
-        "sog": 4
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Minnesota à Utah",
-    "time": "02h00",
-    "teams": [
-     {
-      "team": "Minnesota",
-      "date": "26/10",
-      "opp": "Vancouver",
-      "home": false,
-      "top": [
-       {
-        "player": "J. Eriksson Ek",
-        "d": false,
-        "sog": 5
-       },
-       {
-        "player": "M. McCarron",
-        "d": false,
-        "sog": 5
-       },
-       {
-        "player": "M. Boldy",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     },
-     {
-      "team": "Utah",
-      "date": "25/10",
-      "opp": "Tampa Bay",
-      "home": true,
-      "top": [
-       {
-        "player": "K. Yamamoto",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "A. Lee",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "D. Guenther",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Ottawa à Vegas",
-    "time": "03h00",
-    "teams": [
-     {
-      "team": "Ottawa",
-      "date": "25/10",
-      "opp": "Rangers",
-      "home": true,
-      "top": [
-       {
-        "player": "T. Kleven",
-        "d": true,
-        "sog": 4
-       },
-       {
-        "player": "D. Batherson",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "C. Yakemchuk",
-        "d": true,
-        "sog": 3
-       }
-      ]
-     },
-     {
-      "team": "Vegas",
-      "date": "25/10",
-      "opp": "Columbus",
-      "home": false,
-      "top": [
-       {
-        "player": "J. Eichel",
+        "player": "A. Suniev",
         "d": false,
         "sog": 6
        },
        {
-        "player": "S. Theodore",
-        "d": true,
-        "sog": 4
+        "player": "R. Strome",
+        "d": false,
+        "sog": 5
        },
        {
-        "player": "B. McNabb",
+        "player": "M. Gridin",
+        "d": false,
+        "sog": 5
+       }
+      ]
+     },
+     {
+      "team": "Edmonton",
+      "date": "27/10",
+      "opp": "Detroit",
+      "home": true,
+      "top": [
+       {
+        "player": "R. Nugent-Hopkins",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "L. Draisaitl",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "S. Mukhamadullin",
         "d": true,
+        "sog": 3
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "New Jersey à Colorado",
+    "time": "02h00",
+    "teams": [
+     {
+      "team": "New Jersey",
+      "date": "28/10",
+      "opp": "Dallas",
+      "home": false,
+      "top": [
+       {
+        "player": "J. Hughes",
+        "d": false,
+        "sog": 6
+       },
+       {
+        "player": "C. Glass",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "N. Hischier",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Colorado",
+      "date": "26/10",
+      "opp": "Nashville",
+      "home": false,
+      "top": [
+       {
+        "player": "A. Lehkonen",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "N. Kadri",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "B. Nelson",
+        "d": false,
         "sog": 2
        }
       ]
@@ -3464,104 +2396,52 @@
     ]
    },
    {
-    "game": "Vancouver à Anaheim",
+    "game": "Toronto à Seattle",
     "time": "03h00",
     "teams": [
      {
-      "team": "Vancouver",
-      "date": "26/10",
+      "team": "Toronto",
+      "date": "27/10",
+      "opp": "Calgary",
+      "home": false,
+      "top": [
+       {
+        "player": "W. Nylander",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "T. Blueger",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "D. Raddysh",
+        "d": true,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Seattle",
+      "date": "25/10",
       "opp": "Minnesota",
       "home": true,
       "top": [
        {
-        "player": "F. Chytil",
+        "player": "B. Catton",
         "d": false,
-        "sog": 3
+        "sog": 5
        },
        {
-        "player": "B. Boeser",
-        "d": false,
-        "sog": 1
-       },
-       {
-        "player": "B. Gallagher",
-        "d": false,
-        "sog": 1
-       }
-      ]
-     },
-     {
-      "team": "Anaheim",
-      "date": "24/10",
-      "opp": "Philadelphie",
-      "home": false,
-      "top": [
-       {
-        "player": "C. Gauthier",
-        "d": false,
+        "player": "V. Dunn",
+        "d": true,
         "sog": 4
        },
        {
-        "player": "S. Colangelo",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "A. Killorn",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Buffalo à San José",
-    "time": "03h30",
-    "teams": [
-     {
-      "team": "Buffalo",
-      "date": "25/10",
-      "opp": "Washington",
-      "home": false,
-      "top": [
-       {
-        "player": "J. Quinn",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "R. Dahlin",
-        "d": true,
-        "sog": 3
-       },
-       {
-        "player": "Z. Benson",
+        "player": "J. Eberle",
         "d": false,
         "sog": 2
-       }
-      ]
-     },
-     {
-      "team": "San José",
-      "date": "25/10",
-      "opp": "Boston",
-      "home": false,
-      "top": [
-       {
-        "player": "W. Smith",
-        "d": false,
-        "sog": 5
-       },
-       {
-        "player": "K. Sherwood",
-        "d": false,
-        "sog": 5
-       },
-       {
-        "player": "T. Toffoli",
-        "d": false,
-        "sog": 3
        }
       ]
      }
@@ -3570,288 +2450,245 @@
   ],
   "wm_value": [
    {
-    "player": "Matthew Seminoff",
-    "team": "DAL",
-    "pos": "F",
-    "game": "New Jersey à Dallas",
-    "time": "01h00",
-    "chance": "16 %",
-    "min": "6,92",
-    "fair": "6,29",
-    "wm": "10,00",
-    "edge": 59
+    "player": "Travis Sanheim",
+    "team": "PHI",
+    "pos": "D",
+    "game": "Philadelphie à Washington",
+    "time": "00h30",
+    "chance": "12 %",
+    "min": "9,02",
+    "fair": "8,20",
+    "wm": "11,00",
+    "edge": 34
    },
    {
     "player": "Cole Knuble",
     "team": "PHI",
     "pos": "F",
-    "game": "Columbus à Philadelphie",
-    "time": "00h00",
-    "chance": "23 %",
-    "min": "4,79",
-    "fair": "4,35",
-    "wm": "6,00",
-    "edge": 38
+    "game": "Philadelphie à Washington",
+    "time": "00h30",
+    "chance": "19 %",
+    "min": "5,73",
+    "fair": "5,21",
+    "wm": "6,50",
+    "edge": 25
    },
    {
-    "player": "Travis Sanheim",
-    "team": "PHI",
-    "pos": "D",
-    "game": "Columbus à Philadelphie",
-    "time": "00h00",
-    "chance": "14 %",
-    "min": "8,03",
-    "fair": "7,30",
-    "wm": "10,00",
-    "edge": 37
-   },
-   {
-    "player": "Aleksanteri Kaskimaki",
-    "team": "STL",
+    "player": "Zack MacEwen",
+    "team": "TOR",
     "pos": "F",
-    "game": "Montréal à St. Louis",
-    "time": "01h00",
-    "chance": "14 %",
-    "min": "8,15",
-    "fair": "7,41",
-    "wm": "10,00",
-    "edge": 35
+    "game": "Toronto à Seattle",
+    "time": "03h00",
+    "chance": "11 %",
+    "min": "10,19",
+    "fair": "9,26",
+    "wm": "11,00",
+    "edge": 19
    },
    {
-    "player": "Casey Mittelstadt",
-    "team": "BOS",
+    "player": "Timo Meier",
+    "team": "NJD",
     "pos": "F",
-    "game": "Boston à Caroline",
-    "time": "01h00",
-    "chance": "16 %",
-    "min": "6,71",
-    "fair": "6,10",
+    "game": "New Jersey à Colorado",
+    "time": "02h00",
+    "chance": "26 %",
+    "min": "4,32",
+    "fair": "3,92",
+    "wm": "4,50",
+    "edge": 15
+   },
+   {
+    "player": "Amadeus Lombardi",
+    "team": "NJD",
+    "pos": "F",
+    "game": "New Jersey à Colorado",
+    "time": "02h00",
+    "chance": "14 %",
+    "min": "7,64",
+    "fair": "6,94",
     "wm": "8,00",
-    "edge": 31
+    "edge": 15
    }
   ],
-  "wm_read_at": "16h20",
+  "wm_read_at": "15h11",
   "wm_games": [
-   "Boston à Caroline",
-   "Buffalo à San José",
-   "Columbus à Philadelphie",
-   "Floride à Winnipeg",
-   "Islanders à Nashville",
-   "Los Angeles à Chicago",
-   "Minnesota à Utah",
-   "Montréal à St. Louis",
-   "New Jersey à Dallas",
-   "Ottawa à Vegas",
-   "Sport à KalPa",
-   "Vancouver à Anaheim"
+   "Calgary à Edmonton",
+   "HPK à Kärpät",
+   "Ilves à HIFK",
+   "Lukko à Jukurit",
+   "New Jersey à Colorado",
+   "Philadelphie à Washington",
+   "SaiPa à Pelicans",
+   "TPS à K-Espoo",
+   "Tappara à JYP",
+   "Toronto à Seattle",
+   "Ässät à KooKoo"
   ],
   "values": [
    {
-    "player": "Casey Mittelstadt",
-    "team": "BOS",
+    "player": "Aliaksei Protas",
+    "team": "WSH",
     "pos": "F",
-    "game": "Boston à Caroline",
-    "time": "01h00",
-    "wm": "8,00",
-    "fair": "6,98",
-    "min": "7,69",
-    "chance": "14 %",
-    "one_in": 7,
-    "edge": 15,
+    "game": "Philadelphie à Washington",
+    "time": "00h30",
+    "wm": "5,00",
+    "fair": "4,49",
+    "min": "4,95",
+    "chance": "22 %",
+    "one_in": 4,
+    "edge": 11,
     "star": false,
-    "market_fair": "7,97",
+    "market_fair": "",
     "up": false,
     "down": false,
-    "profile": "pp2",
-    "why": "3e ligne, PP2",
+    "profile": "ns20",
+    "why": "1re ligne",
     "tier": "value",
     "cover_point": {
-     "odds": "2,90",
-     "p": 0.467,
-     "fair": "2,14",
-     "min": "2,36",
-     "ok": true,
-     "note": "✅ couverture qui vaut le coup",
-     "stake_goal": "1,30",
-     "stake_point": "0,70",
-     "gain_if_goal": "+10,43",
-     "mise": "1,30 € buteur + 0,70 € point",
-     "outcomes": "but : +10,43 €, passe seulement : 0 €, rien : −2 €"
+     "odds": "2,10",
+     "p": 0.238,
+     "fair": "4,21",
+     "min": "4,63",
+     "ok": false,
+     "note": "❌ cote trop basse pour couvrir (2,10 au lieu de 4,63 mini)",
+     "stake_goal": "1,00",
+     "stake_point": "1,00",
+     "gain_if_goal": "+5,10",
+     "mise": "1,00 € buteur + 1,00 € point",
+     "outcomes": "but : +5,10 €, passe seulement : 0 €, rien : −2 €"
     }
    }
   ],
   "values_stars": [
    {
-    "player": "Adrian Kempe",
-    "wm": "2,55",
-    "min": "3,24",
+    "player": "Alex Tuch",
+    "wm": "3,00",
+    "min": "3,27",
     "ok": false,
-    "time": "01h00"
+    "time": "00h30"
    },
    {
-    "player": "Cole Caufield",
-    "wm": "2,40",
-    "min": "3,09",
+    "player": "Connor McDavid",
+    "wm": "2,10",
+    "min": "3,27",
     "ok": false,
-    "time": "01h00"
+    "time": "01h30"
    },
    {
-    "player": "Bo Horvat",
-    "wm": "2,75",
-    "min": "3,23",
-    "ok": false,
-    "time": "01h00"
-   },
-   {
-    "player": "Wyatt Johnston",
-    "wm": "2,85",
-    "min": "3,19",
-    "ok": false,
-    "time": "01h00"
-   },
-   {
-    "player": "Jason Robertson",
-    "wm": "2,65",
-    "min": "3,08",
-    "ok": false,
-    "time": "01h00"
-   },
-   {
-    "player": "Kyle Connor",
-    "wm": "2,60",
+    "player": "Leon Draisaitl",
+    "wm": "1,90",
     "min": "2,73",
     "ok": false,
-    "time": "01h00"
+    "time": "01h30"
    },
    {
-    "player": "Kirill Kaprizov",
+    "player": "Nathan MacKinnon",
     "wm": "2,25",
-    "min": "2,73",
+    "min": "2,91",
     "ok": false,
     "time": "02h00"
    },
    {
-    "player": "Matt Boldy",
-    "wm": "2,60",
-    "min": "3,01",
-    "ok": false,
-    "time": "02h00"
-   },
-   {
-    "player": "Cutter Gauthier",
-    "wm": "2,30",
-    "min": "2,98",
+    "player": "William Nylander",
+    "wm": "2,65",
+    "min": "3,22",
     "ok": false,
     "time": "03h00"
-   },
-   {
-    "player": "Tage Thompson",
-    "wm": "2,40",
-    "min": "2,73",
-    "ok": false,
-    "time": "03h30"
-   },
-   {
-    "player": "Macklin Celebrini",
-    "wm": "2,40",
-    "min": "2,73",
-    "ok": false,
-    "time": "03h30"
    }
   ],
   "values_limite": [],
   "values_signaux": [
    {
-    "player": "Kent Johnson",
-    "team": "CBJ",
+    "player": "Vasily Podkolzin",
+    "team": "EDM",
     "pos": "F",
-    "game": "Columbus à Philadelphie",
-    "time": "00h00",
-    "wm": "4,00",
-    "min": "5,10",
-    "fair": "4,63",
-    "chance": "22 %",
-    "one_in": 5,
-    "edge": -14,
+    "game": "Calgary à Edmonton",
+    "time": "01h30",
+    "wm": "2,90",
+    "min": "3,86",
+    "fair": "3,51",
+    "chance": "28 %",
+    "one_in": 4,
+    "edge": -17,
     "signals": "partenaires forts, PP1, top-6, monte en PP1",
     "score": 6,
     "down": false,
-    "gap": "cote trop basse : 4,00 au lieu de 5,10 mini",
+    "gap": "cote trop basse : 2,90 au lieu de 3,86 mini",
     "ok": false,
     "cover_point": {
-     "odds": "1,74",
-     "p": 0.467,
-     "fair": "2,14",
-     "min": "2,36",
+     "odds": "1,58",
+     "p": 0.538,
+     "fair": "1,86",
+     "min": "2,05",
      "ok": false,
-     "note": "❌ cote trop basse pour couvrir (1,74 au lieu de 2,36 mini)",
-     "stake_goal": "0,80",
-     "stake_point": "1,20",
-     "gain_if_goal": "+3,29",
-     "mise": "0,80 € buteur + 1,20 € point",
-     "outcomes": "but : +3,29 €, passe seulement : 0 €, rien : −2 €"
+     "note": "❌ cote trop basse pour couvrir (1,58 au lieu de 2,05 mini)",
+     "stake_goal": "0,70",
+     "stake_point": "1,30",
+     "gain_if_goal": "+2,08",
+     "mise": "0,70 € buteur + 1,30 € point",
+     "outcomes": "but : +2,08 €, passe seulement : 0 €, rien : −2 €"
     }
    },
    {
-    "player": "Valeri Nichushkin",
-    "team": "CBJ",
+    "player": "Matty Beniers",
+    "team": "SEA",
     "pos": "F",
-    "game": "Columbus à Philadelphie",
-    "time": "00h00",
-    "wm": "4,00",
-    "min": "5,37",
-    "fair": "4,88",
-    "chance": "20 %",
-    "one_in": 5,
-    "edge": -18,
-    "signals": "partenaires forts, PP1, top-6, monte en PP1",
-    "score": 6,
-    "down": false,
-    "gap": "cote trop basse : 4,00 au lieu de 5,37 mini",
-    "ok": false,
-    "cover_point": {
-     "odds": "1,86",
-     "p": 0.467,
-     "fair": "2,14",
-     "min": "2,36",
-     "ok": false,
-     "note": "❌ cote trop basse pour couvrir (1,86 au lieu de 2,36 mini)",
-     "stake_goal": "0,90",
-     "stake_point": "1,10",
-     "gain_if_goal": "+3,65",
-     "mise": "0,90 € buteur + 1,10 € point",
-     "outcomes": "but : +3,65 €, passe seulement : 0 €, rien : −2 €"
-    }
-   },
-   {
-    "player": "Charlie Coyle",
-    "team": "CBJ",
-    "pos": "F",
-    "game": "Columbus à Philadelphie",
-    "time": "00h00",
-    "wm": "4,00",
-    "min": "5,25",
-    "fair": "4,77",
+    "game": "Toronto à Seattle",
+    "time": "03h00",
+    "wm": "3,65",
+    "min": "5,17",
+    "fair": "4,69",
     "chance": "21 %",
     "one_in": 5,
-    "edge": -16,
-    "signals": "monte en top-6, monte en PP1",
-    "score": 4,
+    "edge": -22,
+    "signals": "partenaires forts, PP1, top-6, monte en PP1",
+    "score": 6,
     "down": false,
-    "gap": "cote trop basse : 4,00 au lieu de 5,25 mini",
+    "gap": "cote trop basse : 3,65 au lieu de 5,17 mini",
     "ok": false,
     "cover_point": {
-     "odds": "1,78",
-     "p": 0.503,
-     "fair": "1,99",
-     "min": "2,19",
+     "odds": "1,72",
+     "p": 0.29,
+     "fair": "3,45",
+     "min": "3,79",
      "ok": false,
-     "note": "❌ cote trop basse pour couvrir (1,78 au lieu de 2,19 mini)",
+     "note": "❌ cote trop basse pour couvrir (1,72 au lieu de 3,79 mini)",
      "stake_goal": "0,80",
      "stake_point": "1,20",
-     "gain_if_goal": "+3,34",
+     "gain_if_goal": "+2,98",
      "mise": "0,80 € buteur + 1,20 € point",
-     "outcomes": "but : +3,34 €, passe seulement : 0 €, rien : −2 €"
+     "outcomes": "but : +2,98 €, passe seulement : 0 €, rien : −2 €"
+    }
+   },
+   {
+    "player": "Martin Necas",
+    "team": "COL",
+    "pos": "F",
+    "game": "New Jersey à Colorado",
+    "time": "02h00",
+    "wm": "2,90",
+    "min": "4,13",
+    "fair": "3,75",
+    "chance": "27 %",
+    "one_in": 4,
+    "edge": -23,
+    "signals": "monte en PP1",
+    "score": 2,
+    "down": false,
+    "gap": "cote trop basse : 2,90 au lieu de 4,13 mini",
+    "ok": false,
+    "cover_point": {
+     "odds": "1,37",
+     "p": 0.627,
+     "fair": "1,60",
+     "min": "1,76",
+     "ok": false,
+     "note": "❌ cote trop basse pour couvrir (1,37 au lieu de 1,76 mini) · couverture inutile, cote point trop basse",
+     "stake_goal": null,
+     "stake_point": null,
+     "gain_if_goal": null,
+     "mise": null,
+     "outcomes": null
     }
    }
   ],
