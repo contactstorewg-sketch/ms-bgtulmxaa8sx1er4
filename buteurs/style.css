@@ -71,3 +71,12 @@ details.stars summary{font-size:15px;font-weight:600;color:var(--mut)}
 
 .cover-mise{margin-top:4px;font-size:13px;font-weight:600}
 .cover-out{font-size:12px;color:var(--mut);margin-top:2px;line-height:1.35}
+
+.imag{border:2px solid #8e7dff}
+.istat{display:flex;gap:8px;margin:8px 0}
+.istat div{flex:1;background:var(--card2);border-radius:12px;padding:8px;text-align:center}
+.istat b{display:block;font-size:24px;color:#b9adff}
+.istat .base b{color:var(--mut)}
+.istat small{font-size:12px;color:var(--mut)}
+.icase{padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}.icase:last-child{border-bottom:0}
+table.it{width:100%;border-collapse:collapse;font-size:14px}table.it th,table.it td{padding:5px 4px;text-align:right;border-bottom:1px solid var(--line)}table.it th:first-child,table.it td:first-child{text-align:left}table.it th{color:var(--mut);font-weight:600}

@@ -1,0 +1,481 @@
+{
+ "updated": "28/10/2026 20h13",
+ "scenarios": [
+  {
+   "id": "tab_d",
+   "title": "Après des tirs au but, un défenseur marque",
+   "rule": "Le match d'avant d'une équipe s'est fini aux tirs au but (TAB). Au match suivant, un défenseur de cette équipe marque.",
+   "origin": "Ton idée du 28/10 : le match d'avant de Jukurit (Ilves 1-2 Jukurit (TAB), le samedi 24/10) s'est fini aux TAB. Ce soir, Sustr (défenseur) a marqué, à domicile (Jukurit 3-4 Lukko (TAB)).",
+   "after": {
+    "tous": {
+     "oui": 14,
+     "total": 26,
+     "pct": "54 %"
+    },
+    "dom": {
+     "oui": 7,
+     "total": 11,
+     "pct": "64 %"
+    },
+    "ext": {
+     "oui": 7,
+     "total": 15,
+     "pct": "47 %"
+    }
+   },
+   "base": {
+    "tous": {
+     "oui": 108,
+     "total": 294,
+     "pct": "37 %"
+    },
+    "dom": {
+     "oui": 57,
+     "total": 147,
+     "pct": "39 %"
+    },
+    "ext": {
+     "oui": 51,
+     "total": 147,
+     "pct": "35 %"
+    }
+   },
+   "cases": [
+    {
+     "team": "Jukurit",
+     "tab": "Ilves 1-2 Jukurit (TAB)",
+     "tab_day": "samedi 24/10",
+     "day": "mercredi 28/10",
+     "home": true,
+     "opp": "Lukko",
+     "ds": [
+      "Sustr"
+     ],
+     "ok": true
+    },
+    {
+     "team": "Ilves",
+     "tab": "Ilves 1-2 Jukurit (TAB)",
+     "tab_day": "samedi 24/10",
+     "day": "mercredi 28/10",
+     "home": false,
+     "opp": "HIFK",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "Tappara",
+     "tab": "Pelicans 5-4 Tappara (TAB)",
+     "tab_day": "samedi 24/10",
+     "day": "mercredi 28/10",
+     "home": false,
+     "opp": "JYP",
+     "ds": [
+      "Jokipakka",
+      "Tuulola"
+     ],
+     "ok": true
+    },
+    {
+     "team": "Pelicans",
+     "tab": "Pelicans 5-4 Tappara (TAB)",
+     "tab_day": "samedi 24/10",
+     "day": "mercredi 28/10",
+     "home": true,
+     "opp": "SaiPa",
+     "ds": [
+      "Johannesen"
+     ],
+     "ok": true
+    },
+    {
+     "team": "Jokerit",
+     "tab": "Ilves 4-3 Jokerit (TAB)",
+     "tab_day": "samedi 17/10",
+     "day": "samedi 24/10",
+     "home": false,
+     "opp": "KooKoo",
+     "ds": [
+      "Manninen"
+     ],
+     "ok": true
+    },
+    {
+     "team": "HIFK",
+     "tab": "Lukko 3-2 HIFK (TAB)",
+     "tab_day": "mardi 20/10",
+     "day": "vendredi 23/10",
+     "home": false,
+     "opp": "K-Espoo",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "Kärpät",
+     "tab": "SaiPa 2-1 Kärpät (TAB)",
+     "tab_day": "mardi 20/10",
+     "day": "vendredi 23/10",
+     "home": true,
+     "opp": "KalPa",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "Lukko",
+     "tab": "Lukko 3-2 HIFK (TAB)",
+     "tab_day": "mardi 20/10",
+     "day": "vendredi 23/10",
+     "home": true,
+     "opp": "TPS",
+     "ds": [
+      "Olsson"
+     ],
+     "ok": true
+    },
+    {
+     "team": "SaiPa",
+     "tab": "SaiPa 2-1 Kärpät (TAB)",
+     "tab_day": "mardi 20/10",
+     "day": "vendredi 23/10",
+     "home": false,
+     "opp": "Sport",
+     "ds": [
+      "Kramer"
+     ],
+     "ok": true
+    },
+    {
+     "team": "Tappara",
+     "tab": "KooKoo 3-2 Tappara (TAB)",
+     "tab_day": "mardi 20/10",
+     "day": "mercredi 21/10",
+     "home": true,
+     "opp": "Ässät",
+     "ds": [
+      "Jokipakka",
+      "Tuulola"
+     ],
+     "ok": true
+    },
+    {
+     "team": "KooKoo",
+     "tab": "KooKoo 3-2 Tappara (TAB)",
+     "tab_day": "mardi 20/10",
+     "day": "mercredi 21/10",
+     "home": false,
+     "opp": "K-Espoo",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "Kärpät",
+     "tab": "Kärpät 4-3 KooKoo (TAB)",
+     "tab_day": "samedi 17/10",
+     "day": "mardi 20/10",
+     "home": false,
+     "opp": "SaiPa",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "Ilves",
+     "tab": "Ilves 4-3 Jokerit (TAB)",
+     "tab_day": "samedi 17/10",
+     "day": "mardi 20/10",
+     "home": false,
+     "opp": "TPS",
+     "ds": [
+      "Latvala"
+     ],
+     "ok": true
+    },
+    {
+     "team": "KooKoo",
+     "tab": "Kärpät 4-3 KooKoo (TAB)",
+     "tab_day": "samedi 17/10",
+     "day": "mardi 20/10",
+     "home": true,
+     "opp": "Tappara",
+     "ds": [
+      "Pelli"
+     ],
+     "ok": true
+    },
+    {
+     "team": "HIFK",
+     "tab": "HIFK 3-4 TPS (TAB)",
+     "tab_day": "mercredi 14/10",
+     "day": "samedi 17/10",
+     "home": false,
+     "opp": "SaiPa",
+     "ds": [
+      "Nässen"
+     ],
+     "ok": true
+    },
+    {
+     "team": "JYP",
+     "tab": "JYP 3-2 Lukko (TAB)",
+     "tab_day": "mercredi 14/10",
+     "day": "vendredi 16/10",
+     "home": true,
+     "opp": "Kärpät",
+     "ds": [
+      "Peltola"
+     ],
+     "ok": true
+    },
+    {
+     "team": "Lukko",
+     "tab": "JYP 3-2 Lukko (TAB)",
+     "tab_day": "mercredi 14/10",
+     "day": "vendredi 16/10",
+     "home": false,
+     "opp": "Tappara",
+     "ds": [
+      "Seppälä"
+     ],
+     "ok": true
+    },
+    {
+     "team": "Tappara",
+     "tab": "Tappara 4-3 TPS (TAB)",
+     "tab_day": "samedi 10/10",
+     "day": "vendredi 16/10",
+     "home": true,
+     "opp": "Lukko",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "TPS",
+     "tab": "HIFK 3-4 TPS (TAB)",
+     "tab_day": "mercredi 14/10",
+     "day": "vendredi 16/10",
+     "home": true,
+     "opp": "K-Espoo",
+     "ds": [
+      "Landen"
+     ],
+     "ok": true
+    },
+    {
+     "team": "Ässät",
+     "tab": "Ässät 2-3 HPK (TAB)",
+     "tab_day": "vendredi 09/10",
+     "day": "mercredi 14/10",
+     "home": false,
+     "opp": "KalPa",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "TPS",
+     "tab": "Tappara 4-3 TPS (TAB)",
+     "tab_day": "samedi 10/10",
+     "day": "mercredi 14/10",
+     "home": false,
+     "opp": "HIFK",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "HPK",
+     "tab": "Ässät 2-3 HPK (TAB)",
+     "tab_day": "vendredi 09/10",
+     "day": "samedi 10/10",
+     "home": true,
+     "opp": "KooKoo",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "Ässät",
+     "tab": "SaiPa 1-2 Ässät (TAB)",
+     "tab_day": "mercredi 23/09",
+     "day": "vendredi 25/09",
+     "home": true,
+     "opp": "SaiPa",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "SaiPa",
+     "tab": "SaiPa 1-2 Ässät (TAB)",
+     "tab_day": "mercredi 23/09",
+     "day": "vendredi 25/09",
+     "home": false,
+     "opp": "Ässät",
+     "ds": [
+      "Peski"
+     ],
+     "ok": true
+    },
+    {
+     "team": "Jokerit",
+     "tab": "Sport 5-4 Jokerit (TAB)",
+     "tab_day": "mardi 01/09",
+     "day": "samedi 05/09",
+     "home": false,
+     "opp": "Lukko",
+     "ds": [],
+     "ok": false
+    },
+    {
+     "team": "Sport",
+     "tab": "Sport 5-4 Jokerit (TAB)",
+     "tab_day": "mardi 01/09",
+     "day": "vendredi 04/09",
+     "home": false,
+     "opp": "Pelicans",
+     "ds": [],
+     "ok": false
+    }
+   ],
+   "candidates": [
+    {
+     "team": "Lukko",
+     "tab": "Jukurit 3-4 Lukko (TAB)",
+     "tab_day": "mercredi 28/10",
+     "day": "vendredi 30/10",
+     "time": "17h30",
+     "home": true,
+     "opp": "KooKoo"
+    },
+    {
+     "team": "Jukurit",
+     "tab": "Jukurit 3-4 Lukko (TAB)",
+     "tab_day": "mercredi 28/10",
+     "day": "samedi 31/10",
+     "time": "16h00",
+     "home": false,
+     "opp": "Kärpät"
+    }
+   ],
+   "focus": {
+    "team": "Jukurit",
+    "next": {
+     "team": "Jukurit",
+     "tab": "Jukurit 3-4 Lukko (TAB)",
+     "tab_day": "mercredi 28/10",
+     "day": "samedi 31/10",
+     "time": "16h00",
+     "home": false,
+     "opp": "Kärpät"
+    },
+    "defenders": [
+     {
+      "player": "Alex Lintuniemi",
+      "gp": 16,
+      "g": 3,
+      "a": 4,
+      "tirs": 57,
+      "toi": "20 min"
+     },
+     {
+      "player": "Andrej Sustr",
+      "gp": 19,
+      "g": 1,
+      "a": 16,
+      "tirs": 63,
+      "toi": "24 min"
+     },
+     {
+      "player": "Niko Korkola",
+      "gp": 19,
+      "g": 1,
+      "a": 4,
+      "tirs": 41,
+      "toi": "19 min"
+     },
+     {
+      "player": "Eemeli Saari",
+      "gp": 19,
+      "g": 1,
+      "a": 7,
+      "tirs": 39,
+      "toi": "16 min"
+     },
+     {
+      "player": "Elias Ruusu",
+      "gp": 19,
+      "g": 1,
+      "a": 5,
+      "tirs": 36,
+      "toi": "17 min"
+     },
+     {
+      "player": "Bogdans Hodass",
+      "gp": 11,
+      "g": 1,
+      "a": 3,
+      "tirs": 19,
+      "toi": "15 min"
+     },
+     {
+      "player": "Christoffer Sedoff",
+      "gp": 5,
+      "g": 1,
+      "a": 0,
+      "tirs": 10,
+      "toi": "18 min"
+     },
+     {
+      "player": "Arttu Kärki",
+      "gp": 10,
+      "g": 0,
+      "a": 1,
+      "tirs": 29,
+      "toi": "14 min"
+     },
+     {
+      "player": "Sebastian Soini",
+      "gp": 5,
+      "g": 0,
+      "a": 0,
+      "tirs": 4,
+      "toi": "10 min"
+     }
+    ],
+    "note": "Ce soir Jukurit-Lukko s'est aussi fini aux TAB : Jukurit et Lukko sont les 2 prochaines équipes à suivre."
+   }
+  }
+ ],
+ "signal_log": [
+  {
+   "date": "28/10/2026",
+   "title": "Ton signal défenseurs : 5 équipes",
+   "teams": [
+    {
+     "team": "Tappara",
+     "ds": [
+      "Jokipakka",
+      "Tuulola"
+     ]
+    },
+    {
+     "team": "Pelicans",
+     "ds": [
+      "Johannesen"
+     ]
+    },
+    {
+     "team": "Jukurit",
+     "ds": [
+      "Sustr"
+     ]
+    },
+    {
+     "team": "K-Espoo",
+     "ds": []
+    },
+    {
+     "team": "Ilves",
+     "ds": []
+    }
+   ],
+   "result": "3 équipes sur 5 avec un défenseur buteur (4 défenseurs buteurs).",
+   "note": "Tappara, Pelicans, Jukurit et Ilves sortaient tous d'un match fini aux TAB : 3 sur 4 ont eu un défenseur buteur."
+  }
+ ]
+}

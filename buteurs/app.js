@@ -89,7 +89,7 @@ function buteurs(h){
     if(L.a_jouer.length)li+=L.a_jouer.map(function(p){return pickHtml(p)}).join('');else if(L.note)li+='<p>'+esc(L.note)+'</p>';
     L.games.forEach(function(g){li+='<h3>'+esc(g.game)+'</h3><ul>'+g.top.map(function(t){return '<li>• '+esc(t.player)+' ('+esc(t.team)+') : '+esc(t.chance)+', tu joues à '+esc(t.min)+' ou plus'+(t.fair?' <span class="fair">(cote juste '+esc(t.fair)+')</span>':'')+'</li>'}).join('')+'</ul>'});
     o+=card('🇫🇮 Liiga',li);
-  } else if(h.liiga_status){o+=card('🇫🇮 Liiga','<p>'+esc(h.liiga_status.charAt(0).toUpperCase()+h.liiga_status.slice(1))+' aujourd\'hui.</p>')}
+  } else if(typeof h.liiga_status==='string'&&h.liiga_status){o+=card('🇫🇮 Liiga','<p>'+esc(h.liiga_status.charAt(0).toUpperCase()+h.liiga_status.slice(1))+' aujourd\'hui.</p>')}
   return o;
 }
 function defs(h){
@@ -185,6 +185,32 @@ function footHtml(f){
   if(f.others.length)o+=card('👀 À surveiller (30 à 40 %)',f.others.map(fp).join(''));
   return o;
 }
+function imagHtml(m){
+  if(!m||!m.scenarios)return card('🌙 Monde imaginaire','<p>Pas encore de données.</p>');
+  function st(lbl,x,cls){return '<div class="'+(cls||'')+'"><small>'+lbl+'</small><b>'+esc(x.pct)+'</b><small>'+x.oui+' sur '+x.total+'</small></div>'}
+  function lieu(h,opp){return (h?'🏠 à domicile contre ':'✈️ à l\'extérieur à ')+esc(opp)}
+  var o=card('🌙 Monde imaginaire','<p>Ici, on suit tes idées. On regarde si elles se répètent, match après match.</p><p class="small">Ce n\'est pas un conseil de pari. On compte, c\'est tout. Mis à jour le '+esc(m.updated)+'.</p>');
+  m.scenarios.forEach(function(sc){
+    var a=sc.after,b=sc.base,f=sc.focus;
+    var x='<p><b>L\'idée :</b> '+esc(sc.rule)+'</p><p>'+esc(sc.origin)+'</p>';
+    x+='<h3>📊 Depuis le début de la saison (Liiga)</h3><p class="small">Le match suivant, un défenseur de l\'équipe marque :</p>';
+    x+='<div class="istat">'+st('Après TAB',a.tous)+st('Après TAB, 🏠',a.dom)+st('Après TAB, ✈️',a.ext)+'</div>';
+    x+='<div class="istat">'+st('Tous les matchs',b.tous,'base')+st('Tous, 🏠',b.dom,'base')+st('Tous, ✈️',b.ext,'base')+'</div>';
+    x+='<p class="small">👉 Exemple : sur un match normal, un défenseur de l\'équipe marque '+esc(b.tous.pct)+' du temps. Après des TAB, c\'est '+esc(a.tous.pct)+'. Attention : seulement '+a.tous.total+' cas, c\'est encore peu.</p>';
+    if(sc.candidates&&sc.candidates.length)x+='<h3>👀 Prochaines équipes à suivre</h3><p class="small">Leur dernier match s\'est fini aux TAB.</p>'+sc.candidates.map(function(c){return '<div class="icase"><b>'+esc(c.team)+'</b> · '+esc(c.day)+' à '+esc(c.time)+'<br>'+lieu(c.home,c.opp)+'<div class="small">TAB : '+esc(c.tab)+', '+esc(c.tab_day)+'</div></div>'}).join('');
+    o+='<div class="card imag"><h2>🌙 '+esc(sc.title)+'</h2>'+x+'</div>';
+    if(f){var y='';
+      if(f.next)y+='<p>Prochain match : <b>'+esc(f.next.day)+' à '+esc(f.next.time)+'</b>, '+lieu(f.next.home,f.next.opp)+'.</p>';
+      if(f.note)y+='<p class="small">'+esc(f.note)+'</p>';
+      if(f.defenders&&f.defenders.length)y+='<table class="it"><tr><th>Défenseur</th><th>MJ</th><th>Buts</th><th>Passes</th><th>Tirs</th><th>Temps</th></tr>'+f.defenders.map(function(d){return '<tr><td>'+esc(d.player)+'</td><td>'+d.gp+'</td><td>'+d.g+'</td><td>'+d.a+'</td><td>'+d.tirs+'</td><td>'+esc(d.toi)+'</td></tr>'}).join('')+'</table><p class="small">Saison Liiga. Tirs = toutes les tentatives. Temps = temps de jeu moyen par match.</p>';
+      o+=card('🛡️ Les défenseurs de '+esc(f.team),y);}
+    if(sc.cases&&sc.cases.length)o+='<details><summary>📋 Tous les cas après TAB ('+sc.cases.length+')</summary><div class="in">'+sc.cases.map(function(c){return '<div class="icase">'+(c.ok?'✅':'❌')+' <b>'+esc(c.team)+'</b> · '+esc(c.day)+', '+lieu(c.home,c.opp)+'<div class="small">'+(c.ok?'Défenseur buteur : '+esc(c.ds.join(', ')):'Pas de défenseur buteur')+' · TAB avant : '+esc(c.tab)+'</div></div>'}).join('')+'</div></details>';
+  });
+  (m.signal_log||[]).forEach(function(l){
+    o+=card('📝 '+esc(l.title)+' · '+esc(l.date),l.teams.map(function(t){return '<div class="icase">'+(t.ds.length?'✅':'❌')+' <b>'+esc(t.team)+'</b> : '+(t.ds.length?esc(t.ds.join(', ')):'aucun défenseur buteur')+'</div>'}).join('')+'<p><b>'+esc(l.result)+'</b></p>'+(l.note?'<p class="small">'+esc(l.note)+'</p>':''));
+  });
+  return o;
+}
 function calc(){
   var P=parseFloat(String(document.getElementById('cP').value).replace(',','.'))/100;
   var O=parseFloat(String(document.getElementById('cO').value).replace(',','.'));
@@ -195,7 +221,7 @@ function calc(){
   r.className='verdict '+(ev>=0.10?'ok':'no');
   r.innerHTML=(ev>=0.10?'✅ Tu joues (1 €)':'❌ Tu ne joues pas')+'<div class="small" style="color:#eef3f8">Avantage : '+Math.round(ev*100)+' %. Cote juste : '+f2(min)+'. Tu joues à partir de '+f2(play)+'.</div>';
 }
-window.Buteurs={resume:resume,buteurs:buteurs,defs:defs,points:points,matchs:matchs,infos:infos,bilan:bilanHtml,foot:footHtml,calc:calc,otTab:otTab,setData:function(d){DATA=d}};
+window.Buteurs={resume:resume,buteurs:buteurs,defs:defs,points:points,matchs:matchs,infos:infos,bilan:bilanHtml,foot:footHtml,calc:calc,otTab:otTab,imag:imagHtml,setData:function(d){DATA=d}};
 if(typeof document==='undefined')return;
 document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){
   document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x===b)});
@@ -215,5 +241,6 @@ fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.js
   document.getElementById('nul5').innerHTML=otTab(d,'nul');
   document.getElementById('tab').innerHTML=otTab(d,'so');
 }).catch(function(){document.getElementById('stamp').textContent='Impossible de charger l\'analyse. Vérifie ta connexion.'});
+fetch('imaginaire.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json()}).then(function(m){document.getElementById('imag').innerHTML=imagHtml(m)}).catch(function(){document.getElementById('imag').innerHTML=card('🌙 Monde imaginaire','<p>Impossible de charger. Vérifie ta connexion.</p>')});
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});
 })();
