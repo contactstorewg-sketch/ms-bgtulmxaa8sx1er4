@@ -1,5 +1,5 @@
 {
- "generated": "28/10/2026 15h16",
+ "generated": "28/10/2026 21h40",
  "date": "2026-10-28",
  "date_fr": "28/10/2026",
  "hockey": {
@@ -430,1721 +430,272 @@
     ]
    }
   ],
-  "liiga_status": {
-   "date": "2026-10-28",
-   "model": "Liiga v4 (min = 1,10/P ; edge = P×cote−1)",
-   "winamax_file": "winamax_2026-10-28_liiga.json",
-   "winamax_read_at": "2026-10-28 12h51 Paris",
-   "winamax_note": "Cotes lues sans compte via le flux public de la page Winamax ; marché Buteur et Points 1+ = hors prolongation.",
-   "lineups": "Compos affichées sur liiga.fi (API v2) à 12h50 ; à re-vérifier avant 17h30.",
-   "games": [
-    {
-     "game": "Lukko@Jukurit",
-     "id": 2701417,
-     "paris": "17:30",
-     "goalie_home": {
-      "name": "Jesper Myrenberg",
-      "season": {
-       "gp": 15,
-       "svp": 0.93,
-       "gaa": 1.67
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.941,
-       "gaa": 1.4
-      }
-     },
-     "goalie_away": {
-      "name": "Antti Raanta",
-      "season": {
-       "gp": 5,
-       "svp": 0.914,
-       "gaa": 1.8
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.914,
-       "gaa": 1.8
-      }
-     },
-     "line_changes": {
-      "Jukurit": [],
-      "Lukko": [
-       {
-        "player": "Vili Pulakka",
-        "role": "VL",
-        "before": 4,
-        "now": 2
-       },
-       {
-        "player": "Daniil Trakht",
-        "role": "13. H",
-        "before": 2,
-        "now": 4
-       }
-      ]
-     },
-     "returns": {
-      "Jukurit": [
-       {
-        "player": "Luka Tiihonen",
-        "missed_recent": 18,
-        "played": 0,
-        "team_gp": 18,
-        "line": 4,
-        "role": "7. P"
-       },
-       {
-        "player": "Bence Horvath",
-        "missed_recent": 1,
-        "played": 9,
-        "team_gp": 18,
-        "line": 4,
-        "role": "13. H"
-       }
-      ],
-      "Lukko": []
-     },
-     "absent": {
-      "Jukurit": [],
-      "Lukko": []
-     },
-     "best_D": {
-      "best": [
-       "Jakob Stenqvist",
-       "Lukko",
-       0.107,
-       10.28,
-       6
-      ],
-      "shooter": [
-       "Andrej Sustr",
-       "Jukurit",
-       1.56,
-       2.2,
-       3.11,
-       0.055,
-       8
-      ]
-     },
-     "top_toi": {
-      "Jukurit": [
-       {
-        "player": "Connor Ford",
-        "toi": 20.5
-       },
-       {
-        "player": "Andrej Sustr",
-        "toi": 23.4
-       }
-      ],
-      "Lukko": [
-       {
-        "player": "Alex Beaucage",
-        "toi": 18.3
-       },
-       {
-        "player": "Jakob Stenqvist",
-        "toi": 21.2
-       }
-      ]
-     }
-    },
-    {
-     "game": "Tappara@JYP",
-     "id": 2701418,
-     "paris": "17:30",
-     "goalie_home": {
-      "name": "Oskari Setänen",
-      "season": {
-       "gp": 9,
-       "svp": 0.9,
-       "gaa": 2.33
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.88,
-       "gaa": 2.8
-      }
-     },
-     "goalie_away": {
-      "name": "Juha Metsola",
-      "season": {
-       "gp": 5,
-       "svp": 0.905,
-       "gaa": 1.8
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.905,
-       "gaa": 1.8
-      }
-     },
-     "line_changes": {
-      "JYP": [],
-      "Tappara": [
-       {
-        "player": "Henrik Haapala",
-        "role": "VL",
-        "before": 2,
-        "now": 1
-       },
-       {
-        "player": "Jyrki Jokipakka",
-        "role": "VP",
-        "before": 1,
-        "now": 2
-       },
-       {
-        "player": "Julius Mattila",
-        "role": "KH",
-        "before": 1,
-        "now": 2
-       },
-       {
-        "player": "Niclas Almari",
-        "role": "OP",
-        "before": 2,
-        "now": 1
-       },
-       {
-        "player": "Kasper Simontaival",
-        "role": "OL",
-        "before": 2,
-        "now": 1
-       },
-       {
-        "player": "Iivari Räsänen",
-        "role": "7. P",
-        "before": "absent",
-        "now": 4
-       },
-       {
-        "player": "Juuso Nykänen",
-        "role": "OL",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Joona Karvonen",
-        "role": "VP",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Ville Väärälä",
-        "role": "13. H",
-        "before": "absent",
-        "now": 4
-       },
-       {
-        "player": "Vilho Vanhatalo",
-        "role": "VL",
-        "before": "absent",
-        "now": 2
-       },
-       {
-        "player": "Oliver Suvanto",
-        "role": "KH",
-        "before": 2,
-        "now": 1
-       },
-       {
-        "player": "William Wiå",
-        "role": "OL",
-        "before": 3,
-        "now": 4
-       },
-       {
-        "player": "Michael Lindqvist",
-        "role": "OL",
-        "before": 1,
-        "now": 2
-       }
-      ]
-     },
-     "returns": {
-      "JYP": [
-       {
-        "player": "Topias Liljamo",
-        "missed_recent": 2,
-        "played": 7,
-        "team_gp": 14,
-        "line": 4,
-        "role": "13. H"
-       }
-      ],
-      "Tappara": [
-       {
-        "player": "Iivari Räsänen",
-        "missed_recent": 2,
-        "played": 11,
-        "team_gp": 16,
-        "line": 4,
-        "role": "7. P"
-       },
-       {
-        "player": "Ville Väärälä",
-        "missed_recent": 7,
-        "played": 1,
-        "team_gp": 16,
-        "line": 4,
-        "role": "13. H"
-       },
-       {
-        "player": "Vilho Vanhatalo",
-        "missed_recent": 1,
-        "played": 5,
-        "team_gp": 16,
-        "line": 2,
-        "role": "VL"
-       }
-      ]
-     },
-     "absent": {
-      "JYP": [],
-      "Tappara": []
-     },
-     "best_D": {
-      "best": [
-       "Jyrki Jokipakka",
-       "Tappara",
-       0.129,
-       8.53,
-       6.5
-      ],
-      "shooter": [
-       "Trent Bourque",
-       "JYP",
-       2.14,
-       3.0,
-       3.5,
-       0.098,
-       5.75
-      ]
-     },
-     "top_toi": {
-      "JYP": [
-       {
-        "player": "Alexander True",
-        "toi": 19.8
-       },
-       {
-        "player": "Trent Bourque",
-        "toi": 21.7
-       }
-      ],
-      "Tappara": [
-       {
-        "player": "Kasper Simontaival",
-        "toi": 17.4
-       },
-       {
-        "player": "Jyrki Jokipakka",
-        "toi": 21.1
-       }
-      ]
-     }
-    },
-    {
-     "game": "TPS@K-Espoo",
-     "id": 2701419,
-     "paris": "17:30",
-     "goalie_home": {
-      "name": "Petteri Rimpinen",
-      "season": {
-       "gp": 12,
-       "svp": 0.902,
-       "gaa": 2.42
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.872,
-       "gaa": 3.2
-      }
-     },
-     "goalie_away": {
-      "name": "Eetu Mäkiniemi",
-      "season": {
-       "gp": 13,
-       "svp": 0.891,
-       "gaa": 2.08
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.868,
-       "gaa": 2.4
-      }
-     },
-     "line_changes": {
-      "K-Espoo": [
-       {
-        "player": "Matti Järvinen",
-        "role": "KH",
-        "before": "absent",
-        "now": 3
-       },
-       {
-        "player": "Jani Lajunen",
-        "role": "KH",
-        "before": 1,
-        "now": 4
-       },
-       {
-        "player": "Jere Sallinen",
-        "role": "OL",
-        "before": 1,
-        "now": 3
-       },
-       {
-        "player": "Iikka Kangasniemi",
-        "role": "VL",
-        "before": "absent",
-        "now": 1
-       },
-       {
-        "player": "Miro Keskitalo",
-        "role": "VP",
-        "before": 1,
-        "now": 2
-       },
-       {
-        "player": "Niklas Peltomäki",
-        "role": "7. P",
-        "before": 3,
-        "now": 4
-       },
-       {
-        "player": "Kasper Kotkansalo",
-        "role": "OP",
-        "before": 2,
-        "now": 3
-       },
-       {
-        "player": "Aarne Talvitie",
-        "role": "VL",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Jere Väisänen",
-        "role": "VL",
-        "before": 3,
-        "now": 2
-       },
-       {
-        "player": "Joni Jurmo",
-        "role": "VP",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Arttu Tuomaala",
-        "role": "KH",
-        "before": 2,
-        "now": 1
-       },
-       {
-        "player": "Connor Corcoran",
-        "role": "OP",
-        "before": "absent",
-        "now": 1
-       },
-       {
-        "player": "Carter King",
-        "role": "KH",
-        "before": 3,
-        "now": 2
-       }
-      ],
-      "TPS": [
-       {
-        "player": "Veli-Matti Savinainen",
-        "role": "VL",
-        "before": "absent",
-        "now": 3
-       },
-       {
-        "player": "Joel Määttä",
-        "role": "KH",
-        "before": 4,
-        "now": 1
-       },
-       {
-        "player": "Niklas Ylitalo",
-        "role": "8. P",
-        "before": 3,
-        "now": 4
-       },
-       {
-        "player": "Paavo Fugleberg",
-        "role": "OL",
-        "before": "absent",
-        "now": 3
-       },
-       {
-        "player": "Aatos Koivu",
-        "role": "VL",
-        "before": 3,
-        "now": 4
-       }
-      ]
-     },
-     "returns": {
-      "K-Espoo": [
-       {
-        "player": "Matti Järvinen",
-        "missed_recent": 17,
-        "played": 0,
-        "team_gp": 17,
-        "line": 3,
-        "role": "KH"
-       },
-       {
-        "player": "Iikka Kangasniemi",
-        "missed_recent": 2,
-        "played": 13,
-        "team_gp": 17,
-        "line": 1,
-        "role": "VL"
-       },
-       {
-        "player": "Connor Corcoran",
-        "missed_recent": 1,
-        "played": 16,
-        "team_gp": 17,
-        "line": 1,
-        "role": "OP"
-       }
-      ],
-      "TPS": [
-       {
-        "player": "Veli-Matti Savinainen",
-        "missed_recent": 1,
-        "played": 8,
-        "team_gp": 17,
-        "line": 3,
-        "role": "VL"
-       },
-       {
-        "player": "Paavo Fugleberg",
-        "missed_recent": 17,
-        "played": 0,
-        "team_gp": 17,
-        "line": 3,
-        "role": "OL"
-       }
-      ]
-     },
-     "absent": {
-      "K-Espoo": [
-       "Linus Öberg"
-      ],
-      "TPS": [
-       "Lukas Wernblom"
-      ]
-     },
-     "best_D": {
-      "best": [
-       "Connor Corcoran",
-       "K-Espoo",
-       0.129,
-       8.53,
-       null
-      ],
-      "shooter": [
-       "Connor Corcoran",
-       "K-Espoo",
-       2.5,
-       3.0,
-       4.56,
-       0.129,
-       null
-      ]
-     },
-     "top_toi": {
-      "K-Espoo": [
-       {
-        "player": "Arttu Tuomaala",
-        "toi": 17.7
-       },
-       {
-        "player": "Ville Lajunen",
-        "toi": 20.9
-       }
-      ],
-      "TPS": [
-       {
-        "player": "Joona Ikonen",
-        "toi": 18.8
-       },
-       {
-        "player": "Petteri Lindbohm",
-        "toi": 19.3
-       }
-      ]
-     }
-    },
-    {
-     "game": "Ässät@KooKoo",
-     "id": 2701420,
-     "paris": "17:30",
-     "goalie_home": {
-      "name": "Eetu Randelin",
-      "season": {
-       "gp": 9,
-       "svp": 0.876,
-       "gaa": 3.44
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.878,
-       "gaa": 3.2
-      }
-     },
-     "goalie_away": {
-      "name": "Jan Bednar",
-      "season": {
-       "gp": 13,
-       "svp": 0.902,
-       "gaa": 2.08
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.915,
-       "gaa": 2.0
-      }
-     },
-     "line_changes": {
-      "KooKoo": [
-       {
-        "player": "Alexander Ruuttu",
-        "role": "OL",
-        "before": "absent",
-        "now": 3
-       },
-       {
-        "player": "Joona Riekkinen",
-        "role": "7. P",
-        "before": "absent",
-        "now": 4
-       },
-       {
-        "player": "Ossi-Petteri Jaakola",
-        "role": "VL",
-        "before": 2,
-        "now": 4
-       },
-       {
-        "player": "Niklas Nykyri",
-        "role": "OP",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Axel Holmström",
-        "role": "KH",
-        "before": 3,
-        "now": 2
-       }
-      ],
-      "Ässät": [
-       {
-        "player": "Valtteri Lipiäinen",
-        "role": "OL",
-        "before": "absent",
-        "now": 4
-       },
-       {
-        "player": "Aleksi Anttalainen",
-        "role": "8. P",
-        "before": "absent",
-        "now": 4
-       }
-      ]
-     },
-     "returns": {
-      "KooKoo": [
-       {
-        "player": "Alexander Ruuttu",
-        "missed_recent": 17,
-        "played": 0,
-        "team_gp": 17,
-        "line": 3,
-        "role": "OL"
-       },
-       {
-        "player": "Joona Riekkinen",
-        "missed_recent": 1,
-        "played": 14,
-        "team_gp": 17,
-        "line": 4,
-        "role": "7. P"
-       },
-       {
-        "player": "Verner Miettinen",
-        "missed_recent": 1,
-        "played": 8,
-        "team_gp": 17,
-        "line": 4,
-        "role": "13. H"
-       }
-      ],
-      "Ässät": [
-       {
-        "player": "Valtteri Lipiäinen",
-        "missed_recent": 17,
-        "played": 0,
-        "team_gp": 17,
-        "line": 4,
-        "role": "OL"
-       },
-       {
-        "player": "Aleksi Anttalainen",
-        "missed_recent": 9,
-        "played": 8,
-        "team_gp": 17,
-        "line": 4,
-        "role": "8. P"
-       }
-      ]
-     },
-     "absent": {
-      "KooKoo": [],
-      "Ässät": [
-       "Nestor Noiva",
-       "Eemeli Heinilä",
-       "Lasse Boelius",
-       "Miro Karjalainen",
-       "Carl Klingberg",
-       "Feetu Knihti"
-      ]
-     },
-     "best_D": {
-      "best": [
-       "Arttu Pelli",
-       "KooKoo",
-       0.102,
-       10.78,
-       7
-      ],
-      "shooter": [
-       "Kim Nousiainen",
-       "KooKoo",
-       1.94,
-       2.6,
-       3.88,
-       0.102,
-       8
-      ]
-     },
-     "top_toi": {
-      "KooKoo": [
-       {
-        "player": "Miska Siikonen",
-        "toi": 18.5
-       },
-       {
-        "player": "Kim Nousiainen",
-        "toi": 19.3
-       }
-      ],
-      "Ässät": [
-       {
-        "player": "Cameron Hillis",
-        "toi": 18.7
-       },
-       {
-        "player": "Rami Määttä",
-        "toi": 21.6
-       }
-      ]
-     }
-    },
-    {
-     "game": "HPK@Kärpät",
-     "id": 2701421,
-     "paris": "17:30",
-     "goalie_home": {
-      "name": "Niklas Rubin",
-      "season": {
-       "gp": 13,
-       "svp": 0.898,
-       "gaa": 2.46
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.891,
-       "gaa": 3.0
-      }
-     },
-     "goalie_away": {
-      "name": "Jakob Crespin",
-      "season": {
-       "gp": 5,
-       "svp": 0.925,
-       "gaa": 2.2
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.925,
-       "gaa": 2.2
-      }
-     },
-     "line_changes": {
-      "Kärpät": [
-       {
-        "player": "Tuomas Salmela",
-        "role": "VP",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Samuli Ratinen",
-        "role": "OL",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Arttu Paaso",
-        "role": "7. P",
-        "before": 1,
-        "now": 4
-       },
-       {
-        "player": "Lenni Kokkonen",
-        "role": "OP",
-        "before": "absent",
-        "now": 3
-       },
-       {
-        "player": "Veeti Ruotsalainen",
-        "role": "VP",
-        "before": 3,
-        "now": 1
-       },
-       {
-        "player": "Henrik Törnqvist",
-        "role": "VL",
-        "before": 3,
-        "now": 4
-       }
-      ],
-      "HPK": [
-       {
-        "player": "Anrei Hakulinen",
-        "role": "VL",
-        "before": "absent",
-        "now": 2
-       },
-       {
-        "player": "Harri Kainulainen",
-        "role": "KH",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Heikki Huttunen",
-        "role": "13. H",
-        "before": 3,
-        "now": 4
-       },
-       {
-        "player": "Onnikalle Lehtonen",
-        "role": "OP",
-        "before": "absent",
-        "now": 2
-       },
-       {
-        "player": "Arturs Andzans",
-        "role": "7. P",
-        "before": 2,
-        "now": 4
-       },
-       {
-        "player": "Garrett Pyke",
-        "role": "VP",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Ethan De Jong",
-        "role": "OL",
-        "before": 2,
-        "now": 1
-       },
-       {
-        "player": "Brendan Ranford",
-        "role": "VL",
-        "before": 1,
-        "now": 3
-       }
-      ]
-     },
-     "returns": {
-      "Kärpät": [
-       {
-        "player": "Lenni Kokkonen",
-        "missed_recent": 3,
-        "played": 9,
-        "team_gp": 18,
-        "line": 3,
-        "role": "OP"
-       }
-      ],
-      "HPK": [
-       {
-        "player": "Anrei Hakulinen",
-        "missed_recent": 5,
-        "played": 12,
-        "team_gp": 17,
-        "line": 2,
-        "role": "VL"
-       },
-       {
-        "player": "Onnikalle Lehtonen",
-        "missed_recent": 7,
-        "played": 2,
-        "team_gp": 17,
-        "line": 2,
-        "role": "OP"
-       }
-      ]
-     },
-     "absent": {
-      "Kärpät": [
-       "Rasmus Rissanen"
-      ],
-      "HPK": []
-     },
-     "best_D": {
-      "best": [
-       "Aleksi Matinmikko",
-       "Kärpät",
-       0.15,
-       7.33,
-       6.5
-      ],
-      "shooter": [
-       "Aleksi Matinmikko",
-       "Kärpät",
-       2.94,
-       3.2,
-       5.67,
-       0.15,
-       6.5
-      ]
-     },
-     "top_toi": {
-      "Kärpät": [
-       {
-        "player": "Roni Hirvonen",
-        "toi": 18.6
-       },
-       {
-        "player": "Aleksi Matinmikko",
-        "toi": 20.9
-       }
-      ],
-      "HPK": [
-       {
-        "player": "Sami Päivärinta",
-        "toi": 18.1
-       },
-       {
-        "player": "Miska Kukkonen",
-        "toi": 23.7
-       }
-      ]
-     }
-    },
-    {
-     "game": "SaiPa@Pelicans",
-     "id": 2701422,
-     "paris": "17:30",
-     "goalie_home": {
-      "name": "Patrik Bartosak",
-      "season": {
-       "gp": 4,
-       "svp": 0.903,
-       "gaa": 1.75
-      },
-      "last5": {
-       "gp": 4,
-       "svp": 0.903,
-       "gaa": 1.75
-      }
-     },
-     "goalie_away": {
-      "name": "Gustavs Grigals",
-      "season": {
-       "gp": 6,
-       "svp": 0.935,
-       "gaa": 1.33
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.925,
-       "gaa": 1.6
-      }
-     },
-     "line_changes": {
-      "Pelicans": [
-       {
-        "player": "Mikko Kousa",
-        "role": "OP",
-        "before": 1,
-        "now": 3
-       },
-       {
-        "player": "Markus Nutivaara",
-        "role": "VP",
-        "before": 2,
-        "now": 1
-       },
-       {
-        "player": "Hannes Häkkilä",
-        "role": "7. P",
-        "before": "absent",
-        "now": 4
-       },
-       {
-        "player": "Carl-Johan Lerby",
-        "role": "OP",
-        "before": 2,
-        "now": 1
-       },
-       {
-        "player": "Michal Jordan",
-        "role": "VP",
-        "before": 3,
-        "now": 2
-       },
-       {
-        "player": "Johannes Johannesen",
-        "role": "OP",
-        "before": 4,
-        "now": 2
-       }
-      ],
-      "SaiPa": [
-       {
-        "player": "Miikka Salomäki",
-        "role": "OL",
-        "before": "absent",
-        "now": 2
-       },
-       {
-        "player": "Veeti Moilanen",
-        "role": "OL",
-        "before": 4,
-        "now": 3
-       },
-       {
-        "player": "Olli Eloranta",
-        "role": "13. H",
-        "before": "absent",
-        "now": 4
-       },
-       {
-        "player": "Vojtech Hora",
-        "role": "VP",
-        "before": "absent",
-        "now": 1
-       }
-      ]
-     },
-     "returns": {
-      "Pelicans": [
-       {
-        "player": "Hannes Häkkilä",
-        "missed_recent": 4,
-        "played": 10,
-        "team_gp": 14,
-        "line": 4,
-        "role": "7. P"
-       },
-       {
-        "player": "Eelis Teutari",
-        "missed_recent": 1,
-        "played": 11,
-        "team_gp": 14,
-        "line": 4,
-        "role": "13. H"
-       }
-      ],
-      "SaiPa": [
-       {
-        "player": "Miikka Salomäki",
-        "missed_recent": 6,
-        "played": 4,
-        "team_gp": 16,
-        "line": 2,
-        "role": "OL"
-       },
-       {
-        "player": "Olli Eloranta",
-        "missed_recent": 16,
-        "played": 0,
-        "team_gp": 16,
-        "line": 4,
-        "role": "13. H"
-       },
-       {
-        "player": "Vojtech Hora",
-        "missed_recent": 16,
-        "played": 0,
-        "team_gp": 16,
-        "line": 1,
-        "role": "VP"
-       }
-      ]
-     },
-     "absent": {
-      "Pelicans": [],
-      "SaiPa": []
-     },
-     "best_D": {
-      "best": [
-       "Markus Nutivaara",
-       "Pelicans",
-       0.123,
-       8.94,
-       7
-      ],
-      "shooter": [
-       "Brian Kramer",
-       "SaiPa",
-       2.38,
-       3.0,
-       4.88,
-       0.115,
-       7.5
-      ]
-     },
-     "top_toi": {
-      "Pelicans": [
-       {
-        "player": "Gabriel Fortier",
-        "toi": 19.7
-       },
-       {
-        "player": "Markus Nutivaara",
-        "toi": 20.2
-       }
-      ],
-      "SaiPa": [
-       {
-        "player": "Aarne Intonen",
-        "toi": 16.9
-       },
-       {
-        "player": "Brian Kramer",
-        "toi": 20.4
-       }
-      ]
-     }
-    },
-    {
-     "game": "Ilves@HIFK",
-     "id": 2701423,
-     "paris": "17:30",
-     "goalie_home": {
-      "name": "Hugo Alnefelt",
-      "season": {
-       "gp": 8,
-       "svp": 0.898,
-       "gaa": 2.75
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.929,
-       "gaa": 2.0
-      }
-     },
-     "goalie_away": {
-      "name": "Mantas Armalis",
-      "season": {
-       "gp": 10,
-       "svp": 0.948,
-       "gaa": 1.2
-      },
-      "last5": {
-       "gp": 5,
-       "svp": 0.926,
-       "gaa": 1.4
-      }
-     },
-     "line_changes": {
-      "HIFK": [],
-      "Ilves": [
-       {
-        "player": "Toni Utunen",
-        "role": "OP",
-        "before": "absent",
-        "now": 3
-       },
-       {
-        "player": "Topias Hynninen",
-        "role": "VL",
-        "before": 2,
-        "now": 4
-       },
-       {
-        "player": "Ondrej Kos",
-        "role": "OL",
-        "before": 4,
-        "now": 2
-       }
-      ]
-     },
-     "returns": {
-      "HIFK": [
-       {
-        "player": "Atte Joki",
-        "missed_recent": 1,
-        "played": 11,
-        "team_gp": 16,
-        "line": 4,
-        "role": "13. H"
-       }
-      ],
-      "Ilves": [
-       {
-        "player": "Toni Utunen",
-        "missed_recent": 2,
-        "played": 15,
-        "team_gp": 17,
-        "line": 3,
-        "role": "OP"
-       }
-      ]
-     },
-     "absent": {
-      "HIFK": [],
-      "Ilves": []
-     },
-     "best_D": {
-      "best": [
-       "Austin Strand",
-       "Ilves",
-       0.147,
-       7.48,
-       4.75
-      ],
-      "shooter": [
-       "Tony Sund",
-       "Ilves",
-       2.35,
-       3.8,
-       4.76,
-       0.097,
-       7.5
-      ]
-     },
-     "top_toi": {
-      "HIFK": [
-       {
-        "player": "Vincent Marleau",
-        "toi": 19.0
-       },
-       {
-        "player": "Aron Kiviharju",
-        "toi": 20.5
-       }
-      ],
-      "Ilves": [
-       {
-        "player": "Luke Henman",
-        "toi": 17.1
-       },
-       {
-        "player": "Austin Strand",
-        "toi": 19.6
-       }
-      ]
-     }
-    }
-   ],
+  "liiga_status": "",
+  "liiga": {
    "a_jouer": [],
-   "note_a_jouer": "Personne ≥ 35 % (max Ojantakanen 31,8 %).",
+   "note": "Personne ≥ 35 % (max Ojantakanen 31,8 %).",
+   "point": [],
+   "games": [],
    "values": [
     {
-     "block": "value",
      "player": "Ondrej Kos",
      "team": "Ilves",
-     "opp": "HIFK",
-     "game": "Ilves@HIFK",
-     "paris": "17:30",
      "pos": "F",
-     "line": 2,
-     "P": 0.187,
-     "min_odds": 5.88,
-     "wm_buteur": 7.5,
-     "edge": 0.403,
-     "gp": 14,
-     "G": 0,
-     "A": 4,
-     "sog_g": 1.29,
-     "sog5": 1.2,
-     "att_g": 2.79,
-     "toi": 12.9,
-     "pp_rank": 5,
+     "game": "Ilves à HIFK",
+     "time": "17h30",
+     "chance": "19 %",
+     "one_in": 5,
+     "min": "5,88",
+     "fair": "5,35",
+     "wm": "7,50",
+     "edge": 40,
+     "why": "attaquant, ligne 2",
+     "signals": "1,3 tirs/match · 12,9 min de jeu · 0 buts 4 passes en 14 matchs",
      "cover_point": {
-      "odds": 2.45,
-      "p": 0.29,
-      "pts10": 3,
-      "n10": 10,
-      "min": 3.79,
+      "odds": "2,45",
+      "min": "3,79",
       "ok": false,
-      "stake_goal": 1.1,
-      "stake_point": 0.9,
-      "gain_if_goal": 8.46,
-      "gain_if_point_only": 0.21,
-      "lose_if_nothing": -2.0
+      "note": "3 points sur 10 derniers matchs · cote point sous le minimum",
+      "mise": "1,10 € buteur + 0,90 € point",
+      "outcomes": "but : +8,46 €, passe seulement : +0,21 €, rien : −2,00 €"
      }
     },
     {
-     "block": "value",
      "player": "Juuso Puustinen",
      "team": "JYP",
-     "opp": "Tappara",
-     "game": "Tappara@JYP",
-     "paris": "17:30",
      "pos": "F",
-     "line": 4,
-     "P": 0.198,
-     "min_odds": 5.56,
-     "wm_buteur": 5.75,
-     "edge": 0.139,
-     "gp": 6,
-     "G": 0,
-     "A": 0,
-     "sog_g": 1.17,
-     "sog5": 1.2,
-     "att_g": 1.67,
-     "toi": 9.5,
-     "pp_rank": 9,
+     "game": "Tappara à JYP",
+     "time": "17h30",
+     "chance": "20 %",
+     "one_in": 5,
+     "min": "5,56",
+     "fair": "5,05",
+     "wm": "5,75",
+     "edge": 14,
+     "why": "attaquant, ligne 4",
+     "signals": "1,2 tirs/match · 9,5 min de jeu · 0 buts 0 passes en 6 matchs",
      "cover_point": {
-      "odds": 2.15,
-      "p": 0.165,
-      "pts10": 0,
-      "n10": 6,
-      "min": 6.68,
+      "odds": "2,15",
+      "min": "6,68",
       "ok": false,
-      "stake_goal": 1.0,
-      "stake_point": 1.0,
-      "gain_if_goal": 5.9,
-      "gain_if_point_only": 0.15,
-      "lose_if_nothing": -2.0
+      "note": "0 points sur 6 derniers matchs · cote point sous le minimum",
+      "mise": "1,00 € buteur + 1,00 € point",
+      "outcomes": "but : +5,90 €, passe seulement : +0,15 €, rien : −2,00 €"
      }
     },
     {
-     "block": "value",
      "player": "Wiktor Nilsson",
      "team": "Kärpät",
-     "opp": "HPK",
-     "game": "HPK@Kärpät",
-     "paris": "17:30",
      "pos": "F",
-     "line": 4,
-     "P": 0.162,
-     "min_odds": 6.79,
-     "wm_buteur": 7,
-     "edge": 0.134,
-     "gp": 18,
-     "G": 3,
-     "A": 4,
-     "sog_g": 0.89,
-     "sog5": 1.0,
-     "att_g": 2.22,
-     "toi": 12.0,
-     "pp_rank": 2,
+     "game": "HPK à Kärpät",
+     "time": "17h30",
+     "chance": "16 %",
+     "one_in": 6,
+     "min": "6,79",
+     "fair": "6,17",
+     "wm": "7,00",
+     "edge": 13,
+     "why": "attaquant, ligne 4",
+     "signals": "0,9 tirs/match · 12,0 min de jeu · 3 buts 4 passes en 18 matchs",
      "cover_point": {
-      "odds": 2.55,
-      "p": 0.29,
-      "pts10": 3,
-      "n10": 10,
-      "min": 3.79,
+      "odds": "2,55",
+      "min": "3,79",
       "ok": false,
-      "stake_goal": 1.2,
-      "stake_point": 0.8,
-      "gain_if_goal": 8.44,
-      "gain_if_point_only": 0.04,
-      "lose_if_nothing": -2.0
+      "note": "3 points sur 10 derniers matchs · cote point sous le minimum",
+      "mise": "1,20 € buteur + 0,80 € point",
+      "outcomes": "but : +8,44 €, passe seulement : +0,04 €, rien : −2,00 €"
      }
     },
     {
-     "block": "value",
      "player": "Arttu Alasiurua",
      "team": "Ässät",
-     "opp": "KooKoo",
-     "game": "Ässät@KooKoo",
-     "paris": "17:30",
      "pos": "F",
-     "line": 3,
-     "P": 0.149,
-     "min_odds": 7.38,
-     "wm_buteur": 7.5,
-     "edge": 0.117,
-     "gp": 7,
-     "G": 1,
-     "A": 1,
-     "sog_g": 0.57,
-     "sog5": 0.6,
-     "att_g": 1.57,
-     "toi": 11.1,
-     "pp_rank": 10,
+     "game": "Ässät à KooKoo",
+     "time": "17h30",
+     "chance": "15 %",
+     "one_in": 7,
+     "min": "7,38",
+     "fair": "6,71",
+     "wm": "7,50",
+     "edge": 12,
+     "why": "attaquant, ligne 3",
+     "signals": "0,6 tirs/match · 11,1 min de jeu · 1 buts 1 passes en 7 matchs",
      "cover_point": {
-      "odds": 3.3,
-      "p": 0.292,
-      "pts10": 2,
-      "n10": 7,
-      "min": 3.77,
+      "odds": "3,30",
+      "min": "3,77",
       "ok": false,
-      "stake_goal": 1.3,
-      "stake_point": 0.7,
-      "gain_if_goal": 10.06,
-      "gain_if_point_only": 0.31,
-      "lose_if_nothing": -2.0
+      "note": "2 points sur 7 derniers matchs · cote point sous le minimum",
+      "mise": "1,30 € buteur + 0,70 € point",
+      "outcomes": "but : +10,06 €, passe seulement : +0,31 €, rien : −2,00 €"
      }
     },
     {
-     "block": "value",
      "player": "Pekka Jormakka",
      "team": "Jukurit",
-     "opp": "Lukko",
-     "game": "Lukko@Jukurit",
-     "paris": "17:30",
      "pos": "F",
-     "line": 3,
-     "P": 0.194,
-     "min_odds": 5.67,
-     "wm_buteur": 5.75,
-     "edge": 0.115,
-     "gp": 8,
-     "G": 0,
-     "A": 0,
-     "sog_g": 2.25,
-     "sog5": 3.0,
-     "att_g": 3.25,
-     "toi": 15.2,
-     "pp_rank": 9,
+     "game": "Lukko à Jukurit",
+     "time": "17h30",
+     "chance": "19 %",
+     "one_in": 5,
+     "min": "5,67",
+     "fair": "5,15",
+     "wm": "5,75",
+     "edge": 12,
+     "why": "attaquant, ligne 3",
+     "signals": "2,2 tirs/match · 15,2 min de jeu · 0 buts 0 passes en 8 matchs",
      "cover_point": {
-      "odds": 2.95,
-      "p": 0.139,
-      "pts10": 0,
-      "n10": 8,
-      "min": 7.9,
+      "odds": "2,95",
+      "min": "7,90",
       "ok": false,
-      "stake_goal": 1.3,
-      "stake_point": 0.7,
-      "gain_if_goal": 7.54,
-      "gain_if_point_only": 0.06,
-      "lose_if_nothing": -2.0
+      "note": "0 points sur 8 derniers matchs · cote point sous le minimum",
+      "mise": "1,30 € buteur + 0,70 € point",
+      "outcomes": "but : +7,54 €, passe seulement : +0,06 €, rien : −2,00 €"
      }
     }
    ],
    "limite": [
     {
-     "block": "limite",
      "player": "Teemu Engberg",
      "team": "Ilves",
-     "opp": "HIFK",
-     "game": "Ilves@HIFK",
-     "paris": "17:30",
      "pos": "F",
-     "line": 3,
-     "P": 0.157,
-     "min_odds": 7.01,
-     "wm_buteur": 7,
-     "edge": 0.099,
-     "gp": 17,
-     "G": 0,
-     "A": 4,
-     "sog_g": 1.0,
-     "sog5": 1.4,
-     "att_g": 2.12,
-     "toi": 13.6,
-     "pp_rank": 15,
+     "game": "Ilves à HIFK",
+     "time": "17h30",
+     "chance": "16 %",
+     "one_in": 6,
+     "min": "7,01",
+     "fair": "6,37",
+     "wm": "7,00",
+     "edge": 10,
+     "why": "attaquant, ligne 3",
+     "signals": "1,0 tirs/match · 13,6 min de jeu · 0 buts 4 passes en 17 matchs",
      "cover_point": {
-      "odds": 2.65,
-      "p": 0.238,
-      "pts10": 2,
-      "n10": 10,
-      "min": 4.63,
+      "odds": "2,65",
+      "min": "4,63",
       "ok": false,
-      "stake_goal": 1.2,
-      "stake_point": 0.8,
-      "gain_if_goal": 8.52,
-      "gain_if_point_only": 0.12,
-      "lose_if_nothing": -2.0
+      "note": "2 points sur 10 derniers matchs · cote point sous le minimum",
+      "mise": "1,20 € buteur + 0,80 € point",
+      "outcomes": "but : +8,52 €, passe seulement : +0,12 €, rien : −2,00 €"
      }
     },
     {
-     "block": "limite",
      "player": "Thomas Olsen",
      "team": "Jukurit",
-     "opp": "Lukko",
-     "game": "Lukko@Jukurit",
-     "paris": "17:30",
      "pos": "F",
-     "line": 2,
-     "P": 0.208,
-     "min_odds": 5.29,
-     "wm_buteur": 5.25,
-     "edge": 0.092,
-     "gp": 18,
-     "G": 3,
-     "A": 3,
-     "sog_g": 1.22,
-     "sog5": 2.0,
-     "att_g": 2.28,
-     "toi": 16.3,
-     "pp_rank": 6,
+     "game": "Lukko à Jukurit",
+     "time": "17h30",
+     "chance": "21 %",
+     "one_in": 5,
+     "min": "5,29",
+     "fair": "4,81",
+     "wm": "5,25",
+     "edge": 9,
+     "why": "attaquant, ligne 2",
+     "signals": "1,2 tirs/match · 16,3 min de jeu · 3 buts 3 passes en 18 matchs",
      "cover_point": {
-      "odds": 2.8,
-      "p": 0.238,
-      "pts10": 2,
-      "n10": 10,
-      "min": 4.63,
+      "odds": "2,80",
+      "min": "4,63",
       "ok": false,
-      "stake_goal": 1.2,
-      "stake_point": 0.8,
-      "gain_if_goal": 6.54,
-      "gain_if_point_only": 0.24,
-      "lose_if_nothing": -2.0
+      "note": "2 points sur 10 derniers matchs · cote point sous le minimum",
+      "mise": "1,20 € buteur + 0,80 € point",
+      "outcomes": "but : +6,54 €, passe seulement : +0,24 €, rien : −2,00 €"
      }
     },
     {
-     "block": "limite",
      "player": "Tomi Sallinen",
      "team": "Tappara",
-     "opp": "JYP",
-     "game": "Tappara@JYP",
-     "paris": "17:30",
      "pos": "F",
-     "line": 3,
-     "P": 0.143,
-     "min_odds": 7.69,
-     "wm_buteur": 7.5,
-     "edge": 0.073,
-     "gp": 16,
-     "G": 2,
-     "A": 3,
-     "sog_g": 0.75,
-     "sog5": 0.6,
-     "att_g": 1.75,
-     "toi": 15.5,
-     "pp_rank": 12,
+     "game": "Tappara à JYP",
+     "time": "17h30",
+     "chance": "14 %",
+     "one_in": 7,
+     "min": "7,69",
+     "fair": "6,99",
+     "wm": "7,50",
+     "edge": 7,
+     "why": "attaquant, ligne 3",
+     "signals": "0,8 tirs/match · 15,5 min de jeu · 2 buts 3 passes en 16 matchs",
      "cover_point": {
-      "odds": 2.7,
-      "p": 0.238,
-      "pts10": 2,
-      "n10": 10,
-      "min": 4.63,
+      "odds": "2,70",
+      "min": "4,63",
       "ok": false,
-      "stake_goal": 1.2,
-      "stake_point": 0.8,
-      "gain_if_goal": 9.16,
-      "gain_if_point_only": 0.16,
-      "lose_if_nothing": -2.0
+      "note": "2 points sur 10 derniers matchs · cote point sous le minimum",
+      "mise": "1,20 € buteur + 0,80 € point",
+      "outcomes": "but : +9,16 €, passe seulement : +0,16 €, rien : −2,00 €"
      }
     }
    ],
    "feeling": [
     {
-     "block": "feeling",
      "player": "Aleksi Matinmikko",
      "team": "Kärpät",
-     "opp": "HPK",
-     "game": "HPK@Kärpät",
-     "paris": "17:30",
      "pos": "D",
-     "line": 1,
-     "P": 0.15,
-     "min_odds": 7.33,
-     "wm_buteur": 6.5,
-     "edge": -0.025,
-     "gp": 18,
-     "G": 3,
-     "A": 7,
-     "sog_g": 2.94,
-     "sog5": 3.2,
-     "att_g": 5.67,
-     "toi": 20.9,
-     "pp_rank": 3,
+     "game": "HPK à Kärpät",
+     "time": "17h30",
+     "chance": "15 %",
+     "one_in": 7,
+     "min": "7,33",
+     "fair": "6,67",
+     "wm": "6,50",
+     "edge": -2,
+     "why": "défenseur, ligne 1",
+     "signals": "2,9 tirs/match · 20,9 min de jeu · 3 buts 7 passes en 18 matchs",
      "cover_point": {
-      "odds": 1.86,
-      "p": 0.427,
-      "pts10": 6,
-      "n10": 10,
-      "min": 2.58,
+      "odds": "1,86",
+      "min": "2,58",
       "ok": false,
-      "stake_goal": 0.9,
-      "stake_point": 1.1,
-      "gain_if_goal": 5.9,
-      "gain_if_point_only": 0.05,
-      "lose_if_nothing": -2.0
+      "note": "6 points sur 10 derniers matchs · cote point sous le minimum",
+      "mise": "0,90 € buteur + 1,10 € point",
+      "outcomes": "but : +5,90 €, passe seulement : +0,05 €, rien : −2,00 €"
      }
     },
     {
-     "block": "feeling",
      "player": "Valtteri Ojantakanen",
      "team": "JYP",
-     "opp": "Tappara",
-     "game": "Tappara@JYP",
-     "paris": "17:30",
      "pos": "F",
-     "line": 2,
-     "P": 0.318,
-     "min_odds": 3.46,
-     "wm_buteur": 3,
-     "edge": -0.046,
-     "gp": 14,
-     "G": 5,
-     "A": 5,
-     "sog_g": 3.14,
-     "sog5": 3.6,
-     "att_g": 5.14,
-     "toi": 15.8,
-     "pp_rank": 1,
+     "game": "Tappara à JYP",
+     "time": "17h30",
+     "chance": "32 %",
+     "one_in": 3,
+     "min": "3,46",
+     "fair": "3,14",
+     "wm": "3,00",
+     "edge": -5,
+     "why": "attaquant, ligne 2",
+     "signals": "3,1 tirs/match · 15,8 min de jeu · 5 buts 5 passes en 14 matchs",
      "cover_point": {
-      "odds": 1.72,
-      "p": 0.385,
-      "pts10": 5,
-      "n10": 10,
-      "min": 2.86,
+      "odds": "1,72",
+      "min": "2,86",
       "ok": false,
-      "stake_goal": 0.8,
-      "stake_point": 1.2,
-      "gain_if_goal": 2.46,
-      "gain_if_point_only": 0.06,
-      "lose_if_nothing": -2.0
+      "note": "5 points sur 10 derniers matchs · cote point sous le minimum",
+      "mise": "0,80 € buteur + 1,20 € point",
+      "outcomes": "but : +2,46 €, passe seulement : +0,06 €, rien : −2,00 €"
      }
     },
     {
-     "block": "feeling",
      "player": "Tony Sund",
      "team": "Ilves",
-     "opp": "HIFK",
-     "game": "Ilves@HIFK",
-     "paris": "17:30",
      "pos": "D",
-     "line": 2,
-     "P": 0.097,
-     "min_odds": 11.34,
-     "wm_buteur": 7.5,
-     "edge": -0.272,
-     "gp": 17,
-     "G": 3,
-     "A": 9,
-     "sog_g": 2.35,
-     "sog5": 3.8,
-     "att_g": 4.76,
-     "toi": 17.8,
-     "pp_rank": 2,
+     "game": "Ilves à HIFK",
+     "time": "17h30",
+     "chance": "10 %",
+     "one_in": 10,
+     "min": "11,34",
+     "fair": "10,31",
+     "wm": "7,50",
+     "edge": -27,
+     "why": "défenseur, ligne 2",
+     "signals": "2,4 tirs/match · 17,8 min de jeu · 3 buts 9 passes en 17 matchs",
      "cover_point": {
-      "odds": 2.15,
-      "p": 0.503,
-      "pts10": 8,
-      "n10": 10,
-      "min": 2.19,
+      "odds": "2,15",
+      "min": "2,19",
       "ok": false,
-      "stake_goal": 1.0,
-      "stake_point": 1.0,
-      "gain_if_goal": 7.65,
-      "gain_if_point_only": 0.15,
-      "lose_if_nothing": -2.0
+      "note": "8 points sur 10 derniers matchs · cote point sous le minimum",
+      "mise": "1,00 € buteur + 1,00 € point",
+      "outcomes": "but : +7,65 €, passe seulement : +0,15 €, rien : −2,00 €"
      }
     }
    ],
-   "excluded": [
-    {
-     "player": "Ilari Mäkinen",
-     "team": "HPK",
-     "why": "1 seul match joué (4,6 min), P = presque que le prior ; 8,00 vs 7,59 min, non retenu"
-    }
-   ],
-   "top_P": [
-    {
-     "player": "Valtteri Ojantakanen",
-     "team": "JYP",
-     "P": 0.318,
-     "min": 3.46,
-     "wm": 3
-    },
-    {
-     "player": "Leevi Tukiainen",
-     "team": "JYP",
-     "P": 0.274,
-     "min": 4.01,
-     "wm": 2.85
-    },
-    {
-     "player": "Lars Bryggman",
-     "team": "TPS",
-     "P": 0.271,
-     "min": 4.06,
-     "wm": 2.75
-    },
-    {
-     "player": "Matyas Kantner",
-     "team": "Kärpät",
-     "P": 0.27,
-     "min": 4.07,
-     "wm": 3.5
-    },
-    {
-     "player": "Veeti Miettinen",
-     "team": "KooKoo",
-     "P": 0.269,
-     "min": 4.09,
-     "wm": null
-    },
-    {
-     "player": "Cameron Hillis",
-     "team": "Ässät",
-     "P": 0.268,
-     "min": 4.1,
-     "wm": 3.5
-    },
-    {
-     "player": "Alex Beaucage",
-     "team": "Lukko",
-     "P": 0.267,
-     "min": 4.12,
-     "wm": 2.8
-    },
-    {
-     "player": "Patrik Siikanen",
-     "team": "SaiPa",
-     "P": 0.262,
-     "min": 4.2,
-     "wm": 2.75
-    },
-    {
-     "player": "Luke Henman",
-     "team": "Ilves",
-     "P": 0.259,
-     "min": 4.25,
-     "wm": 2.7
-    },
-    {
-     "player": "Eetu Koivistoinen",
-     "team": "Kärpät",
-     "P": 0.253,
-     "min": 4.35,
-     "wm": 3.75
-    }
-   ],
-   "home_D_volume": {
-    "JYP": "D 11,4 tirs cadrés/match (5 derniers)",
-    "Kärpät": "10,6",
-    "K-Espoo": "10,2 (Corcoran revient, pas de cote Winamax)",
-    "Pelicans": "9,6"
-   }
+   "read_at": "2026-10-28 12h51 Paris"
   },
   "hist_nul": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le 5e match après un nul : 19 %. Un peu moins, mais une saison sur 4 dit l'inverse (31 %). Pas fiable : c'est de l'info, pas un pari.",
   "hist_so": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le match juste après des tirs au but : 21 %. Pas d'effet : c'est de l'info, pas un pari.",
@@ -2176,64 +727,179 @@
    }
   ],
   "liiga_ot": {
-   "day": "28/10",
-   "today": true,
-   "after_nul": [],
-   "after_so": [
+   "day": "30/10",
+   "today": false,
+   "after_nul": [
     {
-     "team": "Jukurit",
+     "team": "KooKoo",
      "opp": "Lukko",
-     "home": true,
-     "time": "17h30",
-     "day": "28/10",
-     "so": {
-      "date": "24/10",
-      "opp": "Ilves",
-      "home": false,
-      "score": "2-1",
-      "win": true
-     }
-    },
-    {
-     "team": "Tappara",
-     "opp": "JYP",
      "home": false,
      "time": "17h30",
-     "day": "28/10",
-     "so": {
-      "date": "24/10",
-      "opp": "Pelicans",
-      "home": false,
-      "score": "4-5",
-      "win": false
-     }
-    },
-    {
-     "team": "Pelicans",
-     "opp": "SaiPa",
-     "home": true,
-     "time": "17h30",
-     "day": "28/10",
-     "so": {
-      "date": "24/10",
+     "day": "30/10",
+     "k": 4,
+     "nul": {
+      "date": "20/10",
       "opp": "Tappara",
       "home": true,
-      "score": "5-4",
-      "win": true
-     }
+      "score": "3-2",
+      "win": true,
+      "kind": "SO"
+     },
+     "between": [
+      {
+       "date": "21/10",
+       "opp": "K-Espoo",
+       "home": false,
+       "score": "2-4",
+       "win": false
+      },
+      {
+       "date": "24/10",
+       "opp": "Jokerit",
+       "home": true,
+       "score": "3-6",
+       "win": false
+      },
+      {
+       "date": "28/10",
+       "opp": "Ässät",
+       "home": true,
+       "score": "5-3",
+       "win": true
+      }
+     ]
     },
     {
-     "team": "Ilves",
-     "opp": "HIFK",
+     "team": "SaiPa",
+     "opp": "JYP",
+     "home": true,
+     "time": "17h30",
+     "day": "30/10",
+     "k": 4,
+     "nul": {
+      "date": "20/10",
+      "opp": "Kärpät",
+      "home": true,
+      "score": "2-1",
+      "win": true,
+      "kind": "SO"
+     },
+     "between": [
+      {
+       "date": "23/10",
+       "opp": "Sport",
+       "home": false,
+       "score": "5-3",
+       "win": true
+      },
+      {
+       "date": "24/10",
+       "opp": "Sport",
+       "home": false,
+       "score": "3-1",
+       "win": true
+      },
+      {
+       "date": "28/10",
+       "opp": "Pelicans",
+       "home": false,
+       "score": "0-5",
+       "win": false
+      }
+     ]
+    },
+    {
+     "team": "JYP",
+     "opp": "SaiPa",
      "home": false,
      "time": "17h30",
-     "day": "28/10",
-     "so": {
-      "date": "24/10",
-      "opp": "Jukurit",
+     "day": "30/10",
+     "k": 4,
+     "nul": {
+      "date": "16/10",
+      "opp": "Kärpät",
       "home": true,
-      "score": "1-2",
-      "win": false
+      "score": "4-5",
+      "win": false,
+      "kind": "OT"
+     },
+     "between": [
+      {
+       "date": "22/10",
+       "opp": "HPK",
+       "home": true,
+       "score": "3-2",
+       "win": true
+      },
+      {
+       "date": "24/10",
+       "opp": "Ässät",
+       "home": true,
+       "score": "4-1",
+       "win": true
+      },
+      {
+       "date": "28/10",
+       "opp": "Tappara",
+       "home": true,
+       "score": "4-6",
+       "win": false
+      }
+     ]
+    },
+    {
+     "team": "HIFK",
+     "opp": "Ässät",
+     "home": false,
+     "time": "17h30",
+     "day": "30/10",
+     "k": 4,
+     "nul": {
+      "date": "20/10",
+      "opp": "Lukko",
+      "home": false,
+      "score": "2-3",
+      "win": false,
+      "kind": "SO"
+     },
+     "between": [
+      {
+       "date": "23/10",
+       "opp": "K-Espoo",
+       "home": false,
+       "score": "3-0",
+       "win": true
+      },
+      {
+       "date": "24/10",
+       "opp": "HPK",
+       "home": false,
+       "score": "6-3",
+       "win": true
+      },
+      {
+       "date": "28/10",
+       "opp": "Ilves",
+       "home": true,
+       "score": "2-1",
+       "win": true
+      }
+     ]
+    }
+   ],
+   "after_so": [
+    {
+     "team": "Lukko",
+     "opp": "KooKoo",
+     "home": true,
+     "time": "17h30",
+     "day": "30/10",
+     "so": {
+      "date": "28/10",
+      "opp": "Jukurit",
+      "home": false,
+      "score": "4-3",
+      "win": true
      }
     }
    ]
@@ -2257,7 +923,7 @@
        {
         "player": "C. Dvorak",
         "d": false,
-        "sog": 3
+        "sog": 4
        },
        {
         "player": "T. Zegras",
@@ -2525,6 +1191,39 @@
    "Ässät à KooKoo"
   ],
   "values": [
+   {
+    "player": "Travis Sanheim",
+    "team": "PHI",
+    "pos": "D",
+    "game": "Philadelphie à Washington",
+    "time": "00h30",
+    "wm": "11,00",
+    "fair": "8,20",
+    "min": "9,02",
+    "chance": "12 %",
+    "one_in": 8,
+    "edge": 34,
+    "star": false,
+    "market_fair": "10,89",
+    "up": false,
+    "down": false,
+    "profile": "dno",
+    "why": "D sans PP",
+    "tier": "value",
+    "cover_point": {
+     "odds": "2,45",
+     "p": 0.29,
+     "fair": "3,45",
+     "min": "3,79",
+     "ok": false,
+     "note": "❌ cote trop basse pour couvrir (2,45 au lieu de 3,79 mini)",
+     "stake_goal": "1,10",
+     "stake_point": "0,90",
+     "gain_if_goal": "+12,31",
+     "mise": "1,10 € buteur + 0,90 € point",
+     "outcomes": "but : +12,31 €, passe seulement : 0 €, rien : −2 €"
+    }
+   },
    {
     "player": "Aliaksei Protas",
     "team": "WSH",

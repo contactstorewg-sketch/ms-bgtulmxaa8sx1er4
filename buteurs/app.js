@@ -45,6 +45,16 @@ function sigRow(p){
   (p.gap?'<div class="small gap">'+esc(p.gap)+'</div>':'')+
   '<div class="meta">'+esc(p.game)+' · '+esc(p.time)+'</div>'+coverLine(p)+'</div>';
 }
+function liigaBlocks(d,L){
+  if(!L||!(L.values||L.limite||L.feeling))return '';
+  var f=function(a){return (a||[]).filter(function(p){return !(d&&started(d,p.time))})};
+  var v=f(L.values),lm=f(L.limite),sg=f(L.feeling),o='';
+  o+=v.length?v.map(valRow).join(''):'<p class="vnone">❌ Pas de value Liiga.</p>';
+  if(lm.length)o+='<h3 class="vlim">🟡 Limite (petite marge)</h3>'+lm.map(limRow).join('');
+  if(sg.length)o+='<h3 class="vsig">🔥 Ce qui me fait dire (cote pas forcément bonne)</h3>'+sg.map(sigRow).join('');
+  if(L.read_at)o+='<p class="small">Cotes Winamax Liiga lues le '+esc(L.read_at)+'.</p>';
+  return o;
+}
 function resume(d){
   var h=d.hockey,o='';
   var vb='';
@@ -60,6 +70,7 @@ function resume(d){
     if(h.wm_read_at)vb+='<p class="small">Cotes Winamax lues à '+esc(h.wm_read_at)+'. ⭐ = Winamax paie plus que les autres sites. ⬆️ = rôle en hausse ce soir.'+(v.concat(lm,sg).some(function(p){return p.down})?' ⬇️ = en baisse ce soir, mais la cote dépasse son nouveau minimum.':'')+'</p>';
   }
   o+='<div class="card vcard"><h2>💰 Les values du soir</h2>'+vb+'<p class="vfoot">1 € par pari (2 € max si couverture point : buteur + point), jamais de combiné.</p></div>';
+  var lb=liigaBlocks(d,h.liiga);if(lb)o+='<div class="card vcard"><h2>🇫🇮 💰 Values Liiga</h2>'+lb+'</div>';
   // Stars : une ligne repliée
   var st;
   if(h.values_status==='ok'){
@@ -88,6 +99,7 @@ function buteurs(h){
   if(h.liiga){var L=h.liiga;var li='';
     if(L.a_jouer.length)li+=L.a_jouer.map(function(p){return pickHtml(p)}).join('');else if(L.note)li+='<p>'+esc(L.note)+'</p>';
     L.games.forEach(function(g){li+='<h3>'+esc(g.game)+'</h3><ul>'+g.top.map(function(t){return '<li>• '+esc(t.player)+' ('+esc(t.team)+') : '+esc(t.chance)+', tu joues à '+esc(t.min)+' ou plus'+(t.fair?' <span class="fair">(cote juste '+esc(t.fair)+')</span>':'')+'</li>'}).join('')+'</ul>'});
+    li=liigaBlocks(null,L)+li;
     o+=card('🇫🇮 Liiga',li);
   } else if(typeof h.liiga_status==='string'&&h.liiga_status){o+=card('🇫🇮 Liiga','<p>'+esc(h.liiga_status.charAt(0).toUpperCase()+h.liiga_status.slice(1))+' aujourd\'hui.</p>')}
   return o;
