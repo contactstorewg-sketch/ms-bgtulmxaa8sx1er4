@@ -1,5 +1,5 @@
 {
- "generated": "29/10/2026 15h19",
+ "generated": "29/10/2026 15h21",
  "date": "2026-10-29",
  "date_fr": "29/10/2026",
  "hockey": {
@@ -335,13 +335,13 @@
     "team": "TBL",
     "game": "Winnipeg à Tampa Bay",
     "time": "00h00",
-    "chance": "15 %",
-    "min": "7,15",
-    "fair": "6,49",
-    "example": "À 7,15 ou plus, tu joues. À 6,65, tu ne joues pas.",
+    "chance": "17 %",
+    "min": "6,44",
+    "fair": "5,85",
+    "example": "À 6,44 ou plus, tu joues. À 5,94, tu ne joues pas.",
     "wm": "5,75",
     "wm_ok": false,
-    "wm_edge": -11,
+    "wm_edge": -2,
     "best": false
    },
    {
@@ -377,13 +377,13 @@
     "team": "DET",
     "game": "Chicago à Detroit",
     "time": "00h30",
-    "chance": "9 %",
-    "min": "12,36",
-    "fair": "11,24",
-    "example": "À 12,36 ou plus, tu joues. À 11,86, tu ne joues pas.",
+    "chance": "10 %",
+    "min": "11,12",
+    "fair": "10,10",
+    "example": "À 11,12 ou plus, tu joues. À 10,62, tu ne joues pas.",
     "wm": "4,75",
     "wm_ok": false,
-    "wm_edge": -58,
+    "wm_edge": -53,
     "best": false
    },
    {
@@ -391,13 +391,13 @@
     "team": "STL",
     "game": "Boston à St. Louis",
     "time": "01h00",
-    "chance": "12 %",
-    "min": "8,80",
-    "fair": "8,00",
-    "example": "À 8,80 ou plus, tu joues. À 8,30, tu ne joues pas.",
+    "chance": "14 %",
+    "min": "7,98",
+    "fair": "7,25",
+    "example": "À 7,98 ou plus, tu joues. À 7,48, tu ne joues pas.",
     "wm": "7,00",
     "wm_ok": false,
-    "wm_edge": -12,
+    "wm_edge": -3,
     "best": false
    },
    {
@@ -419,13 +419,13 @@
     "team": "DAL",
     "game": "Montréal à Dallas",
     "time": "01h00",
-    "chance": "11 %",
-    "min": "10,38",
-    "fair": "9,43",
-    "example": "À 10,38 ou plus, tu joues. À 9,88, tu ne joues pas.",
+    "chance": "12 %",
+    "min": "9,33",
+    "fair": "8,47",
+    "example": "À 9,33 ou plus, tu joues. À 8,83, tu ne joues pas.",
     "wm": "5,75",
     "wm_ok": false,
-    "wm_edge": -39,
+    "wm_edge": -32,
     "best": false
    },
    {
@@ -1071,13 +1071,13 @@
     ],
     "bestD": {
      "player": "Quinn Hughes",
-     "chance": "14 %",
-     "min": "8,15",
-     "fair": "7,41",
-     "example": "À 8,15 ou plus, tu joues. À 7,65, tu ne joues pas.",
+     "chance": "15 %",
+     "min": "7,29",
+     "fair": "6,62",
+     "example": "À 7,29 ou plus, tu joues. À 6,79, tu ne joues pas.",
      "wm": "5,50",
      "wm_ok": false,
-     "wm_edge": -26
+     "wm_edge": -17
     }
    },
    {
@@ -1195,13 +1195,13 @@
     },
     "bestD": {
      "player": "Moritz Seider",
-     "chance": "9 %",
-     "min": "12,36",
-     "fair": "11,24",
-     "example": "À 12,36 ou plus, tu joues. À 11,86, tu ne joues pas.",
+     "chance": "10 %",
+     "min": "11,12",
+     "fair": "10,10",
+     "example": "À 11,12 ou plus, tu joues. À 10,62, tu ne joues pas.",
      "wm": "4,75",
      "wm_ok": false,
-     "wm_edge": -58
+     "wm_edge": -53
     }
    },
    {
@@ -1219,13 +1219,13 @@
     },
     "bestD": {
      "player": "Roman Josi",
-     "chance": "13 %",
-     "min": "8,74",
-     "fair": "7,94",
-     "example": "À 8,74 ou plus, tu joues. À 8,24, tu ne joues pas.",
+     "chance": "14 %",
+     "min": "7,92",
+     "fair": "7,19",
+     "example": "À 7,92 ou plus, tu joues. À 7,42, tu ne joues pas.",
      "wm": "4,85",
      "wm_ok": false,
-     "wm_edge": -39
+     "wm_edge": -33
     }
    },
    {
@@ -2335,11 +2335,11 @@
     "ok": false,
     "cover_point": {
      "odds": "1,98",
-     "p": 0.427,
-     "fair": "2,34",
-     "min": "2,58",
+     "p": 0.397,
+     "fair": "2,52",
+     "min": "2,77",
      "ok": false,
-     "note": "❌ cote trop basse pour couvrir (1,98 au lieu de 2,58 mini)",
+     "note": "❌ cote trop basse pour couvrir (1,98 au lieu de 2,77 mini)",
      "stake_goal": "0,90",
      "stake_point": "1,10",
      "gain_if_goal": "+6,03",
