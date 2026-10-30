@@ -1,10 +1,10 @@
 {
- "generated": "30/10/2026 14h00",
+ "generated": "30/10/2026 18h05",
  "date": "2026-10-30",
  "date_fr": "30/10/2026",
  "hockey": {
   "date": "2026-10-30",
-  "model": "NHL v2 attaquants, v1 défenseurs; Liiga v4",
+  "model": "NHL v2 attaquants, v1 défenseurs; Liiga v4 + corr-2026-10-30",
   "intro": [
    "Heures de Paris. 7 matchs de Liiga ce soir (17h30, KalPa-Jokerit à 18h30). 3 matchs NHL cette nuit (23h00 à 01h00). Cotes Winamax lues à 13h49, sans compte."
   ],
@@ -309,6 +309,8 @@
      "🛡️ **LE DÉFENSEUR QUI A LE PLUS DE CHANCES DE MARQUER (NHL)**",
      "• **Seth Jones (FLA)**, contre WPG : **13,5 %, le meilleur de la nuit** (12,1 % avant le bonus D à domicile qui tire). PP1, 24,9 min. Winamax 5,50 pour 8,15 mini. Non.",
      "• Montour (SEA) 13 % : 5,75 pour 8,53. Parekh (CGY) 13 % : 6,50 pour 8,59. Nemec (CGY) 12,5 % : 8,00 pour 8,80. L. Hughes (NJD) 11 % : 5,50 pour 9,73.",
+     "• Couverture 1+ point des D (formule du 30/10) : Seth Jones 58 % (mini 1,90), Montour 49 % (mini 2,26), L. Hughes 37 % (mini 3,00). Cotes point NHL pas publiées par Winamax.",
+     "• Recalcul 18h (corrections du 30/10) : Hertl 26 → 25 %, Sharangovich 18 → 17 %, Björck 11 → 10 % (temps de jeu en baisse, ×0,93). Aucun attaquant à domicile à 6 tentatives. Values, Limite et probables inchangés.",
      "Aucun D n'est une value chez Winamax cette nuit.",
      "📈 **MATCH À BUTS (NHL, consensus Kambi/Bovada, prolongation comprise)**",
      "1. **SEA@CGY (01h00) : 6,4 buts attendus, le plus ouvert.** Mon modèle dit 5,5. Les deux gardiens sont en méforme.",
@@ -329,7 +331,7 @@
      "🎯 **PARIS PLUS SÛRS : « AU MOINS 1 POINT » (NHL)**",
      "• M. Tkachuk : point dans 9 sur 10 (18 points). Mini 1,46.",
      "• B. Tkachuk : point dans 7 sur 10 (15 points). Mini 1,58.",
-     "• Seth Jones (D) : point dans 8 sur 10 (15 points). Mini 1,69 (D baissé de 7 %).",
+     "• Seth Jones (D) : point dans 8 sur 10 (15 points). Chance de point 58 % (nouvelle formule D du 30/10), mini 1,90.",
      "Cotes point Winamax pas encore publiées. Ne joue que si la cote est au-dessus du minimum.",
      "📊 **INFO TIRS (non pariable, je ne conseille jamais les paris sur les tirs)**",
      "Tirs cadrés par match : Connor 4,2, Meier 3,6, J. Hughes 3,6, B. Tkachuk 3,1, Reinhart 3,0, Perfetti 2,9, S. Jones (D) 2,8, Eichel 2,7."
@@ -686,180 +688,8 @@
   "liiga_ot": {
    "day": "30/10",
    "today": true,
-   "after_nul": [
-    {
-     "team": "KooKoo",
-     "opp": "Lukko",
-     "home": false,
-     "time": "17h30",
-     "day": "30/10",
-     "k": 4,
-     "nul": {
-      "date": "20/10",
-      "opp": "Tappara",
-      "home": true,
-      "score": "3-2",
-      "win": true,
-      "kind": "SO"
-     },
-     "between": [
-      {
-       "date": "21/10",
-       "opp": "K-Espoo",
-       "home": false,
-       "score": "2-4",
-       "win": false
-      },
-      {
-       "date": "24/10",
-       "opp": "Jokerit",
-       "home": true,
-       "score": "3-6",
-       "win": false
-      },
-      {
-       "date": "28/10",
-       "opp": "Ässät",
-       "home": true,
-       "score": "5-3",
-       "win": true
-      }
-     ]
-    },
-    {
-     "team": "SaiPa",
-     "opp": "JYP",
-     "home": true,
-     "time": "17h30",
-     "day": "30/10",
-     "k": 4,
-     "nul": {
-      "date": "20/10",
-      "opp": "Kärpät",
-      "home": true,
-      "score": "2-1",
-      "win": true,
-      "kind": "SO"
-     },
-     "between": [
-      {
-       "date": "23/10",
-       "opp": "Sport",
-       "home": false,
-       "score": "5-3",
-       "win": true
-      },
-      {
-       "date": "24/10",
-       "opp": "Sport",
-       "home": false,
-       "score": "3-1",
-       "win": true
-      },
-      {
-       "date": "28/10",
-       "opp": "Pelicans",
-       "home": false,
-       "score": "0-5",
-       "win": false
-      }
-     ]
-    },
-    {
-     "team": "JYP",
-     "opp": "SaiPa",
-     "home": false,
-     "time": "17h30",
-     "day": "30/10",
-     "k": 4,
-     "nul": {
-      "date": "16/10",
-      "opp": "Kärpät",
-      "home": true,
-      "score": "4-5",
-      "win": false,
-      "kind": "OT"
-     },
-     "between": [
-      {
-       "date": "22/10",
-       "opp": "HPK",
-       "home": true,
-       "score": "3-2",
-       "win": true
-      },
-      {
-       "date": "24/10",
-       "opp": "Ässät",
-       "home": true,
-       "score": "4-1",
-       "win": true
-      },
-      {
-       "date": "28/10",
-       "opp": "Tappara",
-       "home": true,
-       "score": "4-6",
-       "win": false
-      }
-     ]
-    },
-    {
-     "team": "HIFK",
-     "opp": "Ässät",
-     "home": false,
-     "time": "17h30",
-     "day": "30/10",
-     "k": 4,
-     "nul": {
-      "date": "20/10",
-      "opp": "Lukko",
-      "home": false,
-      "score": "2-3",
-      "win": false,
-      "kind": "SO"
-     },
-     "between": [
-      {
-       "date": "23/10",
-       "opp": "K-Espoo",
-       "home": false,
-       "score": "3-0",
-       "win": true
-      },
-      {
-       "date": "24/10",
-       "opp": "HPK",
-       "home": false,
-       "score": "6-3",
-       "win": true
-      },
-      {
-       "date": "28/10",
-       "opp": "Ilves",
-       "home": true,
-       "score": "2-1",
-       "win": true
-      }
-     ]
-    }
-   ],
-   "after_so": [
-    {
-     "team": "Lukko",
-     "opp": "KooKoo",
-     "home": true,
-     "time": "17h30",
-     "day": "30/10",
-     "so": {
-      "date": "28/10",
-      "opp": "Jukurit",
-      "home": false,
-      "score": "4-3",
-      "win": true
-     }
-    }
-   ]
+   "after_nul": [],
+   "after_so": []
   },
   "shots": [
    {
@@ -925,17 +755,17 @@
       "home": false,
       "top": [
        {
+        "player": "K. Connor",
+        "d": false,
+        "sog": 4
+       },
+       {
         "player": "N. Pionk",
         "d": true,
         "sog": 4
        },
        {
         "player": "D. Mercer",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "K. Connor",
         "d": false,
         "sog": 3
        }
@@ -1137,11 +967,11 @@
      "mise": null,
      "outcomes": null,
      "odds": null,
-     "p": 0.169,
-     "fair": "5,93",
-     "min": "6,53",
+     "p": 0.199,
+     "fair": "5,02",
+     "min": "5,53",
      "ok": false,
-     "note": "pas de cote point lue · joue dès 6,53"
+     "note": "pas de cote point lue · joue dès 5,53"
     }
    },
    {
@@ -1176,21 +1006,21 @@
     }
    },
    {
-    "player": "Viggo Björck",
-    "team": "WPG",
+    "player": "Frederick Gaudreau",
+    "team": "SEA",
     "pos": "F",
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "wm": "",
+    "game": "Seattle à Calgary",
+    "time": "01h00",
+    "wm": "5,50",
     "min": "7,17",
     "fair": "6,51",
     "chance": "15 %",
     "one_in": 7,
-    "edge": null,
+    "edge": -16,
     "signals": "monte en top-6",
     "score": 2,
     "down": false,
-    "gap": "cote Winamax pas lue : joue dès 7,17",
+    "gap": "cote trop basse : 5,50 au lieu de 7,17 mini",
     "ok": false,
     "cover_point": {
      "stake_goal": null,
@@ -1199,11 +1029,11 @@
      "mise": null,
      "outcomes": null,
      "odds": null,
-     "p": 0.121,
-     "fair": "8,29",
-     "min": "9,12",
+     "p": 0.503,
+     "fair": "1,99",
+     "min": "2,19",
      "ok": false,
-     "note": "pas de cote point lue · joue dès 9,12"
+     "note": "pas de cote point lue · joue dès 2,19"
     }
    }
   ],
