@@ -1,131 +1,591 @@
 {
- "generated": "31/10/2026 09h53",
+ "generated": "31/10/2026 15h16",
  "date": "2026-10-31",
  "date_fr": "31/10/2026",
  "hockey": {
   "date": "2026-10-31",
-  "model": "Liiga v4 + corr-2026-10-30 (NHL : à faire par la routine de 15h)",
+  "model": "NHL v2 attaquants, v1 défenseurs; Liiga v4; corr-2026-10-30",
   "intro": [
-   "Analyse faite ce matin (09h50 Paris). La NHL arrive avec la routine de 15h.",
-   "⚠️ Compos **probables** : liiga.fi n'a pas encore publié les lignes. J'ai pris les lignes du dernier match, sans les blessés et suspendus du jour. Presque toutes les équipes ont joué hier : les gardiens peuvent changer. **Revérifie vers 15h, avant 16h.**",
-   "Cotes Winamax lues à 09h48 Paris. Pas encore de cotes buteur pour K-Espoo–Pelicans et Ässät–Sport, et aucun marché « points » : pas de couverture 🎯 possible pour l'instant."
+   "Heures de Paris. 6 matchs Liiga à 16h00. 10 matchs NHL cette nuit (18h00 à 03h00). Cotes Winamax lues sans compte : Liiga à 15h02, NHL à 15h08.",
+   "**Hier : NHL +8,20 € à 1 € sur 9 paris (Connor ✅, Reinhart ✅, Strome ✅, J. Hughes ✅). Liiga +3,50 €.**"
   ],
-  "games": [],
-  "a_jouer": [],
+  "games": [
+   {
+    "game": "Chicago à Boston",
+    "time": "18h00"
+   },
+   {
+    "game": "St. Louis à Detroit",
+    "time": "18h00"
+   },
+   {
+    "game": "Tampa Bay à Nashville",
+    "time": "19h00"
+   },
+   {
+    "game": "Edmonton à Islanders",
+    "time": "19h00"
+   },
+   {
+    "game": "Buffalo à Los Angeles",
+    "time": "21h00"
+   },
+   {
+    "game": "Ottawa à San José",
+    "time": "21h00"
+   },
+   {
+    "game": "Pittsburgh à Montréal",
+    "time": "00h00"
+   },
+   {
+    "game": "Toronto à Vancouver",
+    "time": "00h00"
+   },
+   {
+    "game": "Columbus à Dallas",
+    "time": "01h00"
+   },
+   {
+    "game": "Calgary à Colorado",
+    "time": "03h00"
+   }
+  ],
+  "a_jouer": [
+   {
+    "player": "Adam Gaudette",
+    "team": "SJS",
+    "game": "Ottawa à San José",
+    "time": "21h00",
+    "chance": "18 %",
+    "min": "6,22",
+    "fair": "5,65",
+    "example": "À 6,22 ou plus, tu joues. À 5,72, tu ne joues pas.",
+    "wm": "7,00",
+    "wm_ok": true,
+    "wm_edge": 24
+   },
+   {
+    "player": "Casey Mittelstadt",
+    "team": "BOS",
+    "game": "Chicago à Boston",
+    "time": "18h00",
+    "chance": "20 %",
+    "min": "5,59",
+    "fair": "5,08",
+    "example": "À 5,59 ou plus, tu joues. À 5,09, tu ne joues pas.",
+    "wm": "5,75",
+    "wm_ok": true,
+    "wm_edge": 13
+   },
+   {
+    "player": "Denton Mateychuk",
+    "team": "CBJ",
+    "game": "Columbus à Dallas",
+    "time": "01h00",
+    "chance": "11 %",
+    "min": "9,91",
+    "fair": "9,01",
+    "example": "À 9,91 ou plus, tu joues. À 9,41, tu ne joues pas.",
+    "wm": "10,00",
+    "wm_ok": true,
+    "wm_edge": 11
+   }
+  ],
   "notes": [],
-  "surveiller": [],
-  "bestD": [],
-  "point": [],
-  "totals": [],
-  "goalies": [],
+  "surveiller": [
+   {
+    "player": "Mikael Backlund",
+    "team": "CGY",
+    "game": "Calgary à Colorado",
+    "time": "03h00",
+    "chance": "17 %",
+    "min": "6,33",
+    "fair": "5,75",
+    "example": "À 6,33 ou plus, tu joues. À 5,83, tu ne joues pas.",
+    "wm": "7,00",
+    "wm_ok": true,
+    "wm_edge": 22
+   },
+   {
+    "player": "Kiefer Sherwood",
+    "team": "SJS",
+    "game": "Ottawa à San José",
+    "time": "21h00",
+    "chance": "23 %",
+    "min": "4,75",
+    "fair": "4,31",
+    "example": "À 4,75 ou plus, tu joues. À 4,25, tu ne joues pas.",
+    "wm": "5,00",
+    "wm_ok": true,
+    "wm_edge": 16
+   },
+   {
+    "player": "Brandon Hagel",
+    "team": "TBL",
+    "game": "Tampa Bay à Nashville",
+    "time": "19h00",
+    "chance": "40 %",
+    "min": "2,73",
+    "fair": "2,48",
+    "example": "À 2,73 ou plus, tu joues. À 2,58, tu ne joues pas.",
+    "wm": "2,70",
+    "wm_ok": false,
+    "wm_edge": 9
+   }
+  ],
+  "bestD": [
+   {
+    "player": "Charlie McAvoy",
+    "team": "BOS",
+    "game": "Chicago à Boston",
+    "time": "18h00",
+    "chance": "14 %",
+    "min": "7,92",
+    "fair": "7,19",
+    "example": "À 7,92 ou plus, tu joues. À 7,42, tu ne joues pas.",
+    "wm": "5,75",
+    "wm_ok": false,
+    "wm_edge": -20,
+    "best": false
+   },
+   {
+    "player": "Philip Broberg",
+    "team": "STL",
+    "game": "St. Louis à Detroit",
+    "time": "18h00",
+    "chance": "12 %",
+    "min": "8,88",
+    "fair": "8,06",
+    "example": "À 8,88 ou plus, tu joues. À 8,38, tu ne joues pas.",
+    "wm": "7,00",
+    "wm_ok": false,
+    "wm_edge": -13,
+    "best": false
+   },
+   {
+    "player": "John Carlson",
+    "team": "TBL",
+    "game": "Tampa Bay à Nashville",
+    "time": "19h00",
+    "chance": "14 %",
+    "min": "7,59",
+    "fair": "6,90",
+    "example": "À 7,59 ou plus, tu joues. À 7,09, tu ne joues pas.",
+    "wm": "6,75",
+    "wm_ok": false,
+    "wm_edge": -2,
+    "best": false
+   },
+   {
+    "player": "Matthew Schaefer",
+    "team": "NYI",
+    "game": "Edmonton à Islanders",
+    "time": "19h00",
+    "chance": "27 %",
+    "min": "4,05",
+    "fair": "3,68",
+    "example": "À 4,05 ou plus, tu joues. À 3,55, tu ne joues pas.",
+    "wm": "4,35",
+    "wm_ok": true,
+    "wm_edge": 18,
+    "best": true
+   },
+   {
+    "player": "Rasmus Dahlin",
+    "team": "BUF",
+    "game": "Buffalo à Los Angeles",
+    "time": "21h00",
+    "chance": "17 %",
+    "min": "6,59",
+    "fair": "5,99",
+    "example": "À 6,59 ou plus, tu joues. À 6,09, tu ne joues pas.",
+    "wm": "5,00",
+    "wm_ok": false,
+    "wm_edge": -16,
+    "best": false
+   },
+   {
+    "player": "Jake Sanderson",
+    "team": "OTT",
+    "game": "Ottawa à San José",
+    "time": "21h00",
+    "chance": "15 %",
+    "min": "7,24",
+    "fair": "6,58",
+    "example": "À 7,24 ou plus, tu joues. À 6,74, tu ne joues pas.",
+    "wm": "6,00",
+    "wm_ok": false,
+    "wm_edge": -9,
+    "best": false
+   },
+   {
+    "player": "Noah Dobson",
+    "team": "MTL",
+    "game": "Pittsburgh à Montréal",
+    "time": "00h00",
+    "chance": "13 %",
+    "min": "8,47",
+    "fair": "7,69",
+    "example": "À 8,47 ou plus, tu joues. À 7,97, tu ne joues pas.",
+    "wm": "7,00",
+    "wm_ok": false,
+    "wm_edge": -9,
+    "best": false
+   },
+   {
+    "player": "Darren Raddysh",
+    "team": "TOR",
+    "game": "Toronto à Vancouver",
+    "time": "00h00",
+    "chance": "13 %",
+    "min": "8,34",
+    "fair": "7,58",
+    "example": "À 8,34 ou plus, tu joues. À 7,84, tu ne joues pas.",
+    "wm": "5,50",
+    "wm_ok": false,
+    "wm_edge": -27,
+    "best": false
+   },
+   {
+    "player": "Zach Werenski",
+    "team": "CBJ",
+    "game": "Columbus à Dallas",
+    "time": "01h00",
+    "chance": "14 %",
+    "min": "7,86",
+    "fair": "7,14",
+    "example": "À 7,86 ou plus, tu joues. À 7,36, tu ne joues pas.",
+    "wm": "4,85",
+    "wm_ok": false,
+    "wm_edge": -32,
+    "best": false
+   },
+   {
+    "player": "Cale Makar",
+    "team": "COL",
+    "game": "Calgary à Colorado",
+    "time": "03h00",
+    "chance": "21 %",
+    "min": "5,29",
+    "fair": "4,81",
+    "example": "À 5,29 ou plus, tu joues. À 4,79, tu ne joues pas.",
+    "wm": "3,65",
+    "wm_ok": false,
+    "wm_edge": -24,
+    "best": false
+   }
+  ],
+  "point": [
+   {
+    "player": "Connor McDavid",
+    "form": "27 pts, point dans 10/10",
+    "team": "EDM",
+    "game": "Edmonton à Islanders",
+    "time": "19h00",
+    "wm": "1,17",
+    "wm_ok": false,
+    "wm_level": "no"
+   },
+   {
+    "player": "Leon Draisaitl",
+    "form": "19 pts, point dans 8/10",
+    "team": "EDM",
+    "game": "Edmonton à Islanders",
+    "time": "19h00",
+    "wm": "1,24",
+    "wm_ok": false,
+    "wm_level": "no"
+   },
+   {
+    "player": "Auston Matthews",
+    "form": "17 pts, point dans 8/10",
+    "team": "TOR",
+    "game": "Toronto à Vancouver",
+    "time": "00h00",
+    "wm": "1,22",
+    "wm_ok": false,
+    "wm_level": "no"
+   }
+  ],
+  "totals": [
+   {
+    "game": "Toronto à Vancouver",
+    "time": "00h00",
+    "line": "6,5",
+    "book": "6,7",
+    "model": "5,7",
+    "open": true
+   },
+   {
+    "game": "Pittsburgh à Montréal",
+    "time": "00h00",
+    "line": "6,5",
+    "book": "6,7",
+    "model": "6,1",
+    "open": false
+   },
+   {
+    "game": "Calgary à Colorado",
+    "time": "03h00",
+    "line": "6,5",
+    "book": "6,6",
+    "model": "6,1",
+    "open": false
+   },
+   {
+    "game": "Ottawa à San José",
+    "time": "21h00",
+    "line": "6,5",
+    "book": "6,5",
+    "model": "6,3",
+    "open": false
+   },
+   {
+    "game": "Edmonton à Islanders",
+    "time": "19h00",
+    "line": "6,0",
+    "book": "6,3",
+    "model": "5,8",
+    "open": false
+   },
+   {
+    "game": "Tampa Bay à Nashville",
+    "time": "19h00",
+    "line": "6,0",
+    "book": "6,2",
+    "model": "5,9",
+    "open": false
+   },
+   {
+    "game": "Chicago à Boston",
+    "time": "18h00",
+    "line": "6,0",
+    "book": "6,2",
+    "model": "5,9",
+    "open": false
+   },
+   {
+    "game": "Buffalo à Los Angeles",
+    "time": "21h00",
+    "line": "6,0",
+    "book": "6,2",
+    "model": "5,9",
+    "open": false
+   },
+   {
+    "game": "St. Louis à Detroit",
+    "time": "18h00",
+    "line": "6,0",
+    "book": "6,0",
+    "model": "5,4",
+    "open": false
+   },
+   {
+    "game": "Columbus à Dallas",
+    "time": "01h00",
+    "line": "5,5",
+    "book": "5,8",
+    "model": "5,5",
+    "open": false
+   }
+  ],
+  "goalies": [
+   {
+    "team": "Chicago",
+    "name": "Arvid Soderblom",
+    "confirmed": false
+   },
+   {
+    "team": "Boston",
+    "name": "Jeremy Swayman",
+    "confirmed": false
+   },
+   {
+    "team": "St. Louis",
+    "name": "Joel Hofer",
+    "confirmed": false
+   },
+   {
+    "team": "Detroit",
+    "name": "John Gibson",
+    "confirmed": true
+   },
+   {
+    "team": "Tampa Bay",
+    "name": "Andrei Vasilevskiy",
+    "confirmed": false
+   },
+   {
+    "team": "Nashville",
+    "name": "Justus Annunen",
+    "confirmed": false
+   },
+   {
+    "team": "Edmonton",
+    "name": "Tristan Jarry",
+    "confirmed": true
+   },
+   {
+    "team": "Islanders",
+    "name": "Ilya Sorokin",
+    "confirmed": false
+   },
+   {
+    "team": "Buffalo",
+    "name": "Ukko-Pekka Luukkonen",
+    "confirmed": false
+   },
+   {
+    "team": "Los Angeles",
+    "name": "Anton Forsberg",
+    "confirmed": false
+   },
+   {
+    "team": "Ottawa",
+    "name": "Samuel Ersson",
+    "confirmed": false
+   },
+   {
+    "team": "San José",
+    "name": "Yaroslav Askarov",
+    "confirmed": false
+   },
+   {
+    "team": "Pittsburgh",
+    "name": "Sergei Murashov",
+    "confirmed": false
+   },
+   {
+    "team": "Montréal",
+    "name": "Jacob Fowler",
+    "confirmed": false
+   },
+   {
+    "team": "Toronto",
+    "name": "Anthony Stolarz",
+    "confirmed": true
+   },
+   {
+    "team": "Vancouver",
+    "name": "Kevin Lankinen",
+    "confirmed": false
+   },
+   {
+    "team": "Columbus",
+    "name": "Jet Greaves",
+    "confirmed": false
+   },
+   {
+    "team": "Dallas",
+    "name": "Jake Oettinger",
+    "confirmed": false
+   },
+   {
+    "team": "Calgary",
+    "name": "Dustin Wolf",
+    "confirmed": false
+   },
+   {
+    "team": "Colorado",
+    "name": "Mackenzie Blackwood",
+    "confirmed": false
+   }
+  ],
   "info": [
    {
-    "title": "🌙 **TA RÈGLE TAB — LES D À JOUER**",
+    "title": "📋 **BILAN D'HIER (vendredi 30/10, NHL)**",
     "lines": [
-     "Deux équipes sortent d'une séance de tirs au but :",
-     "**Ilves** (TAB hier contre Tappara, 1-1 à la fin du temps réglementaire), reçoit KalPa.",
-     "👉 **Le D à jouer : Tony Sund (cote 7,50)**",
-     "Pourquoi : c'est le D d'Ilves qui tire le plus. 16 tirs cadrés sur ses 5 derniers matchs (2, 7, 1, 2, 4), dont 4 cadrés sur 5 tentatives hier. Forme : 0 but, 1 point sur 5. Saison : 3 buts, 9 passes. Bonus : Winamax le paie mieux que les autres sites (7,50 contre 5,97 ailleurs).",
-     "2e D : **Austin Strand (4,75)**. 12 cadrés sur 5 matchs et 34 tentatives, le plus gros volume de l'équipe. 5 buts cette saison, mais 0 but et 1 point sur ses 5 derniers.",
-     "**Jukurit** (TAB le 28/10 contre Lukko), joue à Kärpät.",
-     "👉 **Le D à jouer : Andrej Sustr (cote 8,50)**",
-     "Pourquoi : 14 cadrés sur 5 matchs (6, 0, 0, 3, 5), dont 5 cadrés sur 7 tentatives au dernier match. Il joue 23,6 minutes par match, le plus de l'équipe. Forme : 1 but, 2 points sur 5. Saison : 1 but, 16 passes. Il a marqué le 28/10, justement le soir du TAB.",
-     "2e D : **Alex Lintuniemi (6,25)**. 8 cadrés sur 5 matchs, 0 but et 1 point. 3 buts cette saison.",
-     "Attention : Sustr est un passeur plus qu'un buteur. Les autres sites le voient plutôt à 11,93.",
-     "Ta règle jusqu'ici : 4 fois sur 6, un D de l'équipe a marqué. Hier c'était Välilä pour Lukko (7,50).",
-     "Mon modèle donne 44 % de chances qu'un D d'Ilves marque, et 33 % pour Jukurit.",
-     "ℹ️ Tappara (TAB hier) rejoue demain, 01/11 à 14h00 Paris, contre HPK."
+     "Scores : NJD 5-2 VGK, FLA 5-2 WPG, CGY 6-2 SEA. Les 3 matchs se sont finis dans le temps réglementaire : pas de TAB NHL.",
+     "💰 ✅ **Connor à 2,80** : 1 but, 2 tirs cadrés, 4 tentatives (+1,80 €).",
+     "🟡 ✅ **Reinhart à 2,60** (1 but, 1 passe, 4 cadrés) et ✅ **Strome à 5,50**. Scheifele ❌ (1 passe). Total : **+5,10 €**.",
+     "🔥 Verhaeghe ❌ (1 passe), Bratt ❌ (1 passe, 0 tir), Beniers ❌ (0 point). Total : −3,00 €.",
+     "⭐ Reinhart ✅, J. Hughes ✅ (2 buts dont 1 cage vide, 7 cadrés), B. Tkachuk ❌ (6 cadrés, 0 point). Total : **+2,30 €**.",
+     "🛡️ D à suivre (info) : L. Hughes ✅ à 5,50, Seth Jones ✅ à 5,50 (1 but, 2 passes). Montour, Parekh, Nemec ❌. Soit +6,00 € si tu les avais joués.",
+     "Pas de cote point NHL hier, donc pas de couverture.",
+     "📊 Depuis le début (1 € par pari) : 💰 7 sur 15, **+17,85 €** ; 🟡 4 sur 11, +9,60 € ; 🔥 4 sur 21, −6,55 € ; ⭐ 2 sur 6, −0,70 €. NHL +12,95 €, Liiga +12,25 €."
     ]
    },
    {
-    "title": "💰 **LES VALUES (1 € buteur chacun)**",
+    "title": "🌙 **TA RÈGLE TAB — LES D À JOUER (Liiga, 16h00)**",
     "lines": [
-     "1. **Juuso Arola (JYP, D)** contre Jokerit. **Cote 10,00**, minimum 9,32, **+18 %**. C'est **la meilleure du jour** : les autres sites sont d'accord, avec une cote juste à 8,58.",
-     "Pourquoi : 4 points sur ses 5 derniers matchs (0 but). 11 cadrés (1, 4, 2, 2, 2) et 21 tentatives, dont 4 tentatives hier. Il joue à domicile, en 2e paire, 19,7 minutes. En face, Jokerit a 3 blessés (Pitkänen, Juolevi, Turunen) et le pire box-play des 6 matchs (75,5 %).",
-     "2. **Alexander Ruuttu (KooKoo)** contre HIFK. **Cote 5,75**, minimum 4,91, **+29 %**.",
-     "Pourquoi : il est revenu il y a 2 matchs : 4 cadrés, et 6 tentatives (3 cadrées) hier. 0 point pour l'instant. Attention : 2 matchs seulement, donc le modèle s'appuie surtout sur son profil de tireur. Les autres sites sont bien plus bas (cote juste 8,38). Value la plus fragile.",
-     "3. **Sampo Ranta (HIFK)** à KooKoo. **Cote 5,50**, minimum 5,21, **+16 %**.",
-     "Pourquoi : il tire beaucoup, 24 tentatives et 10 cadrés sur 5 matchs (2, 4, 1, 3, 0). Mais 0 but en 7 matchs et 1 point sur 5. KooKoo est la défense qui laisse le plus d'occasions des 6 matchs, et son box-play est le pire (68 %). Les autres sites : 6,93.",
-     "4. **Pekka Jormakka (Jukurit)** à Kärpät. **Cote 6,50**, minimum 6,36, **+12 %** (de peu).",
-     "Pourquoi : 14 cadrés sur 5 matchs, dont 7 dans un même match, mais 0 au dernier. 0 point en 9 matchs cette saison. Les autres sites : 8,93. C'est le plus limite des 4.",
-     "❌ Écarté : Engberg (Ilves, 7,50, +15 % sur le papier). Seulement 3 cadrés sur 5 matchs, et 0 tentative hier : il ne tire pas."
+     "Pas de TAB NHL hier. En Liiga, ça ne change pas depuis ce matin :",
+     "**Ilves** (TAB hier), reçoit KalPa.",
+     "👉 **Le D à jouer : Tony Sund (cote 7,50)**. 16 tirs cadrés sur 5 matchs, 5 tentatives hier. Forme : 0 but, 1 point. 🎯 Point 2,15 : 1,00 € + 1,00 €.",
+     "2e D : **Austin Strand (4,75)**. 12 cadrés sur 5. Forme : 0 but, 1 point. Point 2,15.",
+     "**Jukurit** (TAB le 28/10), à Kärpät.",
+     "👉 **Le D à jouer : Andrej Sustr (cote 16,00, c'était 8,50 ce matin)**. 14 cadrés sur 5, 7 tentatives au dernier match. Forme : 1 but, 2 points. 🎯 Point 1,82 : 0,90 € buteur + 1,10 € point.",
+     "2e D : **Alex Lintuniemi (6,25)**. 8 cadrés sur 5. Forme : 0 but, 1 point. Pas de cote point."
     ]
    },
    {
-    "title": "⭐ **LES PLUS PROBABLES (1 € buteur, suivi à part)**",
+    "title": "🇺🇸 **NHL CETTE NUIT**",
     "lines": [
-     "1. **Valtteri Ojantakanen (JYP)** contre Jokerit : **37 %**, cote 2,75 (minimum 2,97). En feu : 5 buts et 7 points sur 5 matchs, 17 cadrés (4, 1, 4, 5, 3), 3 cadrés hier. Il a mis un triplé hier.",
-     "2. **Veeti Miettinen (KooKoo)** contre HIFK : **34 %**, cote 2,70 (minimum 3,22). 4 buts et 7 points sur 5, 14 cadrés, 29 tentatives (4 hier). 1re ligne.",
-     "3. **Daniel Mäkiaho (HIFK)** à KooKoo : **33 %**, cote 2,70 (minimum 3,35). 2 buts et 7 points sur 5, 12 cadrés, 9 tentatives hier. 11 buts cette saison.",
-     "Les trois sont sous leur cote minimum : ce sont des « probables », pas des values."
+     "Matchs : CHI@BOS 18h00, STL@DET 18h00, TBL@NSH 19h00, EDM@NYI 19h00, BUF@LAK 21h00, OTT@SJS 21h00, PIT@MTL 00h00, TOR@VAN 00h00, CBJ@DAL 01h00, CGY@COL 03h00.",
+     "💰 **Les values du soir (NHL)**",
+     "1. **Adam Gaudette (SJS)**, contre OTT (son ancien club), 21h00. 4e ligne et PP2. Chance 17,7 %. Winamax **7,00**, minimum 6,21 ✅ (+24 %). Attention, forme faible : 0 point en 3 matchs, 4 cadrés, 1 tentative au dernier match.",
+     "🎯 1,50 € buteur + 0,50 € point (4,10). But : +10,55 €. Passe seulement : +0,05 €.",
+     "2. **Casey Mittelstadt (BOS)**, contre CHI, 18h00. 3e ligne et PP2. Chance 19,7 %. Winamax **5,75**, minimum 5,58 ✅ (+13 %). Forme : 2 buts, 5 points sur 5. Tirs : 6 cadrés sur 5, 0 tentative au dernier match.",
+     "🎯 1,10 € + 0,90 € point (2,25). But : +6,35 €. Passe seulement : +0,02 €.",
+     "3. **Denton Mateychuk (CBJ, D)**, à DAL, 01h00. 2e paire, passe au PP2. Chance 11,1 %. Winamax **10,00**, minimum 9,91 ✅ (+11 %). Forme : 3 buts sur 5. Tirs : 9 cadrés sur 5, 2 tentatives au dernier. Pas de cote point : 1 € sur le but.",
+     "🟡 **Limite (NHL)**",
+     "• Backlund (CGY, 1re ligne) 7,00 pour 7,20 mini. Forme : 1 but, 2 points, 7 cadrés, 3 tentatives. Pas de cote point : 1 €.",
+     "• Sherwood (SJS) 5,00 pour 5,65 mini. Forme : 1 but, 5 points, **16 cadrés**, 5 tentatives. 🎯 1,10 € + 0,90 € (2,35).",
+     "• Hagel (TBL) 2,70 pour 2,75 mini. Chance 40 %. Forme : 2 buts, 6 points, **22 cadrés (le plus gros tireur de la nuit)**, 6 tentatives. 🎯 0,60 € + 1,40 € (1,50).",
+     "⭐ **Les plus probables NHL (1 € sur le but, même sous le minimum)**",
+     "• **Draisaitl (EDM)** 2,15 (chance 44 %, mini 2,48). Forme : **6 buts, 10 points sur 5**, 20 cadrés, 6 tentatives.",
+     "• **Celebrini (SJS)** 2,40 (44 %, mini 2,51). Forme : 2 buts, 5 points, 19 cadrés, 6 tentatives.",
+     "• **Caufield (MTL)** 2,15 (43 %, mini 2,55). Forme : 3 buts, 6 points, 13 cadrés, 5 tentatives. Point à 1,40 : couverture possible (0,50 € + 1,50 €).",
+     "🔥 **Ce qui me fait dire (NHL)**",
+     "1. **Matthew Schaefer (NYI, D)**, contre EDM, 19h00. 1re paire et PP1, à domicile. Forme : **4 buts, 7 points sur 5**. Tirs : **19 cadrés sur 5 (le D qui tire le plus ce soir)**, 6 tentatives au dernier. Chance 27 %. Winamax 4,35 pour 5,60 mini (règle D). Les autres sites : 4,25.",
+     "🎯 0,70 € + 1,30 € point (1,56). But : +3,07 €. Passe seulement : +0,03 €.",
+     "2. **Alex Laferriere (LAK)**, contre BUF, 21h00. 1re ligne et PP1. Forme : 0 but, 3 points. Tirs : 16 cadrés, **8 tentatives au dernier match**. Chance 32 %. 3,75 (mini « non-star » 7,20, mini simple 3,45).",
+     "🎯 0,80 € + 1,20 € point (1,68).",
+     "Rappel : le bloc 🔥 est de l'info. 1 €, ou 2 € avec la couverture.",
+     "🔥 **Les plus en forme / qui tirent le plus (5 derniers matchs)**",
+     "• CHI@BOS : Pastrnak 3 b / 6 pts, 12 cadrés (2,35). Bedard 12 cadrés (3,25).",
+     "• STL@DET : Arvidsson 5 b / 9 pts (3,10). Raymond 4 b / 8 pts (3,25). DeBrincat 18 cadrés (2,65).",
+     "• TBL@NSH : Forsberg 4 b / 7 pts (3,10). Hagel 22 cadrés (2,70). Kucherov et Guentzel 17 cadrés.",
+     "• EDM@NYI : McDavid 13 pts (2,35). Draisaitl 6 b, 20 cadrés (2,15). Schaefer 19 cadrés (4,35).",
+     "• BUF@LAK : Thompson 4 b / 7 pts, 18 cadrés (2,75). Panarin 4 b, 8 tentatives (3,00). Kempe 18 cadrés (2,85).",
+     "• OTT@SJS : Batherson 4 b / 10 pts (2,75). Stützle 7 pts (2,75). Celebrini 19 cadrés (2,40).",
+     "• PIT@MTL : Malkin 3 b / 6 pts (3,50). Caufield 3 b / 6 pts (2,15). Rakell 14 cadrés (3,10).",
+     "• TOR@VAN : Roslovic 9 pts, passe au PP1 (3,10). Matthews 3 b, 14 cadrés (2,10). Nylander 4 b (2,45).",
+     "• CBJ@DAL : Rantanen 4 b / 8 pts (3,00). J. Robertson 17 cadrés (2,50). Werenski 17 cadrés (D, 4,85).",
+     "• CGY@COL : Farabee 4 b / 9 pts (4,35). Gridin 4 b, 17 cadrés (4,35). Makar 17 cadrés (D, 3,65).",
+     "🛡️ **D à suivre (classés par tirs, puis la cote)**",
+     "• EDM@NYI : **Schaefer** 19 cadrés, 4 b / 7 pts, 4,35 (point 1,56). Puis Bouchard 12 cadrés, 6 pts, 4,35 (point 1,27).",
+     "• STL@DET : **Broberg** 17 cadrés, 2 b / 5 pts, 7,00 (point 2,00). Puis Seider 11 cadrés, 5 tentatives, 5,75.",
+     "• BUF@LAK : **Dahlin** 17 cadrés, 1 b / 4 pts, 5,00 (point 1,62). Puis Power 10 cadrés, 8,00.",
+     "• CBJ@DAL : **Werenski** 17 cadrés, 4 pts, 4,85 (point 1,46). Puis Heiskanen 12 cadrés, 7,00 ; Mateychuk (💰) 10,00.",
+     "• CGY@COL : **Makar** 17 cadrés, 7 tentatives, 3,65 (point 1,36). Puis Parekh 11 cadrés, 10,00.",
+     "• TBL@NSH : **Josi** 16 cadrés, 6 pts, 5,75 (point 1,60). Puis Carlson 12 cadrés, 2 b, 6,75.",
+     "• OTT@SJS : **Sanderson** 13 cadrés, 6 pts, 6,00 (point 1,68). Puis Kleven 10 cadrés, 15,00.",
+     "• PIT@MTL : **Dobson** 13 cadrés, 7,00 (point 1,86). Puis Letang 9 cadrés, 11,00.",
+     "• TOR@VAN : **Stecher** 11 cadrés, 2 b / 4 pts, 12,00. Puis Raddysh 5,50 (point 1,48).",
+     "• CHI@BOS : **Lindholm** 9 cadrés, 9,00. Puis McAvoy 7 cadrés, 7 tentatives, 4 pts, 5,75 (point 1,49).",
+     "Seul Mateychuk est une value. Les autres sont à toi de décider.",
+     "⭐ **Stars sous leur minimum ❌** : MacKinnon 2,00 (2,55), Matthews 2,10 (2,89), Nylander 2,45 (2,70), J. Robertson 2,50 (2,87), DeBrincat 2,65 (2,86), Thompson 2,75 (2,96), Kempe 2,85 (2,89).",
+     "🌍 **Winamax vs les autres sites (NHL)** : Winamax paie en moyenne **15 % de moins** que le marché (578 cotes buteur). Proches du marché ce soir : Mateychuk 10,00 (10,18 ailleurs), Gaudette 7,00 (7,65), Mittelstadt 5,75 (6,25).",
+     "📈 **Match à buts (consensus, prolongation comprise)** : 1. **TOR@VAN 6,7 buts**, le plus ouvert (mon modèle : 5,7). 2. PIT@MTL 6,65. 3. CGY@COL 6,6. 4. OTT@SJS 6,55.",
+     "🥅 **Gardiens (5 derniers)** : seuls Gibson (DET), Jarry (EDM) et Stolarz (TOR) sont confirmés.",
+     "Méforme : Lankinen (VAN) .804, Soderblom (CHI) .845, Ersson (OTT) .845, Vasilevskiy (TBL) .866, Wolf (CGY) .870 (il a joué hier : Calgary peut changer). En forme : Fowler (MTL) .944, Askarov (SJS) .927, Hofer (STL) .924.",
+     "🔄 **Changements de ligne** : TOR : McKenna monte en 1re ligne, Roslovic passe au PP1. TBL : Guentzel monte en L1, Hedman revient. CBJ : Fantilli et Knies passent au PP1, Mateychuk au PP2. LAK : Perry et Doughty reviennent. CGY : Gridin et Strome montent en L2, Parekh descend en 3e paire. EDM : Kapanen passe au PP1.",
+     "🩹 **Absents et retours** : Larkin et Edvinsson (DET) absents, Hyman (EDM) blessé, Tavares (TOR) absent, Demko (VAN) blessé. Tanev (TOR) peut revenir après 9 matchs. Parayko, Pulock et Perron incertains.",
+     "🔁 **Les ex** : Gaudette (SJS) contre OTT, Berggren (STL) contre DET, Faulk (DET) contre STL, Perbix (NSH) contre TBL, Joshua et Blueger (TOR) contre VAN, Quillan (VAN) contre TOR, Kadri (COL) contre CGY."
     ]
    },
    {
-    "title": "🔥 **LES PLUS EN FORME / QUI TIRENT LE PLUS**",
+    "title": "💶 **SI TU PRENDS TOUT**",
     "lines": [
-     "(sur les 5 derniers matchs : buts/points, puis tirs cadrés ; « hier » = dernier match)",
-     "**KalPa @ Ilves**",
-     "• Ilves : Henman 4 b / 4 pts, 11 cadrés, 3 tentatives hier, 2,70 ; Korhonen 0 b / 1 pt, 9 cadrés, 4,50. D : Sund 16 cadrés, 7,50.",
-     "• KalPa : Kapanen 2 b / 7 pts, 12 cadrés, 3,50 ; Piitulainen 3 b / 6 pts, 12 cadrés, 5 tentatives hier, 5,00. D : Ruotsalainen 10 cadrés, 6,00.",
-     "• Gardiens : Armalis (Ilves) 94,6 % d'arrêts, Lekkas (KalPa) 88,9 %.",
-     "**Jokerit @ JYP**",
-     "• JYP : Ojantakanen 5 b / 7 pts, 17 cadrés, 2,75 ; True 3 b / 8 pts, 8 cadrés, 4,00. D : Arola 11 cadrés, 10,00.",
-     "• Jokerit : Hännikäinen 2 b / 3 pts, 14 cadrés, 4,75 ; Curry 2 b / 3 pts, 14 cadrés et 28 tentatives, mais 0 cadré hier, 3,55. D : Caito 13 cadrés, 7,50.",
-     "**HIFK @ KooKoo**",
-     "• KooKoo : Miettinen 4 b / 7 pts, 14 cadrés, 2,70 ; Meskanen 3 b / 4 pts, 11 cadrés, 3,20. D : Puhakka 11 cadrés, dont 5 hier sur 8 tentatives, 11,00.",
-     "• HIFK : Pakarinen 4 b / 7 pts, 12 cadrés, 2,90 ; Mäkiaho 2 b / 7 pts, 12 cadrés, 9 tentatives hier, 2,70. D : Melart 1 b, 7 cadrés, 10,00 (il a marqué hier).",
-     "**Jukurit @ Kärpät**",
-     "• Kärpät : Erholtz 2 b / 3 pts, 12 cadrés, 3,80 ; Hirvonen 1 b / 2 pts, 11 cadrés, 3,20. D : Matinmikko 14 cadrés, 6,50.",
-     "• Jukurit : Olofsson 2 b / 4 pts, 14 cadrés et 31 tentatives, 3,25 ; Hayhurst 0 b / 3 pts, 11 cadrés, 7 tentatives au dernier match, 3,70. D : Sustr 14 cadrés, 8,50.",
-     "• Kärpät sans Rissanen (suspendu).",
-     "**K-Espoo @ Pelicans** (cotes pas encore sorties)",
-     "• Pelicans : Lind 3 b / 6 pts, 7 cadrés ; Dudas 0 b / 4 pts, 10 cadrés, 28 tentatives (chance 28 %). D : Nutivaara 1 b, 11 cadrés.",
-     "• K-Espoo : King 3 b / 5 pts, 16 cadrés, 4 cadrés hier (doublé hier) ; Öberg 3 b / 5 pts, 12 cadrés. D : Corcoran 0 b / 4 pts, 14 cadrés.",
-     "**Ässät @ Sport** (cotes pas encore sorties)",
-     "• Sport : Nieminen 2 b / 2 pts, 12 cadrés, 4 cadrés hier ; Palve 1 b / 4 pts, 8 cadrés. D : Viljanen 8 cadrés.",
-     "• Ässät : Kostilainen 1 b / 3 pts, 7 cadrés ; Hillis 0 b / 3 pts, 5 cadrés (chance 22,5 %). D : Nikkilä 10 cadrés, 4 hier.",
-     "• Ässät a 6 absents (Noiva, Heinilä, Boelius, Karjalainen, Klingberg, Knihti)."
-    ]
-   },
-   {
-    "title": "🛡️ **MEILLEUR D PAR MATCH** (plus grosse chance selon le modèle)",
-    "lines": [
-     "• KalPa @ Ilves : **Strand** 17 %, 4,75 pour 6,51 minimum. Non. (Le plus gros tireur : Sund.)",
-     "• Jokerit @ JYP : **Caito** 12,6 %, 7,50 pour 8,73. Non. Arola (11,8 %) est la value.",
-     "• HIFK @ KooKoo : **Pelli** 10,9 %, 7,00 pour 10,09. Non. (Le plus gros tireur : Puhakka, 11,00.)",
-     "• Jukurit @ Kärpät : **Matinmikko** 12,8 %, 6,50 pour 8,59. Non. 14 cadrés sur 5 matchs.",
-     "• K-Espoo @ Pelicans : **Nutivaara** 14,6 %, minimum 7,53. Cote pas encore sortie.",
-     "• Ässät @ Sport : **Åkerström** 10,7 %, minimum 10,28. Cote pas encore sortie."
-    ]
-   },
-   {
-    "title": "🟡 **LIMITE (positif mais petit, 1 €)**",
-    "lines": [
-     "• **Ojantakanen (JYP)** 2,75 pour 2,97 minimum (+2 %) : déjà joué en ⭐, pas de 2e mise. Les autres sites le voient moins haut (3,91).",
-     "• **Patrick Curry (Jokerit)** 3,55, minimum 3,85 (+1,5 %). 2 b / 3 pts sur 5, 14 cadrés, 28 tentatives : le plus gros volume de Jokerit, mais 0 cadré hier.",
-     "Aussi à +7 % : Olsen (Jukurit, 5,50), mais 0 but sur 5 et 8 cadrés seulement. Je ne le joue pas."
-    ]
-   },
-   {
-    "title": "🔥 **CE QUI ME FAIT DIRE**",
-    "lines": [
-     "• **Jacob Hayhurst (Jukurit)** à Kärpät, **3,70** (minimum 4,42, −8 %). 0 but sur 5 malgré 11 cadrés et 7 tentatives au dernier match. 5 buts et 11 passes cette saison, 1re ligne.",
-     "🎯 Couverture point : pas encore de cote. Il faudrait au moins 3,28 sur « 1 point ou plus ».",
-     "• **Carter King (K-Espoo)** à Pelicans : **seulement si la cote sort à 5,45 ou plus**. Doublé hier, 3 b / 5 pts sur 5 et 16 cadrés, le plus gros tireur du match.",
-     "🎯 Couverture point : à voir quand la cote sort (minimum 2,35)."
-    ]
-   },
-   {
-    "title": "📋 **BILAN LIIGA D'HIER (30/10)**",
-    "lines": [
-     "✅ Carter King, doublé (5,00) ; ✅ Ojantakanen, triplé (3,50) ; ✅ Borchardt (5,00).",
-     "❌ Kramer, Kangasniemi, Curry, Kalapudas, Beaucage, Miettinen, Sund.",
-     "• Paris à 1 € (💰 🟡 🔥) : **+3,50 €** sur 10 € (💰 +3,50, 🟡 +2,00, 🔥 −2,00).",
-     "• Version couverte à 2 € : +1,34 € sur 19 €.",
-     "• ⭐ (Beaucage, Fortier, Siikanen) : 0 sur 3, −3 €.",
-     "• 🛡️ Meilleurs D : 0 sur 7. Välilä et Melart ont marqué, mais aucun des deux n'était « meilleur D ».",
-     "• 🌙 Lukko : ✅ ta règle a marché (Välilä a marqué), mais j'avais mis Seppälä en tête ❌ (−1 €). Leçon appliquée aujourd'hui : on classe par tirs, pas par cote.",
-     "📊 Liiga depuis le début (1 €) : 💰 4 sur 10, **+11,75 €** ; 🟡 2 sur 6, +6,50 € ; 🔥 1 sur 5, −2,00 €."
+     "• Liiga : 🌙 Sund 2 €, Sustr 2 € ; 💰 6 × 2 € = 12 € ; ⭐ 3 € ; 🔥 Hayhurst 2 €. Total **21 €**.",
+     "• NHL : 💰 Gaudette 2 €, Mittelstadt 2 €, Mateychuk 1 € ; 🟡 Backlund 1 €, Sherwood 2 €, Hagel 2 € ; ⭐ 3 € ; 🔥 Schaefer 2 €, Laferriere 2 €. Total **17 €**.",
+     "• Tout : **38 €**. C'est beaucoup : si tu veux réduire, garde 🌙 + 💰.",
+     "• En simple, jamais de combiné. Ne joue que si la cote est au-dessus du minimum au moment du pari. Ne monte jamais la mise après une perte.",
+     "🍀 Même une vraie value à 20 % perd environ 4 soirs sur 5.",
+     "📌 **Les règles du jour** : a) 1 € par pari, 2 € avec couverture point. b) Couverture seulement si la cote point est ≥ 1,40. c) Mise point = 2 ÷ cote point, arrondi au 0,10 supérieur. d) Value = au moins +10 % au-dessus du minimum. e) D classés par tirs, jamais par la cote. f) Forme et tirs montrés pour chaque joueur. g) La cote n'est qu'une info parmi d'autres. h) TAB : les 2 D qui tirent le plus. i) ⭐ = 3 plus probables par ligue, 1 € sur le but. j) 🔥 = info, 1 € max (2 € couvert). k) Pas de martingale.",
+     "Sources : liiga.fi, NHL.com, MoneyPuck, Daily Faceoff, Kambi/Bovada, cotes Winamax publiques.",
+     "📱 Appli mise à jour https://contactstorewg-sketch.github.io/ms-bgtulmxaa8sx1er4/buteurs/"
     ]
    }
   ],
@@ -151,34 +611,57 @@
      "why": "attaquant, ligne 3",
      "signals": "2,0 tirs/match · 14,0 min de jeu · 0 buts 0 passes en 2 matchs",
      "cover_point": {
-      "odds": null,
+      "odds": "2,50",
       "min": "3,74",
-      "ok": false,
-      "note": "0 points sur 2 derniers matchs · pas encore de cote point Winamax",
-      "mise": null,
+      "ok": true,
+      "note": "0 points sur 2 derniers matchs",
+      "mise": "1,20 € buteur + 0,80 € point",
       "outcomes": null
      }
     },
     {
-     "player": "Juuso Arola",
-     "team": "JYP",
-     "pos": "D",
+     "player": "Patrick Curry",
+     "team": "Jokerit",
+     "pos": "F",
      "game": "Jokerit à JYP",
      "time": "16h00",
-     "chance": "12 %",
-     "one_in": 8,
-     "min": "9,32",
-     "fair": "8,47",
-     "wm": "10,00",
-     "edge": 18,
-     "why": "défenseur, ligne 2",
-     "signals": "2,0 tirs/match · 19,7 min de jeu · 1 buts 8 passes en 16 matchs",
+     "chance": "29 %",
+     "one_in": 3,
+     "min": "3,85",
+     "fair": "3,50",
+     "wm": "4,00",
+     "edge": 27,
+     "why": "attaquant, ligne 3",
+     "signals": "2,9 tirs/match · 18,0 min de jeu · 2 buts 6 passes en 17 matchs",
      "cover_point": {
-      "odds": null,
-      "min": "3,21",
-      "ok": false,
-      "note": "5 points sur 10 derniers matchs · pas encore de cote point Winamax",
-      "mise": null,
+      "odds": "1,80",
+      "min": "3,70",
+      "ok": true,
+      "note": "3 points sur 10 derniers matchs",
+      "mise": "0,80 € buteur + 1,20 € point",
+      "outcomes": null
+     }
+    },
+    {
+     "player": "Jesper Piitulainen",
+     "team": "KalPa",
+     "pos": "F",
+     "game": "KalPa à Ilves",
+     "time": "16h00",
+     "chance": "18 %",
+     "one_in": 5,
+     "min": "6,01",
+     "fair": "5,46",
+     "wm": "6,50",
+     "edge": 19,
+     "why": "attaquant, ligne 1",
+     "signals": "2,4 tirs/match · 14,0 min de jeu · 3 buts 6 passes en 17 matchs",
+     "cover_point": {
+      "odds": "2,35",
+      "min": "3,74",
+      "ok": true,
+      "note": "0 points sur 2 derniers matchs",
+      "mise": "1,10 € buteur + 0,90 € point",
       "outcomes": null
      }
     },
@@ -193,15 +676,15 @@
      "min": "5,21",
      "fair": "4,74",
      "wm": "5,50",
-     "edge": 16,
+     "edge": 18,
      "why": "attaquant, ligne 2",
      "signals": "1,7 tirs/match · 16,8 min de jeu · 0 buts 2 passes en 7 matchs",
      "cover_point": {
-      "odds": null,
+      "odds": "1,92",
       "min": "3,66",
-      "ok": false,
-      "note": "2 points sur 7 derniers matchs · pas encore de cote point Winamax",
-      "mise": null,
+      "ok": true,
+      "note": "2 points sur 7 derniers matchs",
+      "mise": "0,90 € buteur + 1,10 € point",
       "outcomes": null
      }
     },
@@ -220,11 +703,34 @@
      "why": "attaquant, ligne 3",
      "signals": "2,0 tirs/match · 15,1 min de jeu · 0 buts 0 passes en 9 matchs",
      "cover_point": {
-      "odds": null,
+      "odds": "3,00",
       "min": "6,13",
-      "ok": false,
-      "note": "0 points sur 9 derniers matchs · pas encore de cote point Winamax",
-      "mise": null,
+      "ok": true,
+      "note": "0 points sur 9 derniers matchs",
+      "mise": "1,30 € buteur + 0,70 € point",
+      "outcomes": null
+     }
+    },
+    {
+     "player": "Carter King",
+     "team": "K-Espoo",
+     "pos": "F",
+     "game": "K-Espoo à Pelicans",
+     "time": "16h00",
+     "chance": "20 %",
+     "one_in": 5,
+     "min": "5,45",
+     "fair": "4,95",
+     "wm": "5,50",
+     "edge": 11,
+     "why": "attaquant, ligne 2",
+     "signals": "1,7 tirs/match · 16,3 min de jeu · 5 buts 5 passes en 19 matchs",
+     "cover_point": {
+      "odds": "2,45",
+      "min": "2,35",
+      "ok": true,
+      "note": "8 points sur 10 derniers matchs",
+      "mise": "1,10 € buteur + 0,90 € point",
       "outcomes": null
      }
     }
@@ -252,29 +758,6 @@
       "mise": null,
       "outcomes": null
      }
-    },
-    {
-     "player": "Patrick Curry",
-     "team": "Jokerit",
-     "pos": "F",
-     "game": "Jokerit à JYP",
-     "time": "16h00",
-     "chance": "29 %",
-     "one_in": 3,
-     "min": "3,85",
-     "fair": "3,50",
-     "wm": "3,55",
-     "edge": 2,
-     "why": "attaquant, ligne 3",
-     "signals": "2,9 tirs/match · 18,0 min de jeu · 2 buts 6 passes en 17 matchs",
-     "cover_point": {
-      "odds": null,
-      "min": "3,70",
-      "ok": false,
-      "note": "3 points sur 10 derniers matchs · pas encore de cote point Winamax",
-      "mise": null,
-      "outcomes": null
-     }
     }
    ],
    "feeling": [
@@ -288,16 +771,16 @@
      "one_in": 4,
      "min": "4,42",
      "fair": "4,02",
-     "wm": "3,70",
-     "edge": -8,
+     "wm": "4,00",
+     "edge": 0,
      "why": "attaquant, ligne 1",
      "signals": "2,4 tirs/match · 18,1 min de jeu · 5 buts 11 passes en 19 matchs",
      "cover_point": {
-      "odds": null,
+      "odds": "1,86",
       "min": "3,28",
-      "ok": false,
-      "note": "4 points sur 10 derniers matchs · pas encore de cote point Winamax",
-      "mise": null,
+      "ok": true,
+      "note": "4 points sur 10 derniers matchs",
+      "mise": "0,90 € buteur + 1,10 € point",
       "outcomes": null
      }
     }
@@ -306,7 +789,225 @@
   },
   "hist_nul": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le 5e match après un nul : 19 %. Un peu moins, mais une saison sur 4 dit l'inverse (31 %). Pas fiable : c'est de l'info, pas un pari.",
   "hist_so": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le match juste après des tirs au but : 21 %. Pas d'effet : c'est de l'info, pas un pari.",
-  "after_nul": [],
+  "after_nul": [
+   {
+    "team": "Boston",
+    "opp": "Chicago",
+    "home": true,
+    "time": "18h00",
+    "day": "31/10",
+    "k": 5,
+    "nul": {
+     "date": "21/10",
+     "opp": "Dallas",
+     "home": false,
+     "score": "2-3",
+     "win": false,
+     "kind": "OT"
+    },
+    "between": [
+     {
+      "date": "23/10",
+      "opp": "Nashville",
+      "home": true,
+      "score": "6-0",
+      "win": true
+     },
+     {
+      "date": "25/10",
+      "opp": "San José",
+      "home": true,
+      "score": "6-4",
+      "win": true
+     },
+     {
+      "date": "28/10",
+      "opp": "Caroline",
+      "home": false,
+      "score": "1-2",
+      "win": false
+     },
+     {
+      "date": "30/10",
+      "opp": "St. Louis",
+      "home": false,
+      "score": "1-4",
+      "win": false
+     }
+    ],
+    "bestD": {
+     "player": "Charlie McAvoy",
+     "chance": "14 %",
+     "min": "7,92",
+     "fair": "7,19",
+     "example": "À 7,92 ou plus, tu joues. À 7,42, tu ne joues pas.",
+     "wm": "5,75",
+     "wm_ok": false,
+     "wm_edge": -20
+    }
+   },
+   {
+    "team": "San José",
+    "opp": "Ottawa",
+    "home": true,
+    "time": "21h00",
+    "day": "31/10",
+    "k": 5,
+    "nul": {
+     "date": "21/10",
+     "opp": "Montréal",
+     "home": false,
+     "score": "4-3",
+     "win": true,
+     "kind": "OT"
+    },
+    "between": [
+     {
+      "date": "23/10",
+      "opp": "Ottawa",
+      "home": false,
+      "score": "6-2",
+      "win": true
+     },
+     {
+      "date": "25/10",
+      "opp": "Boston",
+      "home": false,
+      "score": "4-6",
+      "win": false
+     },
+     {
+      "date": "28/10",
+      "opp": "Buffalo",
+      "home": true,
+      "score": "0-2",
+      "win": false
+     },
+     {
+      "date": "30/10",
+      "opp": "Vancouver",
+      "home": true,
+      "score": "3-2",
+      "win": true
+     }
+    ],
+    "bestD": {
+     "player": "Jacob Trouba",
+     "chance": "8 %",
+     "min": "14,11",
+     "fair": "12,82",
+     "example": "À 14,11 ou plus, tu joues. À 13,61, tu ne joues pas.",
+     "wm": "6,00",
+     "wm_ok": false,
+     "wm_edge": -53
+    }
+   },
+   {
+    "team": "Montréal",
+    "opp": "Pittsburgh",
+    "home": true,
+    "time": "00h00",
+    "day": "01/11",
+    "k": 5,
+    "nul": {
+     "date": "21/10",
+     "opp": "San José",
+     "home": true,
+     "score": "3-4",
+     "win": false,
+     "kind": "OT"
+    },
+    "between": [
+     {
+      "date": "24/10",
+      "opp": "Chicago",
+      "home": false,
+      "score": "4-1",
+      "win": true
+     },
+     {
+      "date": "26/10",
+      "opp": "Winnipeg",
+      "home": false,
+      "score": "2-1",
+      "win": true
+     },
+     {
+      "date": "28/10",
+      "opp": "St. Louis",
+      "home": false,
+      "score": "2-0",
+      "win": true
+     },
+     {
+      "date": "30/10",
+      "opp": "Dallas",
+      "home": false,
+      "score": "5-2",
+      "win": true
+     }
+    ],
+    "bestD": {
+     "player": "Noah Dobson",
+     "chance": "13 %",
+     "min": "8,47",
+     "fair": "7,69",
+     "example": "À 8,47 ou plus, tu joues. À 7,97, tu ne joues pas.",
+     "wm": "7,00",
+     "wm_ok": false,
+     "wm_edge": -9
+    }
+   },
+   {
+    "team": "Dallas",
+    "opp": "Columbus",
+    "home": true,
+    "time": "01h00",
+    "day": "01/11",
+    "k": 4,
+    "nul": {
+     "date": "23/10",
+     "opp": "Winnipeg",
+     "home": true,
+     "score": "3-2",
+     "win": true,
+     "kind": "OT"
+    },
+    "between": [
+     {
+      "date": "25/10",
+      "opp": "Islanders",
+      "home": true,
+      "score": "6-3",
+      "win": true
+     },
+     {
+      "date": "28/10",
+      "opp": "New Jersey",
+      "home": true,
+      "score": "1-5",
+      "win": false
+     },
+     {
+      "date": "30/10",
+      "opp": "Montréal",
+      "home": true,
+      "score": "2-5",
+      "win": false
+     }
+    ],
+    "bestD": {
+     "player": "Miro Heiskanen",
+     "chance": "12 %",
+     "min": "8,95",
+     "fair": "8,13",
+     "example": "À 8,95 ou plus, tu joues. À 8,45, tu ne joues pas.",
+     "wm": "7,00",
+     "wm_ok": false,
+     "wm_edge": -14
+    }
+   }
+  ],
   "after_so": [],
   "liiga_ot": {
    "day": "31/10",
@@ -521,19 +1222,881 @@
     }
    ]
   },
-  "shots": [],
-  "wm_value": [],
-  "wm_read_at": "09:48",
+  "shots": [
+   {
+    "game": "Chicago à Boston",
+    "time": "18h00",
+    "teams": [
+     {
+      "team": "Chicago",
+      "date": "30/10",
+      "opp": "Detroit",
+      "home": false,
+      "top": [
+       {
+        "player": "C. Bedard",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "O. Moore",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "C. Smith",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Boston",
+      "date": "30/10",
+      "opp": "St. Louis",
+      "home": false,
+      "top": [
+       {
+        "player": "C. McAvoy",
+        "d": true,
+        "sog": 5
+       },
+       {
+        "player": "J. Peterka",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "M. Geekie",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "St. Louis à Detroit",
+    "time": "18h00",
+    "teams": [
+     {
+      "team": "St. Louis",
+      "date": "30/10",
+      "opp": "Boston",
+      "home": true,
+      "top": [
+       {
+        "player": "M. McTavish",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "R. Thomas",
+        "d": false,
+        "sog": 2
+       },
+       {
+        "player": "J. Snuggerud",
+        "d": false,
+        "sog": 2
+       }
+      ]
+     },
+     {
+      "team": "Detroit",
+      "date": "30/10",
+      "opp": "Chicago",
+      "home": true,
+      "top": [
+       {
+        "player": "V. Arvidsson",
+        "d": false,
+        "sog": 6
+       },
+       {
+        "player": "J. Compher",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "E. Finnie",
+        "d": false,
+        "sog": 4
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Tampa Bay à Nashville",
+    "time": "19h00",
+    "teams": [
+     {
+      "team": "Tampa Bay",
+      "date": "30/10",
+      "opp": "Winnipeg",
+      "home": true,
+      "top": [
+       {
+        "player": "J. Guentzel",
+        "d": false,
+        "sog": 6
+       },
+       {
+        "player": "B. Hagel",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "B. Point",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Nashville",
+      "date": "30/10",
+      "opp": "Washington",
+      "home": true,
+      "top": [
+       {
+        "player": "R. Josi",
+        "d": true,
+        "sog": 6
+       },
+       {
+        "player": "J. Marchessault",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "R. Colton",
+        "d": false,
+        "sog": 4
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Edmonton à Islanders",
+    "time": "19h00",
+    "teams": [
+     {
+      "team": "Edmonton",
+      "date": "29/10",
+      "opp": "Calgary",
+      "home": true,
+      "top": [
+       {
+        "player": "E. Bouchard",
+        "d": true,
+        "sog": 4
+       },
+       {
+        "player": "C. McDavid",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "C. Murphy",
+        "d": true,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Islanders",
+      "date": "30/10",
+      "opp": "Minnesota",
+      "home": false,
+      "top": [
+       {
+        "player": "M. Schaefer",
+        "d": true,
+        "sog": 6
+       },
+       {
+        "player": "A. Duclair",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "B. Horvat",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Buffalo à Los Angeles",
+    "time": "21h00",
+    "teams": [
+     {
+      "team": "Buffalo",
+      "date": "30/10",
+      "opp": "Anaheim",
+      "home": false,
+      "top": [
+       {
+        "player": "N. Ostlund",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "J. Quinn",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "T. Thompson",
+        "d": false,
+        "sog": 4
+       }
+      ]
+     },
+     {
+      "team": "Los Angeles",
+      "date": "30/10",
+      "opp": "Ottawa",
+      "home": true,
+      "top": [
+       {
+        "player": "A. Panarin",
+        "d": false,
+        "sog": 7
+       },
+       {
+        "player": "A. Laferriere",
+        "d": false,
+        "sog": 7
+       },
+       {
+        "player": "A. Kempe",
+        "d": false,
+        "sog": 5
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Ottawa à San José",
+    "time": "21h00",
+    "teams": [
+     {
+      "team": "Ottawa",
+      "date": "30/10",
+      "opp": "Los Angeles",
+      "home": false,
+      "top": [
+       {
+        "player": "D. Batherson",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "S. Pinto",
+        "d": false,
+        "sog": 2
+       },
+       {
+        "player": "F. Zetterlund",
+        "d": false,
+        "sog": 2
+       }
+      ]
+     },
+     {
+      "team": "San José",
+      "date": "30/10",
+      "opp": "Vancouver",
+      "home": true,
+      "top": [
+       {
+        "player": "M. Celebrini",
+        "d": false,
+        "sog": 6
+       },
+       {
+        "player": "W. Smith",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "M. Marchment",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Pittsburgh à Montréal",
+    "time": "00h00",
+    "teams": [
+     {
+      "team": "Pittsburgh",
+      "date": "30/10",
+      "opp": "Utah",
+      "home": true,
+      "top": [
+       {
+        "player": "N. Robertson",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "E. Malkin",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "R. Rakell",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Montréal",
+      "date": "30/10",
+      "opp": "Dallas",
+      "home": false,
+      "top": [
+       {
+        "player": "N. Dobson",
+        "d": true,
+        "sog": 4
+       },
+       {
+        "player": "C. Caufield",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "A. Newhook",
+        "d": false,
+        "sog": 2
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Toronto à Vancouver",
+    "time": "00h00",
+    "teams": [
+     {
+      "team": "Toronto",
+      "date": "29/10",
+      "opp": "Seattle",
+      "home": false,
+      "top": [
+       {
+        "player": "A. Matthews",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "T. Stecher",
+        "d": true,
+        "sog": 4
+       },
+       {
+        "player": "E. Cowan",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Vancouver",
+      "date": "30/10",
+      "opp": "San José",
+      "home": false,
+      "top": [
+       {
+        "player": "D. O'Connor",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "E. Pettersson",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "F. Chytil",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Columbus à Dallas",
+    "time": "01h00",
+    "teams": [
+     {
+      "team": "Columbus",
+      "date": "30/10",
+      "opp": "Caroline",
+      "home": false,
+      "top": [
+       {
+        "player": "A. Fantilli",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "C. Coyle",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "M. Olivier",
+        "d": false,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Dallas",
+      "date": "30/10",
+      "opp": "Montréal",
+      "home": true,
+      "top": [
+       {
+        "player": "J. Robertson",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "A. Hyry",
+        "d": false,
+        "sog": 3
+       },
+       {
+        "player": "M. Heiskanen",
+        "d": true,
+        "sog": 3
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "game": "Calgary à Colorado",
+    "time": "03h00",
+    "teams": [
+     {
+      "team": "Calgary",
+      "date": "31/10",
+      "opp": "Seattle",
+      "home": true,
+      "top": [
+       {
+        "player": "M. Gridin",
+        "d": false,
+        "sog": 5
+       },
+       {
+        "player": "Z. Parekh",
+        "d": true,
+        "sog": 3
+       },
+       {
+        "player": "S. Nemec",
+        "d": true,
+        "sog": 3
+       }
+      ]
+     },
+     {
+      "team": "Colorado",
+      "date": "29/10",
+      "opp": "New Jersey",
+      "home": true,
+      "top": [
+       {
+        "player": "C. Makar",
+        "d": true,
+        "sog": 6
+       },
+       {
+        "player": "M. Necas",
+        "d": false,
+        "sog": 4
+       },
+       {
+        "player": "D. Toews",
+        "d": true,
+        "sog": 4
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "wm_value": [
+   {
+    "player": "Adam Gaudette",
+    "team": "SJS",
+    "pos": "F",
+    "game": "Ottawa à San José",
+    "time": "21h00",
+    "chance": "20 %",
+    "min": "5,53",
+    "fair": "5,03",
+    "wm": "7,00",
+    "edge": 39
+   },
+   {
+    "player": "Mikael Backlund",
+    "team": "CGY",
+    "pos": "F",
+    "game": "Calgary à Colorado",
+    "time": "03h00",
+    "chance": "19 %",
+    "min": "5,70",
+    "fair": "5,18",
+    "wm": "7,00",
+    "edge": 35
+   },
+   {
+    "player": "Aleksanteri Kaskimaki",
+    "team": "STL",
+    "pos": "F",
+    "game": "St. Louis à Detroit",
+    "time": "18h00",
+    "chance": "12 %",
+    "min": "9,41",
+    "fair": "8,55",
+    "wm": "11,00",
+    "edge": 29
+   },
+   {
+    "player": "Scott Laughton",
+    "team": "LAK",
+    "pos": "F",
+    "game": "Buffalo à Los Angeles",
+    "time": "21h00",
+    "chance": "16 %",
+    "min": "7,06",
+    "fair": "6,41",
+    "wm": "8,00",
+    "edge": 25
+   },
+   {
+    "player": "Ryan Lomberg",
+    "team": "CBJ",
+    "pos": "F",
+    "game": "Columbus à Dallas",
+    "time": "01h00",
+    "chance": "8 %",
+    "min": "13,26",
+    "fair": "12,05",
+    "wm": "15,00",
+    "edge": 25
+   }
+  ],
+  "wm_read_at": "15h08",
   "wm_games": [
+   "Buffalo à Los Angeles",
+   "Calgary à Colorado",
+   "Chicago à Boston",
+   "Columbus à Dallas",
+   "Edmonton à Islanders",
    "HIFK à KooKoo",
    "Jokerit à JYP",
    "Jukurit à Kärpät",
-   "KalPa à Ilves"
+   "K-Espoo à Pelicans",
+   "KalPa à Ilves",
+   "Ottawa à San José",
+   "Pittsburgh à Montréal",
+   "St. Louis à Detroit",
+   "Tampa Bay à Nashville",
+   "Toronto à Vancouver",
+   "Ässät à Sport"
   ],
-  "values": [],
-  "values_stars": [],
-  "values_limite": [],
-  "values_signaux": [],
+  "values": [
+   {
+    "player": "Zayne Parekh",
+    "team": "CGY",
+    "pos": "D",
+    "game": "Calgary à Colorado",
+    "time": "03h00",
+    "wm": "10,00",
+    "fair": "7,30",
+    "min": "8,04",
+    "chance": "14 %",
+    "one_in": 7,
+    "edge": 37,
+    "star": false,
+    "market_fair": "9,97",
+    "up": false,
+    "down": false,
+    "profile": "d1b",
+    "why": "D en PP1",
+    "tier": "value",
+    "cover_point": {
+     "odds": "2,45",
+     "p": 0.305,
+     "fair": "3,28",
+     "min": "3,61",
+     "ok": false,
+     "note": "❌ cote trop basse pour couvrir (2,45 au lieu de 3,61 mini)",
+     "stake_goal": "1,10",
+     "stake_point": "0,90",
+     "gain_if_goal": "+11,21",
+     "mise": "1,10 € buteur + 0,90 € point",
+     "outcomes": "but : +11,21 €, passe seulement : 0 €, rien : −2 €"
+    }
+   }
+  ],
+  "values_stars": [
+   {
+    "player": "David Pastrnak",
+    "wm": "2,35",
+    "min": "3,06",
+    "ok": false,
+    "time": "18h00"
+   },
+   {
+    "player": "Alex DeBrincat",
+    "wm": "2,65",
+    "min": "2,96",
+    "ok": false,
+    "time": "18h00"
+   },
+   {
+    "player": "Jake Guentzel",
+    "wm": "2,75",
+    "min": "3,16",
+    "ok": false,
+    "time": "19h00"
+   },
+   {
+    "player": "Brandon Hagel",
+    "wm": "2,70",
+    "min": "2,73",
+    "ok": false,
+    "time": "19h00"
+   },
+   {
+    "player": "Leon Draisaitl",
+    "wm": "2,15",
+    "min": "2,73",
+    "ok": false,
+    "time": "19h00"
+   },
+   {
+    "player": "Bo Horvat",
+    "wm": "2,80",
+    "min": "3,03",
+    "ok": false,
+    "time": "19h00"
+   },
+   {
+    "player": "Tage Thompson",
+    "wm": "2,75",
+    "min": "3,15",
+    "ok": false,
+    "time": "21h00"
+   },
+   {
+    "player": "Adrian Kempe",
+    "wm": "2,85",
+    "min": "3,00",
+    "ok": false,
+    "time": "21h00"
+   },
+   {
+    "player": "Macklin Celebrini",
+    "wm": "2,40",
+    "min": "2,62",
+    "ok": false,
+    "time": "21h00"
+   },
+   {
+    "player": "Cole Caufield",
+    "wm": "2,15",
+    "min": "2,93",
+    "ok": false,
+    "time": "00h00"
+   },
+   {
+    "player": "Auston Matthews",
+    "wm": "2,10",
+    "min": "3,02",
+    "ok": false,
+    "time": "00h00"
+   },
+   {
+    "player": "William Nylander",
+    "wm": "2,45",
+    "min": "2,73",
+    "ok": false,
+    "time": "00h00"
+   },
+   {
+    "player": "Wyatt Johnston",
+    "wm": "2,70",
+    "min": "3,23",
+    "ok": false,
+    "time": "01h00"
+   },
+   {
+    "player": "Jason Robertson",
+    "wm": "2,50",
+    "min": "3,00",
+    "ok": false,
+    "time": "01h00"
+   },
+   {
+    "player": "Nathan MacKinnon",
+    "wm": "2,00",
+    "min": "2,73",
+    "ok": false,
+    "time": "03h00"
+   }
+  ],
+  "values_limite": [
+   {
+    "player": "Scott Laughton",
+    "team": "LAK",
+    "pos": "F",
+    "game": "Buffalo à Los Angeles",
+    "time": "21h00",
+    "wm": "8,00",
+    "fair": "7,46",
+    "min": "8,21",
+    "chance": "13 %",
+    "one_in": 7,
+    "edge": 7,
+    "star": false,
+    "market_fair": "7,81",
+    "up": false,
+    "down": true,
+    "profile": "down",
+    "why": "partenaires faibles, sans PP, mini 8,21",
+    "tier": "limite",
+    "cover_point": {
+     "odds": "2,60",
+     "p": 0.339,
+     "fair": "2,95",
+     "min": "3,25",
+     "ok": false,
+     "note": "❌ cote trop basse pour couvrir (2,60 au lieu de 3,25 mini)",
+     "stake_goal": "1,20",
+     "stake_point": "0,80",
+     "gain_if_goal": "+9,68",
+     "mise": "1,20 € buteur + 0,80 € point",
+     "outcomes": "but : +9,68 €, passe seulement : 0 €, rien : −2 €"
+    }
+   }
+  ],
+  "values_signaux": [
+   {
+    "player": "Gavin McKenna",
+    "team": "TOR",
+    "pos": "F",
+    "game": "Toronto à Vancouver",
+    "time": "00h00",
+    "wm": "3,10",
+    "min": "4,24",
+    "fair": "3,85",
+    "chance": "26 %",
+    "one_in": 4,
+    "edge": -19,
+    "signals": "partenaires forts, PP1, top-6, monte en top-6",
+    "score": 6,
+    "down": false,
+    "gap": "cote trop basse : 3,10 au lieu de 4,24 mini",
+    "ok": false,
+    "cover_point": {
+     "odds": "1,47",
+     "p": 0.503,
+     "fair": "1,99",
+     "min": "2,19",
+     "ok": false,
+     "note": "❌ cote trop basse pour couvrir (1,47 au lieu de 2,19 mini)",
+     "stake_goal": "0,60",
+     "stake_point": "1,40",
+     "gain_if_goal": "+1,92",
+     "mise": "0,60 € buteur + 1,40 € point",
+     "outcomes": "but : +1,92 €, passe seulement : 0 €, rien : −2 €"
+    }
+   },
+   {
+    "player": "Emmitt Finnie",
+    "team": "DET",
+    "pos": "F",
+    "game": "St. Louis à Detroit",
+    "time": "18h00",
+    "wm": "4,00",
+    "min": "4,59",
+    "fair": "4,17",
+    "chance": "24 %",
+    "one_in": 4,
+    "edge": -4,
+    "signals": "partenaires forts, PP1, top-6, monte en PP1",
+    "score": 6,
+    "down": false,
+    "gap": "cote un peu basse : 4,00 au lieu de 4,59 mini",
+    "ok": false,
+    "cover_point": {
+     "odds": "1,84",
+     "p": 0.503,
+     "fair": "1,99",
+     "min": "2,19",
+     "ok": false,
+     "note": "❌ cote trop basse pour couvrir (1,84 au lieu de 2,19 mini)",
+     "stake_goal": "0,90",
+     "stake_point": "1,10",
+     "gain_if_goal": "+3,62",
+     "mise": "0,90 € buteur + 1,10 € point",
+     "outcomes": "but : +3,62 €, passe seulement : 0 €, rien : −2 €"
+    }
+   },
+   {
+    "player": "Teuvo Teravainen",
+    "team": "CHI",
+    "pos": "F",
+    "game": "Chicago à Boston",
+    "time": "18h00",
+    "wm": "5,50",
+    "min": "8,21",
+    "fair": "7,46",
+    "chance": "13 %",
+    "one_in": 7,
+    "edge": -26,
+    "signals": "partenaires forts, PP1, top-6, monte en top-6",
+    "score": 6,
+    "down": false,
+    "gap": "cote trop basse : 5,50 au lieu de 8,21 mini",
+    "ok": false,
+    "cover_point": {
+     "odds": "2,10",
+     "p": 0.427,
+     "fair": "2,34",
+     "min": "2,58",
+     "ok": false,
+     "note": "❌ cote trop basse pour couvrir (2,10 au lieu de 2,58 mini)",
+     "stake_goal": "1,00",
+     "stake_point": "1,00",
+     "gain_if_goal": "+5,60",
+     "mise": "1,00 € buteur + 1,00 € point",
+     "outcomes": "but : +5,60 €, passe seulement : 0 €, rien : −2 €"
+    }
+   }
+  ],
   "values_status": "ok"
  },
  "foot": {
