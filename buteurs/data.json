@@ -1,532 +1,277 @@
 {
- "generated": "30/10/2026 18h05",
- "date": "2026-10-30",
- "date_fr": "30/10/2026",
+ "generated": "31/10/2026 09h53",
+ "date": "2026-10-31",
+ "date_fr": "31/10/2026",
  "hockey": {
-  "date": "2026-10-30",
-  "model": "NHL v2 attaquants, v1 défenseurs; Liiga v4 + corr-2026-10-30",
+  "date": "2026-10-31",
+  "model": "Liiga v4 + corr-2026-10-30 (NHL : à faire par la routine de 15h)",
   "intro": [
-   "Heures de Paris. 7 matchs de Liiga ce soir (17h30, KalPa-Jokerit à 18h30). 3 matchs NHL cette nuit (23h00 à 01h00). Cotes Winamax lues à 13h49, sans compte."
+   "Analyse faite ce matin (09h50 Paris). La NHL arrive avec la routine de 15h.",
+   "⚠️ Compos **probables** : liiga.fi n'a pas encore publié les lignes. J'ai pris les lignes du dernier match, sans les blessés et suspendus du jour. Presque toutes les équipes ont joué hier : les gardiens peuvent changer. **Revérifie vers 15h, avant 16h.**",
+   "Cotes Winamax lues à 09h48 Paris. Pas encore de cotes buteur pour K-Espoo–Pelicans et Ässät–Sport, et aucun marché « points » : pas de couverture 🎯 possible pour l'instant."
   ],
-  "games": [
-   {
-    "game": "New Jersey à Vegas",
-    "time": "23h00"
-   },
-   {
-    "game": "Winnipeg à Floride",
-    "time": "00h00"
-   },
-   {
-    "game": "Seattle à Calgary",
-    "time": "01h00"
-   }
-  ],
-  "a_jouer": [
-   {
-    "player": "Kyle Connor",
-    "team": "WPG",
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "chance": "43 %",
-    "min": "2,59",
-    "fair": "2,35",
-    "example": "À 2,59 ou plus, tu joues. À 2,44, tu ne joues pas.",
-    "wm": "2,80",
-    "wm_ok": true,
-    "wm_edge": 19
-   }
-  ],
+  "games": [],
+  "a_jouer": [],
   "notes": [],
-  "surveiller": [
-   {
-    "player": "Sam Reinhart",
-    "team": "FLA",
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "chance": "39 %",
-    "min": "2,83",
-    "fair": "2,57",
-    "example": "À 2,83 ou plus, tu joues. À 2,68, tu ne joues pas.",
-    "wm": "2,60",
-    "wm_ok": false,
-    "wm_edge": 1
-   },
-   {
-    "player": "Jack Hughes",
-    "team": "NJD",
-    "game": "New Jersey à Vegas",
-    "time": "23h00",
-    "chance": "35 %",
-    "min": "3,18",
-    "fair": "2,88",
-    "example": "À 3,18 ou plus, tu joues. À 3,03, tu ne joues pas.",
-    "wm": "2,70",
-    "wm_ok": false,
-    "wm_edge": -6
-   },
-   {
-    "player": "Brady Tkachuk",
-    "team": "FLA",
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "chance": "34 %",
-    "min": "3,24",
-    "fair": "2,94",
-    "example": "À 3,24 ou plus, tu joues. À 3,09, tu ne joues pas.",
-    "wm": "2,25",
-    "wm_ok": false,
-    "wm_edge": -24
-   }
-  ],
-  "bestD": [
-   {
-    "player": "Luke Hughes",
-    "team": "NJD",
-    "game": "New Jersey à Vegas",
-    "time": "23h00",
-    "chance": "11 %",
-    "min": "9,74",
-    "fair": "8,85",
-    "example": "À 9,74 ou plus, tu joues. À 9,24, tu ne joues pas.",
-    "wm": "5,50",
-    "wm_ok": false,
-    "wm_edge": -38,
-    "best": false
-   },
-   {
-    "player": "Seth Jones",
-    "team": "FLA",
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "chance": "14 %",
-    "min": "8,15",
-    "fair": "7,41",
-    "example": "À 8,15 ou plus, tu joues. À 7,65, tu ne joues pas.",
-    "wm": "5,50",
-    "wm_ok": false,
-    "wm_edge": -26,
-    "best": true
-   },
-   {
-    "player": "Brandon Montour",
-    "team": "SEA",
-    "game": "Seattle à Calgary",
-    "time": "01h00",
-    "chance": "13 %",
-    "min": "8,53",
-    "fair": "7,75",
-    "example": "À 8,53 ou plus, tu joues. À 8,03, tu ne joues pas.",
-    "wm": "5,75",
-    "wm_ok": false,
-    "wm_edge": -26,
-    "best": false
-   }
-  ],
-  "point": [
-   {
-    "player": "Matthew Tkachuk",
-    "form": "18 pts, point dans 9/10",
-    "team": "FLA",
-    "game": "Winnipeg à Floride",
-    "time": "00h00"
-   },
-   {
-    "player": "Brady Tkachuk",
-    "form": "15 pts, point dans 7/10",
-    "team": "FLA",
-    "game": "Winnipeg à Floride",
-    "time": "00h00"
-   },
-   {
-    "player": "Seth Jones",
-    "form": "15 pts, point dans 8/10",
-    "team": "FLA",
-    "game": "Winnipeg à Floride",
-    "time": "00h00"
-   }
-  ],
-  "totals": [
-   {
-    "game": "Seattle à Calgary",
-    "time": "01h00",
-    "line": "6,5",
-    "book": "6,4",
-    "model": "5,5",
-    "open": true
-   },
-   {
-    "game": "New Jersey à Vegas",
-    "time": "23h00",
-    "line": "6,0",
-    "book": "6,3",
-    "model": "6,2",
-    "open": false
-   },
-   {
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "line": "6,0",
-    "book": "6,2",
-    "model": "6,2",
-    "open": false
-   }
-  ],
-  "goalies": [
-   {
-    "team": "New Jersey",
-    "name": "Connor Hellebuyck",
-    "confirmed": false
-   },
-   {
-    "team": "Vegas",
-    "name": "Adin Hill",
-    "confirmed": false
-   },
-   {
-    "team": "Winnipeg",
-    "name": "Nico Daws",
-    "confirmed": false
-   },
-   {
-    "team": "Floride",
-    "name": "Akira Schmid",
-    "confirmed": false
-   },
-   {
-    "team": "Seattle",
-    "name": "Joey Daccord",
-    "confirmed": false
-   },
-   {
-    "team": "Calgary",
-    "name": "Dustin Wolf",
-    "confirmed": false
-   }
-  ],
+  "surveiller": [],
+  "bestD": [],
+  "point": [],
+  "totals": [],
+  "goalies": [],
   "info": [
    {
-    "title": "📋 **BILAN D'HIER (jeudi 29/10, NHL)**",
+    "title": "🌙 **TA RÈGLE TAB — LES D À JOUER**",
     "lines": [
-     "✅ **Tuch a marqué à 3,30** et ✅ **Neighbours à 4,00**. Soirée à **+0,30 €** à 1 €, −1,51 € avec la couverture.",
-     "💰 : ✅ Tuch (+2,30 €, +2,73 € couvert). Protas 0 but mais 2 passes (−1 €, 0,00 € couvert).",
-     "🟡 : Kaskimaki et N. Robertson ❌ (−2 €, −4 € couvert).",
-     "🔥 : ✅ Neighbours (+3 €, +3,76 € couvert). Marchessault et D'Astous ❌. Total 🔥 : +1,00 € (−0,24 € couvert)."
+     "Deux équipes sortent d'une séance de tirs au but :",
+     "**Ilves** (TAB hier contre Tappara, 1-1 à la fin du temps réglementaire), reçoit KalPa.",
+     "👉 **Le D à jouer : Tony Sund (cote 7,50)**",
+     "Pourquoi : c'est le D d'Ilves qui tire le plus. 16 tirs cadrés sur ses 5 derniers matchs (2, 7, 1, 2, 4), dont 4 cadrés sur 5 tentatives hier. Forme : 0 but, 1 point sur 5. Saison : 3 buts, 9 passes. Bonus : Winamax le paie mieux que les autres sites (7,50 contre 5,97 ailleurs).",
+     "2e D : **Austin Strand (4,75)**. 12 cadrés sur 5 matchs et 34 tentatives, le plus gros volume de l'équipe. 5 buts cette saison, mais 0 but et 1 point sur ses 5 derniers.",
+     "**Jukurit** (TAB le 28/10 contre Lukko), joue à Kärpät.",
+     "👉 **Le D à jouer : Andrej Sustr (cote 8,50)**",
+     "Pourquoi : 14 cadrés sur 5 matchs (6, 0, 0, 3, 5), dont 5 cadrés sur 7 tentatives au dernier match. Il joue 23,6 minutes par match, le plus de l'équipe. Forme : 1 but, 2 points sur 5. Saison : 1 but, 16 passes. Il a marqué le 28/10, justement le soir du TAB.",
+     "2e D : **Alex Lintuniemi (6,25)**. 8 cadrés sur 5 matchs, 0 but et 1 point. 3 buts cette saison.",
+     "Attention : Sustr est un passeur plus qu'un buteur. Les autres sites le voient plutôt à 11,93.",
+     "Ta règle jusqu'ici : 4 fois sur 6, un D de l'équipe a marqué. Hier c'était Välilä pour Lukko (7,50).",
+     "Mon modèle donne 44 % de chances qu'un D d'Ilves marque, et 33 % pour Jukurit.",
+     "ℹ️ Tappara (TAB hier) rejoue demain, 01/11 à 14h00 Paris, contre HPK."
     ]
    },
    {
-    "title": "🏒 **LIIGA CE SOIR**",
+    "title": "💰 **LES VALUES (1 € buteur chacun)**",
     "lines": [
-     "Compos liiga.fi lues à 13h45. KooKoo et HIFK n'ont pas encore changé leurs lignes : ligne probable. Revérifie à 17h00.",
-     "Nouveau ce soir (tes 3 corrections) : bonus selon la ligne (L1 ×1,10, L2 ×1,04, L3 ×0,97, L4 ×0,80) et D à domicile qui tire (×1,12).",
-     "💰 **Les values du soir (Liiga)**",
-     "1. **Brian Kramer (SaiPa, D)**, contre JYP, 17h30. 3e paire mais PP2, 2,8 tirs cadrés par match sur les 5 derniers. Chance 16 % (14 % avant le bonus D à domicile). Winamax **7,50**, minimum 6,92 ✅ (+19 %).",
-     "🎯 Couverture point : 0,90 € buteur + 1,10 € point (1,90). But : +6,84 €. Passe seulement : +0,09 €. Rien : −2 €.",
-     "2. **Iikka Kangasniemi (K-Espoo)**, à HPK, 17h30. 1re ligne. Chance 22 % (20 % avant le bonus ligne). Winamax **5,25**, minimum 4,98 ✅ (+16 %). Attention : peu de tirs en ce moment (0,8 par match).",
-     "🎯 Couverture point : 0,90 € + 1,10 € (1,84). But : +4,75 €. Passe seulement : +0,02 €.",
-     "3. **Carter King (K-Espoo)**, même match. 2e ligne. Chance 23 %. Winamax **5,00**, minimum 4,85 ✅ (+14 %).",
-     "🎯 Couverture point : 1,10 € + 0,90 € (2,30). But : +5,57 €. Passe seulement : +0,07 €.",
-     "4. **Patrick Curry (Jokerit)**, à KalPa, 18h30. 3e ligne mais PP1, 4,4 tirs cadrés par match. Il retrouve son ancien club. Chance 31 %. Winamax **3,60**, minimum 3,51 ✅ (+13 %).",
-     "🎯 Couverture point : 0,70 € + 1,30 € (1,64). But : +2,65 €. Passe seulement : +0,13 €.",
-     "5. **Valtteri Ojantakanen (JYP)**, à SaiPa, 17h30. 2e ligne et PP1, 6 buts, 3,8 tirs cadrés par match. Il a marqué mercredi. Chance 32 %. Winamax **3,50**, minimum 3,46 ✅ (+11 %).",
-     "🎯 Couverture point : 0,90 € + 1,10 € (1,90). But : +3,24 €. Passe seulement : +0,09 €.",
-     "Aussi au-dessus de +10 %, mais hors top 5 : Seppälä (Lukko, D) 10,00 (+13 %), Engberg (Ilves) 7,50 (+10 %).",
-     "Écartés (trop peu de matchs joués) : Lipiäinen, Tammela, Ruuttu.",
-     "🟡 **Limite (Liiga)**",
-     "• Cade Borchardt (KalPa, contre Jokerit, 18h30), 3e ligne : 21 %, 5,00 pour 5,24 mini. 🎯 1,10 € + 0,90 € point (2,25).",
-     "• Antti Kalapudas (Jokerit, à KalPa, 18h30), 1re ligne : 22 %, 4,75 pour 5,02 mini. 🎯 0,90 € + 1,10 € point (1,98).",
-     "• Alex Beaucage (Lukko, contre KooKoo, 17h30), 1re ligne : 39 %, la plus grosse chance de la Liiga ce soir. 2,60 pour 2,84 mini. 🎯 Point à 1,39 : pas de couverture, 1 € sur le but seulement.",
-     "🔥 **Ce qui me fait dire (Liiga)**",
-     "1. **Veeti Miettinen (KooKoo)**, à Lukko, 17h30. 1re ligne et PP1. 5 buts et 4 passes sur ses 5 derniers matchs. 27 %. Winamax 3,00 pour 4,07 mini (il manque 1,07). En face, Salonen est en grande forme (.948).",
-     "🎯 Point 1,92, mini 1,92 ✅. 0,90 € buteur + 1,10 € point. But : +2,81 €. Passe seulement : +0,11 €.",
-     "2. **Tony Sund (Ilves, D)**, à Tappara, 17h30. 3,4 tirs cadrés par match sur les 5 derniers. 10 %. Winamax 7,50 pour 11,58 mini (loin). Les autres sites le paient moins (6,42).",
-     "🎯 Point 2,35. 1,10 € + 0,90 €. But : +8,37 €.",
-     "Rappel : le bloc 🔥 est de l'info. 1 € maximum, ou 2 € avec la couverture.",
-     "📌 **1re ligne, modèle 10-20 %** (suivi pour ta correction, pas des paris) : Vesterinen 4,50, De Jong 4,25 (HPK) ; Tuomaala 4,00 (K-Espoo) ; Rissanen 3,60 (KalPa) ; Siikonen 4,25 (KooKoo) ; Intonen 3,50, Zabaneh 4,25 (SaiPa) ; O. Mäkinen 6,00, Lassila 3,50 (JYP) ; J. Määttä 4,25, Haudum 3,25 (TPS) ; S. Hämäläinen 5,50, Pohjalainen 5,00 (Pelicans) ; Haapala 4,50, Suvanto 4,25 (Tappara) ; Järvinen 5,50 (Ilves) ; Björkqvist (pas de cote), Pinard 3,00 (Ässät) ; Huuhtanen 3,50 (HIFK). Aucun n'est au-dessus de son minimum.",
-     "🛡️ **Meilleur D par match (Liiga)**",
-     "• HPK-K-Espoo : Corcoran (K-Espoo) 12,5 %, 6,75 pour 8,80. • KalPa-Jokerit : Ruotsalainen (KalPa) 16,5 %, 5,75 pour 6,67.",
-     "• Lukko-KooKoo : Stenqvist (Lukko) 14 %, 5,00 pour 7,69. • SaiPa-JYP : **Kramer** (value ci-dessus).",
-     "• TPS-Pelicans : Nutivaara 12 %, 6,75 pour 9,02. • Tappara-Ilves : Strand 14 %, 5,00 pour 7,69 (le tireur : Sund).",
-     "• Ässät-HIFK : Anttalainen 10 %, pas de cote (le tireur : Rami Määttä, 8,50).",
-     "Ton signal D : les D à domicile qui tirent le plus sont à Ässät (11,1 tirs cadrés par match), SaiPa (10,2) et KalPa (10,1).",
-     "📈 **Match à buts (Liiga, modèle)** : KalPa-Jokerit 6,3, le plus ouvert. Lukko-KooKoo 6,1. SaiPa-JYP 5,8. HPK-K-Espoo 5,4. Ässät-HIFK 5,4. Tappara-Ilves 4,8. TPS-Pelicans 4,7, le plus fermé.",
-     "🌙 **Monde imaginaire** : Lukko reçoit KooKoo après sa séance de tirs au but. Info seulement : sur 4 saisons, la règle ne tient pas.",
-     "🥅 **Gardiens probables (5 derniers)** : en forme : Salonen (Lukko) .948, Crespin (HPK) .942, Armalis (Ilves) .934, Alnefelt (HIFK) .934, Bartosak (Pelicans) .929. En méforme : Lekkas (KalPa) .871, Karhunen (Jokerit) .874, Salminen (JYP) .881, Patrikainen (KooKoo) .887. Vali (TPS) n'a joué qu'un match.",
-     "🩹 **Retours et absents (Liiga)**",
-     "• Retours : Tedenby (HPK, 18 matchs manqués), Kivistö (Tappara, 17), Soisalo (Pelicans, 15), Öberg (K-Espoo), Mononen (KalPa), Airola et Eloranta (SaiPa), Björkqvist (Ässät, 1re ligne), Floris (Lukko), Liikonen (JYP).",
-     "• Absents : Pitkänen, Juolevi, Turunen (Jokerit) ; Harpur (Lukko) ; Wernblom (TPS) ; Noiva, Heinilä, Boelius, Karjalainen, Klingberg, Knihti (Ässät). Hakulinen (HPK) n'est pas dans la compo, même si Winamax le propose.",
-     "🔄 Changements de ligne Liiga : déjà pris en compte dans les chances ci-dessus (bonus selon la ligne).",
-     "🔁 **Les ex** : Curry (Jokerit) à KalPa, Perttu (SaiPa) contre JYP, Puutio (HIFK) à Ässät.",
-     "🎯 **Point (Liiga, info)** : les meilleures cotes point par rapport au modèle : Onni Lind (Pelicans) 2,90 (+32 %), Jaakola (KooKoo) 2,85 (+25 %)."
+     "1. **Juuso Arola (JYP, D)** contre Jokerit. **Cote 10,00**, minimum 9,32, **+18 %**. C'est **la meilleure du jour** : les autres sites sont d'accord, avec une cote juste à 8,58.",
+     "Pourquoi : 4 points sur ses 5 derniers matchs (0 but). 11 cadrés (1, 4, 2, 2, 2) et 21 tentatives, dont 4 tentatives hier. Il joue à domicile, en 2e paire, 19,7 minutes. En face, Jokerit a 3 blessés (Pitkänen, Juolevi, Turunen) et le pire box-play des 6 matchs (75,5 %).",
+     "2. **Alexander Ruuttu (KooKoo)** contre HIFK. **Cote 5,75**, minimum 4,91, **+29 %**.",
+     "Pourquoi : il est revenu il y a 2 matchs : 4 cadrés, et 6 tentatives (3 cadrées) hier. 0 point pour l'instant. Attention : 2 matchs seulement, donc le modèle s'appuie surtout sur son profil de tireur. Les autres sites sont bien plus bas (cote juste 8,38). Value la plus fragile.",
+     "3. **Sampo Ranta (HIFK)** à KooKoo. **Cote 5,50**, minimum 5,21, **+16 %**.",
+     "Pourquoi : il tire beaucoup, 24 tentatives et 10 cadrés sur 5 matchs (2, 4, 1, 3, 0). Mais 0 but en 7 matchs et 1 point sur 5. KooKoo est la défense qui laisse le plus d'occasions des 6 matchs, et son box-play est le pire (68 %). Les autres sites : 6,93.",
+     "4. **Pekka Jormakka (Jukurit)** à Kärpät. **Cote 6,50**, minimum 6,36, **+12 %** (de peu).",
+     "Pourquoi : 14 cadrés sur 5 matchs, dont 7 dans un même match, mais 0 au dernier. 0 point en 9 matchs cette saison. Les autres sites : 8,93. C'est le plus limite des 4.",
+     "❌ Écarté : Engberg (Ilves, 7,50, +15 % sur le papier). Seulement 3 cadrés sur 5 matchs, et 0 tentative hier : il ne tire pas."
     ]
    },
    {
-    "title": "🎯 **BUTEURS CETTE NUIT (NHL)**",
+    "title": "⭐ **LES PLUS PROBABLES (1 € buteur, suivi à part)**",
     "lines": [
-     "⚠️ Aucun gardien n'est confirmé. Winnipeg joue son 2e match en 2 jours. Winamax n'a pas encore publié les cotes « points » NHL (relu à 13h55) : regarde la cote point avant de couvrir.",
-     "💰 **La value de la nuit (NHL)**",
-     "1. ⭐ **Kyle Connor (WPG)**, à Florida, 00h00. 2e ligne et PP1, 4,2 tirs cadrés par match. Chance 43 %. Winamax **2,80**, minimum 2,75 ✅ (+19 %). Attention : les autres sites le voient moins haut (cote juste du marché 3,30), et Winnipeg a joué hier.",
-     "🎯 Couverture point : cote pas encore publiée (mini 2,04). Si elle est à 1,40 ou plus : mise point = 2 € ÷ cote, arrondie au 0,10 au-dessus, le reste sur le but. Sinon 1 € sur le but seul.",
-     "🟡 **Limite (NHL)**",
-     "• Mark Scheifele (WPG, à FLA, 00h00), 1re ligne et PP1 : 31 %, 3,50 pour 3,51 mini (il manque 0,01). Point : mini 1,84.",
-     "• Sam Reinhart (FLA, contre WPG, 00h00), 2e ligne et PP1 : 39 %, 2,60 pour 2,83 mini. Point : mini 1,93.",
-     "• Ryan Strome (CGY, contre SEA, 01h00), 3e ligne et PP2 : 18 %, 5,50 pour 6,04 mini. Point : mini 3,79.",
-     "🔥 **Ce qui me fait dire (NHL)**",
-     "1. **Carter Verhaeghe (FLA)**, contre WPG, 00h00. 2e ligne avec Reinhart, PP1. 30 % avec le bonus de ligne. Winamax 2,80, loin du mini des non-stars. Point : mini 2,04.",
-     "2. **Jesper Bratt (NJD)**, à Vegas, 23h00. Joue avec Jack Hughes, PP1. 24 %. Winamax 3,65 (mini non-star 7,20). Point : mini 2,04.",
-     "3. **Matty Beniers (SEA)**, à Calgary, 01h00. 1re ligne avec McMann et Eberle, PP1. 20 %. Winamax 3,50 (mini non-star 7,20). En face, Wolf est en grande méforme (.846). Point : mini 3,24.",
-     "🎯 Pour ces 3 : pas de cote point publiée. Même règle : 2 € maximum, sinon 1 € sur le but.",
-     "⭐ **Stars** : seul Connor passe (2,80 pour 2,75). Les autres sont sous leur minimum : Reinhart 2,60 (2,83), Scheifele 3,50 (3,51, de peu), J. Hughes 2,70 (3,17), B. Tkachuk 2,25 (3,24), Hischier 3,00 (3,43), Stone 2,90 (3,78), Eichel 2,90 (3,96), McMann 2,80 (3,93).",
-     "🌍 **Winamax vs les autres sites** : Winamax paie en moyenne 15 % de moins que les autres sur les buteurs NHL (108 cotes) et 24 % de moins en Liiga (227 cotes). Les exceptions sont des D à grosse cote, comme Jokirinne (HPK) 8,50 pour 4,67 chez les autres, ou Larsen (Jokerit) 11,00 pour 8,01. Mon modèle leur donne 7 à 11 % : pas des values.",
-     "🍀 Honnêtement : même une vraie value à 20 % perd environ 4 soirs sur 5."
+     "1. **Valtteri Ojantakanen (JYP)** contre Jokerit : **37 %**, cote 2,75 (minimum 2,97). En feu : 5 buts et 7 points sur 5 matchs, 17 cadrés (4, 1, 4, 5, 3), 3 cadrés hier. Il a mis un triplé hier.",
+     "2. **Veeti Miettinen (KooKoo)** contre HIFK : **34 %**, cote 2,70 (minimum 3,22). 4 buts et 7 points sur 5, 14 cadrés, 29 tentatives (4 hier). 1re ligne.",
+     "3. **Daniel Mäkiaho (HIFK)** à KooKoo : **33 %**, cote 2,70 (minimum 3,35). 2 buts et 7 points sur 5, 12 cadrés, 9 tentatives hier. 11 buts cette saison.",
+     "Les trois sont sous leur cote minimum : ce sont des « probables », pas des values."
     ]
    },
    {
-    "title": "📋 **BILAN D'HIER, LE DÉTAIL**",
+    "title": "🔥 **LES PLUS EN FORME / QUI TIRENT LE PLUS**",
     "lines": [
-     "Scores : WPG 4-6 TBL, UTA 4-3 PIT (prol.), CBJ 2-3 CAR, CHI 1-4 DET, BOS 1-4 STL, WSH 4-3 NSH, MTL 5-2 DAL, NYI 4-3 MIN (prol.), BUF 7-6 ANA, OTT 5-6 LAK (prol.), VAN 2-3 SJS.",
-     "À jouer : T. Thompson ✅ (triplé). Kaprizov, Celebrini, DeBrincat ❌. Tous étaient sous leur minimum.",
-     "À surveiller : Connor, Boldy, Johnston, Tuch, Raymond ✅ ; Caufield, Gauthier, Forsberg ✅ (2 buts chacun) ; Arvidsson ✅ (3). Larkin n'a pas joué.",
-     "🛡️ Meilleurs D : 4 sur 11 (Carlson, Sergachev, Broberg, Schaefer avec 2 buts). Chychrun, le meilleur de la nuit, ❌.",
-     "🎯 Paris point : 2 sur 3 (Kaprizov, Kucherov). Couvertures point publiées : 3 sur 7 avec au moins 1 point.",
-     "📈 Totaux à +/-1 : 3 sur 11. UTA@PIT, annoncé le plus ouvert, a eu 7 buts ; le max était BUF@ANA (13) ❌.",
-     "🥅 Gardiens en méforme qui ont mal joué : 7 sur 9. En forme qui ont bien joué : 2 sur 3 (Kochetkov, Askarov).",
-     "Qui a marqué ? 82 buts : 34 prévisibles, 38 possibles, 10 imprévisibles (surtout des D : Pionk 2 fois, Samberg, Pelech, Kleven ; Hagel était incertain).",
-     "Hier aussi : plus utilisé attaquant qui a marqué 13 sur 21, défenseur 7 sur 22. Promus 7 sur 40, rétrogradés 7 sur 40. Retours 1 sur 7. Les ex 0 sur 4.",
-     "📊 **Depuis le début, par bloc (paris publiés)**",
-     "• 💰 Values NHL : 2 sur 4, **+4,30 €** à 1 € (+5,83 € sur 8 € couvert).",
-     "• 💰 Values Liiga : 2 sur 5, **+8,25 €** (+9,96 € couvert).",
-     "• 🟡 Limite NHL : 0 sur 2, −2,00 € (−4,00 € couvert). 🟡 Liiga : 1 sur 3, +4,50 € (+5,16 € couvert).",
-     "• 🔥 NHL : 3 sur 13, −1,55 € (−0,73 € couvert). 🔥 Liiga : 1 sur 3, 0,00 € (−1,54 € couvert).",
-     "• Buteurs proposés NHL : 33 sur 99 (environ 33 attendus). D NHL : 12 sur 60 (environ 8 attendus).",
-     "• Cotes Winamax suivies : en moyenne −19 % par euro joué sur 2049 résultats. C'est le prix de la marge Winamax."
+     "(sur les 5 derniers matchs : buts/points, puis tirs cadrés ; « hier » = dernier match)",
+     "**KalPa @ Ilves**",
+     "• Ilves : Henman 4 b / 4 pts, 11 cadrés, 3 tentatives hier, 2,70 ; Korhonen 0 b / 1 pt, 9 cadrés, 4,50. D : Sund 16 cadrés, 7,50.",
+     "• KalPa : Kapanen 2 b / 7 pts, 12 cadrés, 3,50 ; Piitulainen 3 b / 6 pts, 12 cadrés, 5 tentatives hier, 5,00. D : Ruotsalainen 10 cadrés, 6,00.",
+     "• Gardiens : Armalis (Ilves) 94,6 % d'arrêts, Lekkas (KalPa) 88,9 %.",
+     "**Jokerit @ JYP**",
+     "• JYP : Ojantakanen 5 b / 7 pts, 17 cadrés, 2,75 ; True 3 b / 8 pts, 8 cadrés, 4,00. D : Arola 11 cadrés, 10,00.",
+     "• Jokerit : Hännikäinen 2 b / 3 pts, 14 cadrés, 4,75 ; Curry 2 b / 3 pts, 14 cadrés et 28 tentatives, mais 0 cadré hier, 3,55. D : Caito 13 cadrés, 7,50.",
+     "**HIFK @ KooKoo**",
+     "• KooKoo : Miettinen 4 b / 7 pts, 14 cadrés, 2,70 ; Meskanen 3 b / 4 pts, 11 cadrés, 3,20. D : Puhakka 11 cadrés, dont 5 hier sur 8 tentatives, 11,00.",
+     "• HIFK : Pakarinen 4 b / 7 pts, 12 cadrés, 2,90 ; Mäkiaho 2 b / 7 pts, 12 cadrés, 9 tentatives hier, 2,70. D : Melart 1 b, 7 cadrés, 10,00 (il a marqué hier).",
+     "**Jukurit @ Kärpät**",
+     "• Kärpät : Erholtz 2 b / 3 pts, 12 cadrés, 3,80 ; Hirvonen 1 b / 2 pts, 11 cadrés, 3,20. D : Matinmikko 14 cadrés, 6,50.",
+     "• Jukurit : Olofsson 2 b / 4 pts, 14 cadrés et 31 tentatives, 3,25 ; Hayhurst 0 b / 3 pts, 11 cadrés, 7 tentatives au dernier match, 3,70. D : Sustr 14 cadrés, 8,50.",
+     "• Kärpät sans Rissanen (suspendu).",
+     "**K-Espoo @ Pelicans** (cotes pas encore sorties)",
+     "• Pelicans : Lind 3 b / 6 pts, 7 cadrés ; Dudas 0 b / 4 pts, 10 cadrés, 28 tentatives (chance 28 %). D : Nutivaara 1 b, 11 cadrés.",
+     "• K-Espoo : King 3 b / 5 pts, 16 cadrés, 4 cadrés hier (doublé hier) ; Öberg 3 b / 5 pts, 12 cadrés. D : Corcoran 0 b / 4 pts, 14 cadrés.",
+     "**Ässät @ Sport** (cotes pas encore sorties)",
+     "• Sport : Nieminen 2 b / 2 pts, 12 cadrés, 4 cadrés hier ; Palve 1 b / 4 pts, 8 cadrés. D : Viljanen 8 cadrés.",
+     "• Ässät : Kostilainen 1 b / 3 pts, 7 cadrés ; Hillis 0 b / 3 pts, 5 cadrés (chance 22,5 %). D : Nikkilä 10 cadrés, 4 hier.",
+     "• Ässät a 6 absents (Noiva, Heinilä, Boelius, Karjalainen, Klingberg, Knihti)."
     ]
    },
    {
-    "title": "👀 **À RE-SURVEILLER (NHL, ont raté leur dernier match ciblé et rejouent cette nuit)**",
+    "title": "🛡️ **MEILLEUR D PAR MATCH** (plus grosse chance selon le modèle)",
     "lines": [
-     "J. Hughes (NJD), Beniers (SEA), Andersson (VGK, D), Seth Jones (FLA, D). Un match raté ne les rend pas « dus » : aucun bonus.",
-     "🛡️ **LE DÉFENSEUR QUI A LE PLUS DE CHANCES DE MARQUER (NHL)**",
-     "• **Seth Jones (FLA)**, contre WPG : **13,5 %, le meilleur de la nuit** (12,1 % avant le bonus D à domicile qui tire). PP1, 24,9 min. Winamax 5,50 pour 8,15 mini. Non.",
-     "• Montour (SEA) 13 % : 5,75 pour 8,53. Parekh (CGY) 13 % : 6,50 pour 8,59. Nemec (CGY) 12,5 % : 8,00 pour 8,80. L. Hughes (NJD) 11 % : 5,50 pour 9,73.",
-     "• Couverture 1+ point des D (formule du 30/10) : Seth Jones 58 % (mini 1,90), Montour 49 % (mini 2,26), L. Hughes 37 % (mini 3,00). Cotes point NHL pas publiées par Winamax.",
-     "• Recalcul 18h (corrections du 30/10) : Hertl 26 → 25 %, Sharangovich 18 → 17 %, Björck 11 → 10 % (temps de jeu en baisse, ×0,93). Aucun attaquant à domicile à 6 tentatives. Values, Limite et probables inchangés.",
-     "Aucun D n'est une value chez Winamax cette nuit.",
-     "📈 **MATCH À BUTS (NHL, consensus Kambi/Bovada, prolongation comprise)**",
-     "1. **SEA@CGY (01h00) : 6,4 buts attendus, le plus ouvert.** Mon modèle dit 5,5. Les deux gardiens sont en méforme.",
-     "2. NJD@VGK (23h00) : 6,3. 3. WPG@FLA (00h00) : 6,2.",
-     "🥅 **GARDIENS PROBABLES NHL (5 derniers), aucun confirmé**",
-     "Méforme : Wolf (CGY) .846, Hellebuyck (NJD) .869, Daccord (SEA) .870, Daws (WPG) .884 (il a joué hier). Moyens : Schmid (FLA) .893, Hill (VGK) .895.",
-     "Daws a joué hier : Winnipeg peut changer de gardien.",
-     "🔄 **CHANGEMENTS DE LIGNE (NHL)**",
-     "• NJD : Hischier, Meier et Evangelista en 1re ligne ; J. Hughes, Bratt et Gritsyuk en 2e.",
-     "• WPG : Vilardi monte en 1re ligne, Connor passe en 2e. Mercer et Björck montent en 2e ligne. Pionk passe au PP2.",
-     "• VGK : Lauzon et Hanifin montent en 2e paire. • SEA : Gaudreau monte en 2e ligne, Nyman descend en 4e. • CGY : Parekh monte en 2e paire.",
-     "🩹 **RETOURS ET ABSENTS (NHL)**",
-     "• Absents : Casey (NJD) ; Wotherspoon, Olofsson (VGK), Hart incertain ; Bjugstad, Namestnikov, Morrissey (WPG) ; Barkov, Gadjovich, Marchand (FLA), Markstrom incertain ; McCann, Melanson, Lindgren (SEA) ; Huberdeau, Honzek (CGY), Othmann et Cooley incertains.",
-     "Tous les joueurs proposés ci-dessus sont dans la compo du jour (Daily Faceoff, 14h00).",
-     "🔁 **Les ex (NHL)** : aucun ce soir.",
-     "⏱️ **TEMPS DE JEU (saison, minutes)**",
-     "NJD : J. Hughes 20,4 ; L. Hughes 24,0. VGK : Eichel 19,9 ; Theodore 21,7. WPG : Connor 21,2 ; Pionk 24,2. FLA : Reinhart 20,2 ; S. Jones 24,9. SEA : Beniers 17,8 ; Montour 24,0. CGY : Farabee 18,8 ; Bahl 22,2.",
-     "🎯 **PARIS PLUS SÛRS : « AU MOINS 1 POINT » (NHL)**",
-     "• M. Tkachuk : point dans 9 sur 10 (18 points). Mini 1,46.",
-     "• B. Tkachuk : point dans 7 sur 10 (15 points). Mini 1,58.",
-     "• Seth Jones (D) : point dans 8 sur 10 (15 points). Chance de point 58 % (nouvelle formule D du 30/10), mini 1,90.",
-     "Cotes point Winamax pas encore publiées. Ne joue que si la cote est au-dessus du minimum.",
-     "📊 **INFO TIRS (non pariable, je ne conseille jamais les paris sur les tirs)**",
-     "Tirs cadrés par match : Connor 4,2, Meier 3,6, J. Hughes 3,6, B. Tkachuk 3,1, Reinhart 3,0, Perfetti 2,9, S. Jones (D) 2,8, Eichel 2,7."
+     "• KalPa @ Ilves : **Strand** 17 %, 4,75 pour 6,51 minimum. Non. (Le plus gros tireur : Sund.)",
+     "• Jokerit @ JYP : **Caito** 12,6 %, 7,50 pour 8,73. Non. Arola (11,8 %) est la value.",
+     "• HIFK @ KooKoo : **Pelli** 10,9 %, 7,00 pour 10,09. Non. (Le plus gros tireur : Puhakka, 11,00.)",
+     "• Jukurit @ Kärpät : **Matinmikko** 12,8 %, 6,50 pour 8,59. Non. 14 cadrés sur 5 matchs.",
+     "• K-Espoo @ Pelicans : **Nutivaara** 14,6 %, minimum 7,53. Cote pas encore sortie.",
+     "• Ässät @ Sport : **Åkerström** 10,7 %, minimum 10,28. Cote pas encore sortie."
+    ]
+   },
+   {
+    "title": "🟡 **LIMITE (positif mais petit, 1 €)**",
+    "lines": [
+     "• **Ojantakanen (JYP)** 2,75 pour 2,97 minimum (+2 %) : déjà joué en ⭐, pas de 2e mise. Les autres sites le voient moins haut (3,91).",
+     "• **Patrick Curry (Jokerit)** 3,55, minimum 3,85 (+1,5 %). 2 b / 3 pts sur 5, 14 cadrés, 28 tentatives : le plus gros volume de Jokerit, mais 0 cadré hier.",
+     "Aussi à +7 % : Olsen (Jukurit, 5,50), mais 0 but sur 5 et 8 cadrés seulement. Je ne le joue pas."
+    ]
+   },
+   {
+    "title": "🔥 **CE QUI ME FAIT DIRE**",
+    "lines": [
+     "• **Jacob Hayhurst (Jukurit)** à Kärpät, **3,70** (minimum 4,42, −8 %). 0 but sur 5 malgré 11 cadrés et 7 tentatives au dernier match. 5 buts et 11 passes cette saison, 1re ligne.",
+     "🎯 Couverture point : pas encore de cote. Il faudrait au moins 3,28 sur « 1 point ou plus ».",
+     "• **Carter King (K-Espoo)** à Pelicans : **seulement si la cote sort à 5,45 ou plus**. Doublé hier, 3 b / 5 pts sur 5 et 16 cadrés, le plus gros tireur du match.",
+     "🎯 Couverture point : à voir quand la cote sort (minimum 2,35)."
+    ]
+   },
+   {
+    "title": "📋 **BILAN LIIGA D'HIER (30/10)**",
+    "lines": [
+     "✅ Carter King, doublé (5,00) ; ✅ Ojantakanen, triplé (3,50) ; ✅ Borchardt (5,00).",
+     "❌ Kramer, Kangasniemi, Curry, Kalapudas, Beaucage, Miettinen, Sund.",
+     "• Paris à 1 € (💰 🟡 🔥) : **+3,50 €** sur 10 € (💰 +3,50, 🟡 +2,00, 🔥 −2,00).",
+     "• Version couverte à 2 € : +1,34 € sur 19 €.",
+     "• ⭐ (Beaucage, Fortier, Siikanen) : 0 sur 3, −3 €.",
+     "• 🛡️ Meilleurs D : 0 sur 7. Välilä et Melart ont marqué, mais aucun des deux n'était « meilleur D ».",
+     "• 🌙 Lukko : ✅ ta règle a marché (Välilä a marqué), mais j'avais mis Seppälä en tête ❌ (−1 €). Leçon appliquée aujourd'hui : on classe par tirs, pas par cote.",
+     "📊 Liiga depuis le début (1 €) : 💰 4 sur 10, **+11,75 €** ; 🟡 2 sur 6, +6,50 € ; 🔥 1 sur 5, −2,00 €."
     ]
    }
   ],
   "liiga_status": "",
   "liiga": {
    "a_jouer": [],
-   "note": "Personne ≥ 35 % sauf Beaucage (38,8 %, 2,60 sous le mini 2,84).",
+   "note": "",
    "point": [],
    "games": [],
    "values": [
     {
-     "player": "Brian Kramer",
-     "team": "SaiPa",
-     "pos": "D",
-     "game": "JYP à SaiPa",
-     "time": "17h30",
-     "chance": "16 %",
-     "one_in": 6,
-     "min": "6,92",
-     "fair": "6,29",
-     "wm": "7,50",
-     "edge": 19,
-     "why": "défenseur, ligne 3",
-     "signals": "2,4 tirs/match · 20,8 min de jeu · 2 buts 9 passes en 17 matchs",
-     "cover_point": {
-      "odds": "1,90",
-      "min": "2,80",
-      "ok": false,
-      "note": "7 points sur 10 derniers matchs · cote point sous le minimum",
-      "mise": "0,90 € buteur + 1,10 € point",
-      "outcomes": "but : +6,84 €, passe seulement : +0,09 €, rien : −2,00 €"
-     }
-    },
-    {
-     "player": "Iikka Kangasniemi",
-     "team": "K-Espoo",
+     "player": "Alexander Ruuttu",
+     "team": "KooKoo",
      "pos": "F",
-     "game": "K-Espoo à HPK",
-     "time": "17h30",
+     "game": "HIFK à KooKoo",
+     "time": "16h00",
      "chance": "22 %",
-     "one_in": 5,
-     "min": "4,98",
-     "fair": "4,52",
-     "wm": "5,25",
-     "edge": 16,
-     "why": "attaquant, ligne 1",
-     "signals": "1,0 tirs/match · 15,9 min de jeu · 2 buts 4 passes en 14 matchs",
+     "one_in": 4,
+     "min": "4,91",
+     "fair": "4,46",
+     "wm": "5,75",
+     "edge": 29,
+     "why": "attaquant, ligne 3",
+     "signals": "2,0 tirs/match · 14,0 min de jeu · 0 buts 0 passes en 2 matchs",
      "cover_point": {
-      "odds": "1,84",
-      "min": "2,71",
+      "odds": null,
+      "min": "3,74",
       "ok": false,
-      "note": "6 points sur 10 derniers matchs · cote point sous le minimum",
-      "mise": "0,90 € buteur + 1,10 € point",
-      "outcomes": "but : +4,75 €, passe seulement : +0,02 €, rien : −2,00 €"
+      "note": "0 points sur 2 derniers matchs · pas encore de cote point Winamax",
+      "mise": null,
+      "outcomes": null
      }
     },
     {
-     "player": "Carter King",
-     "team": "K-Espoo",
-     "pos": "F",
-     "game": "K-Espoo à HPK",
-     "time": "17h30",
-     "chance": "23 %",
-     "one_in": 4,
-     "min": "4,85",
-     "fair": "4,41",
-     "wm": "5,00",
-     "edge": 14,
-     "why": "attaquant, ligne 2",
-     "signals": "1,6 tirs/match · 16,2 min de jeu · 3 buts 5 passes en 18 matchs",
+     "player": "Juuso Arola",
+     "team": "JYP",
+     "pos": "D",
+     "game": "Jokerit à JYP",
+     "time": "16h00",
+     "chance": "12 %",
+     "one_in": 8,
+     "min": "9,32",
+     "fair": "8,47",
+     "wm": "10,00",
+     "edge": 18,
+     "why": "défenseur, ligne 2",
+     "signals": "2,0 tirs/match · 19,7 min de jeu · 1 buts 8 passes en 16 matchs",
      "cover_point": {
-      "odds": "2,30",
-      "min": "2,51",
+      "odds": null,
+      "min": "3,21",
       "ok": false,
-      "note": "7 points sur 10 derniers matchs · cote point sous le minimum",
-      "mise": "1,10 € buteur + 0,90 € point",
-      "outcomes": "but : +5,57 €, passe seulement : +0,07 €, rien : −2,00 €"
+      "note": "5 points sur 10 derniers matchs · pas encore de cote point Winamax",
+      "mise": null,
+      "outcomes": null
+     }
+    },
+    {
+     "player": "Sampo Ranta",
+     "team": "HIFK",
+     "pos": "F",
+     "game": "HIFK à KooKoo",
+     "time": "16h00",
+     "chance": "21 %",
+     "one_in": 5,
+     "min": "5,21",
+     "fair": "4,74",
+     "wm": "5,50",
+     "edge": 16,
+     "why": "attaquant, ligne 2",
+     "signals": "1,7 tirs/match · 16,8 min de jeu · 0 buts 2 passes en 7 matchs",
+     "cover_point": {
+      "odds": null,
+      "min": "3,66",
+      "ok": false,
+      "note": "2 points sur 7 derniers matchs · pas encore de cote point Winamax",
+      "mise": null,
+      "outcomes": null
+     }
+    },
+    {
+     "player": "Pekka Jormakka",
+     "team": "Jukurit",
+     "pos": "F",
+     "game": "Jukurit à Kärpät",
+     "time": "16h00",
+     "chance": "17 %",
+     "one_in": 6,
+     "min": "6,36",
+     "fair": "5,78",
+     "wm": "6,50",
+     "edge": 12,
+     "why": "attaquant, ligne 3",
+     "signals": "2,0 tirs/match · 15,1 min de jeu · 0 buts 0 passes en 9 matchs",
+     "cover_point": {
+      "odds": null,
+      "min": "6,13",
+      "ok": false,
+      "note": "0 points sur 9 derniers matchs · pas encore de cote point Winamax",
+      "mise": null,
+      "outcomes": null
+     }
+    }
+   ],
+   "limite": [
+    {
+     "player": "Valtteri Ojantakanen",
+     "team": "JYP",
+     "pos": "F",
+     "game": "Jokerit à JYP",
+     "time": "16h00",
+     "chance": "37 %",
+     "one_in": 3,
+     "min": "2,97",
+     "fair": "2,70",
+     "wm": "2,75",
+     "edge": 2,
+     "why": "attaquant, ligne 2",
+     "signals": "3,2 tirs/match · 15,5 min de jeu · 9 buts 6 passes en 16 matchs",
+     "cover_point": {
+      "odds": null,
+      "min": "2,28",
+      "ok": false,
+      "note": "8 points sur 10 derniers matchs · pas encore de cote point Winamax",
+      "mise": null,
+      "outcomes": null
      }
     },
     {
      "player": "Patrick Curry",
      "team": "Jokerit",
      "pos": "F",
-     "game": "Jokerit à KalPa",
-     "time": "18h30",
-     "chance": "31 %",
+     "game": "Jokerit à JYP",
+     "time": "16h00",
+     "chance": "29 %",
      "one_in": 3,
-     "min": "3,51",
-     "fair": "3,19",
-     "wm": "3,60",
-     "edge": 13,
+     "min": "3,85",
+     "fair": "3,50",
+     "wm": "3,55",
+     "edge": 2,
      "why": "attaquant, ligne 3",
-     "signals": "3,1 tirs/match · 18,1 min de jeu · 2 buts 6 passes en 16 matchs",
+     "signals": "2,9 tirs/match · 18,0 min de jeu · 2 buts 6 passes en 17 matchs",
      "cover_point": {
-      "odds": "1,64",
+      "odds": null,
       "min": "3,70",
       "ok": false,
-      "note": "3 points sur 10 derniers matchs · cote point sous le minimum",
-      "mise": "0,70 € buteur + 1,30 € point",
-      "outcomes": "but : +2,65 €, passe seulement : +0,13 €, rien : −2,00 €"
-     }
-    },
-    {
-     "player": "Valtteri Ojantakanen",
-     "team": "JYP",
-     "pos": "F",
-     "game": "JYP à SaiPa",
-     "time": "17h30",
-     "chance": "32 %",
-     "one_in": 3,
-     "min": "3,46",
-     "fair": "3,14",
-     "wm": "3,50",
-     "edge": 11,
-     "why": "attaquant, ligne 2",
-     "signals": "3,3 tirs/match · 15,7 min de jeu · 6 buts 5 passes en 15 matchs",
-     "cover_point": {
-      "odds": "1,90",
-      "min": "2,71",
-      "ok": false,
-      "note": "6 points sur 10 derniers matchs · cote point sous le minimum",
-      "mise": "0,90 € buteur + 1,10 € point",
-      "outcomes": "but : +3,24 €, passe seulement : +0,09 €, rien : −2,00 €"
-     }
-    }
-   ],
-   "limite": [
-    {
-     "player": "Cade Borchardt",
-     "team": "KalPa",
-     "pos": "F",
-     "game": "Jokerit à KalPa",
-     "time": "18h30",
-     "chance": "21 %",
-     "one_in": 5,
-     "min": "5,24",
-     "fair": "4,76",
-     "wm": "5,00",
-     "edge": 5,
-     "why": "attaquant, ligne 3",
-     "signals": "1,5 tirs/match · 15,3 min de jeu · 2 buts 5 passes en 16 matchs",
-     "cover_point": {
-      "odds": "2,25",
-      "min": "3,28",
-      "ok": false,
-      "note": "4 points sur 10 derniers matchs · cote point sous le minimum",
-      "mise": "1,10 € buteur + 0,90 € point",
-      "outcomes": "but : +5,53 €, passe seulement : +0,02 €, rien : −2,00 €"
-     }
-    },
-    {
-     "player": "Antti Kalapudas",
-     "team": "Jokerit",
-     "pos": "F",
-     "game": "Jokerit à KalPa",
-     "time": "18h30",
-     "chance": "22 %",
-     "one_in": 5,
-     "min": "5,02",
-     "fair": "4,57",
-     "wm": "4,75",
-     "edge": 4,
-     "why": "attaquant, ligne 1",
-     "signals": "1,2 tirs/match · 14,9 min de jeu · 2 buts 4 passes en 16 matchs",
-     "cover_point": {
-      "odds": "1,98",
-      "min": "2,96",
-      "ok": false,
-      "note": "5 points sur 10 derniers matchs · cote point sous le minimum",
-      "mise": "0,90 € buteur + 1,10 € point",
-      "outcomes": "but : +4,45 €, passe seulement : +0,18 €, rien : −2,00 €"
-     }
-    },
-    {
-     "player": "Alex Beaucage",
-     "team": "Lukko",
-     "pos": "F",
-     "game": "KooKoo à Lukko",
-     "time": "17h30",
-     "chance": "39 %",
-     "one_in": 3,
-     "min": "2,84",
-     "fair": "2,58",
-     "wm": "2,60",
-     "edge": 1,
-     "why": "attaquant, ligne 1",
-     "signals": "2,6 tirs/match · 18,3 min de jeu · 7 buts 9 passes en 18 matchs",
-     "cover_point": {
-      "odds": "1,39",
-      "min": "2,35",
-      "ok": false,
-      "note": "8 points sur 10 derniers matchs · cote point sous le minimum",
+      "note": "3 points sur 10 derniers matchs · pas encore de cote point Winamax",
       "mise": null,
       "outcomes": null
      }
@@ -534,509 +279,261 @@
    ],
    "feeling": [
     {
-     "player": "Veeti Miettinen",
-     "team": "KooKoo",
+     "player": "Jacob Hayhurst",
+     "team": "Jukurit",
      "pos": "F",
-     "game": "KooKoo à Lukko",
-     "time": "17h30",
-     "chance": "27 %",
+     "game": "Jukurit à Kärpät",
+     "time": "16h00",
+     "chance": "25 %",
      "one_in": 4,
-     "min": "4,07",
-     "fair": "3,70",
-     "wm": "3,00",
-     "edge": -19,
+     "min": "4,42",
+     "fair": "4,02",
+     "wm": "3,70",
+     "edge": -8,
      "why": "attaquant, ligne 1",
-     "signals": "2,2 tirs/match · 15,4 min de jeu · 9 buts 6 passes en 17 matchs",
+     "signals": "2,4 tirs/match · 18,1 min de jeu · 5 buts 11 passes en 19 matchs",
      "cover_point": {
-      "odds": "1,92",
-      "min": "1,92",
-      "ok": true,
-      "note": "12 points sur 10 derniers matchs",
-      "mise": "0,90 € buteur + 1,10 € point",
-      "outcomes": "but : +2,81 €, passe seulement : +0,11 €, rien : −2,00 €"
-     }
-    },
-    {
-     "player": "Tony Sund",
-     "team": "Ilves",
-     "pos": "D",
-     "game": "Ilves à Tappara",
-     "time": "17h30",
-     "chance": "10 %",
-     "one_in": 11,
-     "min": "11,58",
-     "fair": "10,53",
-     "wm": "7,50",
-     "edge": -29,
-     "why": "défenseur, ligne 2",
-     "signals": "2,3 tirs/match · 17,9 min de jeu · 3 buts 9 passes en 18 matchs",
-     "cover_point": {
-      "odds": "2,35",
-      "min": "2,58",
+      "odds": null,
+      "min": "3,28",
       "ok": false,
-      "note": "8 points sur 10 derniers matchs · cote point sous le minimum",
-      "mise": "1,10 € buteur + 0,90 € point",
-      "outcomes": "but : +8,37 €, passe seulement : +0,12 €, rien : −2,00 €"
+      "note": "4 points sur 10 derniers matchs · pas encore de cote point Winamax",
+      "mise": null,
+      "outcomes": null
      }
     }
    ],
-   "read_at": "2026-10-30 13h49 Paris"
+   "read_at": "2026-10-31 09:48 Paris"
   },
   "hist_nul": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le 5e match après un nul : 19 %. Un peu moins, mais une saison sur 4 dit l'inverse (31 %). Pas fiable : c'est de l'info, pas un pari.",
   "hist_so": "Sur 4 saisons NHL : 22 % des matchs vont en prolongation. Le match juste après des tirs au but : 21 %. Pas d'effet : c'est de l'info, pas un pari.",
-  "after_nul": [
-   {
-    "team": "Winnipeg",
-    "opp": "Floride",
-    "home": false,
-    "time": "00h00",
-    "day": "31/10",
-    "k": 4,
-    "nul": {
-     "date": "23/10",
-     "opp": "Dallas",
-     "home": false,
-     "score": "2-3",
-     "win": false,
-     "kind": "OT"
-    },
-    "between": [
-     {
-      "date": "26/10",
-      "opp": "Montréal",
-      "home": true,
-      "score": "1-2",
-      "win": false
-     },
-     {
-      "date": "28/10",
-      "opp": "Floride",
-      "home": true,
-      "score": "1-5",
-      "win": false
-     },
-     {
-      "date": "30/10",
-      "opp": "Tampa Bay",
-      "home": false,
-      "score": "4-6",
-      "win": false
-     }
-    ],
-    "bestD": {
-     "player": "Neal Pionk",
-     "chance": "9 %",
-     "min": "12,36",
-     "fair": "11,24",
-     "example": "À 12,36 ou plus, tu joues. À 11,86, tu ne joues pas.",
-     "wm": "8,00",
-     "wm_ok": false,
-     "wm_edge": -29
-    }
-   },
-   {
-    "team": "Seattle",
-    "opp": "Calgary",
-    "home": false,
-    "time": "01h00",
-    "day": "31/10",
-    "k": 4,
-    "nul": {
-     "date": "21/10",
-     "opp": "Detroit",
-     "home": true,
-     "score": "4-3",
-     "win": true,
-     "kind": "SO"
-    },
-    "between": [
-     {
-      "date": "23/10",
-      "opp": "Utah",
-      "home": true,
-      "score": "5-3",
-      "win": true
-     },
-     {
-      "date": "25/10",
-      "opp": "Minnesota",
-      "home": true,
-      "score": "1-5",
-      "win": false
-     },
-     {
-      "date": "29/10",
-      "opp": "Toronto",
-      "home": true,
-      "score": "5-4",
-      "win": true
-     }
-    ],
-    "bestD": {
-     "player": "Brandon Montour",
-     "chance": "13 %",
-     "min": "8,53",
-     "fair": "7,75",
-     "example": "À 8,53 ou plus, tu joues. À 8,03, tu ne joues pas.",
-     "wm": "5,75",
-     "wm_ok": false,
-     "wm_edge": -26
-    }
-   }
-  ],
+  "after_nul": [],
   "after_so": [],
   "liiga_ot": {
-   "day": "30/10",
+   "day": "31/10",
    "today": true,
-   "after_nul": [],
-   "after_so": []
-  },
-  "shots": [
-   {
-    "game": "New Jersey à Vegas",
-    "time": "23h00",
-    "teams": [
-     {
-      "team": "New Jersey",
-      "date": "29/10",
-      "opp": "Colorado",
-      "home": false,
-      "top": [
-       {
-        "player": "A. Lombardi",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "N. Hischier",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "C. Brown",
-        "d": false,
-        "sog": 2
-       }
-      ]
-     },
-     {
-      "team": "Vegas",
-      "date": "28/10",
-      "opp": "Ottawa",
+   "after_nul": [
+    {
+     "team": "JYP",
+     "opp": "Jokerit",
+     "home": true,
+     "time": "16h00",
+     "day": "31/10",
+     "k": 5,
+     "nul": {
+      "date": "16/10",
+      "opp": "Kärpät",
       "home": true,
-      "top": [
-       {
-        "player": "J. Lauzon",
-        "d": true,
-        "sog": 5
-       },
-       {
-        "player": "B. Bowman",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "M. Stone",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "teams": [
-     {
-      "team": "Winnipeg",
+      "score": "4-5",
+      "win": false,
+      "kind": "OT"
+     },
+     "between": [
+      {
+       "date": "22/10",
+       "opp": "HPK",
+       "home": true,
+       "score": "3-2",
+       "win": true
+      },
+      {
+       "date": "24/10",
+       "opp": "Ässät",
+       "home": true,
+       "score": "4-1",
+       "win": true
+      },
+      {
+       "date": "28/10",
+       "opp": "Tappara",
+       "home": true,
+       "score": "4-6",
+       "win": false
+      },
+      {
+       "date": "30/10",
+       "opp": "SaiPa",
+       "home": false,
+       "score": "6-3",
+       "win": true
+      }
+     ]
+    },
+    {
+     "team": "KooKoo",
+     "opp": "HIFK",
+     "home": true,
+     "time": "16h00",
+     "day": "31/10",
+     "k": 5,
+     "nul": {
+      "date": "20/10",
+      "opp": "Tappara",
+      "home": true,
+      "score": "3-2",
+      "win": true,
+      "kind": "SO"
+     },
+     "between": [
+      {
+       "date": "21/10",
+       "opp": "K-Espoo",
+       "home": false,
+       "score": "2-4",
+       "win": false
+      },
+      {
+       "date": "24/10",
+       "opp": "Jokerit",
+       "home": true,
+       "score": "3-6",
+       "win": false
+      },
+      {
+       "date": "28/10",
+       "opp": "Ässät",
+       "home": true,
+       "score": "5-3",
+       "win": true
+      },
+      {
+       "date": "30/10",
+       "opp": "Lukko",
+       "home": false,
+       "score": "1-3",
+       "win": false
+      }
+     ]
+    },
+    {
+     "team": "HIFK",
+     "opp": "KooKoo",
+     "home": false,
+     "time": "16h00",
+     "day": "31/10",
+     "k": 5,
+     "nul": {
+      "date": "20/10",
+      "opp": "Lukko",
+      "home": false,
+      "score": "2-3",
+      "win": false,
+      "kind": "SO"
+     },
+     "between": [
+      {
+       "date": "23/10",
+       "opp": "K-Espoo",
+       "home": false,
+       "score": "3-0",
+       "win": true
+      },
+      {
+       "date": "24/10",
+       "opp": "HPK",
+       "home": false,
+       "score": "6-3",
+       "win": true
+      },
+      {
+       "date": "28/10",
+       "opp": "Ilves",
+       "home": true,
+       "score": "2-1",
+       "win": true
+      },
+      {
+       "date": "30/10",
+       "opp": "Ässät",
+       "home": false,
+       "score": "2-3",
+       "win": false
+      }
+     ]
+    },
+    {
+     "team": "Kärpät",
+     "opp": "Jukurit",
+     "home": true,
+     "time": "16h00",
+     "day": "31/10",
+     "k": 4,
+     "nul": {
+      "date": "20/10",
+      "opp": "SaiPa",
+      "home": false,
+      "score": "1-2",
+      "win": false,
+      "kind": "SO"
+     },
+     "between": [
+      {
+       "date": "23/10",
+       "opp": "KalPa",
+       "home": true,
+       "score": "5-2",
+       "win": true
+      },
+      {
+       "date": "24/10",
+       "opp": "KalPa",
+       "home": true,
+       "score": "1-5",
+       "win": false
+      },
+      {
+       "date": "28/10",
+       "opp": "HPK",
+       "home": true,
+       "score": "1-0",
+       "win": true
+      }
+     ]
+    }
+   ],
+   "after_so": [
+    {
+     "team": "Ilves",
+     "opp": "KalPa",
+     "home": true,
+     "time": "16h00",
+     "day": "31/10",
+     "so": {
       "date": "30/10",
-      "opp": "Tampa Bay",
+      "opp": "Tappara",
       "home": false,
-      "top": [
-       {
-        "player": "K. Connor",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "N. Pionk",
-        "d": true,
-        "sog": 4
-       },
-       {
-        "player": "D. Mercer",
-        "d": false,
-        "sog": 3
-       }
-      ]
-     },
-     {
-      "team": "Floride",
+      "score": "2-1",
+      "win": true
+     }
+    },
+    {
+     "team": "Jukurit",
+     "opp": "Kärpät",
+     "home": false,
+     "time": "16h00",
+     "day": "31/10",
+     "so": {
       "date": "28/10",
-      "opp": "Winnipeg",
-      "home": false,
-      "top": [
-       {
-        "player": "A. Lundell",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "C. Verhaeghe",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "S. Jones",
-        "d": true,
-        "sog": 3
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "game": "Seattle à Calgary",
-    "time": "01h00",
-    "teams": [
-     {
-      "team": "Seattle",
-      "date": "29/10",
-      "opp": "Toronto",
+      "opp": "Lukko",
       "home": true,
-      "top": [
-       {
-        "player": "B. McMann",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "B. Meyers",
-        "d": false,
-        "sog": 2
-       },
-       {
-        "player": "V. Dunn",
-        "d": true,
-        "sog": 2
-       }
-      ]
-     },
-     {
-      "team": "Calgary",
-      "date": "29/10",
-      "opp": "Edmonton",
-      "home": false,
-      "top": [
-       {
-        "player": "R. Strome",
-        "d": false,
-        "sog": 4
-       },
-       {
-        "player": "M. Coronato",
-        "d": false,
-        "sog": 3
-       },
-       {
-        "player": "M. Pospisil",
-        "d": false,
-        "sog": 3
-       }
-      ]
+      "score": "3-4",
+      "win": false
      }
-    ]
-   }
-  ],
-  "wm_value": [
-   {
-    "player": "Marc Gatcomb",
-    "team": "VGK",
-    "pos": "F",
-    "game": "New Jersey à Vegas",
-    "time": "23h00",
-    "chance": "14 %",
-    "min": "8,15",
-    "fair": "7,41",
-    "wm": "9,00",
-    "edge": 22
-   },
-   {
-    "player": "Kyle Connor",
-    "team": "WPG",
-    "pos": "F",
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "chance": "43 %",
-    "min": "2,59",
-    "fair": "2,35",
-    "wm": "2,80",
-    "edge": 19
-   },
-   {
-    "player": "Amadeus Lombardi",
-    "team": "NJD",
-    "pos": "F",
-    "game": "New Jersey à Vegas",
-    "time": "23h00",
-    "chance": "17 %",
-    "min": "6,51",
-    "fair": "5,92",
-    "wm": "7,00",
-    "edge": 18
-   },
-   {
-    "player": "Cody Glass",
-    "team": "NJD",
-    "pos": "F",
-    "game": "New Jersey à Vegas",
-    "time": "23h00",
-    "chance": "16 %",
-    "min": "6,84",
-    "fair": "6,21",
-    "wm": "7,00",
-    "edge": 13
-   },
-   {
-    "player": "Connor Brown",
-    "team": "NJD",
-    "pos": "F",
-    "game": "New Jersey à Vegas",
-    "time": "23h00",
-    "chance": "16 %",
-    "min": "6,97",
-    "fair": "6,33",
-    "wm": "7,00",
-    "edge": 11
-   }
-  ],
-  "wm_read_at": "13h49",
+    }
+   ]
+  },
+  "shots": [],
+  "wm_value": [],
+  "wm_read_at": "09:48",
   "wm_games": [
-   "HIFK à Ässät",
-   "Ilves à Tappara",
-   "JYP à SaiPa",
-   "Jokerit à KalPa",
-   "K-Espoo à HPK",
-   "KooKoo à Lukko",
-   "New Jersey à Vegas",
-   "Pelicans à TPS",
-   "Seattle à Calgary",
-   "Winnipeg à Floride"
+   "HIFK à KooKoo",
+   "Jokerit à JYP",
+   "Jukurit à Kärpät",
+   "KalPa à Ilves"
   ],
   "values": [],
-  "values_stars": [
-   {
-    "player": "Sam Reinhart",
-    "wm": "2,60",
-    "min": "2,96",
-    "ok": false,
-    "time": "00h00"
-   },
-   {
-    "player": "Kyle Connor",
-    "wm": "2,80",
-    "min": "2,73",
-    "ok": true,
-    "time": "00h00"
-   }
-  ],
+  "values_stars": [],
   "values_limite": [],
-  "values_signaux": [
-   {
-    "player": "Elias Salomonsson",
-    "team": "WPG",
-    "pos": "D",
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "wm": "8,00",
-    "min": "15,28",
-    "fair": "13,89",
-    "chance": "7 %",
-    "one_in": 14,
-    "edge": -42,
-    "signals": "D en PP1, monte en PP1",
-    "score": 4,
-    "down": false,
-    "gap": "cote trop basse : 8,00 au lieu de 15,28 mini",
-    "ok": false,
-    "cover_point": {
-     "stake_goal": null,
-     "stake_point": null,
-     "gain_if_goal": null,
-     "mise": null,
-     "outcomes": null,
-     "odds": null,
-     "p": 0.199,
-     "fair": "5,02",
-     "min": "5,53",
-     "ok": false,
-     "note": "pas de cote point lue · joue dès 5,53"
-    }
-   },
-   {
-    "player": "Dawson Mercer",
-    "team": "WPG",
-    "pos": "F",
-    "game": "Winnipeg à Floride",
-    "time": "00h00",
-    "wm": "5,50",
-    "min": "5,99",
-    "fair": "5,44",
-    "chance": "18 %",
-    "one_in": 5,
-    "edge": 1,
-    "signals": "monte en top-6",
-    "score": 2,
-    "down": false,
-    "gap": "cote un peu basse : 5,50 au lieu de 5,99 mini",
-    "ok": false,
-    "cover_point": {
-     "stake_goal": null,
-     "stake_point": null,
-     "gain_if_goal": null,
-     "mise": null,
-     "outcomes": null,
-     "odds": null,
-     "p": 0.385,
-     "fair": "2,60",
-     "min": "2,86",
-     "ok": false,
-     "note": "pas de cote point lue · joue dès 2,86"
-    }
-   },
-   {
-    "player": "Frederick Gaudreau",
-    "team": "SEA",
-    "pos": "F",
-    "game": "Seattle à Calgary",
-    "time": "01h00",
-    "wm": "5,50",
-    "min": "7,17",
-    "fair": "6,51",
-    "chance": "15 %",
-    "one_in": 7,
-    "edge": -16,
-    "signals": "monte en top-6",
-    "score": 2,
-    "down": false,
-    "gap": "cote trop basse : 5,50 au lieu de 7,17 mini",
-    "ok": false,
-    "cover_point": {
-     "stake_goal": null,
-     "stake_point": null,
-     "gain_if_goal": null,
-     "mise": null,
-     "outcomes": null,
-     "odds": null,
-     "p": 0.503,
-     "fair": "1,99",
-     "min": "2,19",
-     "ok": false,
-     "note": "pas de cote point lue · joue dès 2,19"
-    }
-   }
-  ],
+  "values_signaux": [],
   "values_status": "ok"
  },
  "foot": {
